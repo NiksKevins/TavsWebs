@@ -1,0 +1,160 @@
+"use client";
+
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Float, Sparkles } from "@react-three/drei";
+import { Suspense, useMemo, useRef } from "react";
+import * as THREE from "three";
+import { useMousePosition, useReducedMotion } from "@/hooks/useMotion";
+
+function NetworkGlobe({ mouse }: { mouse: { x: number; y: number } }) {
+  const group = useRef<THREE.Group>(null);
+  const reduced = useReducedMotion();
+
+  const { positions, connections } = useMemo(() => {
+    const count = 48;
+    const pts: THREE.Vector3[] = [];
+    const phi = Math.PI * (3 - Math.sqrt(5));
+
+    for (let i = 0; i < count; i++) {
+      const y = 1 - (i / (count - 1)) * 2;
+      const radius = Math.sqrt(1 - y * y);
+      const theta = phi * i;
+      pts.push(
+        new THREE.Vector3(
+          Math.cos(theta) * radius * 1.55,
+          y * 1.55,
+          Math.sin(theta) * radius * 1.55,
+        ),
+      );
+    }
+
+    const lines: number[] = [];
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        if (pts[i].distanceTo(pts[j]) < 1.15) {
+          lines.push(
+            pts[i].x,
+            pts[i].y,
+            pts[i].z,
+            pts[j].x,
+            pts[j].y,
+            pts[j].z,
+          );
+        }
+      }
+    }
+
+    return {
+      positions: new Float32Array(pts.flatMap((p) => [p.x, p.y, p.z])),
+      connections: new Float32Array(lines),
+    };
+  }, []);
+
+  useFrame((state) => {
+    if (!group.current) return;
+    const t = state.clock.getElapsedTime();
+    if (!reduced) {
+      group.current.rotation.y = t * 0.12 + mouse.x * 0.45;
+      group.current.rotation.x = mouse.y * 0.25 + Math.sin(t * 0.2) * 0.08;
+    }
+  });
+
+  return (
+    <group ref={group}>
+      <points>
+        <bufferGeometry>
+          <bufferAttribute
+            attach="attributes-position"
+            args={[positions, 3]}
+          />
+        </bufferGeometry>
+        <pointsMaterial
+          color="#67e8f9"
+          size={0.055}
+          sizeAttenuation
+          transparent
+          opacity={0.95}
+          depthWrite={false}
+        />
+      </points>
+      <lineSegments>
+        <bufferGeometry>
+          <bufferAttribute
+            attach="attributes-position"
+            args={[connections, 3]}
+          />
+        </bufferGeometry>
+        <lineBasicMaterial
+          color="#3b82f6"
+          transparent
+          opacity={0.35}
+          depthWrite={false}
+        />
+      </lineSegments>
+      <mesh>
+        <icosahedronGeometry args={[1.05, 1]} />
+        <meshPhysicalMaterial
+          color="#0a1220"
+          metalness={0.85}
+          roughness={0.15}
+          transmission={0.55}
+          thickness={0.6}
+          transparent
+          opacity={0.45}
+          envMapIntensity={1.2}
+        />
+      </mesh>
+    </group>
+  );
+}
+
+function Scene() {
+  const mouse = useMousePosition();
+  const reduced = useReducedMotion();
+
+  return (
+    <>
+      <ambientLight intensity={0.35} />
+      <pointLight position={[4, 3, 4]} intensity={1.4} color="#60a5fa" />
+      <pointLight position={[-4, -2, -2]} intensity={0.8} color="#67e8f9" />
+      <Float
+        speed={reduced ? 0 : 1.2}
+        rotationIntensity={reduced ? 0 : 0.25}
+        floatIntensity={reduced ? 0 : 0.6}
+      >
+        <NetworkGlobe mouse={mouse} />
+      </Float>
+      {!reduced && (
+        <Sparkles
+          count={40}
+          scale={6}
+          size={2}
+          speed={0.25}
+          opacity={0.35}
+          color="#93c5fd"
+        />
+      )}
+    </>
+  );
+}
+
+export function HeroScene() {
+  return (
+    <div className="absolute inset-0 -z-0">
+      <Canvas
+        dpr={[1, 1.5]}
+        camera={{ position: [0, 0, 5.2], fov: 42 }}
+        gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+        style={{ background: "transparent" }}
+      >
+        <Suspense fallback={null}>
+          <Scene />
+        </Suspense>
+      </Canvas>
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(5,7,12,0.55)_70%,rgba(5,7,12,0.95)_100%)]"
+      />
+    </div>
+  );
+}

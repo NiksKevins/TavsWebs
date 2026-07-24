@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "home": {
+      "title": "Premium tīmekļa izstrādes aģentūra",
+      "description": "TavsWebs ir premium tīmekļa izstrādes aģentūra — veidojam ātras, iedarbīgas vietnes un digitālas pieredzes, kas pārvērš apmeklētājus par klientiem.",
+      "ogTitle": "TavsWebs — Premium tīmekļa izstrādes aģentūra"
+    },
+    "work": {
+      "title": "Izvēlētie darbi",
+      "description": "Iepazīstieties ar TavsWebs projektiem — redakcionāli e-veikali, fintech platformas, arhitektūras portfolio un SaaS produktu vietnes, kas būvētas ātrumam un konversijai.",
+      "ogTitle": "Izvēlētie darbi — TavsWebs"
+    },
+    "services": {
+      "title": "Dizaina un izstrādes pakalpojumi",
+      "description": "Zīmola un tīmekļa dizains, produktu inženierija, imersīvas 3D pieredzes un izaugsmei gatavi laidieni no TavsWebs.",
+      "ogTitle": "Pakalpojumi — TavsWebs"
+    },
+    "process": {
+      "title": "Mūsu process",
+      "description": "Kā TavsWebs veido vietnes: izpēte, stratēģija, dizains, izstrāde un palaišana — sadarbīgs, kinematogrāfisks process.",
+      "ogTitle": "Mūsu process — TavsWebs"
+    },
+    "about": {
+      "title": "Par studiju",
+      "description": "Par TavsWebs — neliela radoša studija, kas veido premium digitālus produktus ar mēru, meistarību un tehnisku precizitāti.",
+      "ogTitle": "Par mums — TavsWebs"
+    },
+    "contact": {
+      "title": "Sākt projektu",
+      "description": "Sazinieties ar TavsWebs, lai sāktu nākamo vietni vai digitālo produktu. Piedāvājumu saņemiet e-pastā, telefonā vai WhatsApp — atbildam 24 stundu laikā.",
+      "ogTitle": "Kontakti — TavsWebs"
+    },
+    "faq": {
+      "title": "Biežāk uzdotie jautājumi",
+      "description": "Atbildes par TavsWebs termiņiem, budžetiem, tehnoloģijām, darbu ar esošiem zīmoliem un nepabeigtiem projektiem.",
+      "ogTitle": "BUJ — TavsWebs"
+    }
+  },
+  "nav": {
+    "work": "Darbi",
+    "services": "Pakalpojumi",
+    "process": "Process",
+    "about": "Par mums",
+    "contact": "Kontakti",
+    "faq": "BUJ",
+    "getQuote": "Saņemt piedāvājumu",
+    "openMenu": "Atvērt izvēlni",
+    "closeMenu": "Aizvērt izvēlni",
+    "homeAria": "{name} sākumlapa",
+    "primary": "Galvenā navigācija",
+    "language": "Valoda"
+  },
+  "hero": {
+    "eyebrow": "Tīmekļa izstrādes aģentūra",
+    "body": "{tagline}. Vietnes, kas jūtas pašsaprotamas — ātras, uzticamas un veidotas ar precizitāti.",
+    "ctaPrimary": "Sākt projektu",
+    "ctaSecondary": "Skatīt darbus",
+    "explore": "Ienirt"
+  },
+  "site": {
+    "tagline": "Digitāla amatniecība ambicioziem zīmoliem",
+    "description": "TavsWebs projektē un būvē premium tīmekļa pieredzes — vietnes, kas jūtas kā roku darbs, strādā bez kompromisiem un pārvērš apmeklētājus par klientiem.",
+    "responseTime": "Atbildam 24 stundu laikā",
+    "skipToContent": "Pāriet pie satura"
+  },
+  "home": {
+    "processCard": {
+      "label": "Process",
+      "text": "No pirmās sarunas līdz palaišanai — skaidrs, sadarbīgs ceļš.",
+      "cta": "Uzzināt vairāk →"
+    },
+    "aboutCard": {
+      "label": "Par mums",
+      "text": "Studija, kas balstās uz mēru, meistarību un tehnisku precizitāti.",
+      "cta": "Uzzināt vairāk →"
+    },
+    "faqCard": {
+      "label": "BUJ",
+      "text": "Termiņi, budžeti, tehnoloģijas un tas, kā sadarbība notiek praksē.",
+      "cta": "Uzzināt vairāk →"
+    }
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Izvēlētie darbi",
+    "titleAccent": "darbi",
+    "titleLead": "Izvēlētie",
+    "subtitle": "Redakcionāli stāsti — katrs projekts kā sava pasaule, nevis kārtējā kartīte režģī.",
+    "viewCase": "Skatīt case study",
+    "caseStudyTitle": "{title} — case study",
+    "viewAll": "Visi projekti",
+    "backToAll": "Atpakaļ pie visiem darbiem",
+    "moreWork": "Citi darbi",
+    "overview": "Pārskats",
+    "outcomes": "Rezultāti",
+    "servicesLabel": "Pakalpojumi",
+    "ctaTitle": "Vēlaties līdzīgus rezultātus?",
+    "ctaProject": "Sākt projektu kā {title}",
+    "pageDescription": "Iepazīstieties ar TavsWebs projektiem — redakcionāli e-veikali, fintech platformas, arhitektūras portfolio un SaaS produktu vietnes, kas būvētas ātrumam un konversijai."
+  },
+  "projects": {
+    "nordic-atelier": {
+      "title": "Nordic Atelier",
+      "category": "E-komercija · Zīmols",
+      "description": "Klusa luksusa e-veikals skandināvu dizaina namam — redakcionāls ritms, taustāmi produktu stāsti un norēķini, kas izzūd pieredzē.",
+      "longDescription": "Nordic Atelier vajadzēja veikalu, kas jūtas tikpat pārdomāts kā viņu mēbeles. Mēs pārbūvējām zīmola vietni ap redakcionālu stāstījumu: lieli materiālu pētījumi, atturīga kustība un norēķinu plūsma, kas paliek neredzama līdz pirkuma brīdim. Veiktspēja bija dizaina ierobežojums — produkta lapas zem vienas sekundes LCP, nezaudējot attēlu kvalitāti.",
+      "metrics": ["+142% konversija", "0,9 s LCP", "Awwwards nominācija"],
+      "services": ["Zīmola un tīmekļa dizains", "Produkta inženierija", "Izaugsme un palaišana"]
+    },
+    "pulse-finance": {
+      "title": "Pulse Finance",
+      "category": "Fintech · Platforma",
+      "description": "Blīva produkta virsma, kas kļuvusi eleganta. Reāllaika paneļi ar kinematogrāfisku kustību un dizaina sistēma, kas iztur mērogu.",
+      "longDescription": "Pulse Finance laidīs klajā Series B produkta virsmu, kurai vienlaikus bija jārāda uzticība un tehniskais dziļums. Mēs izveidojām tumšu, precīzu sistēmu ar kustības norādēm dzīvajiem datiem un komponentu bibliotēku, ko varēja paplašināt gan produkta, gan mārketinga komanda. Pieejamība un tastatūras plūsmas regulētai auditorijai nebija kompromiss.",
+      "metrics": ["Series B palaišana", "40+ komponenti", "WCAG AA"],
+      "services": ["Produkta inženierija", "Zīmola un tīmekļa dizains"]
+    },
+    "lumen-studio": {
+      "title": "Lumen Studio",
+      "category": "Arhitektūra · Portfolio",
+      "description": "Imersīvi projektu arhīvi ar ritināšanai balstītu telpisku stāstījumu — gaisma, ēna un materiāls kā galvenais naratīvs.",
+      "longDescription": "Lumen Studio portfolio bija jājutās telpiski. Mēs uzbūvējām ritināšanai balstītus case study, kuros stāstu vada gaisma un materiāls, ar iespējamiem WebGL pastaigām flagmaņu projektiem. Headless CMS ļauj arhitektiem publicēt jaunus darbus, nesabojājot arhīva kinematogrāfisko ritmu.",
+      "metrics": ["3D pastaigas", "CMS vadīts", "99 Lighthouse"],
+      "services": ["3D un imersija", "Zīmola un tīmekļa dizains", "Produkta inženierija"]
+    },
+    "orbit-labs": {
+      "title": "Orbit Labs",
+      "category": "SaaS · Produkts",
+      "description": "No pitch deck līdz produkcijai astoņās nedēļās. Izstrādātājiem domāta produkta vietne, kas pārdod ar skaidrību, ne troksni.",
+      "longDescription": "Orbit Labs vajadzēja mārketinga vietni, kam izstrādātāji uzticētos. Mēs noņēmām troksni, uzbūvējam dokumentācijai tuvas produkta lapas un astoņās nedēļās laidām edge-deployed Next.js risinājumu. Demo pieprasījumi pēc palaišanas vairāk nekā dubultojās — pateicoties skaidrībai, ātrumam un stāstam, kas cienīja tehnisku auditoriju.",
+      "metrics": ["2,4× demo pieprasījumi", "Tumšs UI", "Edge deploy"],
+      "services": ["Produkta inženierija", "Izaugsme un palaišana"]
+    }
+  },
+  "services": {
+    "eyebrow": "Pakalpojumi",
+    "title": "Spējas, ne katalogs",
+    "pageDescription": "Zīmola un tīmekļa dizains, produktu inženierija, imersīvas 3D pieredzes un izaugsmei gatavi laidieni no TavsWebs.",
+    "exploreAll": "Visi pakalpojumi",
+    "ctaTitle": "Vajag pielāgotu sadarbību?",
+    "items": {
+      "brand-web-design": {
+        "title": "Zīmola un tīmekļa dizains",
+        "description": "Identitātes sistēmas un saskarnes ar redakcionālu atturību — tipogrāfija, ritms un kustība, kas jūtas neizbēgama.",
+        "detail": "Vizuālās sistēmas · UI komplekti · Dizaina ops",
+        "longDescription": "Mēs veidojam zīmolus un saskarnes, kas iztur īstu lietošanu. No vizuālās identitātes līdz augstas precizitātes produkta UI — katrs lēmums ir par skaidrību, hierarhiju un ilgstošu meistarību, ne tendencēm."
+      },
+      "product-engineering": {
+        "title": "Produkta inženierija",
+        "description": "Next.js, TypeScript un veiktspējas budžeti, kas turas arī pie īstas slodzes. Kods kā amatniecība.",
+        "detail": "App Router · Edge · Headless CMS",
+        "longDescription": "Inženierija ir daļa no dizaina. Mēs piegādājam Next.js un TypeScript produktus ar stingriem veiktspējas budžetiem, pieejamiem komponentiem un CMS arhitektūrām, ar kurām satura komandas tiešām var strādāt."
+      },
+      "3d-immersive": {
+        "title": "3D un imersija",
+        "description": "WebGL pieredzes, kas pastiprina stāstu — nekad kā dekorācija dekorācijas pēc.",
+        "detail": "Three.js · R3F · Šeideru darbs",
+        "longDescription": "Kad imersija ir pelnījusi savu vietu, mēs to būvējam uzmanīgi: React Three Fiber ainas, šeideri un ritināšanas kino, kas paliek veiksmīgs arī īstās ierīcēs — tostarp mobilajās."
+      },
+      "growth-launch": {
+        "title": "Izaugsme un palaišana",
+        "description": "SEO pamati, analitika un konversijas ceļi no pirmās dienas — ne kā pielikums beigās.",
+        "detail": "Core Web Vitals · Schema · CRO",
+        "longDescription": "Palaišana ir sistēma: tehniskais SEO, strukturētie dati, analitika un konversijas ceļi, kas top kopā ar radošo — lai vietne strādātu gan meklētājiem, gan cilvēkiem."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "Kā mēs būvējam",
+    "titleLead": "Kā mēs",
+    "titleAccent": "būvējam",
+    "subtitle": "Kinematogrāfisks ceļš no pirmās sarunas līdz palaišanai — pa vienai pilnekrāna nodaļai.",
+    "pageDescription": "Kā TavsWebs veido vietnes: izpēte, stratēģija, dizains, izstrāde un palaišana — sadarbīgs, kinematogrāfisks process.",
+    "ctaTitle": "Izrunāsim jūsu īso briefu",
+    "steps": {
+      "discovery": {
+        "title": "Izpēte",
+        "subtitle": "Klausāmies pirms būvējam",
+        "description": "Kartējam mērķus, auditorijas, ierobežojumus un konkurences tukšumus. Vispirms skaidrība — tad ambīcija."
+      },
+      "strategy": {
+        "title": "Stratēģija",
+        "subtitle": "Strukturējam pieredzi",
+        "description": "Informācijas arhitektūra, konversijas ceļi un kustības valoda, kas atbalsta zīmola stāstu."
+      },
+      "design": {
+        "title": "Dizains",
+        "subtitle": "Katrs kadrs ar rūpību",
+        "description": "Augstas precizitātes kompozīcijas, mijiedarbības prototipi un sistēmas, kas mērogojas, nezaudējot dvēseli."
+      },
+      "development": {
+        "title": "Izstrāde",
+        "subtitle": "Piegāde ar precizitāti",
+        "description": "Veiktspējai prioritāra inženierija, iebūvēta pieejamība un pikseļprecīza īstenošana."
+      },
+      "launch": {
+        "title": "Palaišana",
+        "subtitle": "Izejām live — un turpinām slīpēt",
+        "description": "Deploy, mērījumi, iterācijas. Paliekam tuvu arī pēc palaišanas, pirmajam īsto lietotāju vilnim."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Par mums",
+    "title": "Studija, kas balstās uz mēru",
+    "titleLead": "Studija, kas balstās uz",
+    "titleAccent": "mēru",
+    "pageDescription": "Par TavsWebs — neliela radoša studija, kas veido premium digitālus produktus ar mēru, meistarību un tehnisku precizitāti.",
+    "p1": "{name} pastāv zīmoliem, kas atsakās no viduvējā. Mēs ticam, ka tīmeklis var justies apzināts — katrs ritinājums, katra pauze, katra mijiedarbība ar iemeslu.",
+    "p2": "Filozofija ir vienkārša: mazāk lapu, kas nozīmē vairāk. Dizains, kas pārdzīvo tendences. Inženierija, kas cienī lietotājus un budžetus vienādi.",
+    "philosophyLabel": "Studijas filozofija",
+    "philosophy": "Skaidrība virs trokšņa. Meistarība virs apjoma.",
+    "ctaTitle": "Strādāt ar TavsWebs",
+    "timeline": {
+      "2019": {
+        "title": "Studijas dibināšana",
+        "text": "Sākām kā divu cilvēku amatniecības prakse zīmoliem, kas atteicās no šabloniem."
+      },
+      "2021": {
+        "title": "Fokuss uz produktu",
+        "text": "Paplašinājāmies SaaS un platformu darbā — sistēmiska domāšana satiekas ar redakcionālu dizainu."
+      },
+      "2023": {
+        "title": "Imersīvais tīmeklis",
+        "text": "WebGL un ritināšanas kino kļuva par pamata spējām, nevis blakuseksperimentiem."
+      },
+      "2026": {
+        "title": "TavsWebs šodien",
+        "text": "Kompakta komanda, kas piegādā premium digitālus produktus klientiem Eiropā un ārpus tās."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Atsauksmes",
+    "title": "Partneru vārdi",
+    "items": {
+      "0": {
+        "quote": "Viņi izturējās pret mūsu vietni kā pret produkta palaišanu, ne brošūru. Viena pati kustības valoda mainīja, kā investori mūs uztvēra.",
+        "name": "Elena Voss",
+        "role": "CEO, Pulse Finance"
+      },
+      "1": {
+        "quote": "Katrs sīkums bija pārdomāts — no ritināšanas ritma līdz pēdējam focus stāvoklim. Reti sastopama šāda precizitāte.",
+        "name": "Marcus Lind",
+        "role": "Dibinātājs, Nordic Atelier"
+      },
+      "2": {
+        "quote": "Veiktspējas cipari, ko ar šādu dizaina līmeni uzskatījām par neiespējamiem. Viņi pierādīja pretējo.",
+        "name": "Sofia Reyes",
+        "role": "Produkta vadītāja, Orbit Labs"
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "BUJ",
+    "title": "Skaidras atbildes",
+    "subtitle": "Praktiskās lietas, ko klienti jautā pirms starta.",
+    "pageDescription": "Atbildes par TavsWebs termiņiem, budžetiem, tehnoloģijām, darbu ar esošiem zīmoliem un nepabeigtiem projektiem.",
+    "ctaTitle": "Vēl ir jautājumi?",
+    "items": {
+      "0": {
+        "q": "Cik ilgi parasti ilgst projekts?",
+        "a": "Lielākā daļa mārketinga vietņu top 6–10 nedēļās. Produktu platformas un imersīvie risinājumi — 10–16 nedēļas, atkarībā no apjoma un satura gatavības."
+      },
+      "1": {
+        "q": "Vai strādājat ar jau esošiem zīmoliem?",
+        "a": "Jā. Varam attīstīt jau izveidotu identitāti vai sākt no pirmiem principiem. Abos gadījumos tīmekļa pieredzei jājūtas kā dabiskai evolūcijai — ne kā kostīmam."
+      },
+      "2": {
+        "q": "Kādu tehnoloģiju steku izmantojat?",
+        "a": "Next.js, TypeScript, Tailwind, Framer Motion un React Three Fiber — kad imersija ir pelnījusi vietu. CMS iespējas: Sanity, Contentful vai pielāgoti risinājumi."
+      },
+      "3": {
+        "q": "Vai varat pārņemt nepabeigtu projektu?",
+        "a": "Bieži vien jā. Vispirms izvērtējam kodu, dizaina parādu un veiktspējas bāzi — dažkārt pārbūve izmaksā mazāk nekā glābšana."
+      },
+      "4": {
+        "q": "Kāds ir minimālais budžets?",
+        "a": "Jēgpilns pielāgots darbs parasti sākas no aptuveni €8 000. Sarežģītāki produkti un 3D pieredzes aug no turienes. Pirms starta būsim atklāti."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakti",
+    "title": "Sākt projektu",
+    "titleAlt": "Uztaisīsim kaut ko, kam vērts atvērt",
+    "titleAltLead": "Uztaisīsim kaut ko,",
+    "titleAltAccent": "kam vērts",
+    "titleAltEnd": "atvērt",
+    "subtitle": "Pastāstiet par projektu. Atbildēsim ar nākamajiem soļiem, termiņu redzējumu un godīgu novērtējumu, vai esam īstā komanda.",
+    "pageDescription": "Sazinieties ar TavsWebs, lai sāktu nākamo vietni vai digitālo produktu. Piedāvājumu saņemiet e-pastā, telefonā vai WhatsApp — atbildam 24 stundu laikā.",
+    "email": "E-pasts",
+    "phone": "Tālrunis",
+    "whatsapp": "WhatsApp",
+    "whatsappHint": "Rakstiet mums",
+    "name": "Vārds",
+    "namePlaceholder": "Jūsu vārds",
+    "emailField": "E-pasts",
+    "emailPlaceholder": "jus@uznemums.lv",
+    "company": "Uzņēmums",
+    "companyPlaceholder": "Zīmols vai uzņēmums",
+    "budget": "Budžets",
+    "budgetPlaceholder": "Izvēlieties diapazonu",
+    "description": "Projekta apraksts",
+    "descriptionPlaceholder": "Mērķi, termiņi, atsauces — viss, kas palīdz saprast briefu.",
+    "submit": "Sākt manu projektu",
+    "submitted": "Atveram e-pasta klientu…",
+    "budgets": {
+      "0": "Līdz €8k",
+      "1": "€8k – €15k",
+      "2": "€15k – €30k",
+      "3": "€30k – €60k",
+      "4": "€60k+",
+      "5": "Vēl nezinu"
+    }
+  },
+  "cta": {
+    "title": "Gatavi sākt?",
+    "description": "Pastāstiet par projektu — atbildēsim ar nākamajiem soļiem 24 stundu laikā.",
+    "button": "Saņemt piedāvājumu"
+  },
+  "footer": {
+    "rights": "© {year} {name}. Visas tiesības aizsargātas.",
+    "note": "Veidots ar nodomu — ne no šablona.",
+    "nav": "Kājenes navigācija"
+  },
+  "dock": {
+    "whatsapp": "WhatsApp",
+    "email": "E-pasts",
+    "quote": "Piedāvājums",
+    "quickActions": "Ātrās darbības"
+  },
+  "og": {
+    "agency": "Tīmekļa aģentūra",
+    "craft": "Premium digitālā amatniecība"
+  },
+  "breadcrumbs": {
+    "home": "Sākums"
+  },
+  "language": {
+    "lv": "LV",
+    "en": "EN",
+    "switchTo": "Pārslēgt uz {locale}"
+  }
+}
