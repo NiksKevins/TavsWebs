@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Geist_Mono, Manrope, Syne } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { Navigation } from "@/components/layout/Navigation";
 import { MobileDock } from "@/components/layout/MobileDock";
@@ -90,6 +91,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <MobileDock />
           </SmoothScroll>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
