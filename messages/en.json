@@ -277,7 +277,7 @@
       },
       "4": {
         "q": "What’s the minimum budget?",
-        "a": "Meaningful custom work typically starts around €8,000. Complex product and 3D experiences scale from there. We’ll be transparent before any kickoff."
+        "a": "Smaller sites and landing pages can start from around €200. Broader brand and product builds scale from there depending on scope. We’ll be transparent before any kickoff."
       }
     }
   },
@@ -305,13 +305,16 @@
     "description": "Project description",
     "descriptionPlaceholder": "Goals, timeline, references — whatever helps us understand the brief.",
     "submit": "Start My Project",
-    "submitted": "Opening your email client…",
+    "submitting": "Sending…",
+    "success": "Thanks — your message is on its way. We’ll reply within 24 hours.",
+    "error": "Something went wrong sending your message. Please try again or email us directly.",
+    "submitted": "Message sent.",
     "budgets": {
-      "0": "Under €8k",
-      "1": "€8k – €15k",
-      "2": "€15k – €30k",
-      "3": "€30k – €60k",
-      "4": "€60k+",
+      "0": "€200 – €1k",
+      "1": "€1k – €3k",
+      "2": "€3k – €8k",
+      "3": "€8k – €15k",
+      "4": "€15k+",
       "5": "Not sure yet"
     }
   },

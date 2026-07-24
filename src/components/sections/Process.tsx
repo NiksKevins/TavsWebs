@@ -20,10 +20,12 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
     offset: ["start start", "end end"],
   });
 
+  // Use vw (not %) — % is relative to the track's layout width (often 100vw when
+  // w-full is set), which only advances ~one panel across the whole scroll.
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    ["0%", `-${(processStepIds.length - 1) * (100 / processStepIds.length)}%`],
+    ["0vw", `-${(processStepIds.length - 1) * 100}vw`],
   );
 
   return (
@@ -66,9 +68,9 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
           ))}
         </div>
       ) : (
-        <div ref={containerRef} className="relative h-[500vh]">
+        <div ref={containerRef} className="relative h-[400vh] md:h-[500vh]">
           <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-            <motion.div style={{ x }} className="flex h-[70vh] w-full">
+            <motion.div style={{ x }} className="flex h-[70vh] will-change-transform">
               {processStepIds.map((id, i) => (
                 <div
                   key={id}

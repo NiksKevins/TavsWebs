@@ -1,11 +1,12 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Clock, Mail, MessageCircle, Phone } from "lucide-react";
 import { budgetIndexes, site } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { BudgetSelect } from "@/components/ui/BudgetSelect";
 import { cn } from "@/lib/utils";
 
 const fieldClass =
@@ -14,25 +15,50 @@ const fieldClass =
 export function Contact({ showHeader = true }: { showHeader?: boolean }) {
   const t = useTranslations("contact");
   const tSite = useTranslations("site");
-  const [submitted, setSubmitted] = useState(false);
+  const locale = useLocale();
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
+    "idle",
+  );
+  const [budgetError, setBudgetError] = useState(false);
+  const [budgetKey, setBudgetKey] = useState(0);
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const body = [
-      `Name: ${data.get("name")}`,
-      `Email: ${data.get("email")}`,
-      `Company: ${data.get("company")}`,
-      `Budget: ${data.get("budget")}`,
-      ``,
-      `${data.get("description")}`,
-    ].join("\n");
+    const budget = String(data.get("budget") || "");
+    if (!budget) {
+      setBudgetError(true);
+      return;
+    }
+    setBudgetError(false);
+    setStatus("loading");
 
-    window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(
-      `Project inquiry — ${data.get("company") || data.get("name")}`,
-    )}&body=${encodeURIComponent(body)}`;
-    setSubmitted(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          email: data.get("email"),
+          company: data.get("company"),
+          budget,
+          description: data.get("description"),
+          locale,
+        }),
+      });
+
+      if (!res.ok) {
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+      form.reset();
+      setBudgetKey((k) => k + 1);
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -122,6 +148,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                     autoComplete="name"
                     className={fieldClass}
                     placeholder={t("namePlaceholder")}
+                    disabled={status === "loading"}
                   />
                 </label>
                 <label className="block">
@@ -135,6 +162,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                     autoComplete="email"
                     className={fieldClass}
                     placeholder={t("emailPlaceholder")}
+                    disabled={status === "loading"}
                   />
                 </label>
                 <label className="block">
@@ -146,28 +174,24 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                     autoComplete="organization"
                     className={fieldClass}
                     placeholder={t("companyPlaceholder")}
+                    disabled={status === "loading"}
                   />
                 </label>
-                <label className="block">
-                  <span className="mb-2 block text-xs uppercase tracking-[0.18em] text-dim">
-                    {t("budget")}
-                  </span>
-                  <select
+                <div>
+                  <BudgetSelect
+                    key={budgetKey}
                     name="budget"
-                    className={cn(fieldClass, "appearance-none")}
-                    defaultValue=""
-                    required
-                  >
-                    <option value="" disabled>
+                    label={t("budget")}
+                    placeholder={t("budgetPlaceholder")}
+                    options={budgetIndexes.map((key) => t(`budgets.${key}`))}
+                    onChange={() => setBudgetError(false)}
+                  />
+                  {budgetError && (
+                    <p className="mt-2 text-xs text-red-400" role="alert">
                       {t("budgetPlaceholder")}
-                    </option>
-                    {budgetIndexes.map((key) => (
-                      <option key={key} value={t(`budgets.${key}`)} className="bg-bg">
-                        {t(`budgets.${key}`)}
-                      </option>
-                    ))}
-                  </select>
-                </label>
+                    </p>
+                  )}
+                </div>
               </div>
 
               <label className="mt-5 block">
@@ -180,16 +204,26 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                   rows={5}
                   className={cn(fieldClass, "resize-y")}
                   placeholder={t("descriptionPlaceholder")}
+                  disabled={status === "loading"}
                 />
               </label>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                <Button type="submit" size="lg">
-                  {t("submit")}
+                <Button
+                  type="submit"
+                  size="lg"
+                  disabled={status === "loading"}
+                >
+                  {status === "loading" ? t("submitting") : t("submit")}
                 </Button>
-                {submitted && (
+                {status === "success" && (
                   <p className="text-sm text-accent-bright" role="status">
-                    {t("submitted")}
+                    {t("success")}
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-sm text-red-400" role="alert">
+                    {t("error")}
                   </p>
                 )}
               </div>

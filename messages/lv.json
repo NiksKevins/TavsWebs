@@ -277,7 +277,7 @@
       },
       "4": {
         "q": "Kāds ir minimālais budžets?",
-        "a": "Jēgpilns pielāgots darbs parasti sākas no aptuveni €8 000. Sarežģītāki produkti un 3D pieredzes aug no turienes. Pirms starta būsim atklāti."
+        "a": "Mazākas vietnes un landing page var sākties no aptuveni €200. Plašāki zīmola un produkta projekti aug no turienes atkarībā no apjoma. Pirms starta būsim atklāti."
       }
     }
   },
@@ -305,13 +305,16 @@
     "description": "Projekta apraksts",
     "descriptionPlaceholder": "Mērķi, termiņi, atsauces — viss, kas palīdz saprast briefu.",
     "submit": "Sākt manu projektu",
-    "submitted": "Atveram e-pasta klientu…",
+    "submitting": "Sūtam…",
+    "success": "Paldies — ziņa ir ceļā. Atbildēsim 24 stundu laikā.",
+    "error": "Neizdevās nosūtīt ziņu. Mēģiniet vēlreiz vai rakstiet mums tieši e-pastā.",
+    "submitted": "Ziņa nosūtīta.",
     "budgets": {
-      "0": "Līdz €8k",
-      "1": "€8k – €15k",
-      "2": "€15k – €30k",
-      "3": "€30k – €60k",
-      "4": "€60k+",
+      "0": "€200 – €1k",
+      "1": "€1k – €3k",
+      "2": "€3k – €8k",
+      "3": "€8k – €15k",
+      "4": "€15k+",
       "5": "Vēl nezinu"
     }
   },
