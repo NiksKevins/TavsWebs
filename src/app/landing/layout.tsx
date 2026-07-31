@@ -11,14 +11,14 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://landing.tavswebs.com"),
-  title: "Bezmaksas mājaslapas audits | TavsWebs",
+  title: "Jauna mājaslapa biznesam | Bezmaksas piedāvājums — TavsWebs",
   description:
-    "Vai jūsu mājaslapa zaudē klientus? Saņemiet bezmaksas auditu — ātrdarbība, mobilā versija, SEO, dizains un konversijas. Atbildam 24h laikā.",
+    "Vajag jaunu mājaslapu, veikalu, CRM vai aplikāciju? Bezmaksas piedāvājums 24h laikā. No €200. Mājaslapu izstrāde Latvijā — TavsWebs.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Bezmaksas mājaslapas audits | TavsWebs",
+    title: "Jauna mājaslapa biznesam | TavsWebs",
     description:
-      "Aizpildiet formu un saņemiet bezmaksas mājaslapas auditu 24 stundu laikā.",
+      "Izvēlieties pakalpojumu un saņemiet bezmaksas piedāvājumu 24 stundu laikā.",
     url: "https://landing.tavswebs.com",
     siteName: site.name,
     locale: "lv_LV",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bezmaksas mājaslapas audits | TavsWebs",
+    title: "Jauna mājaslapa biznesam | TavsWebs",
     description:
-      "Aizpildiet formu un saņemiet bezmaksas mājaslapas auditu 24 stundu laikā.",
+      "Izvēlieties pakalpojumu un saņemiet bezmaksas piedāvājumu 24 stundu laikā.",
   },
   alternates: {
     canonical: "https://landing.tavswebs.com",

@@ -2,23 +2,23 @@ import Image from "next/image";
 import {
   Check,
   ClipboardList,
-  FileSearch,
-  ShieldCheck,
+  MessageSquare,
+  Rocket,
   Globe2,
   Smile,
   Star,
   Headphones,
 } from "lucide-react";
-import { AuditForm } from "@/components/landing/AuditForm";
+import { LeadForm } from "@/components/landing/LeadForm";
 import { BrandMark } from "@/components/ui/BrandMark";
 import { projects, site } from "@/lib/data";
 
 const checklist = [
-  "Ātrdarbības analīze",
-  "Mobilās versijas novērtējums",
-  "SEO pārbaude",
-  "Dizaina ieteikumi",
-  "Konversiju rekomendācijas",
+  "Jauna mājaslapa no nulles",
+  "Interneta veikals un maksājumi",
+  "CRM un biznesa sistēmas",
+  "Mobilās aplikācijas",
+  "Bezmaksas piedāvājums 24h laikā",
 ];
 
 const stats = [
@@ -32,20 +32,20 @@ const steps = [
   {
     n: "01",
     title: "Aizpildiet formu",
-    text: "Aizpildiet īso formu ar saviem datiem un mājaslapas adresi.",
+    text: "Izvēlieties pakalpojumu un atstājiet kontaktus — mājaslapas adrese nav obligāta.",
     icon: ClipboardList,
   },
   {
     n: "02",
-    title: "Mēs analizējam",
-    text: "Mūsu speciālisti veic pilnīgu jūsu mājaslapas izvērtējumu.",
-    icon: FileSearch,
+    title: "Īsa saruna",
+    text: "Sazināmies 24h laikā, saprotam mērķi un sagatavojam skaidru piedāvājumu.",
+    icon: MessageSquare,
   },
   {
     n: "03",
-    title: "Saņemiet atskaiti",
-    text: "Jūs saņemsiet detalizētu atskaiti ar ieteikumiem un uzlabojumiem.",
-    icon: ShieldCheck,
+    title: "Sākam darbu",
+    text: "Kad piedāvājums der — būvējam un palaidam. Ātri, kvalitatīvi, pielāgoti.",
+    icon: Rocket,
   },
 ];
 
@@ -54,7 +54,6 @@ const portfolio = projects.slice(0, 4);
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Header */}
       <header className="border-b border-white/10">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
           <a
@@ -90,7 +89,6 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* Hero */}
       <section id="top" className="border-b border-white/10">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-8 lg:grid-cols-2 lg:items-center lg:py-20">
           <div>
@@ -98,16 +96,19 @@ export default function LandingPage() {
               Bezmaksas piedāvājums
             </p>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
-              Vai jūsu mājaslapa zaudē klientus?
+              Vajag jaunu mājaslapu biznesam?
             </h1>
             <p className="mt-5 text-lg text-white/70">
-              Mēs veiksim jūsu mājaslapas{" "}
-              <span className="font-semibold text-[#5EEAD4]">bezmaksas</span>{" "}
-              auditu.
+              Izveidosim to{" "}
+              <span className="font-semibold text-[#5EEAD4]">ātri</span>,
+              kvalitatīvi un pielāgotu jūsu prasībām — no €200.
             </p>
             <ul className="mt-8 space-y-3" id="pakalpojumi">
               {checklist.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm sm:text-base">
+                <li
+                  key={item}
+                  className="flex items-start gap-3 text-sm sm:text-base"
+                >
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#5EEAD4]/15 text-[#5EEAD4]">
                     <Check size={14} strokeWidth={3} />
                   </span>
@@ -118,12 +119,11 @@ export default function LandingPage() {
           </div>
 
           <div id="forma">
-            <AuditForm />
+            <LeadForm />
           </div>
         </div>
       </section>
 
-      {/* Stats */}
       <section id="atsauksmes" className="bg-white text-black">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:py-16">
           {stats.map(({ value, label, icon: Icon }) => (
@@ -138,7 +138,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Steps */}
       <section className="bg-white text-black">
         <div className="mx-auto max-w-6xl px-5 pb-16 sm:px-8">
           <h2 className="text-center text-2xl font-bold tracking-tight sm:text-3xl">
@@ -170,7 +169,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Portfolio */}
       <section id="portfolio" className="border-t border-white/10 bg-black">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
           <p className="text-center text-xs font-semibold tracking-[0.22em] text-[#5EEAD4] uppercase">
@@ -194,7 +192,7 @@ export default function LandingPage() {
                       alt={project.id}
                       fill
                       sizes="(max-width: 768px) 100vw, 25vw"
-                        className="max-w-none object-cover object-top transition duration-500 group-hover:scale-[1.03]"
+                      className="max-w-none object-cover object-top transition duration-500 group-hover:scale-[1.03]"
                     />
                   </div>
                 </div>
@@ -214,20 +212,20 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
       <section id="par-mums" className="bg-white text-black">
         <div className="mx-auto max-w-3xl px-5 py-16 text-center sm:px-8 sm:py-20">
           <h2 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-            Nepalaidiet garām iespēju uzlabot savu biznesu!
+            Gatavi jaunai mājaslapai vai sistēmai?
           </h2>
           <p className="mt-4 text-base text-black/60 sm:text-lg">
-            Sazinieties ar mums jau šodien un saņemiet bezmaksas konsultāciju.
+            Pastāstiet, kas vajadzīgs — iedosim skaidru cenu un termiņu bez
+            maksas.
           </p>
           <a
             href="#forma"
-            className="mt-8 inline-flex rounded-xl bg-[#5EEAD4] px-8 py-3.5 text-sm font-semibold text-black transition hover:bg-[#7af0dc]"
+            className="mt-8 inline-flex rounded-xl bg-[#5EEAD4] px-8 py-3.5 text-sm font-semibold !text-black transition hover:bg-[#7af0dc]"
           >
-            Saņemt bezmaksas konsultāciju
+            Saņemt bezmaksas piedāvājumu
           </a>
         </div>
       </section>
