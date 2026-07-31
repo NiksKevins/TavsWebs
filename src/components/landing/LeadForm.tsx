@@ -104,19 +104,22 @@ export function LeadForm({
           {landingServices.map((service) => {
             const active = services.includes(service.id);
             return (
-              <button
+              <label
                 key={service.id}
-                type="button"
-                onClick={() => toggleService(service.id)}
-                aria-pressed={active}
                 className={
                   active
-                    ? "rounded-full border border-[#5EEAD4] bg-[#5EEAD4]/15 px-3 py-1.5 text-xs font-medium text-[#5EEAD4]"
-                    : "rounded-full border border-white/15 bg-transparent px-3 py-1.5 text-xs font-medium text-white/70 hover:border-white/30 hover:text-white"
+                    ? "cursor-pointer select-none rounded-full border border-[#5EEAD4] bg-[#5EEAD4]/15 px-3.5 py-2 text-xs font-medium text-[#5EEAD4] shadow-[0_0_0_1px_rgba(94,234,212,0.25)]"
+                    : "cursor-pointer select-none rounded-full border border-white/25 bg-white/[0.03] px-3.5 py-2 text-xs font-medium text-white/75 hover:border-white/45 hover:bg-white/[0.06] hover:text-white"
                 }
               >
+                <input
+                  type="checkbox"
+                  className="sr-only"
+                  checked={active}
+                  onChange={() => toggleService(service.id)}
+                />
                 {service.label}
-              </button>
+              </label>
             );
           })}
         </div>
