@@ -17,7 +17,10 @@ export function Footer() {
           <Link href="/" className="display inline-flex items-center gap-3 text-3xl md:text-4xl">
             <BrandMark className="h-8 w-8 shrink-0 md:h-9 md:w-9" />
             {site.name}
-            <span className="text-accent-bright">.</span>
+            <span
+              aria-hidden
+              className="ml-1 inline-block h-2 w-2 rounded-full bg-accent-bright md:h-2.5 md:w-2.5"
+            />
           </Link>
           <p className="mt-3 max-w-sm text-sm text-muted">{tSite("tagline")}</p>
         </div>

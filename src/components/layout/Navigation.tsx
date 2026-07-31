@@ -57,7 +57,10 @@ export function Navigation() {
           >
             <BrandMark className="h-6 w-6 shrink-0 md:h-7 md:w-7" />
             {site.name}
-            <span className="text-accent-bright">.</span>
+            <span
+              aria-hidden
+              className="ml-0.5 inline-block h-1.5 w-1.5 rounded-full bg-accent-bright md:h-2 md:w-2"
+            />
           </Link>
 
           <nav
