@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Button } from "@/components/ui/Button";
+import { BrandMark } from "@/components/ui/BrandMark";
 import { navHrefs, site } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useScrollDirection } from "@/hooks/useMotion";
@@ -51,9 +52,10 @@ export function Navigation() {
         >
           <Link
             href="/"
-            className="display text-lg tracking-tight text-white md:text-xl"
+            className="display inline-flex items-center gap-2 text-lg tracking-tight text-white md:text-xl"
             aria-label={t("homeAria", { name: site.name })}
           >
+            <BrandMark className="h-6 w-6 shrink-0 md:h-7 md:w-7" />
             {site.name}
             <span className="text-accent-bright">.</span>
           </Link>

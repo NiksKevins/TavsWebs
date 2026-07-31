@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { BrandMark } from "@/components/ui/BrandMark";
 import { footerHrefs, site } from "@/lib/data";
 
 export function Footer() {
@@ -13,7 +14,8 @@ export function Footer() {
     <footer className="section-pad border-t border-white/5 pb-[calc(6rem+var(--safe-bottom))] pt-16 md:pb-16">
       <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <Link href="/" className="display text-3xl md:text-4xl">
+          <Link href="/" className="display inline-flex items-center gap-3 text-3xl md:text-4xl">
+            <BrandMark className="h-8 w-8 shrink-0 md:h-9 md:w-9" />
             {site.name}
             <span className="text-accent-bright">.</span>
           </Link>

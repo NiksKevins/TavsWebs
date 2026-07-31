@@ -55,6 +55,52 @@ export async function generateMetadata({ params }: Props) {
     authors: [{ name: site.name, url: site.url }],
     creator: site.name,
     publisher: site.name,
+    keywords: [
+      "mājaslapu izstrāde",
+      "mājas lapas izveide",
+      "CRM sistēmas",
+      "programmēšana Latvijā",
+      "website development Latvia",
+      "TavsWebs",
+    ],
+    icons: {
+      icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+      apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
+    },
+    manifest: "/manifest.webmanifest",
+    openGraph: {
+      type: "website",
+      siteName: site.name,
+      locale: locale === "en" ? "en_US" : "lv_LV",
+      url: site.url,
+      title: t("home.ogTitle"),
+      description: tSite("description"),
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: site.twitter,
+      creator: site.twitter,
+      title: t("home.ogTitle"),
+      description: tSite("description"),
+    },
+    alternates: {
+      canonical: site.url,
+      languages: {
+        lv: site.url,
+        en: `${site.url}/en`,
+        "x-default": site.url,
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
   };
 }
 

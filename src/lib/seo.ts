@@ -16,9 +16,15 @@ export function absoluteUrl(path = "/") {
   return new URL(normalized, site.url).toString();
 }
 
-export function ogImageUrl(title: string, subtitle?: string) {
+export function ogImageUrl(
+  title: string,
+  subtitle?: string,
+  labels?: { agency?: string; craft?: string },
+) {
   const params = new URLSearchParams({ title });
   if (subtitle) params.set("subtitle", subtitle);
+  params.set("agency", labels?.agency ?? "Mājaslapu izstrāde");
+  params.set("craft", labels?.craft ?? "CRM · Web · Apps");
   return absoluteUrl(`/og?${params.toString()}`);
 }
 
@@ -47,13 +53,17 @@ export async function createPageMetadata(
 ): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "meta" });
   const tSite = await getTranslations({ locale, namespace: "site" });
+  const tOg = await getTranslations({ locale, namespace: "og" });
   const path = pagePaths[key];
   const localized = localizedPath(locale, path);
   const url = absoluteUrl(localized);
   const title = t(`${key}.title`);
   const description = t(`${key}.description`);
   const ogTitle = t(`${key}.ogTitle`);
-  const image = ogImageUrl(ogTitle, tSite("tagline"));
+  const image = ogImageUrl(ogTitle, tSite("tagline"), {
+    agency: tOg("agency"),
+    craft: tOg("craft"),
+  });
 
   return {
     title: key === "home" ? { absolute: ogTitle } : title,
@@ -79,6 +89,7 @@ export async function createPageMetadata(
       title: ogTitle,
       description,
       site: site.twitter,
+      creator: site.twitter,
       images: [image],
     },
   };
@@ -90,6 +101,7 @@ export async function createProjectMetadata(
 ): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "projects" });
   const tWork = await getTranslations({ locale, namespace: "work" });
+  const tOg = await getTranslations({ locale, namespace: "og" });
   const title = t(`${projectId}.title`);
   const description = t(`${projectId}.description`);
   const category = t(`${projectId}.category`);
@@ -97,7 +109,10 @@ export async function createProjectMetadata(
   const localized = localizedPath(locale, path);
   const url = absoluteUrl(localized);
   const ogTitle = `${title} — TavsWebs`;
-  const image = ogImageUrl(ogTitle, category);
+  const image = ogImageUrl(ogTitle, category, {
+    agency: tOg("agency"),
+    craft: tOg("craft"),
+  });
 
   return {
     title: tWork("caseStudyTitle", { title }),
@@ -120,6 +135,7 @@ export async function createProjectMetadata(
       title: ogTitle,
       description,
       site: site.twitter,
+      creator: site.twitter,
       images: [image],
     },
   };
@@ -138,6 +154,7 @@ export async function organizationJsonLd(locale: Locale) {
     email: site.email,
     telephone: site.phone,
     image: ogImageUrl(site.name, t("tagline")),
+    logo: absoluteUrl("/icon.svg"),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Rīga",
@@ -213,15 +230,19 @@ export async function faqJsonLd(locale: Locale) {
 export async function projectJsonLd(locale: Locale, projectId: ProjectId) {
   const t = await getTranslations({ locale, namespace: "projects" });
   const project = (await import("@/lib/data")).getProject(projectId);
+  const title = t(`${projectId}.title`);
   return {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    name: t(`${projectId}.title`),
+    name: title,
     description: t(`${projectId}.longDescription`),
     datePublished: `${project?.year ?? "2024"}-01-01`,
     creator: { "@id": `${site.url}/#organization` },
     url: absoluteUrl(localizedPath(locale, `/work/${projectId}`)),
     about: t(`${projectId}.category`),
     inLanguage: locale,
+    image: project?.image
+      ? absoluteUrl(project.image)
+      : ogImageUrl(`${title} — TavsWebs`, t(`${projectId}.category`)),
   };
 }
