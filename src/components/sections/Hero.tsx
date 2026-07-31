@@ -1,12 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/data";
+import { useMediaQuery } from "@/hooks/useMotion";
 
 const HeroScene = dynamic(
   () =>
@@ -18,13 +20,37 @@ export function Hero() {
   const t = useTranslations("hero");
   const tSite = useTranslations("site");
   const reduced = useReducedMotion();
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const [showScene, setShowScene] = useState(false);
+
+  // Defer WebGL until after first paint — biggest LCP/TBT win on mobile
+  useEffect(() => {
+    if (reduced) return;
+
+    const start = () => setShowScene(true);
+
+    if ("requestIdleCallback" in window) {
+      const id = requestIdleCallback(start, { timeout: isDesktop ? 800 : 2000 });
+      return () => cancelIdleCallback(id);
+    }
+
+    const t = setTimeout(start, isDesktop ? 400 : 1500);
+    return () => clearTimeout(t);
+  }, [reduced, isDesktop]);
 
   return (
     <section
       id="top"
       className="relative flex min-h-[110vh] flex-col justify-end overflow-hidden pb-24 pt-32 md:justify-center md:pb-16"
     >
-      <HeroScene />
+      {showScene ? (
+        <HeroScene />
+      ) : (
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-0 bg-[radial-gradient(ellipse_at_60%_40%,rgba(37,99,235,0.18),transparent_55%),radial-gradient(ellipse_at_30%_70%,rgba(103,232,249,0.08),transparent_50%),#05070c]"
+        />
+      )}
 
       <div
         aria-hidden

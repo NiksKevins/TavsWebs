@@ -131,15 +131,35 @@ export async function organizationJsonLd(locale: Locale) {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${site.url}/#organization`,
-    name: site.name,
+    name: "TavsWebs — Mājaslapu izstrāde | Programmēšana",
+    alternateName: site.name,
     description: t("description"),
     url: site.url,
     email: site.email,
     telephone: site.phone,
     image: ogImageUrl(site.name, t("tagline")),
-    areaServed: "Worldwide",
-    priceRange: "€€€",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Rīga",
+      addressCountry: "LV",
+    },
+    areaServed: [
+      { "@type": "Country", name: "Latvia" },
+      { "@type": "City", name: "Rīga" },
+    ],
+    priceRange: "€€",
+    currenciesAccepted: "EUR",
     sameAs: [site.whatsapp],
+    knowsAbout: [
+      "mājaslapu izstrāde",
+      "mājas lapas izveide",
+      "CRM sistēmas",
+      "biznesa sistēmas",
+      "interneta veikalu izstrāde",
+      "mobilās aplikācijas",
+      "SEO audits",
+      "programmēšana",
+    ],
   };
 }
 
@@ -175,10 +195,11 @@ export function breadcrumbJsonLd(
 
 export async function faqJsonLd(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "faq" });
+  const { faqIndexes } = await import("@/lib/data");
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: ["0", "1", "2", "3", "4"].map((i) => ({
+    mainEntity: faqIndexes.map((i) => ({
       "@type": "Question",
       name: t(`items.${i}.q`),
       acceptedAnswer: {

@@ -1,9 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion, useMotionValue, useSpring } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { useRef } from "react";
 import { Link } from "@/i18n/navigation";
 import { projects, projectHref, type ProjectMeta } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
@@ -18,31 +16,15 @@ function ProjectShowcase({
 }) {
   const t = useTranslations("projects");
   const tWork = useTranslations("work");
-  const ref = useRef<HTMLDivElement>(null);
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-  const sx = useSpring(mx, { stiffness: 120, damping: 20 });
-  const sy = useSpring(my, { stiffness: 120, damping: 20 });
   const isLeft = project.offset === "left";
   const metrics = t.raw(`${project.id}.metrics`) as string[];
 
   return (
     <article
-      ref={ref}
       className={cn(
         "relative grid items-center gap-8 py-16 md:grid-cols-12 md:gap-6 md:py-28",
         index % 2 === 1 && "md:[&>*:first-child]:order-2",
       )}
-      onMouseMove={(e) => {
-        const rect = ref.current?.getBoundingClientRect();
-        if (!rect) return;
-        mx.set((e.clientX - rect.left) / rect.width - 0.5);
-        my.set((e.clientY - rect.top) / rect.height - 0.5);
-      }}
-      onMouseLeave={() => {
-        mx.set(0);
-        my.set(0);
-      }}
     >
       <div
         className={cn(
@@ -52,55 +34,28 @@ function ProjectShowcase({
       >
         <Link
           href={projectHref(project.id)}
-          className="relative block overflow-hidden rounded-[1.5rem] border border-white/10"
+          className="group relative block overflow-hidden rounded-[1.5rem] border border-white/10"
           aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
+          data-cursor="hover"
         >
-          <motion.div
+          <div
             className="relative aspect-[16/11] overflow-hidden"
             style={{
               background: `radial-gradient(120% 90% at ${isLeft ? "20%" : "80%"} 10%, ${project.glow}, transparent 55%), linear-gradient(145deg, ${project.accent}, #05070c 70%)`,
-              x: sx,
-              y: sy,
-              scale: 1.04,
             }}
-            data-cursor="hover"
           >
-            <div className="absolute inset-6 rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm md:inset-10 md:p-8">
-              <div className="mb-6 flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                <span className="ml-3 h-2 flex-1 rounded-full bg-white/8" />
-              </div>
-              <div className="grid gap-4 md:grid-cols-[1.2fr_0.8fr]">
-                <div className="space-y-3">
-                  <div className="h-3 w-2/3 rounded-full bg-white/15" />
-                  <div className="h-3 w-full rounded-full bg-white/8" />
-                  <div className="h-3 w-5/6 rounded-full bg-white/8" />
-                  <div className="mt-8 aspect-[4/3] rounded-lg bg-gradient-to-br from-white/15 via-accent/20 to-transparent" />
-                </div>
-                <div className="hidden space-y-3 md:block">
-                  <div className="aspect-square rounded-lg bg-white/[0.06]" />
-                  <div className="h-24 rounded-lg bg-white/[0.04]" />
-                </div>
-              </div>
-            </div>
-            <div
-              className={cn(
-                "absolute -bottom-8 h-[55%] w-[42%] rounded-2xl border border-white/15 bg-[#0a1220]/80 shadow-2xl backdrop-blur-md",
-                isLeft ? "-right-6 rotate-[-6deg]" : "-left-6 rotate-[6deg]",
-              )}
-            >
-              <div className="h-full p-4">
-                <div className="mb-3 h-2 w-16 rounded-full bg-accent/50" />
-                <div className="space-y-2">
-                  <div className="h-2 w-full rounded-full bg-white/10" />
-                  <div className="h-2 w-4/5 rounded-full bg-white/10" />
-                  <div className="mt-4 aspect-video rounded-md bg-gradient-to-tr from-cyan/20 to-accent/10" />
-                </div>
-              </div>
-            </div>
-          </motion.div>
+            <img
+              src={project.image}
+              alt={t(`${project.id}.title`)}
+              width={1600}
+              height={1100}
+              className="absolute inset-0 object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+              style={{ width: "100%", height: "100%", maxWidth: "none" }}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+          </div>
         </Link>
       </div>
 

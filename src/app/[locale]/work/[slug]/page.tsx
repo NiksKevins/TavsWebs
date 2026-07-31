@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -44,6 +45,7 @@ export default async function ProjectPage({ params }: Props) {
   const tNav = await getTranslations("nav");
   const metrics = t.raw(`${project.id}.metrics`) as string[];
   const services = t.raw(`${project.id}.services`) as string[];
+  const galleryLabels = (t.raw(`${project.id}.galleryLabels`) as string[]) ?? [];
   const related = projects.filter((p) => p.id !== project.id).slice(0, 2);
 
   return (
@@ -79,15 +81,48 @@ export default async function ProjectPage({ params }: Props) {
       <section className="section-pad pb-20">
         <div className="mx-auto max-w-[1400px]">
           <Reveal>
-            <div
-              className="relative aspect-[16/9] overflow-hidden rounded-[2rem] border border-white/10"
-              style={{
-                background: `radial-gradient(120% 90% at 20% 10%, ${project.glow}, transparent 55%), linear-gradient(145deg, ${project.accent}, #05070c 70%)`,
-              }}
-            >
-              <div className="absolute inset-8 rounded-xl border border-white/10 bg-white/[0.04] md:inset-14" />
+            <div className="relative aspect-[16/9] overflow-hidden rounded-[2rem] border border-white/10 bg-black">
+              <Image
+                src={project.image}
+                alt={t(`${project.id}.title`)}
+                fill
+                sizes="100vw"
+                className="max-w-none object-cover object-top"
+                priority
+              />
             </div>
+            {galleryLabels[0] && (
+              <p className="mt-3 text-sm text-muted">{galleryLabels[0]}</p>
+            )}
           </Reveal>
+
+          {project.gallery.filter((src) => src !== project.image).length > 0 && (
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {project.gallery
+                .map((src, i) => ({ src, label: galleryLabels[i], i }))
+                .filter(({ src }) => src !== project.image)
+                .map(({ src, label }, i) => (
+                <Reveal key={src} delay={i * 0.05}>
+                  <figure className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
+                    <div className="relative aspect-[16/10]">
+                      <Image
+                        src={src}
+                        alt={label ?? t(`${project.id}.title`)}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="max-w-none object-cover object-top"
+                      />
+                    </div>
+                    {label && (
+                      <figcaption className="border-t border-white/8 px-5 py-3 text-sm text-muted">
+                        {label}
+                      </figcaption>
+                    )}
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          )}
 
           <div className="mt-14 grid gap-12 lg:grid-cols-12">
             <Reveal className="lg:col-span-7">
@@ -120,6 +155,17 @@ export default async function ProjectPage({ params }: Props) {
                     </li>
                   ))}
                 </ul>
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 inline-flex items-center gap-2 text-sm text-accent-bright hover:text-white"
+                  >
+                    {tWork("viewLive")}
+                    <ArrowUpRight size={14} />
+                  </a>
+                )}
               </div>
             </Reveal>
           </div>
@@ -142,17 +188,28 @@ export default async function ProjectPage({ params }: Props) {
                   <LocaleLink
                     key={item.id}
                     href={projectHref(item.id)}
-                    className="glass group rounded-[1.5rem] p-6 transition-colors hover:border-accent/30"
+                    className="glass group overflow-hidden rounded-[1.5rem] transition-colors hover:border-accent/30"
                   >
-                    <p className="text-xs uppercase tracking-[0.2em] text-dim">
-                      {t(`${item.id}.category`)}
-                    </p>
-                    <p className="display mt-3 text-2xl group-hover:text-accent-bright">
-                      {t(`${item.id}.title`)}
-                    </p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm text-accent-bright">
-                      {tWork("viewCase")} <ArrowUpRight size={14} />
-                    </span>
+                    <div className="relative aspect-[16/10]">
+                      <Image
+                        src={item.image}
+                        alt={t(`${item.id}.title`)}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <p className="text-xs uppercase tracking-[0.2em] text-dim">
+                        {t(`${item.id}.category`)}
+                      </p>
+                      <p className="display mt-3 text-2xl group-hover:text-accent-bright">
+                        {t(`${item.id}.title`)}
+                      </p>
+                      <span className="mt-4 inline-flex items-center gap-1 text-sm text-accent-bright">
+                        {tWork("viewCase")} <ArrowUpRight size={14} />
+                      </span>
+                    </div>
                   </LocaleLink>
                 ))}
               </div>

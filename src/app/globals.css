@@ -96,6 +96,12 @@ img,
 canvas {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+img[data-nimg="fill"],
+img[data-nimg="1"] {
+  max-width: none;
 }
 
 .grain {

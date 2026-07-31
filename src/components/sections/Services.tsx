@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { serviceIds } from "@/lib/data";
+import { serviceIds, serviceImages } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
 
@@ -93,23 +94,18 @@ export function Services({
 
                   <div
                     className={cn(
-                      "relative hidden aspect-[4/3] overflow-hidden rounded-2xl border border-white/8 md:col-span-4 md:block",
+                      "relative hidden aspect-[4/3] overflow-hidden rounded-2xl border border-white/8 bg-[#071018] md:col-span-4 md:block",
                       flip ? "md:order-1 md:col-start-1" : "md:col-start-9",
                     )}
                   >
-                    <div
-                      className={cn(
-                        "absolute inset-0 transition-transform duration-700 group-hover:scale-105",
-                        i === 0 &&
-                          "bg-[radial-gradient(circle_at_30%_20%,rgba(96,165,250,0.35),transparent_55%),linear-gradient(160deg,#0c1a2e,#05070c)]",
-                        i === 1 &&
-                          "bg-[conic-gradient(from_210deg_at_60%_40%,rgba(103,232,249,0.2),transparent_40%,rgba(59,130,246,0.25))]",
-                        i === 2 &&
-                          "bg-[linear-gradient(135deg,rgba(15,23,42,1),rgba(30,58,138,0.45)),repeating-linear-gradient(90deg,transparent,transparent_24px,rgba(255,255,255,0.03)_25px)]",
-                        i === 3 &&
-                          "bg-[radial-gradient(ellipse_at_70%_80%,rgba(59,130,246,0.4),transparent_50%),linear-gradient(#071018,#0a1220)]",
-                      )}
+                    <Image
+                      src={serviceImages[id]}
+                      alt={t(`items.${id}.title`)}
+                      fill
+                      sizes="(max-width: 768px) 0vw, 33vw"
+                      className="max-w-none object-cover transition-transform duration-700 group-hover:scale-105"
                     />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
                   </div>
                 </article>
               </Reveal>

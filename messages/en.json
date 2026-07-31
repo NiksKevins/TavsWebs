@@ -1,38 +1,38 @@
 {
   "meta": {
     "home": {
-      "title": "Premium Web Development Agency",
-      "description": "TavsWebs is a premium web development agency crafting high-performance websites, immersive digital experiences, and conversion-focused product launches.",
-      "ogTitle": "TavsWebs — Premium Web Development Agency"
+      "title": "Website Development in Latvia",
+      "description": "Website development, custom CRM systems, mobile apps, SEO and anything a business needs — tailored software in Latvia. From €200. Quote in 24h.",
+      "ogTitle": "Website Development — CRM & Business Systems | TavsWebs"
     },
     "work": {
-      "title": "Selected Work",
-      "description": "Explore selected TavsWebs projects — editorial e-commerce, fintech platforms, architecture portfolios, and SaaS product sites built for performance and conversion.",
-      "ogTitle": "Selected Work — TavsWebs"
+      "title": "Our Work",
+      "description": "Real TavsWebs projects — websites, stores and digital products that help find customers.",
+      "ogTitle": "Work — TavsWebs"
     },
     "services": {
-      "title": "Web Design & Development Services",
-      "description": "Brand and web design, product engineering, immersive 3D experiences, and growth-focused launches from TavsWebs.",
+      "title": "Services",
+      "description": "Websites, CRM systems, online stores, apps, SEO and custom programming — everything a business needs digitally.",
       "ogTitle": "Services — TavsWebs"
     },
     "process": {
-      "title": "Our Process",
-      "description": "How TavsWebs designs and builds websites: discovery, strategy, design, development, and launch — a cinematic, collaborative process.",
-      "ogTitle": "Our Process — TavsWebs"
+      "title": "How We Work",
+      "description": "Clear steps: talk, plan, design, build and launch. No unnecessary complexity.",
+      "ogTitle": "Process — TavsWebs"
     },
     "about": {
-      "title": "About the Studio",
-      "description": "Learn about TavsWebs — a lean creative studio building premium digital products with restraint, craft, and technical precision.",
+      "title": "About Us",
+      "description": "TavsWebs — website development and programming in Latvia. Fast, high quality, tailored to your needs.",
       "ogTitle": "About — TavsWebs"
     },
     "contact": {
-      "title": "Start a Project",
-      "description": "Contact TavsWebs to start your next website or digital product. Get a quote via email, phone, or WhatsApp — replies within 24 hours.",
+      "title": "Get a Quote",
+      "description": "Tell us what you need — website, CRM, app, redesign or SEO. We’ll reply within 24 hours.",
       "ogTitle": "Contact — TavsWebs"
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Answers about TavsWebs timelines, budgets, tech stack, brand work, and taking over unfinished website projects.",
+      "title": "FAQ",
+      "description": "How much does a website cost in Latvia? How long does it take? Do you also build apps and SEO audits?",
       "ogTitle": "FAQ — TavsWebs"
     }
   },
@@ -43,7 +43,7 @@
     "about": "About",
     "contact": "Contact",
     "faq": "FAQ",
-    "getQuote": "Get a Quote",
+    "getQuote": "Get a quote",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "homeAria": "{name} home",
@@ -51,263 +51,332 @@
     "language": "Language"
   },
   "hero": {
-    "eyebrow": "Web development agency",
-    "body": "{tagline}. Sites that feel inevitable — engineered for speed, designed for trust.",
-    "ctaPrimary": "Start a project",
+    "eyebrow": "Website development in Latvia",
+    "body": "{tagline}. Websites, CRM systems, apps, SEO — and anything else your business needs. If it can be built in code, we can make it happen.",
+    "ctaPrimary": "Get a quote",
     "ctaSecondary": "View work",
     "explore": "Explore"
   },
   "site": {
-    "tagline": "Digital craft for ambitious brands",
-    "description": "TavsWebs designs and builds premium web experiences — sites that feel handcrafted, perform flawlessly, and convert visitors into clients.",
+    "tagline": "Fast, high quality, tailored to your needs",
+    "description": "TavsWebs — websites, specialised CRM systems and any business software in Latvia. From idea to finished product.",
     "responseTime": "Replies within 24 hours",
     "skipToContent": "Skip to content"
   },
   "home": {
     "processCard": {
       "label": "Process",
-      "text": "Discovery to launch — a cinematic, collaborative path.",
+      "text": "From first talk to launch — clear steps, no waiting around.",
       "cta": "Learn more →"
     },
     "aboutCard": {
       "label": "About",
-      "text": "A studio built on restraint, craft, and technical precision.",
+      "text": "Simply: fast, clear, and without unnecessary complexity.",
       "cta": "Learn more →"
     },
     "faqCard": {
       "label": "FAQ",
-      "text": "Timelines, budgets, stack, and how engagements work.",
+      "text": "Pricing, timelines, apps, SEO, and how we start working together.",
       "cta": "Learn more →"
     }
   },
   "work": {
     "eyebrow": "Portfolio",
-    "title": "Selected work",
+    "title": "Our work",
     "titleAccent": "work",
-    "titleLead": "Selected",
-    "subtitle": "Editorial showcases — each project treated as its own world, not a card in a grid.",
-    "viewCase": "View case study",
-    "caseStudyTitle": "{title} Case Study",
-    "viewAll": "View all projects",
-    "backToAll": "Back to all work",
+    "titleLead": "Our",
+    "subtitle": "Real clients — from CMS platforms to business websites.",
+    "viewCase": "View project",
+    "caseStudyTitle": "{title} — project",
+    "viewAll": "All projects",
+    "backToAll": "Back to work",
     "moreWork": "More work",
     "overview": "Overview",
-    "outcomes": "Outcomes",
+    "outcomes": "Results",
     "servicesLabel": "Services",
-    "ctaTitle": "Want results like these?",
+    "ctaTitle": "Want a similar result?",
     "ctaProject": "Start a project like {title}",
-    "pageDescription": "Explore selected TavsWebs projects — editorial e-commerce, fintech platforms, architecture portfolios, and SaaS product sites built for performance and conversion."
+    "pageDescription": "Real TavsWebs projects — websites, stores and digital products.",
+    "viewLive": "View live site"
   },
   "projects": {
-    "nordic-atelier": {
-      "title": "Nordic Atelier",
-      "category": "E-commerce · Brand",
-      "description": "A quiet luxury storefront for a Scandinavian design house — editorial pacing, tactile product storytelling, and checkout that disappears into the experience.",
-      "longDescription": "Nordic Atelier needed a storefront that felt as considered as their furniture. We rebuilt the brand site around editorial storytelling: large material studies, restrained motion, and a checkout flow designed to stay invisible until the moment of purchase. Performance was treated as a design constraint — sub-second LCP on product pages without sacrificing imagery.",
-      "metrics": ["+142% conversion", "0.9s LCP", "Awwwards nominee"],
-      "services": ["Brand & Web Design", "Product Engineering", "Growth & Launch"]
+    "audi-klubs": {
+      "title": "Audi Klubs",
+      "category": "Club platform · CMS",
+      "description": "A real club platform with a WordPress-style content editor — the client updates pages, news and events themselves.",
+      "longDescription": "Audi Klubs is a full club platform: homepage, events, shop, gallery, classifieds and donations. The key client value is a WordPress-style admin (Filament CMS). They can edit page content, hero slides, partners, FAQ and shop without code. Open a page in admin, edit sections, publish — exactly what clients want: a strong site plus self-serve control.",
+      "metrics": [
+        "WordPress-style CMS",
+        "Self-serve editing",
+        "Events · Shop · Gallery"
+      ],
+      "services": [
+        "Website development",
+        "Programming",
+        "CMS editor"
+      ],
+      "galleryLabels": [
+        "Website view",
+        "CMS — homepage editor",
+        "CMS — rich text editor (WordPress-like)",
+        "CMS — page list"
+      ]
     },
-    "pulse-finance": {
-      "title": "Pulse Finance",
-      "category": "Fintech · Platform",
-      "description": "A dense product surface made elegant. Real-time dashboards with cinematic motion and a design system built for scale.",
-      "longDescription": "Pulse Finance launched a Series B product surface that had to communicate trust and technical depth at once. We designed a dark-first system with cinematic motion cues for live data, then engineered a component library that product and marketing teams could both extend. Accessibility and keyboard flows were non-negotiable for a regulated audience.",
-      "metrics": ["Series B launch", "40+ components", "WCAG AA"],
-      "services": ["Product Engineering", "Brand & Web Design"]
+    "sturisi-vib": {
+      "title": "Stūrīši VIB",
+      "category": "Construction · Landscaping",
+      "description": "Live website for an earthworks and landscaping company — sturisivib.lv.",
+      "longDescription": "Stūrīši VIB specializes in landscaping, drainage and earthworks. The site clearly presents site preparation, road building, paving, melioration and greening. Clean design, mobile-ready layout and a contact form — so customers find the service and get in touch fast.",
+      "metrics": [
+        "sturisivib.lv",
+        "Mobile-ready",
+        "Clear services"
+      ],
+      "services": [
+        "Website development",
+        "SEO",
+        "Design"
+      ],
+      "galleryLabels": [
+        "Homepage",
+        "Services"
+      ]
     },
-    "lumen-studio": {
-      "title": "Lumen Studio",
-      "category": "Architecture · Portfolio",
-      "description": "Immersive project archives with scroll-driven spatial storytelling — light, shadow, and material as the narrative.",
-      "longDescription": "Lumen Studio’s portfolio had to feel spatial. We built scroll-driven case studies where light and material lead the story, with optional WebGL walkthroughs for flagship projects. A headless CMS lets architects publish new work without breaking the cinematic pacing of the archive.",
-      "metrics": ["3D walkthroughs", "CMS-driven", "99 Lighthouse"],
-      "services": ["3D & Immersive", "Brand & Web Design", "Product Engineering"]
+    "kozy-eats": {
+      "title": "Kozy Eats",
+      "category": "Cafe · Mock",
+      "description": "Mock project — a warm cafe landing page with menu and order CTA.",
+      "longDescription": "A demo cafe brand site: clear hero, menu focus and an order button. An example of a simple conversion-focused website.",
+      "metrics": [
+        "Mock project",
+        "Landing page",
+        "Mobile-ready"
+      ],
+      "services": [
+        "Website development",
+        "Design"
+      ],
+      "galleryLabels": [
+        "Website view"
+      ]
     },
-    "orbit-labs": {
-      "title": "Orbit Labs",
-      "category": "SaaS · Product",
-      "description": "From pitch deck to production in eight weeks. A developer-facing product site that sells through clarity, not noise.",
-      "longDescription": "Orbit Labs needed a marketing site that developers would trust. We stripped the noise, built documentation-adjacent product pages, and shipped an edge-deployed Next.js stack in eight weeks. Demo requests more than doubled after launch — driven by clarity, speed, and a product narrative that respected a technical audience.",
-      "metrics": ["2.4× demo requests", "Dark-first UI", "Edge-deployed"],
-      "services": ["Product Engineering", "Growth & Launch"]
+    "favela-nightclub": {
+      "title": "Favela Nightclub",
+      "category": "Nightclub · Mock",
+      "description": "Mock project — a dark nightclub site with events and ticket CTA.",
+      "longDescription": "A demo nightclub brand site: strong visual style, event listing and a clear tickets button. An example of an atmospheric brand website.",
+      "metrics": [
+        "Mock project",
+        "Events",
+        "Dark UI"
+      ],
+      "services": [
+        "Website development",
+        "Design"
+      ],
+      "galleryLabels": [
+        "Website view"
+      ]
     }
   },
   "services": {
     "eyebrow": "Services",
-    "title": "Capabilities, not catalogs",
-    "pageDescription": "Brand and web design, product engineering, immersive 3D experiences, and growth-focused launches from TavsWebs.",
-    "exploreAll": "Explore all services",
-    "ctaTitle": "Need a custom engagement?",
+    "title": "Everything a business needs digitally",
+    "pageDescription": "Websites, specialised CRM systems, stores, apps, SEO and custom programming — end to end.",
+    "exploreAll": "All services",
+    "ctaTitle": "Need something else?",
     "items": {
-      "brand-web-design": {
-        "title": "Brand & Web Design",
-        "description": "Identity systems and interfaces with editorial restraint — typography, rhythm, and motion that feel inevitable.",
-        "detail": "Visual systems · UI kits · Design ops",
-        "longDescription": "We design brands and interfaces that hold up under real use. From visual identity systems to high-fidelity product UI, every decision is about clarity, hierarchy, and lasting craft — not trend chasing."
+      "website-dev": {
+        "title": "Website development",
+        "description": "Fast, high quality and tailored to your needs. A site that clearly shows what you do.",
+        "detail": "From €200 · 1–3 weeks · SEO basics",
+        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website. Design, development, mobile version and launch included."
       },
-      "product-engineering": {
-        "title": "Product Engineering",
-        "description": "Next.js, TypeScript, and performance budgets that hold under real traffic. Code as craft.",
-        "detail": "App Router · Edge · Headless CMS",
-        "longDescription": "Engineering is part of the design. We ship Next.js and TypeScript products with strict performance budgets, accessible components, and CMS architectures that content teams can actually run."
+      "ecommerce": {
+        "title": "Online store development",
+        "description": "Sell products online. A store with payments, products and order handling.",
+        "detail": "Payments · Products · Orders",
+        "longDescription": "A full online store — product catalog, cart, payments and order management. Everything you need to start selling online."
       },
-      "3d-immersive": {
-        "title": "3D & Immersive",
-        "description": "WebGL experiences that enhance the story — never decorate for decoration’s sake.",
-        "detail": "Three.js · R3F · Shader craft",
-        "longDescription": "When immersion earns its place, we build it carefully: React Three Fiber scenes, shader work, and scroll cinema that stays performant on real devices — including mobile."
+      "mobile-apps": {
+        "title": "Mobile apps",
+        "description": "iOS and Android apps for your business — easy, fast and store-ready.",
+        "detail": "iOS · Android · App Store",
+        "longDescription": "We build mobile apps that work on phones and tablets. From idea to App Store and Google Play."
       },
-      "growth-launch": {
-        "title": "Growth & Launch",
-        "description": "SEO foundations, analytics, and conversion paths engineered from day one — not bolted on later.",
-        "detail": "Core Web Vitals · Schema · CRO",
-        "longDescription": "Launch is a system: technical SEO, structured data, analytics, and conversion paths designed alongside the creative — so the site performs for search and for humans."
+      "redesign": {
+        "title": "Redesign & rebuild",
+        "description": "Old site not working anymore? We refresh design, speed and features.",
+        "detail": "New design · Speed · Fixes",
+        "longDescription": "We rebuild existing sites — modern look, better speed and easier use. Often faster and cheaper than starting from scratch."
+      },
+      "seo-audit": {
+        "title": "SEO audits & optimization",
+        "description": "We check why Google can’t find you — and fix it so customers find you.",
+        "detail": "Audit · Fixes · Google",
+        "longDescription": "SEO audit: speed, titles, technical issues and search visibility. You get a clear fix list — and we can implement it too."
+      },
+      "programming": {
+        "title": "Programming",
+        "description": "Web apps, APIs, automation and custom solutions — anything that can be built in code.",
+        "detail": "Web apps · API · Automation",
+        "longDescription": "If you need something built — a system, automation, API or fixes — we do it. Tell us what you need and we’ll give a clear quote."
+      },
+      "crm": {
+        "title": "CRM & business systems",
+        "description": "Specialised CRM systems for companies and internal business tools — built around your processes.",
+        "detail": "CRM · Customer management · Internal systems",
+        "longDescription": "We build specialised CRM systems and any business software — customer management, orders, inventory, staff tools, integrations. No generic templates: we make what your company actually needs. If something is missing digitally — we can make it happen."
       }
     }
   },
   "process": {
     "eyebrow": "Process",
-    "title": "How we build",
-    "titleLead": "How we",
-    "titleAccent": "build",
-    "subtitle": "A cinematic path from first conversation to launch — one full-screen chapter at a time.",
-    "pageDescription": "How TavsWebs designs and builds websites: discovery, strategy, design, development, and launch — a cinematic, collaborative process.",
-    "ctaTitle": "Let’s walk through your brief",
+    "title": "How it works",
+    "titleLead": "How it",
+    "titleAccent": "works",
+    "subtitle": "Clear steps from idea to a finished product.",
+    "pageDescription": "How TavsWebs works: talk, plan, design, build and launch.",
+    "ctaTitle": "Tell us what you need",
     "steps": {
       "discovery": {
-        "title": "Discovery",
-        "subtitle": "Listen before we build",
-        "description": "We map goals, audiences, constraints, and competitive whitespace. Clarity first — then ambition."
+        "title": "Talk",
+        "subtitle": "We listen first",
+        "description": "Tell us what you need — website, app, redesign or SEO. Together we define the goal."
       },
       "strategy": {
-        "title": "Strategy",
-        "subtitle": "Structure the experience",
-        "description": "Information architecture, conversion paths, and a motion language that supports the brand narrative."
+        "title": "Plan",
+        "subtitle": "Clear structure",
+        "description": "We agree on content, features, timeline and price — before we start building."
       },
       "design": {
         "title": "Design",
-        "subtitle": "Craft every frame",
-        "description": "High-fidelity compositions, interaction prototypes, and systems that scale without losing soul."
+        "subtitle": "You approve",
+        "description": "We show how it will look. You approve before we start coding."
       },
       "development": {
-        "title": "Development",
-        "subtitle": "Ship with precision",
-        "description": "Performance-first engineering, accessibility baked in, and pixel-faithful implementation."
+        "title": "Build",
+        "subtitle": "We ship it",
+        "description": "We build a fast, secure and easy solution based on the approved design."
       },
       "launch": {
         "title": "Launch",
-        "subtitle": "Go live — and keep refining",
-        "description": "Deploy, measure, iterate. We stay close through launch and the first wave of real users."
+        "subtitle": "Live and working",
+        "description": "We test, launch and stay available after if you need anything."
       }
     }
   },
   "about": {
     "eyebrow": "About",
-    "title": "A studio built on restraint",
-    "titleLead": "A studio built on",
-    "titleAccent": "restraint",
-    "pageDescription": "Learn about TavsWebs — a lean creative studio building premium digital products with restraint, craft, and technical precision.",
-    "p1": "{name} exists for brands that refuse the average. We believe the web should feel intentional — every scroll, every pause, every interaction earning its place.",
-    "p2": "Our philosophy is simple: fewer pages that matter more. Design that survives trends. Engineering that respects users and budgets alike.",
-    "philosophyLabel": "Studio philosophy",
-    "philosophy": "Clarity over clutter. Craft over volume.",
+    "title": "Clear and without the fluff",
+    "titleLead": "Clear and without the",
+    "titleAccent": "fluff",
+    "pageDescription": "TavsWebs — website development and programming in Latvia.",
+    "p1": "{name} builds websites, specialised CRM systems, apps and any business software in Latvia — fast, high quality and tailored to your needs.",
+    "p2": "No templates and no jargon. If a company needs something digital — from a website to a CRM or a full internal system — we can make it happen. You know what you get, what it costs and how long it takes.",
+    "philosophyLabel": "How we work",
+    "philosophy": "Clarity over noise. Results over promises.",
     "ctaTitle": "Work with TavsWebs",
     "timeline": {
       "2019": {
-        "title": "Studio founded",
-        "text": "Started as a two-person craft practice focused on brands that refused templates."
+        "title": "Start",
+        "text": "We started with websites for small and mid-size businesses in Latvia."
       },
       "2021": {
-        "title": "Product focus",
-        "text": "Expanded into SaaS and platform work — systems thinking meets editorial design."
+        "title": "Products & systems",
+        "text": "Added web apps, stores and custom programming."
       },
       "2023": {
-        "title": "Immersive web",
-        "text": "Integrated WebGL and scroll cinema as core capabilities, not side experiments."
+        "title": "Apps & SEO",
+        "text": "Expanded into mobile apps, redesigns and SEO audits."
       },
       "2026": {
         "title": "TavsWebs today",
-        "text": "A lean team shipping premium digital products for clients across Europe and beyond."
+        "text": "Full digital support — websites, CRM, apps and anything a business needs."
       }
     }
   },
   "testimonials": {
     "eyebrow": "Testimonials",
-    "title": "Words from partners",
+    "title": "What clients say",
     "items": {
       "0": {
-        "quote": "They treated our site like a product launch, not a brochure. The motion language alone changed how investors perceived us.",
-        "name": "Elena Voss",
-        "role": "CEO, Pulse Finance"
+        "quote": "We needed a site that clearly shows what we do. It was done fast, and now clients call us — without endless explaining.",
+        "name": "Andris",
+        "role": "Stūrīši VIB · groundworks"
       },
       "1": {
-        "quote": "Every detail felt considered — from the scroll rhythm to the last focus state. Rare to find a studio this precise.",
-        "name": "Marcus Lind",
-        "role": "Founder, Nordic Atelier"
+        "quote": "The main thing was editing content ourselves. The CMS is clear — we update pages and events without a developer.",
+        "name": "Mārtiņš",
+        "role": "Audi Klubs · board member"
       },
       "2": {
-        "quote": "Performance numbers we didn’t think were possible with this level of design. They proved us wrong.",
-        "name": "Sofia Reyes",
-        "role": "Head of Product, Orbit Labs"
+        "quote": "From the first call to a live site — a couple of weeks. Clean design, solid on mobile, and a fair price.",
+        "name": "Ilze Bērziņa",
+        "role": "Business owner, Riga"
       }
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Straight answers",
-    "subtitle": "The practical details clients ask before we start.",
-    "pageDescription": "Answers about TavsWebs timelines, budgets, tech stack, brand work, and taking over unfinished website projects.",
+    "title": "Common questions",
+    "subtitle": "Practical answers before we start.",
+    "pageDescription": "How much does a website cost in Latvia? How long does it take? Do you also build apps?",
     "ctaTitle": "Still have questions?",
     "items": {
       "0": {
-        "q": "How long does a typical project take?",
-        "a": "Most marketing sites land in 6–10 weeks. Product platforms and immersive builds run 10–16 weeks depending on scope and content readiness."
+        "q": "How much does website development cost in Latvia?",
+        "a": "A simple website starts from €200. An online store, mobile app or larger system — from €2000. We’ll give an exact price after a short talk — free of charge."
       },
       "1": {
-        "q": "Do you work with existing brands?",
-        "a": "Yes. We can extend an established identity or rebuild from first principles. Either way, the web experience should feel like a natural evolution — not a costume."
+        "q": "Do you do more than websites?",
+        "a": "Specialised CRM systems for companies, mobile apps, online stores, redesigns, SEO audits and any programming. If a business needs something digital — we can make it happen."
       },
       "2": {
-        "q": "What’s your tech stack?",
-        "a": "Next.js, TypeScript, Tailwind, Framer Motion, and React Three Fiber when immersion earns its place. CMS options include Sanity, Contentful, and custom solutions."
+        "q": "How long does a website take?",
+        "a": "A typical website — 1 to 3 weeks. Redesigns are often faster. Apps and larger projects — 4 to 12 weeks. We agree on the timeline before we start."
       },
       "3": {
-        "q": "Can you take over an unfinished project?",
-        "a": "Often. We’ll audit the codebase, design debt, and performance baseline before proposing a path forward — sometimes a rebuild is cheaper than a rescue."
+        "q": "What is an SEO audit?",
+        "a": "We check your site — speed, titles and Google visibility. Then you get a clear fix list, and we can implement the fixes too."
       },
       "4": {
-        "q": "What’s the minimum budget?",
-        "a": "Smaller sites and landing pages can start from around €200. Broader brand and product builds scale from there depending on scope. We’ll be transparent before any kickoff."
+        "q": "Do you build mobile apps?",
+        "a": "Yes. We build iOS and Android apps, plus web apps. Tell us what you need — we’ll give a price and timeline."
+      },
+      "5": {
+        "q": "Where in Latvia do you work?",
+        "a": "Across Latvia — in Riga and remotely. We work online, so location isn’t a blocker."
       }
     }
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Start a project",
-    "titleAlt": "Let’s build something worth opening",
-    "titleAltLead": "Let’s build something",
-    "titleAltAccent": "worth",
-    "titleAltEnd": "opening",
-    "subtitle": "Tell us about your project. We’ll reply with next steps, timeline thoughts, and an honest fit assessment.",
-    "pageDescription": "Contact TavsWebs to start your next website or digital product. Get a quote via email, phone, or WhatsApp — replies within 24 hours.",
+    "title": "Get a quote",
+    "titleAlt": "Tell us what you need",
+    "titleAltLead": "Tell us what you",
+    "titleAltAccent": "need",
+    "titleAltEnd": ".",
+    "subtitle": "Website, app, redesign, SEO or any programming. We’ll reply in 24h with a clear price — free.",
+    "pageDescription": "Contact TavsWebs — get a quote within 24 hours.",
     "email": "Email",
     "phone": "Phone",
     "whatsapp": "WhatsApp",
-    "whatsappHint": "Chat with us",
+    "whatsappHint": "Message us",
     "name": "Name",
     "namePlaceholder": "Your name",
     "emailField": "Email",
     "emailPlaceholder": "you@company.com",
     "company": "Company",
-    "companyPlaceholder": "Brand or company",
+    "companyPlaceholder": "Company (optional)",
     "budget": "Budget",
     "budgetPlaceholder": "Select a range",
-    "description": "Project description",
-    "descriptionPlaceholder": "Goals, timeline, references — whatever helps us understand the brief.",
-    "submit": "Start My Project",
+    "description": "What do you need?",
+    "descriptionPlaceholder": "Website, app, redesign, SEO… Tell us briefly.",
+    "submit": "Send",
     "submitting": "Sending…",
-    "success": "Thanks — your message is on its way. We’ll reply within 24 hours.",
-    "error": "Something went wrong sending your message. Please try again or email us directly.",
+    "success": "Thanks! We’ll reply within 24 hours.",
+    "error": "Couldn’t send. Try again or email us directly.",
     "submitted": "Message sent.",
     "budgets": {
       "0": "€200 – €1k",
@@ -320,23 +389,23 @@
   },
   "cta": {
     "title": "Ready to start?",
-    "description": "Tell us about your project — we’ll reply with next steps within 24 hours.",
-    "button": "Get a Quote"
+    "description": "Website, CRM, app or something else for your business — tell us what you need. We’ll reply within 24 hours.",
+    "button": "Get a quote"
   },
   "footer": {
     "rights": "© {year} {name}. All rights reserved.",
-    "note": "Crafted with intention — not templates.",
+    "note": "Websites, CRM systems and programming in Latvia.",
     "nav": "Footer"
   },
   "dock": {
     "whatsapp": "WhatsApp",
     "email": "Email",
-    "quote": "Get Quote",
+    "quote": "Quote",
     "quickActions": "Quick actions"
   },
   "og": {
-    "agency": "Web Agency",
-    "craft": "Premium digital craft"
+    "agency": "Website development",
+    "craft": "Fast, high quality, tailored"
   },
   "breadcrumbs": {
     "home": "Home"

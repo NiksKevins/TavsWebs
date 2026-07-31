@@ -4,19 +4,28 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, Sparkles } from "@react-three/drei";
 import { Suspense, useMemo, useRef } from "react";
 import * as THREE from "three";
-import { useMousePosition, useReducedMotion } from "@/hooks/useMotion";
+import {
+  useMediaQuery,
+  useMousePosition,
+  useReducedMotion,
+} from "@/hooks/useMotion";
 
-function NetworkGlobe({ mouse }: { mouse: { x: number; y: number } }) {
+function NetworkGlobe({
+  mouse,
+  pointCount,
+}: {
+  mouse: { x: number; y: number };
+  pointCount: number;
+}) {
   const group = useRef<THREE.Group>(null);
   const reduced = useReducedMotion();
 
   const { positions, connections } = useMemo(() => {
-    const count = 48;
     const pts: THREE.Vector3[] = [];
     const phi = Math.PI * (3 - Math.sqrt(5));
 
-    for (let i = 0; i < count; i++) {
-      const y = 1 - (i / (count - 1)) * 2;
+    for (let i = 0; i < pointCount; i++) {
+      const y = 1 - (i / (pointCount - 1)) * 2;
       const radius = Math.sqrt(1 - y * y);
       const theta = phi * i;
       pts.push(
@@ -28,10 +37,11 @@ function NetworkGlobe({ mouse }: { mouse: { x: number; y: number } }) {
       );
     }
 
+    const linkDist = pointCount > 36 ? 1.15 : 1.35;
     const lines: number[] = [];
     for (let i = 0; i < pts.length; i++) {
       for (let j = i + 1; j < pts.length; j++) {
-        if (pts[i].distanceTo(pts[j]) < 1.15) {
+        if (pts[i].distanceTo(pts[j]) < linkDist) {
           lines.push(
             pts[i].x,
             pts[i].y,
@@ -48,7 +58,7 @@ function NetworkGlobe({ mouse }: { mouse: { x: number; y: number } }) {
       positions: new Float32Array(pts.flatMap((p) => [p.x, p.y, p.z])),
       connections: new Float32Array(lines),
     };
-  }, []);
+  }, [pointCount]);
 
   useFrame((state) => {
     if (!group.current) return;
@@ -108,9 +118,10 @@ function NetworkGlobe({ mouse }: { mouse: { x: number; y: number } }) {
   );
 }
 
-function Scene() {
+function Scene({ isDesktop }: { isDesktop: boolean }) {
   const mouse = useMousePosition();
   const reduced = useReducedMotion();
+  const pointCount = isDesktop ? 48 : 28;
 
   return (
     <>
@@ -122,9 +133,9 @@ function Scene() {
         rotationIntensity={reduced ? 0 : 0.25}
         floatIntensity={reduced ? 0 : 0.6}
       >
-        <NetworkGlobe mouse={mouse} />
+        <NetworkGlobe mouse={mouse} pointCount={pointCount} />
       </Float>
-      {!reduced && (
+      {!reduced && isDesktop && (
         <Sparkles
           count={40}
           scale={6}
@@ -139,16 +150,24 @@ function Scene() {
 }
 
 export function HeroScene() {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
     <div className="absolute inset-0 -z-0">
       <Canvas
-        dpr={[1, 1.5]}
+        dpr={isDesktop ? [1, 1.5] : [1, 1]}
         camera={{ position: [0, 0, 5.2], fov: 42 }}
-        gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+        gl={{
+          antialias: isDesktop,
+          alpha: true,
+          powerPreference: "high-performance",
+          stencil: false,
+          depth: true,
+        }}
         style={{ background: "transparent" }}
       >
         <Suspense fallback={null}>
-          <Scene />
+          <Scene isDesktop={isDesktop} />
         </Suspense>
       </Canvas>
       <div

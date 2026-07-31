@@ -39,32 +39,52 @@ export type PageKey = keyof typeof pagePaths;
 
 export const projects = [
   {
-    id: "nordic-atelier",
-    year: "2025",
-    accent: "#1a3a5c",
-    glow: "rgba(56, 189, 248, 0.25)",
+    id: "audi-klubs",
+    year: "2026",
+    accent: "#1a0508",
+    glow: "rgba(220, 38, 38, 0.35)",
     offset: "left" as const,
+    image: "/portfolio/audi-klubs-site.jpg",
+    url: null,
+    gallery: [
+      "/portfolio/audi-klubs-site.jpg",
+      "/portfolio/audi-klubs-cms-home.jpg",
+      "/portfolio/audi-klubs-cms-rich.jpg",
+      "/portfolio/audi-klubs-cms.jpg",
+    ] as const,
   },
   {
-    id: "pulse-finance",
+    id: "sturisi-vib",
     year: "2025",
-    accent: "#0c1f33",
-    glow: "rgba(59, 130, 246, 0.3)",
+    accent: "#1c1910",
+    glow: "rgba(212, 179, 75, 0.35)",
     offset: "right" as const,
+    image: "/portfolio/sturisi-vib-site.jpg",
+    url: "https://sturisivib.lv/",
+    gallery: [
+      "/portfolio/sturisi-vib-site.jpg",
+      "/portfolio/sturisi-vib-services.jpg",
+    ] as const,
   },
   {
-    id: "lumen-studio",
-    year: "2024",
-    accent: "#111827",
-    glow: "rgba(34, 211, 238, 0.22)",
+    id: "kozy-eats",
+    year: "2025",
+    accent: "#2a1810",
+    glow: "rgba(194, 120, 80, 0.3)",
     offset: "left" as const,
+    image: "/portfolio/mock-kozy-eats.jpg",
+    url: null,
+    gallery: ["/portfolio/mock-kozy-eats.jpg"] as const,
   },
   {
-    id: "orbit-labs",
+    id: "favela-nightclub",
     year: "2024",
-    accent: "#0a1628",
-    glow: "rgba(96, 165, 250, 0.28)",
+    accent: "#12081a",
+    glow: "rgba(168, 85, 247, 0.3)",
     offset: "right" as const,
+    image: "/portfolio/mock-favela.jpg",
+    url: null,
+    gallery: ["/portfolio/mock-favela.jpg"] as const,
   },
 ] as const;
 
@@ -83,13 +103,26 @@ export function getProject(id: string) {
 }
 
 export const serviceIds = [
-  "brand-web-design",
-  "product-engineering",
-  "3d-immersive",
-  "growth-launch",
+  "website-dev",
+  "ecommerce",
+  "mobile-apps",
+  "redesign",
+  "seo-audit",
+  "programming",
+  "crm",
 ] as const;
 
 export type ServiceId = (typeof serviceIds)[number];
+
+export const serviceImages: Record<ServiceId, string> = {
+  "website-dev": "/services/website-dev.jpg",
+  ecommerce: "/services/ecommerce.jpg",
+  "mobile-apps": "/services/mobile-apps.jpg",
+  redesign: "/services/redesign.jpg",
+  "seo-audit": "/services/seo-audit.jpg",
+  programming: "/services/programming.jpg",
+  crm: "/services/crm.jpg",
+};
 
 export const processStepIds = [
   "discovery",
@@ -102,7 +135,7 @@ export const processStepIds = [
 export const timelineYears = ["2019", "2021", "2023", "2026"] as const;
 
 export const testimonialIndexes = ["0", "1", "2"] as const;
-export const faqIndexes = ["0", "1", "2", "3", "4"] as const;
+export const faqIndexes = ["0", "1", "2", "3", "4", "5"] as const;
 export const budgetIndexes = ["0", "1", "2", "3", "4", "5"] as const;
 
 export const localeOgMap = {

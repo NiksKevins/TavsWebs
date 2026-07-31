@@ -1,38 +1,38 @@
 {
   "meta": {
     "home": {
-      "title": "Premium tīmekļa izstrādes aģentūra",
-      "description": "TavsWebs ir premium tīmekļa izstrādes aģentūra — veidojam ātras, iedarbīgas vietnes un digitālas pieredzes, kas pārvērš apmeklētājus par klientiem.",
-      "ogTitle": "TavsWebs — Premium tīmekļa izstrādes aģentūra"
+      "title": "Mājaslapu izstrāde Latvijā",
+      "description": "Mājaslapu izstrāde, CRM sistēmas, mobilās aplikācijas, SEO un jebkas, ko biznesam vajag — programmējam pielāgotus risinājumus Latvijā. No €200. Piedāvājums 24h.",
+      "ogTitle": "Mājaslapu izstrāde — CRM un biznesa sistēmas | TavsWebs"
     },
     "work": {
-      "title": "Izvēlētie darbi",
-      "description": "Iepazīstieties ar TavsWebs projektiem — redakcionāli e-veikali, fintech platformas, arhitektūras portfolio un SaaS produktu vietnes, kas būvētas ātrumam un konversijai.",
-      "ogTitle": "Izvēlētie darbi — TavsWebs"
+      "title": "Mūsu darbi",
+      "description": "Reāli TavsWebs projekti — mājaslapas, veikali un digitālie produkti, kas palīdz atrast klientus.",
+      "ogTitle": "Darbi — TavsWebs"
     },
     "services": {
-      "title": "Dizaina un izstrādes pakalpojumi",
-      "description": "Zīmola un tīmekļa dizains, produktu inženierija, imersīvas 3D pieredzes un izaugsmei gatavi laidieni no TavsWebs.",
+      "title": "Pakalpojumi",
+      "description": "Mājaslapas, CRM sistēmas, interneta veikali, aplikācijas, SEO un pielāgota programmēšana — viss, ko biznesam vajag digitāli.",
       "ogTitle": "Pakalpojumi — TavsWebs"
     },
     "process": {
-      "title": "Mūsu process",
-      "description": "Kā TavsWebs veido vietnes: izpēte, stratēģija, dizains, izstrāde un palaišana — sadarbīgs, kinematogrāfisks process.",
-      "ogTitle": "Mūsu process — TavsWebs"
+      "title": "Kā mēs strādājam",
+      "description": "Četri skaidri soļi: saruna, dizains, izstrāde un palaišana. Bez liekas sarežģītības.",
+      "ogTitle": "Process — TavsWebs"
     },
     "about": {
-      "title": "Par studiju",
-      "description": "Par TavsWebs — neliela radoša studija, kas veido premium digitālus produktus ar mēru, meistarību un tehnisku precizitāti.",
+      "title": "Par mums",
+      "description": "TavsWebs — mājaslapu izstrāde un programmēšana Latvijā. Ātri, kvalitatīvi un pielāgots tavām prasībām.",
       "ogTitle": "Par mums — TavsWebs"
     },
     "contact": {
-      "title": "Sākt projektu",
-      "description": "Sazinieties ar TavsWebs, lai sāktu nākamo vietni vai digitālo produktu. Piedāvājumu saņemiet e-pastā, telefonā vai WhatsApp — atbildam 24 stundu laikā.",
+      "title": "Uzzināt cenu",
+      "description": "Pastāsti, kas tev vajadzīgs — mājaslapa, CRM, aplikācija, redesign vai SEO. Atbildēsim 24 stundu laikā.",
       "ogTitle": "Kontakti — TavsWebs"
     },
     "faq": {
-      "title": "Biežāk uzdotie jautājumi",
-      "description": "Atbildes par TavsWebs termiņiem, budžetiem, tehnoloģijām, darbu ar esošiem zīmoliem un nepabeigtiem projektiem.",
+      "title": "Biežākie jautājumi",
+      "description": "Cik maksā mājaslapu izstrāde Latvijā? Cik ilgi jāgaida? Vai darāt arī aplikācijas un SEO auditus?",
       "ogTitle": "BUJ — TavsWebs"
     }
   },
@@ -43,7 +43,7 @@
     "about": "Par mums",
     "contact": "Kontakti",
     "faq": "BUJ",
-    "getQuote": "Saņemt piedāvājumu",
+    "getQuote": "Uzzināt cenu",
     "openMenu": "Atvērt izvēlni",
     "closeMenu": "Aizvērt izvēlni",
     "homeAria": "{name} sākumlapa",
@@ -51,263 +51,332 @@
     "language": "Valoda"
   },
   "hero": {
-    "eyebrow": "Tīmekļa izstrādes aģentūra",
-    "body": "{tagline}. Vietnes, kas jūtas pašsaprotamas — ātras, uzticamas un veidotas ar precizitāti.",
-    "ctaPrimary": "Sākt projektu",
+    "eyebrow": "Mājaslapu izstrāde Latvijā",
+    "body": "{tagline}. Mājaslapas, CRM sistēmas, aplikācijas, SEO — un jebkas cits, ko tavam biznesam vajag. Ja to var uzprogrammēt, mēs to varam uztaisīt.",
+    "ctaPrimary": "Uzzināt cenu",
     "ctaSecondary": "Skatīt darbus",
-    "explore": "Ienirt"
+    "explore": "Tālāk"
   },
   "site": {
-    "tagline": "Digitāla amatniecība ambicioziem zīmoliem",
-    "description": "TavsWebs projektē un būvē premium tīmekļa pieredzes — vietnes, kas jūtas kā roku darbs, strādā bez kompromisiem un pārvērš apmeklētājus par klientiem.",
+    "tagline": "Ātri, kvalitatīvi un pielāgots tavām prasībām",
+    "description": "TavsWebs — mājaslapas, specializētas CRM sistēmas un jebkādi biznesa risinājumi Latvijā. No idejas līdz gatavam produktam.",
     "responseTime": "Atbildam 24 stundu laikā",
     "skipToContent": "Pāriet pie satura"
   },
   "home": {
     "processCard": {
       "label": "Process",
-      "text": "No pirmās sarunas līdz palaišanai — skaidrs, sadarbīgs ceļš.",
+      "text": "No sarunas līdz palaišanai — skaidri soļi, bez liekas gaidīšanas.",
       "cta": "Uzzināt vairāk →"
     },
     "aboutCard": {
       "label": "Par mums",
-      "text": "Studija, kas balstās uz mēru, meistarību un tehnisku precizitāti.",
+      "text": "Vienkārši: ātri, skaidri un bez liekas sarežģītības.",
       "cta": "Uzzināt vairāk →"
     },
     "faqCard": {
       "label": "BUJ",
-      "text": "Termiņi, budžeti, tehnoloģijas un tas, kā sadarbība notiek praksē.",
+      "text": "Cenas, termiņi, aplikācijas, SEO un kā sākt sadarbību.",
       "cta": "Uzzināt vairāk →"
     }
   },
   "work": {
     "eyebrow": "Portfolio",
-    "title": "Izvēlētie darbi",
+    "title": "Mūsu darbi",
     "titleAccent": "darbi",
-    "titleLead": "Izvēlētie",
-    "subtitle": "Redakcionāli stāsti — katrs projekts kā sava pasaule, nevis kārtējā kartīte režģī.",
-    "viewCase": "Skatīt case study",
-    "caseStudyTitle": "{title} — case study",
+    "titleLead": "Mūsu",
+    "subtitle": "Reāli klienti — no CMS platformām līdz biznesa mājaslapām.",
+    "viewCase": "Skatīt projektu",
+    "caseStudyTitle": "{title} — projekts",
     "viewAll": "Visi projekti",
-    "backToAll": "Atpakaļ pie visiem darbiem",
+    "backToAll": "Atpakaļ pie darbiem",
     "moreWork": "Citi darbi",
     "overview": "Pārskats",
     "outcomes": "Rezultāti",
     "servicesLabel": "Pakalpojumi",
-    "ctaTitle": "Vēlaties līdzīgus rezultātus?",
+    "ctaTitle": "Vēlies līdzīgu rezultātu?",
     "ctaProject": "Sākt projektu kā {title}",
-    "pageDescription": "Iepazīstieties ar TavsWebs projektiem — redakcionāli e-veikali, fintech platformas, arhitektūras portfolio un SaaS produktu vietnes, kas būvētas ātrumam un konversijai."
+    "pageDescription": "Reāli TavsWebs projekti — mājaslapas, veikali un digitālie produkti.",
+    "viewLive": "Skatīt live vietni"
   },
   "projects": {
-    "nordic-atelier": {
-      "title": "Nordic Atelier",
-      "category": "E-komercija · Zīmols",
-      "description": "Klusa luksusa e-veikals skandināvu dizaina namam — redakcionāls ritms, taustāmi produktu stāsti un norēķini, kas izzūd pieredzē.",
-      "longDescription": "Nordic Atelier vajadzēja veikalu, kas jūtas tikpat pārdomāts kā viņu mēbeles. Mēs pārbūvējām zīmola vietni ap redakcionālu stāstījumu: lieli materiālu pētījumi, atturīga kustība un norēķinu plūsma, kas paliek neredzama līdz pirkuma brīdim. Veiktspēja bija dizaina ierobežojums — produkta lapas zem vienas sekundes LCP, nezaudējot attēlu kvalitāti.",
-      "metrics": ["+142% konversija", "0,9 s LCP", "Awwwards nominācija"],
-      "services": ["Zīmola un tīmekļa dizains", "Produkta inženierija", "Izaugsme un palaišana"]
+    "audi-klubs": {
+      "title": "Audi Klubs",
+      "category": "Kluba platforma · CMS",
+      "description": "Reāla kluba platforma ar WordPress tipa satura redaktoru — klients pats maina lapas, ziņas un pasākumus bez programmētāja.",
+      "longDescription": "Audi Klubs ir pilna kluba platforma: sākumlapa, pasākumi, veikals, galerija, sludinājumi un ziedojumi. Galvenā vērtība klientam — WordPress tipa admin (Filament CMS). Var rediģēt lapu saturu, hero slaidus, partnerus, BUJ un veikalu bez koda. Atver lapu adminā, labo sekcijas un publicē — tieši tā, kā klienti to grib: skaista vietne + ērta pašapkalpošanās.",
+      "metrics": [
+        "WordPress tipa CMS",
+        "Paši rediģē saturu",
+        "Pasākumi · Veikals · Galerija"
+      ],
+      "services": [
+        "Mājaslapu izstrāde",
+        "Programmēšana",
+        "CMS redaktors"
+      ],
+      "galleryLabels": [
+        "Vietnes skats",
+        "CMS — sākumlapas redaktors",
+        "CMS — teksta redaktors (kā WordPress)",
+        "CMS — lapu saraksts"
+      ]
     },
-    "pulse-finance": {
-      "title": "Pulse Finance",
-      "category": "Fintech · Platforma",
-      "description": "Blīva produkta virsma, kas kļuvusi eleganta. Reāllaika paneļi ar kinematogrāfisku kustību un dizaina sistēma, kas iztur mērogu.",
-      "longDescription": "Pulse Finance laidīs klajā Series B produkta virsmu, kurai vienlaikus bija jārāda uzticība un tehniskais dziļums. Mēs izveidojām tumšu, precīzu sistēmu ar kustības norādēm dzīvajiem datiem un komponentu bibliotēku, ko varēja paplašināt gan produkta, gan mārketinga komanda. Pieejamība un tastatūras plūsmas regulētai auditorijai nebija kompromiss.",
-      "metrics": ["Series B palaišana", "40+ komponenti", "WCAG AA"],
-      "services": ["Produkta inženierija", "Zīmola un tīmekļa dizains"]
+    "sturisi-vib": {
+      "title": "Stūrīši VIB",
+      "category": "Celtniecība · Labiekārtošana",
+      "description": "Live mājaslapa zemes darbu un teritoriju labiekārtošanas uzņēmumam — sturisivib.lv.",
+      "longDescription": "Stūrīši VIB specializējas teritoriju labiekārtošanā, meliorācijā un zemes darbos. Vietne skaidri rāda piedāvājumu: būvlaukumu sagatavošana, ceļu būve, bruģēšana, meliorācija un apzaļumošana. Tīrs dizains, mobilā versija un kontaktu forma — lai klienti ātri atrastu pakalpojumu un sazinātos.",
+      "metrics": [
+        "sturisivib.lv",
+        "Mobilā versija",
+        "Skaidri pakalpojumi"
+      ],
+      "services": [
+        "Mājaslapu izstrāde",
+        "SEO",
+        "Dizains"
+      ],
+      "galleryLabels": [
+        "Sākumlapa",
+        "Pakalpojumi"
+      ]
     },
-    "lumen-studio": {
-      "title": "Lumen Studio",
-      "category": "Arhitektūra · Portfolio",
-      "description": "Imersīvi projektu arhīvi ar ritināšanai balstītu telpisku stāstījumu — gaisma, ēna un materiāls kā galvenais naratīvs.",
-      "longDescription": "Lumen Studio portfolio bija jājutās telpiski. Mēs uzbūvējām ritināšanai balstītus case study, kuros stāstu vada gaisma un materiāls, ar iespējamiem WebGL pastaigām flagmaņu projektiem. Headless CMS ļauj arhitektiem publicēt jaunus darbus, nesabojājot arhīva kinematogrāfisko ritmu.",
-      "metrics": ["3D pastaigas", "CMS vadīts", "99 Lighthouse"],
-      "services": ["3D un imersija", "Zīmola un tīmekļa dizains", "Produkta inženierija"]
+    "kozy-eats": {
+      "title": "Kozy Eats",
+      "category": "Kafejnīca · Mock",
+      "description": "Mock projekts — silta kafejnīcas landing page ar ēdienkarti un pasūtījuma CTA.",
+      "longDescription": "Demonstrācijas projekts kafejnīcas zīmolam: skaidrs hero, ēdienkarte un poga pasūtījumam. Piemērs, kā izskatās vienkārša, konversijām domāta vietne.",
+      "metrics": [
+        "Mock projekts",
+        "Landing page",
+        "Mobilā versija"
+      ],
+      "services": [
+        "Mājaslapu izstrāde",
+        "Dizains"
+      ],
+      "galleryLabels": [
+        "Vietnes skats"
+      ]
     },
-    "orbit-labs": {
-      "title": "Orbit Labs",
-      "category": "SaaS · Produkts",
-      "description": "No pitch deck līdz produkcijai astoņās nedēļās. Izstrādātājiem domāta produkta vietne, kas pārdod ar skaidrību, ne troksni.",
-      "longDescription": "Orbit Labs vajadzēja mārketinga vietni, kam izstrādātāji uzticētos. Mēs noņēmām troksni, uzbūvējam dokumentācijai tuvas produkta lapas un astoņās nedēļās laidām edge-deployed Next.js risinājumu. Demo pieprasījumi pēc palaišanas vairāk nekā dubultojās — pateicoties skaidrībai, ātrumam un stāstam, kas cienīja tehnisku auditoriju.",
-      "metrics": ["2,4× demo pieprasījumi", "Tumšs UI", "Edge deploy"],
-      "services": ["Produkta inženierija", "Izaugsme un palaišana"]
+    "favela-nightclub": {
+      "title": "Favela Nightclub",
+      "category": "Naktsklubs · Mock",
+      "description": "Mock projekts — tumša naktskluba vietne ar pasākumiem un biļešu CTA.",
+      "longDescription": "Demonstrācijas projekts naktsklubam: spēcīgs vizuālais stils, pasākumu saraksts un skaidra poga biļetēm. Piemērs atmosfēriskai zīmola vietnei.",
+      "metrics": [
+        "Mock projekts",
+        "Pasākumi",
+        "Tumšs UI"
+      ],
+      "services": [
+        "Mājaslapu izstrāde",
+        "Dizains"
+      ],
+      "galleryLabels": [
+        "Vietnes skats"
+      ]
     }
   },
   "services": {
     "eyebrow": "Pakalpojumi",
-    "title": "Spējas, ne katalogs",
-    "pageDescription": "Zīmola un tīmekļa dizains, produktu inženierija, imersīvas 3D pieredzes un izaugsmei gatavi laidieni no TavsWebs.",
+    "title": "Viss, kas biznesam vajadzīgs digitāli",
+    "pageDescription": "Mājaslapas, specializētas CRM sistēmas, veikali, aplikācijas, SEO un pielāgota programmēšana — no A līdz Z.",
     "exploreAll": "Visi pakalpojumi",
-    "ctaTitle": "Vajag pielāgotu sadarbību?",
+    "ctaTitle": "Vajag kaut ko citu?",
     "items": {
-      "brand-web-design": {
-        "title": "Zīmola un tīmekļa dizains",
-        "description": "Identitātes sistēmas un saskarnes ar redakcionālu atturību — tipogrāfija, ritms un kustība, kas jūtas neizbēgama.",
-        "detail": "Vizuālās sistēmas · UI komplekti · Dizaina ops",
-        "longDescription": "Mēs veidojam zīmolus un saskarnes, kas iztur īstu lietošanu. No vizuālās identitātes līdz augstas precizitātes produkta UI — katrs lēmums ir par skaidrību, hierarhiju un ilgstošu meistarību, ne tendencēm."
+      "website-dev": {
+        "title": "Mājaslapu izstrāde",
+        "description": "Ātri, kvalitatīvi un pielāgots tavām prasībām. Mājaslapa, kas skaidri pastāsta, ko tu dari.",
+        "detail": "No €200 · 1–3 nedēļas · SEO pamati",
+        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei. Dizains, programmēšana, mobilā versija un palaišana iekļauta."
       },
-      "product-engineering": {
-        "title": "Produkta inženierija",
-        "description": "Next.js, TypeScript un veiktspējas budžeti, kas turas arī pie īstas slodzes. Kods kā amatniecība.",
-        "detail": "App Router · Edge · Headless CMS",
-        "longDescription": "Inženierija ir daļa no dizaina. Mēs piegādājam Next.js un TypeScript produktus ar stingriem veiktspējas budžetiem, pieejamiem komponentiem un CMS arhitektūrām, ar kurām satura komandas tiešām var strādāt."
+      "ecommerce": {
+        "title": "Interneta veikalu izstrāde",
+        "description": "Pārdod preces internetā. Veikals ar maksājumiem, produktiem un pasūtījumu apstrādi.",
+        "detail": "Maksājumi · Produkti · Pasūtījumi",
+        "longDescription": "Pilns interneta veikals — produktu katalogs, grozs, maksājumi un pasūtījumu pārvaldība. Viss, kas vajadzīgs, lai sāktu pārdot online."
       },
-      "3d-immersive": {
-        "title": "3D un imersija",
-        "description": "WebGL pieredzes, kas pastiprina stāstu — nekad kā dekorācija dekorācijas pēc.",
-        "detail": "Three.js · R3F · Šeideru darbs",
-        "longDescription": "Kad imersija ir pelnījusi savu vietu, mēs to būvējam uzmanīgi: React Three Fiber ainas, šeideri un ritināšanas kino, kas paliek veiksmīgs arī īstās ierīcēs — tostarp mobilajās."
+      "mobile-apps": {
+        "title": "Mobilās aplikācijas",
+        "description": "iOS un Android aplikācijas tavam biznesam — ērtas, ātras un gatavas veikaliem.",
+        "detail": "iOS · Android · App Store",
+        "longDescription": "Veidojam mobilās aplikācijas, kas strādā telefonā un planšetē. No idejas līdz publikācijai App Store un Google Play."
       },
-      "growth-launch": {
-        "title": "Izaugsme un palaišana",
-        "description": "SEO pamati, analitika un konversijas ceļi no pirmās dienas — ne kā pielikums beigās.",
-        "detail": "Core Web Vitals · Schema · CRO",
-        "longDescription": "Palaišana ir sistēma: tehniskais SEO, strukturētie dati, analitika un konversijas ceļi, kas top kopā ar radošo — lai vietne strādātu gan meklētājiem, gan cilvēkiem."
+      "redesign": {
+        "title": "Redesign un pārbūve",
+        "description": "Vecā mājaslapa vairs neder? Atjauninām dizainu, ātrumu un funkcionalitāti.",
+        "detail": "Jauns dizains · Ātrums · Labojumi",
+        "longDescription": "Pārbūvējam esošās vietnes — moderns izskats, labāka ātrums un ērtāka lietošana. Bieži ātrāk un lētāk nekā sākt no nulles."
+      },
+      "seo-audit": {
+        "title": "SEO auditi un optimizācija",
+        "description": "Pārbaudām, kāpēc tevi neatrod Google, un salabojam — lai klienti atrastu tevi.",
+        "detail": "Audits · Labojumi · Google",
+        "longDescription": "SEO audits: ātrums, virsraksti, tehniskās kļūdas un redzamība meklētājā. Iedodam skaidru sarakstu un vajadzības gadījumā arī salabojam paši."
+      },
+      "programming": {
+        "title": "Programmēšana",
+        "description": "Web lietotnes, API, automātika un pielāgoti risinājumi — jebkas, ko var uzprogrammēt.",
+        "detail": "Web lietotnes · API · Automātika",
+        "longDescription": "Ja tev vajag kaut ko uzprogrammēt — sistēmu, automātiku, API vai labojumus — mēs to darām. Pastāsti, kas vajadzīgs, un iedosim skaidru piedāvājumu."
+      },
+      "crm": {
+        "title": "CRM un biznesa sistēmas",
+        "description": "Specializētas CRM sistēmas uzņēmumiem un iekšējās biznesa lietotnes — pielāgotas tieši taviem procesiem.",
+        "detail": "CRM · Klientu pārvaldība · Iekšējās sistēmas",
+        "longDescription": "Veidojam specializētas CRM sistēmas un jebkādas biznesa sistēmas — klientu pārvaldība, pasūtījumi, inventārs, darbinieku rīki, integrācijas. Nav gatavu šablonu: taisām to, kas tavam uzņēmumam īsti vajadzīgs. Ja biznesam kaut kas digitāli trūkst — varam to uztaisīt."
       }
     }
   },
   "process": {
     "eyebrow": "Process",
-    "title": "Kā mēs būvējam",
-    "titleLead": "Kā mēs",
-    "titleAccent": "būvējam",
-    "subtitle": "Kinematogrāfisks ceļš no pirmās sarunas līdz palaišanai — pa vienai pilnekrāna nodaļai.",
-    "pageDescription": "Kā TavsWebs veido vietnes: izpēte, stratēģija, dizains, izstrāde un palaišana — sadarbīgs, kinematogrāfisks process.",
-    "ctaTitle": "Izrunāsim jūsu īso briefu",
+    "title": "Kā tas notiek",
+    "titleLead": "Kā tas",
+    "titleAccent": "notiek",
+    "subtitle": "Skaidri soļi no idejas līdz gatavam produktam.",
+    "pageDescription": "Kā TavsWebs strādā: saruna, plāns, dizains, izstrāde un palaišana.",
+    "ctaTitle": "Pastāsti, kas tev vajadzīgs",
     "steps": {
       "discovery": {
-        "title": "Izpēte",
-        "subtitle": "Klausāmies pirms būvējam",
-        "description": "Kartējam mērķus, auditorijas, ierobežojumus un konkurences tukšumus. Vispirms skaidrība — tad ambīcija."
+        "title": "Saruna",
+        "subtitle": "Klausāmies vispirms",
+        "description": "Pastāsti, kas tev vajadzīgs — mājaslapa, aplikācija, redesign vai SEO. Kopā saprotam mērķi."
       },
       "strategy": {
-        "title": "Stratēģija",
-        "subtitle": "Strukturējam pieredzi",
-        "description": "Informācijas arhitektūra, konversijas ceļi un kustības valoda, kas atbalsta zīmola stāstu."
+        "title": "Plāns",
+        "subtitle": "Skaidra struktūra",
+        "description": "Vienojamies par saturu, funkcijām, termiņu un cenu — pirms sākam būvēt."
       },
       "design": {
         "title": "Dizains",
-        "subtitle": "Katrs kadrs ar rūpību",
-        "description": "Augstas precizitātes kompozīcijas, mijiedarbības prototipi un sistēmas, kas mērogojas, nezaudējot dvēseli."
+        "subtitle": "Tu apstiprini",
+        "description": "Parādām, kā izskatīsies. Tu apstiprini, pirms sākam programmēt."
       },
       "development": {
         "title": "Izstrāde",
-        "subtitle": "Piegāde ar precizitāti",
-        "description": "Veiktspējai prioritāra inženierija, iebūvēta pieejamība un pikseļprecīza īstenošana."
+        "subtitle": "Būvējam",
+        "description": "Programmējam ātru, drošu un ērtu risinājumu atbilstoši apstiprinātajam dizainam."
       },
       "launch": {
         "title": "Palaišana",
-        "subtitle": "Izejām live — un turpinām slīpēt",
-        "description": "Deploy, mērījumi, iterācijas. Paliekam tuvu arī pēc palaišanas, pirmajam īsto lietotāju vilnim."
+        "subtitle": "Gatavs un strādā",
+        "description": "Pārbaudām, palaidam un palīdzam arī pēc tam, ja kaut kas vajadzīgs."
       }
     }
   },
   "about": {
     "eyebrow": "Par mums",
-    "title": "Studija, kas balstās uz mēru",
-    "titleLead": "Studija, kas balstās uz",
-    "titleAccent": "mēru",
-    "pageDescription": "Par TavsWebs — neliela radoša studija, kas veido premium digitālus produktus ar mēru, meistarību un tehnisku precizitāti.",
-    "p1": "{name} pastāv zīmoliem, kas atsakās no viduvējā. Mēs ticam, ka tīmeklis var justies apzināts — katrs ritinājums, katra pauze, katra mijiedarbība ar iemeslu.",
-    "p2": "Filozofija ir vienkārša: mazāk lapu, kas nozīmē vairāk. Dizains, kas pārdzīvo tendences. Inženierija, kas cienī lietotājus un budžetus vienādi.",
-    "philosophyLabel": "Studijas filozofija",
-    "philosophy": "Skaidrība virs trokšņa. Meistarība virs apjoma.",
+    "title": "Skaidri un bez liekām komplikācijām",
+    "titleLead": "Skaidri un bez liekām",
+    "titleAccent": "komplikācijām",
+    "pageDescription": "TavsWebs — mājaslapu izstrāde un programmēšana Latvijā.",
+    "p1": "{name} veido mājaslapas, specializētas CRM sistēmas, aplikācijas un jebkādus biznesa risinājumus Latvijā — ātri, kvalitatīvi un pielāgoti tavām prasībām.",
+    "p2": "Nav šablonu un nav lieka žargona. Ja uzņēmumam kaut kas digitāli vajadzīgs — no vietnes līdz CRM vai pilnai iekšējai sistēmai — varam to uztaisīt. Tu saproti, ko saņem, cik tas maksā un cik ilgi aizņems.",
+    "philosophyLabel": "Kā strādājam",
+    "philosophy": "Skaidrība virs trokšņa. Rezultāts virs solaījumiem.",
     "ctaTitle": "Strādāt ar TavsWebs",
     "timeline": {
       "2019": {
-        "title": "Studijas dibināšana",
-        "text": "Sākām kā divu cilvēku amatniecības prakse zīmoliem, kas atteicās no šabloniem."
+        "title": "Sākums",
+        "text": "Sākām ar mājaslapām maziem un vidējiem uzņēmumiem Latvijā."
       },
       "2021": {
-        "title": "Fokuss uz produktu",
-        "text": "Paplašinājāmies SaaS un platformu darbā — sistēmiska domāšana satiekas ar redakcionālu dizainu."
+        "title": "Produkti un sistēmas",
+        "text": "Pievienojām web lietotnes, veikalus un pielāgotu programmēšanu."
       },
       "2023": {
-        "title": "Imersīvais tīmeklis",
-        "text": "WebGL un ritināšanas kino kļuva par pamata spējām, nevis blakuseksperimentiem."
+        "title": "Aplikācijas un SEO",
+        "text": "Paplašinājāmies ar mobilajām aplikācijām, redesign un SEO auditiem."
       },
       "2026": {
         "title": "TavsWebs šodien",
-        "text": "Kompakta komanda, kas piegādā premium digitālus produktus klientiem Eiropā un ārpus tās."
+        "text": "Pilns digitālais atbalsts — mājaslapas, CRM, aplikācijas un jebkas, ko biznesam vajag."
       }
     }
   },
   "testimonials": {
     "eyebrow": "Atsauksmes",
-    "title": "Partneru vārdi",
+    "title": "Ko saka klienti",
     "items": {
       "0": {
-        "quote": "Viņi izturējās pret mūsu vietni kā pret produkta palaišanu, ne brošūru. Viena pati kustības valoda mainīja, kā investori mūs uztvēra.",
-        "name": "Elena Voss",
-        "role": "CEO, Pulse Finance"
+        "quote": "Vajadzēja vietni, kas skaidri rāda, ko darām. Sanāca ātri, un tagad klienti zvana paši — bez liekas skaidrošanas.",
+        "name": "Andris",
+        "role": "Stūrīši VIB · zemes darbi"
       },
       "1": {
-        "quote": "Katrs sīkums bija pārdomāts — no ritināšanas ritma līdz pēdējam focus stāvoklim. Reti sastopama šāda precizitāte.",
-        "name": "Marcus Lind",
-        "role": "Dibinātājs, Nordic Atelier"
+        "quote": "Galvenais bija, lai paši varam mainīt saturu. CMS ir saprotams — labojam lapas un pasākumus bez programmētāja.",
+        "name": "Mārtiņš",
+        "role": "Audi Klubs · valdes loceklis"
       },
       "2": {
-        "quote": "Veiktspējas cipari, ko ar šādu dizaina līmeni uzskatījām par neiespējamiem. Viņi pierādīja pretējo.",
-        "name": "Sofia Reyes",
-        "role": "Produkta vadītāja, Orbit Labs"
+        "quote": "No sarunas līdz gatavai lapai — pāris nedēļas. Dizains tīrs, mobilajā skats labs, un cena bija godīga.",
+        "name": "Ilze Bērziņa",
+        "role": "Uzņēmēja, Rīga"
       }
     }
   },
   "faq": {
     "eyebrow": "BUJ",
-    "title": "Skaidras atbildes",
-    "subtitle": "Praktiskās lietas, ko klienti jautā pirms starta.",
-    "pageDescription": "Atbildes par TavsWebs termiņiem, budžetiem, tehnoloģijām, darbu ar esošiem zīmoliem un nepabeigtiem projektiem.",
+    "title": "Biežākie jautājumi",
+    "subtitle": "Praktiskas atbildes pirms starta.",
+    "pageDescription": "Cik maksā mājaslapu izstrāde Latvijā? Cik ilgi jāgaida? Vai darāt arī aplikācijas?",
     "ctaTitle": "Vēl ir jautājumi?",
     "items": {
       "0": {
-        "q": "Cik ilgi parasti ilgst projekts?",
-        "a": "Lielākā daļa mārketinga vietņu top 6–10 nedēļās. Produktu platformas un imersīvie risinājumi — 10–16 nedēļas, atkarībā no apjoma un satura gatavības."
+        "q": "Cik maksā mājaslapu izstrāde Latvijā?",
+        "a": "Vienkārša mājas lapas izveide — no €200. Interneta veikals, mobilā aplikācija vai lielāka sistēma — no €2000. Precīzu cenu iedosim pēc īsas sarunas — bez maksas."
       },
       "1": {
-        "q": "Vai strādājat ar jau esošiem zīmoliem?",
-        "a": "Jā. Varam attīstīt jau izveidotu identitāti vai sākt no pirmiem principiem. Abos gadījumos tīmekļa pieredzei jājūtas kā dabiskai evolūcijai — ne kā kostīmam."
+        "q": "Ko vēl darāt, ne tikai mājaslapas?",
+        "a": "Specializētas CRM sistēmas uzņēmumiem, mobilās aplikācijas, interneta veikalus, redesign, SEO auditus un jebkādu programmēšanu. Ja biznesam kaut kas digitāli vajadzīgs — varam to uztaisīt."
       },
       "2": {
-        "q": "Kādu tehnoloģiju steku izmantojat?",
-        "a": "Next.js, TypeScript, Tailwind, Framer Motion un React Three Fiber — kad imersija ir pelnījusi vietu. CMS iespējas: Sanity, Contentful vai pielāgoti risinājumi."
+        "q": "Cik ilgi aizņem mājas lapas izveide?",
+        "a": "Parasta mājaslapa — 1 līdz 3 nedēļas. Redesign bieži ātrāk. Aplikācijas un lielāki projekti — 4 līdz 12 nedēļas. Pirms darba sākuma vienojamies par termiņu."
       },
       "3": {
-        "q": "Vai varat pārņemt nepabeigtu projektu?",
-        "a": "Bieži vien jā. Vispirms izvērtējam kodu, dizaina parādu un veiktspējas bāzi — dažkārt pārbūve izmaksā mazāk nekā glābšana."
+        "q": "Kas ir SEO audits?",
+        "a": "Pārbaudām tavu mājaslapu — ātrumu, virsrakstus un Google redzamību. Tad iedodam skaidru sarakstu, ko labot, un vajadzības gadījumā salabojam paši."
       },
       "4": {
-        "q": "Kāds ir minimālais budžets?",
-        "a": "Mazākas vietnes un landing page var sākties no aptuveni €200. Plašāki zīmola un produkta projekti aug no turienes atkarībā no apjoma. Pirms starta būsim atklāti."
+        "q": "Vai veidojat arī mobilās aplikācijas?",
+        "a": "Jā. Veidojam iOS un Android aplikācijas, kā arī web lietotnes. Pastāsti, kas vajadzīgs — iedosim cenu un termiņu."
+      },
+      "5": {
+        "q": "Kur Latvijā jūs strādājat?",
+        "a": "Visā Latvijā — Rīgā un attālināti. Sadarbība notiek tiešsaistē, tāpēc atrašanās vieta nav šķērslis."
       }
     }
   },
   "contact": {
     "eyebrow": "Kontakti",
-    "title": "Sākt projektu",
-    "titleAlt": "Uztaisīsim kaut ko, kam vērts atvērt",
-    "titleAltLead": "Uztaisīsim kaut ko,",
-    "titleAltAccent": "kam vērts",
-    "titleAltEnd": "atvērt",
-    "subtitle": "Pastāstiet par projektu. Atbildēsim ar nākamajiem soļiem, termiņu redzējumu un godīgu novērtējumu, vai esam īstā komanda.",
-    "pageDescription": "Sazinieties ar TavsWebs, lai sāktu nākamo vietni vai digitālo produktu. Piedāvājumu saņemiet e-pastā, telefonā vai WhatsApp — atbildam 24 stundu laikā.",
+    "title": "Uzzināt cenu",
+    "titleAlt": "Pastāsti, kas tev vajadzīgs",
+    "titleAltLead": "Pastāsti, kas tev",
+    "titleAltAccent": "vajadzīgs",
+    "titleAltEnd": ".",
+    "subtitle": "Mājaslapa, aplikācija, redesign, SEO vai jebkāda programmēšana. Atbildēsim 24h ar skaidru cenu — bez maksas.",
+    "pageDescription": "Sazinies ar TavsWebs — piedāvājumu saņemsi 24 stundu laikā.",
     "email": "E-pasts",
     "phone": "Tālrunis",
     "whatsapp": "WhatsApp",
-    "whatsappHint": "Rakstiet mums",
+    "whatsappHint": "Raksti mums",
     "name": "Vārds",
-    "namePlaceholder": "Jūsu vārds",
+    "namePlaceholder": "Tavs vārds",
     "emailField": "E-pasts",
-    "emailPlaceholder": "jus@uznemums.lv",
+    "emailPlaceholder": "tu@uznemums.lv",
     "company": "Uzņēmums",
-    "companyPlaceholder": "Zīmols vai uzņēmums",
+    "companyPlaceholder": "Uzņēmums (nav obligāti)",
     "budget": "Budžets",
-    "budgetPlaceholder": "Izvēlieties diapazonu",
-    "description": "Projekta apraksts",
-    "descriptionPlaceholder": "Mērķi, termiņi, atsauces — viss, kas palīdz saprast briefu.",
-    "submit": "Sākt manu projektu",
+    "budgetPlaceholder": "Izvēlies diapazonu",
+    "description": "Kas tev vajadzīgs?",
+    "descriptionPlaceholder": "Mājaslapa, aplikācija, redesign, SEO… Pastāsti īsi.",
+    "submit": "Nosūtīt",
     "submitting": "Sūtam…",
-    "success": "Paldies — ziņa ir ceļā. Atbildēsim 24 stundu laikā.",
-    "error": "Neizdevās nosūtīt ziņu. Mēģiniet vēlreiz vai rakstiet mums tieši e-pastā.",
+    "success": "Paldies! Atbildēsim 24 stundu laikā.",
+    "error": "Neizdevās nosūtīt. Mēģini vēlreiz vai raksti e-pastā.",
     "submitted": "Ziņa nosūtīta.",
     "budgets": {
       "0": "€200 – €1k",
@@ -319,24 +388,24 @@
     }
   },
   "cta": {
-    "title": "Gatavi sākt?",
-    "description": "Pastāstiet par projektu — atbildēsim ar nākamajiem soļiem 24 stundu laikā.",
-    "button": "Saņemt piedāvājumu"
+    "title": "Gatavs sākt?",
+    "description": "Mājaslapa, CRM, aplikācija vai kaut kas cits biznesam — pastāsti, kas vajadzīgs. Atbildēsim 24 stundu laikā.",
+    "button": "Uzzināt cenu"
   },
   "footer": {
     "rights": "© {year} {name}. Visas tiesības aizsargātas.",
-    "note": "Veidots ar nodomu — ne no šablona.",
+    "note": "Mājaslapas, CRM sistēmas un programmēšana Latvijā.",
     "nav": "Kājenes navigācija"
   },
   "dock": {
     "whatsapp": "WhatsApp",
     "email": "E-pasts",
-    "quote": "Piedāvājums",
+    "quote": "Cena",
     "quickActions": "Ātrās darbības"
   },
   "og": {
-    "agency": "Tīmekļa aģentūra",
-    "craft": "Premium digitālā amatniecība"
+    "agency": "Mājaslapu izstrāde",
+    "craft": "Ātri, kvalitatīvi, pielāgoti"
   },
   "breadcrumbs": {
     "home": "Sākums"
