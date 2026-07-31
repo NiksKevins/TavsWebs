@@ -9,7 +9,7 @@ export const landingServices = [
   { id: "crm", label: "CRM / biznesa sistēma" },
   { id: "redesign", label: "Redesign (esošai lapai)" },
   { id: "seo", label: "SEO audits" },
-  { id: "programming", label: "Cita programmēšana" },
+  { id: "programming", label: "Cits" },
 ] as const;
 
 type Status = "idle" | "loading" | "success" | "error";
