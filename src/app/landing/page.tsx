@@ -10,6 +10,7 @@ import {
   Headphones,
 } from "lucide-react";
 import { AuditForm } from "@/components/landing/AuditForm";
+import { BrandMark } from "@/components/ui/BrandMark";
 import { projects, site } from "@/lib/data";
 
 const checklist = [
@@ -55,9 +56,16 @@ export default function LandingPage() {
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
       <header className="border-b border-white/10">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-          <a href="#top" className="text-sm font-bold tracking-[0.18em] uppercase">
-            TAVSWEBS
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
+          <a
+            href="#top"
+            className="inline-flex items-center gap-2.5 text-white"
+            aria-label={site.name}
+          >
+            <BrandMark className="h-7 w-7 shrink-0 sm:h-8 sm:w-8" />
+            <span className="text-sm font-bold tracking-[0.18em] uppercase sm:text-[15px]">
+              {site.name}
+            </span>
           </a>
           <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
             <a href="#pakalpojumi" className="hover:text-white">
@@ -75,7 +83,7 @@ export default function LandingPage() {
           </nav>
           <a
             href="#forma"
-            className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-white/90"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold !text-black transition hover:bg-zinc-100"
           >
             Sazināties
           </a>
