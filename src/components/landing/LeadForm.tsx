@@ -191,7 +191,8 @@ export function LeadForm({
       <button
         type="submit"
         disabled={status === "loading"}
-        className="mt-6 w-full rounded-xl bg-[#5EEAD4] px-5 py-3.5 text-sm font-semibold !text-black transition hover:bg-[#7af0dc] disabled:opacity-60"
+        className="mt-6 w-full rounded-xl px-5 py-3.5 text-sm font-semibold transition hover:brightness-110 disabled:opacity-60"
+        style={{ backgroundColor: "#5EEAD4", color: "#000" }}
       >
         {status === "loading" ? "Sūta…" : "Saņemt bezmaksas piedāvājumu"}
       </button>
