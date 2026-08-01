@@ -57,6 +57,10 @@ const googleReviews = [
     name: "Megija Megana",
     text: "Ļoti laba pieredze. Viss tika izdarīts ātri un kvalitatīvi. Paldies par lielisko darbu! Noteikti iesaku.",
   },
+  {
+    name: "Inguss Boldāns",
+    text: "Ātrs serviss un precizitāte mājaslapas izveidē!",
+  },
 ] as const;
 
 function GoogleMark({ className }: { className?: string }) {
@@ -237,11 +241,11 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-lg gap-5 md:max-w-none md:grid-cols-1 md:justify-items-center">
+          <div className="mx-auto mt-10 grid max-w-3xl gap-5 sm:grid-cols-2">
             {googleReviews.map((review) => (
               <blockquote
                 key={review.name}
-                className="flex w-full max-w-lg flex-col rounded-2xl border border-black/8 bg-[#FAFAFA] p-5 text-left md:max-w-xl"
+                className="flex flex-col rounded-2xl border border-black/8 bg-[#FAFAFA] p-5 text-left"
               >
                 <Stars />
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-black/75">
