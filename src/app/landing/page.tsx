@@ -51,19 +51,11 @@ const steps = [
 
 const GOOGLE_REVIEWS_URL = "https://share.google/SfRHlWtMviu8CpwQ5";
 
-/** Client quotes shown on landing — replace with exact Google review text if different. */
+/** Real Google Business reviews */
 const googleReviews = [
   {
-    name: "Andris",
-    text: "Vajadzēja vietni, kas skaidri rāda, ko darām. Sanāca ātri, un tagad klienti zvana paši — bez liekas skaidrošanas.",
-  },
-  {
-    name: "Mārtiņš",
-    text: "Galvenais bija, lai paši varam mainīt saturu. CMS ir saprotams — labojam lapas un pasākumus bez programmētāja.",
-  },
-  {
-    name: "Ilze Bērziņa",
-    text: "No sarunas līdz gatavai lapai — pāris nedēļas. Dizains tīrs, mobilajā skats labs, un cena bija godīga.",
+    name: "Megija Megana",
+    text: "Ļoti laba pieredze. Viss tika izdarīts ātri un kvalitatīvi. Paldies par lielisko darbu! Noteikti iesaku.",
   },
 ] as const;
 
@@ -241,15 +233,15 @@ export default function LandingPage() {
               Ko saka klienti
             </h2>
             <p className="mt-2 max-w-md text-sm text-black/55">
-              Klientu atsauksmes + saite uz mūsu Google profilu.
+              Reālas atsauksmes no Google.
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mx-auto mt-10 grid max-w-lg gap-5 md:max-w-none md:grid-cols-1 md:justify-items-center">
             {googleReviews.map((review) => (
               <blockquote
                 key={review.name}
-                className="flex flex-col rounded-2xl border border-black/8 bg-[#FAFAFA] p-5 text-left"
+                className="flex w-full max-w-lg flex-col rounded-2xl border border-black/8 bg-[#FAFAFA] p-5 text-left md:max-w-xl"
               >
                 <Stars />
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-black/75">
