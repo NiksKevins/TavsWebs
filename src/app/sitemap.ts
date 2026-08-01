@@ -1,12 +1,34 @@
 import type { MetadataRoute } from "next";
+import { headers } from "next/headers";
 import { pagePaths, projects } from "@/lib/data";
 import { routing } from "@/i18n/routing";
 import { absoluteUrl, localizedPath } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
+import { isLandingHost, landingUrl } from "@/lib/landing";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const host = (await headers()).get("host");
   const now = new Date();
-  const entries: MetadataRoute.Sitemap = [];
+
+  if (isLandingHost(host)) {
+    return [
+      {
+        url: landingUrl,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 1,
+      },
+    ];
+  }
+
+  const entries: MetadataRoute.Sitemap = [
+    {
+      url: landingUrl,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+  ];
 
   for (const locale of routing.locales) {
     for (const path of Object.values(pagePaths)) {
@@ -51,8 +73,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Dedupe: with as-needed, lv and en both generate unique URLs; for default locale
-  // path is without prefix. We intentionally emit both locale variants.
   const seen = new Set<string>();
   return entries.filter((entry) => {
     if (seen.has(entry.url)) return false;
