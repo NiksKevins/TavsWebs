@@ -41,7 +41,11 @@ export default function LandingLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="lv" className={`${manrope.variable} h-full antialiased`}>
+    <html
+      lang="lv"
+      className={`${manrope.variable} h-full scroll-smooth antialiased`}
+      style={{ scrollBehavior: "smooth" }}
+    >
       <body
         className="min-h-full bg-black font-[family-name:var(--font-landing)] text-white"
         style={{ fontFamily: "var(--font-landing), system-ui, sans-serif" }}

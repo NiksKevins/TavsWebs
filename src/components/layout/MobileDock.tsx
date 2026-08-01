@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Mail, MessageCircle } from "lucide-react";
@@ -11,11 +12,25 @@ import { cn } from "@/lib/utils";
 export function MobileDock() {
   const t = useTranslations("dock");
   const { direction, scrolled } = useScrollDirection(12);
-  const hidden = scrolled && direction === "down";
+  const [navOpen, setNavOpen] = useState(false);
+  const hidden = navOpen || (scrolled && direction === "down");
+
+  useEffect(() => {
+    const sync = () =>
+      setNavOpen(document.body.hasAttribute("data-nav-open"));
+    sync();
+    const observer = new MutationObserver(sync);
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["data-nav-open"],
+    });
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <motion.nav
       aria-label={t("quickActions")}
+      aria-hidden={hidden}
       className="fixed inset-x-0 bottom-0 z-50 px-3 pb-[calc(0.75rem+var(--safe-bottom))] md:hidden"
       animate={{
         y: hidden ? 120 : 0,

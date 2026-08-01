@@ -29,8 +29,10 @@ export function Navigation() {
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    document.body.toggleAttribute("data-nav-open", open);
     return () => {
       document.body.style.overflow = "";
+      document.body.removeAttribute("data-nav-open");
     };
   }, [open]);
 
@@ -38,7 +40,7 @@ export function Navigation() {
     <>
       <header
         className={cn(
-          "fixed inset-x-0 top-0 z-50 transition-all duration-500",
+          "fixed inset-x-0 top-0 z-[70] transition-all duration-500",
           compact ? "py-2" : "py-5",
         )}
       >
@@ -111,12 +113,12 @@ export function Navigation() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-40 flex flex-col bg-[#05070c]/95 backdrop-blur-xl lg:hidden"
+            className="fixed inset-0 z-[60] flex flex-col bg-[#05070c]/95 backdrop-blur-xl lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="section-pad flex flex-1 flex-col justify-center gap-6 pt-24">
+            <div className="section-pad flex min-h-0 flex-1 flex-col justify-center gap-[clamp(0.5rem,2.2vh,1.25rem)] overflow-y-auto pt-[max(5rem,12vh)] pb-[max(1.5rem,4vh)]">
               {navHrefs.map((link, i) => (
                 <motion.div
                   key={link.href}
@@ -127,7 +129,7 @@ export function Navigation() {
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="display text-5xl text-white"
+                    className="display block text-[clamp(1.75rem,6.5vh,2.75rem)] leading-tight text-white"
                   >
                     {t(link.key)}
                   </Link>
@@ -137,10 +139,10 @@ export function Navigation() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="pt-6"
+                className="pt-[clamp(0.5rem,2vh,1.25rem)]"
               >
                 <Link href="/contact" onClick={() => setOpen(false)}>
-                  <Button size="lg">{t("getQuote")}</Button>
+                  <Button size="md">{t("getQuote")}</Button>
                 </Link>
               </motion.div>
             </div>
