@@ -36,7 +36,6 @@ function ProjectShowcase({
           href={projectHref(project.id)}
           className="group relative block overflow-hidden rounded-[1.5rem] border border-white/10"
           aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
-          data-cursor="hover"
         >
           <div
             className="relative aspect-[16/11] overflow-hidden"

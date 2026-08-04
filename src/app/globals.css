@@ -148,12 +148,3 @@ img[data-nimg="1"] {
     scroll-behavior: auto !important;
   }
 }
-
-/* Custom cursor hide on touch / reduced */
-@media (hover: hover) and (pointer: fine) {
-  body.has-custom-cursor,
-  body.has-custom-cursor a,
-  body.has-custom-cursor button {
-    cursor: none;
-  }
-}

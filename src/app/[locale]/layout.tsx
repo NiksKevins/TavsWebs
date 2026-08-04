@@ -5,7 +5,6 @@ import { Geist_Mono, Manrope, Syne } from "next/font/google";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { Navigation } from "@/components/layout/Navigation";
 import { MobileDock } from "@/components/layout/MobileDock";
-import { CustomCursor } from "@/components/layout/CustomCursor";
 import { Footer } from "@/components/layout/Footer";
 import { routing } from "@/i18n/routing";
 import { site } from "@/lib/data";
@@ -129,7 +128,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           </a>
           <div className="grain" aria-hidden />
           <SmoothScroll>
-            <CustomCursor />
             <Navigation />
             {children}
             <Footer />

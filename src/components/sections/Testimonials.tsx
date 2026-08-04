@@ -31,7 +31,6 @@ export function Testimonials() {
                   style={{
                     transform: `translateY(${index === 1 ? "1.5rem" : index === 2 ? "0.5rem" : "0"})`,
                   }}
-                  data-cursor="hover"
                 >
                   <p className="text-lg leading-relaxed text-white/90">
                     “{t(`items.${i}.quote`)}”
