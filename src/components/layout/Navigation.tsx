@@ -54,14 +54,14 @@ export function Navigation() {
         >
           <Link
             href="/"
-            className="display inline-flex items-center gap-2 text-lg tracking-tight text-white md:text-xl"
+            className="display inline-flex items-center gap-2 text-lg tracking-tight text-white opacity-95 transition hover:opacity-100 md:text-xl"
             aria-label={t("homeAria", { name: site.name })}
           >
-            <BrandMark className="h-6 w-6 shrink-0 md:h-7 md:w-7" />
+            <BrandMark className="h-6 w-6 shrink-0 transition-transform duration-200 group-hover:scale-105 md:h-7 md:w-7" />
             {site.name}
             <span
               aria-hidden
-              className="ml-0.5 inline-block h-1.5 w-1.5 rounded-full bg-accent-bright md:h-2 md:w-2"
+              className="ml-0.5 inline-block h-1.5 w-1.5 rounded-full bg-accent-bright transition-transform duration-200 md:h-2 md:w-2"
             />
           </Link>
 
@@ -77,8 +77,8 @@ export function Navigation() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "text-sm transition-colors hover:text-white",
-                    active ? "text-white" : "text-muted",
+                    "nav-link text-sm",
+                    active ? "text-white" : "text-muted hover:text-white",
                   )}
                   aria-current={active ? "page" : undefined}
                 >
@@ -99,7 +99,7 @@ export function Navigation() {
             <LanguageSwitcher />
             <button
               type="button"
-              className="glass flex h-11 w-11 items-center justify-center rounded-full"
+              className="glass flex h-11 w-11 items-center justify-center rounded-full transition hover:border-white/25 hover:bg-white/[0.08] active:scale-95"
               aria-label={open ? t("closeMenu") : t("openMenu")}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
@@ -129,7 +129,7 @@ export function Navigation() {
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="display block text-[clamp(1.75rem,6.5vh,2.75rem)] leading-tight text-white"
+                    className="display block text-[clamp(1.75rem,6.5vh,2.75rem)] leading-tight text-white/90 transition hover:translate-x-1 hover:text-white"
                   >
                     {t(link.key)}
                   </Link>

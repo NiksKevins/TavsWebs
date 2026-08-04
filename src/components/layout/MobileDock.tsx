@@ -44,8 +44,8 @@ export function MobileDock() {
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
-            "group flex flex-col items-center justify-center gap-1 rounded-2xl py-3 text-[11px] font-medium text-muted transition-colors",
-            "hover:bg-emerald-500/10 hover:text-emerald-400 active:bg-emerald-500/15 active:text-emerald-400",
+            "group flex flex-col items-center justify-center gap-1 rounded-2xl py-3 text-[11px] font-medium text-muted transition-all duration-200",
+            "hover:bg-emerald-500/10 hover:text-emerald-400 hover:-translate-y-0.5 active:translate-y-0 active:bg-emerald-500/15 active:text-emerald-400",
           )}
         >
           <MessageCircle
@@ -56,7 +56,7 @@ export function MobileDock() {
         </a>
         <a
           href={`mailto:${site.email}`}
-          className="group flex flex-col items-center justify-center gap-1 rounded-2xl py-3 text-[11px] font-medium text-muted transition-colors hover:bg-accent/10 hover:text-accent-bright active:bg-accent/15"
+          className="group flex flex-col items-center justify-center gap-1 rounded-2xl py-3 text-[11px] font-medium text-muted transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent/10 hover:text-accent-bright active:translate-y-0 active:bg-accent/15"
         >
           <Mail
             size={20}
@@ -66,7 +66,7 @@ export function MobileDock() {
         </a>
         <Link
           href="/contact"
-          className="flex flex-col items-center justify-center gap-1 rounded-2xl bg-gradient-to-r from-accent to-accent-bright py-3 text-[11px] font-semibold text-white shadow-[0_0_28px_-10px_rgba(59,130,246,0.9)]"
+          className="flex flex-col items-center justify-center gap-1 rounded-2xl bg-gradient-to-r from-accent to-accent-bright py-3 text-[11px] font-semibold text-white shadow-[0_0_28px_-10px_rgba(59,130,246,0.9)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 active:translate-y-0"
         >
           {t("quote")}
         </Link>

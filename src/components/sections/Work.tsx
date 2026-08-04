@@ -34,7 +34,7 @@ function ProjectShowcase({
       >
         <Link
           href={projectHref(project.id)}
-          className="group relative block overflow-hidden rounded-[1.5rem] border border-white/10"
+          className="group relative block overflow-hidden rounded-[1.5rem] border border-white/10 transition-all duration-300 hover:border-accent/35 hover:shadow-[0_20px_50px_-28px_rgba(59,130,246,0.55)]"
           aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
         >
           <div
@@ -86,7 +86,7 @@ function ProjectShowcase({
           </ul>
           <Link
             href={projectHref(project.id)}
-            className="mt-8 inline-flex items-center gap-2 text-sm text-white transition-colors hover:text-accent-bright"
+            className="mt-8 inline-flex items-center gap-2 text-sm text-white transition-all duration-200 hover:gap-3 hover:text-accent-bright"
           >
             {tWork("viewCase")}
             <ArrowUpRight size={16} />
@@ -144,7 +144,7 @@ export function Work({
           <Reveal className="mt-12 flex justify-center md:justify-end">
             <Link
               href="/work"
-              className="inline-flex items-center gap-2 text-sm text-accent-bright hover:text-white"
+              className="inline-flex items-center gap-2 text-sm text-accent-bright transition-all duration-200 hover:gap-3 hover:text-white"
             >
               {t("viewAll")}
               <ArrowUpRight size={16} />

@@ -88,7 +88,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
             <div className="space-y-5">
               <a
                 href={`mailto:${site.email}`}
-                className="glass flex items-center gap-4 rounded-2xl p-4 transition-colors hover:border-accent/30"
+                className="glass card-hover flex items-center gap-4 rounded-2xl p-4"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/15 text-accent-bright">
                   <Mail size={18} />
@@ -100,7 +100,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
               </a>
               <a
                 href={site.phoneHref}
-                className="glass flex items-center gap-4 rounded-2xl p-4 transition-colors hover:border-accent/30"
+                className="glass card-hover flex items-center gap-4 rounded-2xl p-4"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/15 text-accent-bright">
                   <Phone size={18} />
@@ -114,7 +114,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                 href={site.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass flex items-center gap-4 rounded-2xl p-4 transition-colors hover:border-emerald-400/30"
+                className="glass card-hover flex items-center gap-4 rounded-2xl p-4 hover:border-emerald-400/35"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
                   <MessageCircle size={18} />

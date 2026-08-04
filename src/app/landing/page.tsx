@@ -118,22 +118,22 @@ export default function LandingPage() {
             </span>
           </a>
           <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
-            <a href="#pakalpojumi" className="hover:text-white">
+            <a href="#pakalpojumi" className="nav-link transition-colors hover:text-white">
               Pakalpojumi
             </a>
-            <a href="#portfolio" className="hover:text-white">
+            <a href="#portfolio" className="nav-link transition-colors hover:text-white">
               Portfolio
             </a>
-            <a href="#par-mums" className="hover:text-white">
+            <a href="#par-mums" className="nav-link transition-colors hover:text-white">
               Par mums
             </a>
-            <a href="#atsauksmes" className="hover:text-white">
+            <a href="#atsauksmes" className="nav-link transition-colors hover:text-white">
               Atsauksmes
             </a>
           </nav>
           <a
             href="#forma"
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold !text-black transition hover:bg-zinc-100"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold !text-black transition-all duration-200 hover:-translate-y-0.5 hover:bg-zinc-100 active:translate-y-0"
           >
             Sazināties
           </a>
@@ -266,7 +266,7 @@ export default function LandingPage() {
               href={GOOGLE_REVIEWS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-black/15 bg-white px-6 py-3 text-sm font-semibold text-black transition hover:border-black/30 hover:bg-black/[0.03]"
+              className="inline-flex items-center gap-2 rounded-xl border border-black/15 bg-white px-6 py-3 text-sm font-semibold text-black transition-all duration-200 hover:-translate-y-0.5 hover:border-black/30 hover:bg-black/[0.03] active:translate-y-0"
             >
               <GoogleMark className="h-5 w-5" />
               Lasīt visas Google atsauksmes
@@ -286,7 +286,7 @@ export default function LandingPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {portfolio.map((project) => (
               <div key={project.id} className="group">
-                <div className="overflow-hidden rounded-xl border border-white/10 bg-[#111]">
+                <div className="overflow-hidden rounded-xl border border-white/10 bg-[#111] transition-all duration-300 group-hover:-translate-y-1 group-hover:border-white/25">
                   <div className="flex items-center gap-1.5 border-b border-white/10 px-3 py-2">
                     <span className="h-2 w-2 rounded-full bg-white/20" />
                     <span className="h-2 w-2 rounded-full bg-white/20" />
@@ -310,7 +310,7 @@ export default function LandingPage() {
               href={`${site.url}/work`}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-white/30 px-6 py-3 text-sm font-medium transition hover:border-white hover:bg-white/5"
+              className="rounded-xl border border-white/30 px-6 py-3 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:border-white hover:bg-white/5 active:translate-y-0"
             >
               Apskatīt visu portfolio
             </a>
@@ -329,7 +329,7 @@ export default function LandingPage() {
           </p>
           <a
             href="#forma"
-            className="mt-8 inline-flex rounded-xl bg-[#5EEAD4] px-8 py-3.5 text-sm font-semibold !text-black transition hover:bg-[#7af0dc]"
+            className="mt-8 inline-flex rounded-xl bg-[#5EEAD4] px-8 py-3.5 text-sm font-semibold !text-black transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#7af0dc] active:translate-y-0"
           >
             Saņemt bezmaksas piedāvājumu
           </a>
@@ -340,10 +340,10 @@ export default function LandingPage() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-xs text-white/40 sm:flex-row sm:px-8">
           <p>© {new Date().getFullYear()} TavsWebs</p>
           <div className="flex gap-4">
-            <a href={`mailto:${site.email}`} className="hover:text-white">
+            <a href={`mailto:${site.email}`} className="transition-colors hover:text-white">
               {site.email}
             </a>
-            <a href={site.phoneHref} className="hover:text-white">
+            <a href={site.phoneHref} className="transition-colors hover:text-white">
               {site.phone}
             </a>
           </div>

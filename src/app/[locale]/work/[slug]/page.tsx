@@ -149,7 +149,7 @@ export default async function ProjectPage({ params }: Props) {
                 <ul className="mt-4 space-y-2 text-sm text-muted">
                   {services.map((service) => (
                     <li key={service}>
-                      <LocaleLink href="/services" className="hover:text-white">
+                      <LocaleLink href="/services" className="text-link transition-colors">
                         {service}
                       </LocaleLink>
                     </li>
@@ -160,7 +160,7 @@ export default async function ProjectPage({ params }: Props) {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-8 inline-flex items-center gap-2 text-sm text-accent-bright hover:text-white"
+                    className="mt-8 inline-flex items-center gap-2 text-sm text-accent-bright transition-all duration-200 hover:gap-3 hover:text-white"
                   >
                     {tWork("viewLive")}
                     <ArrowUpRight size={14} />
@@ -173,7 +173,7 @@ export default async function ProjectPage({ params }: Props) {
           <div className="mt-20 border-t border-white/8 pt-10">
             <LocaleLink
               href="/work"
-              className="inline-flex items-center gap-2 text-sm text-muted hover:text-white"
+              className="inline-flex items-center gap-2 text-sm text-muted transition-all duration-200 hover:gap-3 hover:text-white"
             >
               <ArrowLeft size={16} />
               {tWork("backToAll")}
@@ -188,7 +188,7 @@ export default async function ProjectPage({ params }: Props) {
                   <LocaleLink
                     key={item.id}
                     href={projectHref(item.id)}
-                    className="glass group overflow-hidden rounded-[1.5rem] transition-colors hover:border-accent/30"
+                    className="glass group overflow-hidden rounded-[1.5rem] transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
                   >
                     <div className="relative aspect-[16/10]">
                       <Image

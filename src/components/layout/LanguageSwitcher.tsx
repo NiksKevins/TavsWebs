@@ -32,10 +32,10 @@ export function LanguageSwitcher({ className }: { className?: string }) {
             aria-label={t("switchTo", { locale: t(code) })}
             aria-pressed={active}
             className={cn(
-              "rounded-full px-2.5 py-1.5 font-medium tracking-wide transition-colors",
+              "rounded-full px-2.5 py-1.5 font-medium tracking-wide transition-all duration-200",
               active
                 ? "bg-accent/20 text-white"
-                : "text-muted hover:text-white",
+                : "text-muted hover:bg-white/[0.08] hover:text-white active:scale-95",
             )}
             onClick={() => {
               if (code === locale) return;

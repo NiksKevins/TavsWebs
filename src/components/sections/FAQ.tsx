@@ -39,7 +39,7 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
                 <div className="border-b border-white/8">
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                    className="group flex w-full items-center justify-between gap-6 py-6 text-left transition-colors hover:text-accent-bright"
                     aria-expanded={isOpen}
                     onClick={() => setOpen(isOpen ? null : i)}
                   >
@@ -48,7 +48,7 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
                     </span>
                     <span
                       className={cn(
-                        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/10 transition-transform duration-300",
+                        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/10 transition-all duration-300 group-hover:border-accent/40 group-hover:bg-accent/10",
                         isOpen && "rotate-45 border-accent/40 bg-accent/10",
                       )}
                     >

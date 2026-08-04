@@ -117,7 +117,7 @@ export function Services({
           <Reveal className="mt-12 flex justify-center md:justify-end">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 text-sm text-accent-bright hover:text-white"
+              className="inline-flex items-center gap-2 text-sm text-accent-bright transition-all duration-200 hover:gap-3 hover:text-white"
             >
               {t("exploreAll")}
               <ArrowUpRight size={16} />
