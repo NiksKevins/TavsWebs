@@ -51,8 +51,10 @@
     "language": "Valoda"
   },
   "hero": {
-    "eyebrow": "Mājaslapu izstrāde Latvijā",
-    "body": "{tagline}. Mājaslapas, CRM sistēmas, aplikācijas, SEO — un jebkas cits, ko tavam biznesam vajag. Ja to var uzprogrammēt, mēs to varam uztaisīt.",
+    "eyebrow": "TavsWebs · mājaslapas no €200",
+    "titleBefore": "Mājaslapa,",
+    "titleAccent": "kas atved klientus",
+    "body": "Skaidra lapa, veikals, CRM vai aplikācija — bez liekas sarežģītības. Piedāvājums 24 stundu laikā.",
     "ctaPrimary": "Uzzināt cenu",
     "ctaSecondary": "Skatīt darbus",
     "explore": "Tālāk"

@@ -95,9 +95,9 @@ function NetworkGlobe({
           />
         </bufferGeometry>
         <lineBasicMaterial
-          color="#3b82f6"
+          color="#14b8a6"
           transparent
-          opacity={0.35}
+          opacity={0.32}
           depthWrite={false}
         />
       </lineSegments>
@@ -126,8 +126,8 @@ function Scene({ isDesktop }: { isDesktop: boolean }) {
   return (
     <>
       <ambientLight intensity={0.35} />
-      <pointLight position={[4, 3, 4]} intensity={1.4} color="#60a5fa" />
-      <pointLight position={[-4, -2, -2]} intensity={0.8} color="#67e8f9" />
+      <pointLight position={[4, 3, 4]} intensity={1.2} color="#5eead4" />
+      <pointLight position={[-4, -2, -2]} intensity={0.7} color="#38bdf8" />
       <Float
         speed={reduced ? 0 : 1.2}
         rotationIntensity={reduced ? 0 : 0.25}
@@ -137,12 +137,12 @@ function Scene({ isDesktop }: { isDesktop: boolean }) {
       </Float>
       {!reduced && isDesktop && (
         <Sparkles
-          count={40}
+          count={36}
           scale={6}
           size={2}
           speed={0.25}
-          opacity={0.35}
-          color="#93c5fd"
+          opacity={0.3}
+          color="#99f6e4"
         />
       )}
     </>

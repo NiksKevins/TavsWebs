@@ -51,8 +51,10 @@
     "language": "Language"
   },
   "hero": {
-    "eyebrow": "Website development in Latvia",
-    "body": "{tagline}. Websites, CRM systems, apps, SEO — and anything else your business needs. If it can be built in code, we can make it happen.",
+    "eyebrow": "TavsWebs · websites from €200",
+    "titleBefore": "A website",
+    "titleAccent": "that brings you clients",
+    "body": "A clear site, store, CRM, or app — without the fluff. Quote within 24 hours.",
     "ctaPrimary": "Get a quote",
     "ctaSecondary": "View work",
     "explore": "Explore"
