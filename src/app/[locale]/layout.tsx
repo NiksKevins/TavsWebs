@@ -7,6 +7,7 @@ import { Navigation } from "@/components/layout/Navigation";
 import { MobileDock } from "@/components/layout/MobileDock";
 import { Footer } from "@/components/layout/Footer";
 import { ChatWidget } from "@/components/ChatWidget";
+import { CursorGlow } from "@/components/CursorGlow";
 import { routing } from "@/i18n/routing";
 import { site } from "@/lib/data";
 import "../globals.css";
@@ -135,6 +136,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <MobileDock />
           </SmoothScroll>
           <ChatWidget />
+          <CursorGlow />
         </NextIntlClientProvider>
       </body>
     </html>
