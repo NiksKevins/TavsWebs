@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react";
 import { useMediaQuery, useReducedMotion } from "@/hooks/useMotion";
 
 /**
- * Soft, desaturated cursor glow — site-wide.
- * Normal OS cursor stays; this is only a light wash under the pointer.
+ * Soft brand-blue cursor wash — site-wide.
+ * Normal OS cursor stays; glow is deliberately dim (no hot white core).
  */
 export function CursorGlow() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -56,11 +56,11 @@ export function CursorGlow() {
 
     const drawGlow = (gx: number, gy: number, radius: number, alpha: number) => {
       const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, radius);
-      // muted teal / mist — intentionally desaturated
-      g.addColorStop(0, `rgba(210, 230, 228, ${0.34 * alpha})`);
-      g.addColorStop(0.18, `rgba(120, 170, 168, ${0.2 * alpha})`);
-      g.addColorStop(0.45, `rgba(70, 120, 125, ${0.1 * alpha})`);
-      g.addColorStop(1, `rgba(40, 70, 80, 0)`);
+      // Brand blues (#60a5fa → #3b82f6), muted — no white hot spot
+      g.addColorStop(0, `rgba(96, 165, 250, ${0.16 * alpha})`);
+      g.addColorStop(0.28, `rgba(59, 130, 246, ${0.1 * alpha})`);
+      g.addColorStop(0.55, `rgba(37, 99, 235, ${0.045 * alpha})`);
+      g.addColorStop(1, `rgba(15, 40, 90, 0)`);
       ctx.fillStyle = g;
       ctx.beginPath();
       ctx.arc(gx, gy, radius, 0, Math.PI * 2);
@@ -70,15 +70,14 @@ export function CursorGlow() {
     const tick = () => {
       if (!running) return;
 
-      // smooth follow
-      x += (tx - x) * 0.16;
-      y += (ty - y) * 0.16;
+      x += (tx - x) * 0.14;
+      y += (ty - y) * 0.14;
 
       if (visible) {
         trail.push({ x, y, a: 1 });
-        if (trail.length > 14) trail.shift();
+        if (trail.length > 10) trail.shift();
       } else if (trail.length) {
-        for (const p of trail) p.a *= 0.9;
+        for (const p of trail) p.a *= 0.88;
         if (trail[0] && trail[0].a < 0.02) trail.shift();
       }
 
@@ -88,13 +87,13 @@ export function CursorGlow() {
       for (let i = 0; i < trail.length; i++) {
         const p = trail[i];
         const t = (i + 1) / trail.length;
-        drawGlow(p.x, p.y, 90 + t * 70, p.a * t * 0.55);
+        drawGlow(p.x, p.y, 70 + t * 50, p.a * t * 0.35);
       }
 
       if (visible || trail.length) {
         const alpha = visible ? 1 : (trail.at(-1)?.a ?? 0);
-        drawGlow(x, y, 220, alpha * 0.85);
-        drawGlow(x, y, 110, alpha);
+        drawGlow(x, y, 180, alpha * 0.7);
+        drawGlow(x, y, 95, alpha * 0.85);
       }
 
       raf = requestAnimationFrame(tick);
@@ -122,7 +121,7 @@ export function CursorGlow() {
     <canvas
       ref={canvasRef}
       aria-hidden
-      className="pointer-events-none fixed inset-0 z-[25] mix-blend-screen"
+      className="pointer-events-none fixed inset-0 z-[25] mix-blend-soft-light opacity-90"
     />
   );
 }
