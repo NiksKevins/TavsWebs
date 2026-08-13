@@ -6,6 +6,7 @@ import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { Navigation } from "@/components/layout/Navigation";
 import { MobileDock } from "@/components/layout/MobileDock";
 import { Footer } from "@/components/layout/Footer";
+import { ChatWidget } from "@/components/ChatWidget";
 import { routing } from "@/i18n/routing";
 import { site } from "@/lib/data";
 import "../globals.css";
@@ -133,6 +134,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Footer />
             <MobileDock />
           </SmoothScroll>
+          <ChatWidget />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import { ChatWidget } from "@/components/ChatWidget";
 import { site } from "@/lib/data";
 import { landingJsonLd, landingSeo, landingUrl } from "@/lib/landing";
 import { ogImageUrl } from "@/lib/seo";
@@ -74,6 +75,7 @@ export default function LandingLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
