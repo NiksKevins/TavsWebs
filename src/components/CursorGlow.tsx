@@ -56,10 +56,9 @@ export function CursorGlow() {
 
     const drawGlow = (gx: number, gy: number, radius: number, alpha: number) => {
       const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, radius);
-      // Brand blues — visible soft wash, no eye-burning white core
-      g.addColorStop(0, `rgba(147, 197, 253, ${0.28 * alpha})`);
-      g.addColorStop(0.22, `rgba(96, 165, 250, ${0.2 * alpha})`);
-      g.addColorStop(0.5, `rgba(59, 130, 246, ${0.1 * alpha})`);
+      g.addColorStop(0, `rgba(96, 165, 250, ${0.18 * alpha})`);
+      g.addColorStop(0.35, `rgba(59, 130, 246, ${0.1 * alpha})`);
+      g.addColorStop(0.7, `rgba(37, 99, 235, ${0.04 * alpha})`);
       g.addColorStop(1, `rgba(30, 64, 175, 0)`);
       ctx.fillStyle = g;
       ctx.beginPath();
