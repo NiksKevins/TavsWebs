@@ -5,11 +5,10 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["three"],
   poweredByHeader: false,
   compress: true,
   experimental: {
-    optimizePackageImports: ["lucide-react", "framer-motion", "@react-three/drei"],
+    optimizePackageImports: ["lucide-react", "framer-motion"],
   },
   headers: async () => [
     {

@@ -196,6 +196,115 @@ img[data-nimg="1"] {
   line-height: 0.95;
 }
 
+/* Hero atmosphere — animated backdrop + smoke trail support */
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.55;
+  will-change: transform;
+  animation: hero-orb-float 18s ease-in-out infinite;
+}
+
+.hero-orb-a {
+  top: 8%;
+  right: 8%;
+  width: min(46vw, 520px);
+  height: min(46vw, 520px);
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.45), transparent 68%);
+}
+
+.hero-orb-b {
+  bottom: 5%;
+  left: -5%;
+  width: min(52vw, 580px);
+  height: min(52vw, 580px);
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.32), transparent 70%);
+  animation-duration: 24s;
+  animation-direction: reverse;
+}
+
+.hero-orb-c {
+  top: 40%;
+  left: 35%;
+  width: min(30vw, 320px);
+  height: min(30vw, 320px);
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.18), transparent 70%);
+  animation-duration: 20s;
+  animation-delay: -6s;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: -20%;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 60% 40%, black 20%, transparent 75%);
+  animation: hero-grid-drift 40s linear infinite;
+}
+
+.hero-sparkles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-sparkles span {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 9999px;
+  background: rgba(167, 243, 208, 0.75);
+  box-shadow: 0 0 12px rgba(45, 212, 191, 0.55);
+  left: calc(8% + (var(--i) * 5.1%));
+  top: calc(12% + ((var(--i) * 17) % 70) * 1%);
+  animation: hero-sparkle 7s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.35s);
+  opacity: 0.35;
+}
+
+@keyframes hero-orb-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2%, -3%, 0) scale(1.08);
+  }
+}
+
+@keyframes hero-grid-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(64px, 64px, 0);
+  }
+}
+
+@keyframes hero-sparkle {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translate3d(0, -14px, 0) scale(1.25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-orb,
+  .hero-grid,
+  .hero-sparkles span {
+    animation: none !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

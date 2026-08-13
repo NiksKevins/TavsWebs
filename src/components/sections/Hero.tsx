@@ -1,59 +1,22 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
-import { useMediaQuery } from "@/hooks/useMotion";
-
-const HeroScene = dynamic(
-  () =>
-    import("@/components/three/HeroScene").then((m) => m.HeroScene),
-  { ssr: false, loading: () => <div className="absolute inset-0 bg-bg" /> },
-);
+import { HeroAtmosphere } from "@/components/hero/HeroAtmosphere";
 
 export function Hero() {
   const t = useTranslations("hero");
   const reduced = useReducedMotion();
-  const isDesktop = useMediaQuery("(min-width: 768px)");
-  const [showScene, setShowScene] = useState(false);
-
-  // Defer WebGL until after first paint — biggest LCP/TBT win on mobile
-  useEffect(() => {
-    if (reduced) return;
-
-    const start = () => setShowScene(true);
-
-    if ("requestIdleCallback" in window) {
-      const id = requestIdleCallback(start, { timeout: isDesktop ? 800 : 2000 });
-      return () => cancelIdleCallback(id);
-    }
-
-    const timer = setTimeout(start, isDesktop ? 400 : 1500);
-    return () => clearTimeout(timer);
-  }, [reduced, isDesktop]);
 
   return (
     <section
       id="top"
       className="relative flex min-h-[100vh] flex-col justify-end overflow-hidden pb-24 pt-32 md:justify-center md:pb-20"
     >
-      {showScene ? (
-        <HeroScene />
-      ) : (
-        <div
-          aria-hidden
-          className="absolute inset-0 -z-0 bg-[radial-gradient(ellipse_at_75%_35%,rgba(20,184,166,0.14),transparent_50%),radial-gradient(ellipse_at_20%_80%,rgba(59,130,246,0.12),transparent_45%),#05070c]"
-        />
-      )}
-
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(105deg,rgba(5,7,12,0.88)_0%,rgba(5,7,12,0.45)_42%,rgba(5,7,12,0.2)_62%,rgba(5,7,12,0.75)_100%)]"
-      />
+      <HeroAtmosphere />
 
       <div className="section-pad relative z-10 mx-auto w-full max-w-[1400px]">
         <motion.p
