@@ -56,11 +56,11 @@ export function CursorGlow() {
 
     const drawGlow = (gx: number, gy: number, radius: number, alpha: number) => {
       const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, radius);
-      // Brand blues (#60a5fa → #3b82f6), muted — no white hot spot
-      g.addColorStop(0, `rgba(96, 165, 250, ${0.16 * alpha})`);
-      g.addColorStop(0.28, `rgba(59, 130, 246, ${0.1 * alpha})`);
-      g.addColorStop(0.55, `rgba(37, 99, 235, ${0.045 * alpha})`);
-      g.addColorStop(1, `rgba(15, 40, 90, 0)`);
+      // Brand blues — visible soft wash, no eye-burning white core
+      g.addColorStop(0, `rgba(147, 197, 253, ${0.28 * alpha})`);
+      g.addColorStop(0.22, `rgba(96, 165, 250, ${0.2 * alpha})`);
+      g.addColorStop(0.5, `rgba(59, 130, 246, ${0.1 * alpha})`);
+      g.addColorStop(1, `rgba(30, 64, 175, 0)`);
       ctx.fillStyle = g;
       ctx.beginPath();
       ctx.arc(gx, gy, radius, 0, Math.PI * 2);
@@ -70,12 +70,12 @@ export function CursorGlow() {
     const tick = () => {
       if (!running) return;
 
-      x += (tx - x) * 0.14;
-      y += (ty - y) * 0.14;
+      x += (tx - x) * 0.15;
+      y += (ty - y) * 0.15;
 
       if (visible) {
         trail.push({ x, y, a: 1 });
-        if (trail.length > 10) trail.shift();
+        if (trail.length > 12) trail.shift();
       } else if (trail.length) {
         for (const p of trail) p.a *= 0.88;
         if (trail[0] && trail[0].a < 0.02) trail.shift();
@@ -87,13 +87,13 @@ export function CursorGlow() {
       for (let i = 0; i < trail.length; i++) {
         const p = trail[i];
         const t = (i + 1) / trail.length;
-        drawGlow(p.x, p.y, 70 + t * 50, p.a * t * 0.35);
+        drawGlow(p.x, p.y, 80 + t * 55, p.a * t * 0.5);
       }
 
       if (visible || trail.length) {
         const alpha = visible ? 1 : (trail.at(-1)?.a ?? 0);
-        drawGlow(x, y, 180, alpha * 0.7);
-        drawGlow(x, y, 95, alpha * 0.85);
+        drawGlow(x, y, 200, alpha * 0.9);
+        drawGlow(x, y, 105, alpha);
       }
 
       raf = requestAnimationFrame(tick);
@@ -121,7 +121,7 @@ export function CursorGlow() {
     <canvas
       ref={canvasRef}
       aria-hidden
-      className="pointer-events-none fixed inset-0 z-[25] mix-blend-soft-light opacity-90"
+      className="pointer-events-none fixed inset-0 z-[25] mix-blend-screen"
     />
   );
 }
