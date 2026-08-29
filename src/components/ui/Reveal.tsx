@@ -1,8 +1,11 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { ReactNode } from "react";
+import { EASE_OUT_EXPO, EASE_OUT_QUART, fadeUp, fadeUpLite } from "@/lib/motion";
 import { cn } from "@/lib/utils";
+
+type RevealMode = "default" | "blur" | "scale" | "lite";
 
 interface RevealProps {
   children: ReactNode;
@@ -10,14 +13,31 @@ interface RevealProps {
   delay?: number;
   y?: number;
   once?: boolean;
+  mode?: RevealMode;
 }
+
+const modes: Record<RevealMode, Variants> = {
+  default: fadeUp,
+  blur: fadeUp,
+  scale: {
+    hidden: { opacity: 0, y: 32, scale: 0.96 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 0.85, ease: EASE_OUT_EXPO },
+    },
+  },
+  lite: fadeUpLite,
+};
 
 export function Reveal({
   children,
   className,
   delay = 0,
-  y = 36,
+  y,
   once = true,
+  mode = "default",
 }: RevealProps) {
   const reduced = useReducedMotion();
 
@@ -25,17 +45,38 @@ export function Reveal({
     return <div className={className}>{children}</div>;
   }
 
+  const base = modes[mode];
+  const variants: Variants = y
+    ? {
+        hidden: { ...base.hidden, y },
+        visible: {
+          ...(typeof base.visible === "object" ? base.visible : {}),
+          transition: {
+            duration: 0.85,
+            ease: EASE_OUT_QUART,
+            delay,
+          },
+        },
+      }
+    : {
+        hidden: base.hidden,
+        visible: {
+          ...(typeof base.visible === "object" ? base.visible : {}),
+          transition: {
+            duration: 0.85,
+            ease: EASE_OUT_QUART,
+            delay,
+          },
+        },
+      };
+
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once, margin: "-10% 0px" }}
-      transition={{
-        duration: 0.9,
-        delay,
-        ease: [0.22, 1, 0.36, 1],
-      }}
+      variants={variants}
     >
       {children}
     </motion.div>

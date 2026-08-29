@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import {
   GOOGLE_REVIEWS_URL,
@@ -9,6 +10,9 @@ import {
 } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
+import { Stagger, StaggerItem } from "@/components/ui/Stagger";
+import { WordReveal } from "@/components/ui/TextReveal";
+import { springSnappy } from "@/lib/motion";
 
 function GoogleMark({ className }: { className?: string }) {
   return (
@@ -51,17 +55,21 @@ export function Testimonials() {
   return (
     <section className="section-pad py-20 md:py-28">
       <div className="mx-auto max-w-[1400px]">
-        <Reveal>
+        <Reveal mode="blur">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
               <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
-              <h2 className="display mt-4 text-4xl md:text-5xl">{t("title")}</h2>
+              <h2 className="display mt-4 text-4xl md:text-5xl">
+                <WordReveal text={t("title")} delay={0.08} />
+              </h2>
             </div>
-            <a
+            <motion.a
               href={GOOGLE_REVIEWS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="card inline-flex items-center gap-3 self-start border-l-[3px] border-l-highlight px-5 py-3 transition-shadow hover:shadow-md"
+              className="card inline-flex items-center gap-3 self-start border-l-[3px] border-l-highlight px-5 py-3"
+              whileHover={{ y: -4, boxShadow: "0 12px 40px rgba(28,25,23,0.08)" }}
+              transition={springSnappy}
             >
               <GoogleMark className="h-6 w-6" />
               <div>
@@ -71,14 +79,18 @@ export function Testimonials() {
                   {t("googleLabel")}
                 </p>
               </div>
-            </a>
+            </motion.a>
           </div>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {googleReviews.map((review, index) => (
-            <Reveal key={review.name} delay={index * 0.06}>
-              <blockquote className="card flex h-full flex-col border-l-[3px] border-l-accent/25 p-6 md:p-7">
+        <Stagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3" stagger={0.08}>
+          {googleReviews.map((review) => (
+            <StaggerItem key={review.name}>
+              <motion.blockquote
+                className="card flex h-full flex-col border-l-[3px] border-l-accent/25 p-6 md:p-7"
+                whileHover={{ y: -6 }}
+                transition={springSnappy}
+              >
                 <Stars />
                 <p className="mt-4 flex-1 leading-relaxed text-text">
                   &ldquo;{isLv ? review.textLv : review.text}&rdquo;
@@ -87,13 +99,17 @@ export function Testimonials() {
                   <p className="font-medium">{review.name}</p>
                   <p className="mt-0.5 text-xs text-dim">{t("googleSource")}</p>
                 </footer>
-              </blockquote>
-            </Reveal>
+              </motion.blockquote>
+            </StaggerItem>
           ))}
 
-          {testimonialIndexes.slice(0, 1).map((i, index) => (
-            <Reveal key={i} delay={(googleReviews.length + index) * 0.06}>
-              <blockquote className="card flex h-full flex-col border-l-[3px] border-l-accent/25 p-6 md:p-7">
+          {testimonialIndexes.slice(0, 1).map((i) => (
+            <StaggerItem key={i}>
+              <motion.blockquote
+                className="card flex h-full flex-col border-l-[3px] border-l-accent/25 p-6 md:p-7"
+                whileHover={{ y: -6 }}
+                transition={springSnappy}
+              >
                 <p className="flex-1 leading-relaxed text-text">
                   &ldquo;{t(`items.${i}.quote`)}&rdquo;
                 </p>
@@ -101,12 +117,12 @@ export function Testimonials() {
                   <p className="font-medium">{t(`items.${i}.name`)}</p>
                   <p className="mt-0.5 text-sm text-dim">{t(`items.${i}.role`)}</p>
                 </footer>
-              </blockquote>
-            </Reveal>
+              </motion.blockquote>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
 
-        <Reveal className="mt-8 text-center">
+        <Reveal className="mt-8 text-center" delay={0.1}>
           <a
             href={GOOGLE_REVIEWS_URL}
             target="_blank"

@@ -1,10 +1,14 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { featuredProjectIds, projects, projectHref, type ProjectMeta } from "@/lib/data";
+import { AnimatedLink } from "@/components/ui/AnimatedLink";
 import { Reveal } from "@/components/ui/Reveal";
+import { WordReveal } from "@/components/ui/TextReveal";
+import { springSnappy } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 function ProjectCard({
@@ -17,21 +21,28 @@ function ProjectCard({
   const t = useTranslations("projects");
   const tWork = useTranslations("work");
   const metrics = t.raw(`${project.id}.metrics`) as string[];
+  const reduced = useReducedMotion();
 
   return (
-    <Reveal delay={index * 0.06} className="h-full shrink-0 sm:shrink lg:shrink">
-      <article className="group card-hover flex h-full w-[min(85vw,360px)] flex-col overflow-hidden sm:w-[340px] lg:w-auto">
+    <Reveal delay={index * 0.08} mode="scale" className="h-full shrink-0 sm:shrink lg:shrink">
+      <motion.article
+        className="group card-hover flex h-full w-[min(85vw,360px)] flex-col overflow-hidden sm:w-[340px] lg:w-auto"
+        whileHover={reduced ? undefined : { y: -8 }}
+        transition={springSnappy}
+      >
         <Link
           href={projectHref(project.id)}
           className="relative block aspect-[16/11] overflow-hidden bg-surface"
           aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
         >
-          <img
+          <motion.img
             src={project.image}
             alt={t(`${project.id}.title`)}
-            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+            className="h-full w-full object-cover object-top"
             loading={index === 0 ? "eager" : "lazy"}
             decoding="async"
+            whileHover={reduced ? undefined : { scale: 1.05 }}
+            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
           />
         </Link>
         <div className="flex flex-1 flex-col p-5 md:p-6">
@@ -59,15 +70,13 @@ function ProjectCard({
               </li>
             ))}
           </ul>
-          <Link
-            href={projectHref(project.id)}
-            className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-all duration-200 hover:gap-2.5"
-          >
-            {tWork("viewCase")}
-            <ArrowUpRight size={14} />
+          <Link href={projectHref(project.id)} className="mt-5 inline-block">
+            <AnimatedLink showArrow>
+              <span className="text-sm">{tWork("viewCase")}</span>
+            </AnimatedLink>
           </Link>
         </div>
-      </article>
+      </motion.article>
     </Reveal>
   );
 }
@@ -95,13 +104,13 @@ export function Work({
       >
         <div className="mx-auto max-w-[1400px]">
           {showHeader && (
-            <Reveal>
+            <Reveal mode="blur">
               <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                 <h2
                   id="work-heading"
                   className="display max-w-[14ch] text-4xl md:text-5xl lg:text-6xl"
                 >
-                  {t("homeTitle")}
+                  <WordReveal text={t("homeTitle")} delay={0.08} />
                 </h2>
                 <p className="max-w-xs text-sm text-muted">{t("subtitle")}</p>
               </div>

@@ -66,11 +66,13 @@ export function Navigation() {
           compact ? "py-2" : "py-4",
         )}
       >
-        <div
+        <motion.div
+          layout
           className={cn(
-            "section-pad mx-auto flex max-w-[1400px] items-center justify-between rounded-2xl transition-all duration-500",
+            "section-pad mx-auto flex max-w-[1400px] items-center justify-between rounded-2xl transition-colors duration-500",
             compact ? "glass py-2.5" : "bg-bg/80 py-1 backdrop-blur-sm",
           )}
+          transition={{ type: "spring", stiffness: 380, damping: 34 }}
         >
           <Link
             href="/"
@@ -189,7 +191,7 @@ export function Navigation() {
               {open ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
-        </div>
+        </motion.div>
       </header>
 
       <AnimatePresence>
