@@ -111,7 +111,7 @@ export default function LandingPage() {
             </a>
             <a
               href="#forma"
-              className="inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-accent to-accent-bright px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:brightness-105"
+              className="inline-flex shrink-0 items-center justify-center rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-accent-bright hover:-translate-y-0.5"
             >
               Sazināties
             </a>
@@ -250,7 +250,7 @@ export default function LandingPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {realProjects.map((project) => (
               <div key={project.id} className="group card overflow-hidden">
-                <div className="relative aspect-[16/11] overflow-hidden bg-slate-100">
+                <div className="relative aspect-[16/11] overflow-hidden bg-surface">
                   <Image
                     src={project.image}
                     alt={project.id}
@@ -285,7 +285,7 @@ export default function LandingPage() {
           </p>
           <a
             href="#forma"
-            className="mt-8 inline-flex rounded-full bg-gradient-to-r from-accent to-accent-bright px-8 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:brightness-105"
+            className="mt-8 inline-flex rounded-xl bg-accent px-8 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-accent-bright hover:-translate-y-0.5"
           >
             Saņemt bezmaksas piedāvājumu
           </a>

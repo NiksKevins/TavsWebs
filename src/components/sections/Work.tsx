@@ -23,7 +23,7 @@ function ProjectCard({
       <article className="group card-hover flex h-full w-[min(85vw,360px)] flex-col overflow-hidden sm:w-[340px] lg:w-auto">
         <Link
           href={projectHref(project.id)}
-          className="relative block aspect-[16/11] overflow-hidden bg-slate-100"
+          className="relative block aspect-[16/11] overflow-hidden bg-surface"
           aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
         >
           <img
@@ -53,7 +53,7 @@ function ProjectCard({
             {metrics.slice(0, 2).map((m) => (
               <li
                 key={m}
-                className="rounded-full bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent"
+                className="rounded-full bg-highlight-muted px-2.5 py-1 text-xs font-medium text-accent"
               >
                 {m}
               </li>
@@ -209,7 +209,7 @@ function ProjectShowcase({
           <div
             className="relative aspect-[16/11] overflow-hidden"
             style={{
-              background: `radial-gradient(120% 90% at ${isLeft ? "20%" : "80%"} 10%, ${project.glow}, transparent 55%), linear-gradient(145deg, ${project.accent}, #f1f5f9 70%)`,
+              background: `radial-gradient(120% 90% at ${isLeft ? "20%" : "80%"} 10%, ${project.glow}, transparent 55%), linear-gradient(145deg, ${project.accent}, #f3efe8 70%)`,
             }}
           >
             <img

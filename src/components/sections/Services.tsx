@@ -60,7 +60,7 @@ export function Services({
                       "rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide align-middle",
                       badge === "popular"
                         ? "bg-accent text-white"
-                        : "bg-cyan text-white",
+                        : "bg-highlight text-white",
                     )}
                   >
                     {t(`badges.${badge}`)}
@@ -131,7 +131,7 @@ export function Services({
 
                   <div
                     className={cn(
-                      "relative hidden aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-slate-100 md:col-span-4 md:block",
+                      "relative hidden aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-surface md:col-span-4 md:block",
                       flip ? "md:order-1 md:col-start-1" : "md:col-start-9",
                     )}
                   >

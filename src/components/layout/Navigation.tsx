@@ -81,7 +81,7 @@ export function Navigation() {
             {site.name}
             <span
               aria-hidden
-              className="ml-0.5 inline-block h-1.5 w-1.5 rounded-full bg-accent md:h-2 md:w-2"
+              className="ml-0.5 inline-block h-1.5 w-1.5 rounded-full bg-highlight md:h-2 md:w-2"
             />
           </Link>
 
@@ -94,7 +94,7 @@ export function Navigation() {
                 type="button"
                 className={cn(
                   "nav-link inline-flex items-center gap-1 text-sm",
-                  isServicesActive ? "text-text font-medium" : "text-muted hover:text-text",
+                  isServicesActive ? "text-accent font-medium" : "text-muted hover:text-text",
                 )}
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
@@ -123,7 +123,7 @@ export function Navigation() {
                       <Link
                         key={item.id}
                         href={serviceHref(item.id)}
-                        className="block px-4 py-2.5 text-sm text-muted transition-colors hover:bg-slate-50 hover:text-text"
+                        className="block px-4 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-text"
                         onClick={() => setServicesOpen(false)}
                       >
                         {t(`serviceItems.${item.id}`)}
@@ -132,7 +132,7 @@ export function Navigation() {
                     <div className="mx-3 my-2 border-t border-border" />
                     <Link
                       href="/services"
-                      className="block px-4 py-2.5 text-sm font-medium text-accent transition-colors hover:bg-slate-50"
+                      className="block px-4 py-2.5 text-sm font-medium text-accent transition-colors hover:bg-surface"
                       onClick={() => setServicesOpen(false)}
                     >
                       {t("allServices")} →
@@ -151,7 +151,7 @@ export function Navigation() {
                   href={link.href}
                   className={cn(
                     "nav-link text-sm",
-                    active ? "text-text font-medium" : "text-muted hover:text-text",
+                    active ? "text-accent font-medium" : "text-muted hover:text-text",
                   )}
                   aria-current={active ? "page" : undefined}
                 >

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { site, timelineYears } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 
 export function About({ showHeader = true }: { showHeader?: boolean }) {
   const t = useTranslations("about");
@@ -14,9 +15,7 @@ export function About({ showHeader = true }: { showHeader?: boolean }) {
           <div className="lg:col-span-5">
             {showHeader ? (
               <Reveal>
-                <p className="text-xs uppercase tracking-[0.28em] text-dim">
-                  {t("eyebrow")}
-                </p>
+                <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
                 <h2 className="display mt-4 text-5xl md:text-6xl lg:text-7xl">
                   {t("titleLead")}{" "}
                   <span className="text-gradient">{t("titleAccent")}</span>
@@ -33,8 +32,8 @@ export function About({ showHeader = true }: { showHeader?: boolean }) {
 
           <div className="lg:col-span-6 lg:col-start-7">
             <div className="relative mb-14 aspect-[5/4] overflow-hidden rounded-[2rem] border border-border bg-bg-elevated shadow-sm">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(37,99,235,0.12),transparent_50%),linear-gradient(145deg,#f1f5f9,#ffffff)]" />
-              <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(15,23,42,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.04)_1px,transparent_1px)] [background-size:48px_48px]" />
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(27,61,111,0.08),transparent_50%),linear-gradient(145deg,#f3efe8,#fffdf9)]" />
+              <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(28,25,23,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(28,25,23,0.035)_1px,transparent_1px)] [background-size:48px_48px]" />
               <div className="absolute bottom-6 left-6 right-6 glass rounded-2xl p-5">
                 <p className="text-sm text-muted">{t("philosophyLabel")}</p>
                 <p className="display mt-2 text-2xl">{t("philosophy")}</p>
@@ -45,7 +44,7 @@ export function About({ showHeader = true }: { showHeader?: boolean }) {
               {timelineYears.map((year, i) => (
                 <Reveal key={year} delay={i * 0.06}>
                   <li className="relative">
-                    <span className="absolute -left-[2.4rem] top-1.5 h-3 w-3 rounded-full border border-accent-bright bg-bg" />
+                    <span className="absolute -left-[2.4rem] top-1.5 h-3 w-3 rounded-full border border-highlight bg-bg" />
                     <p className="font-mono text-xs text-accent-bright">
                       {year}
                     </p>

@@ -35,7 +35,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
               "rounded-full px-2.5 py-1.5 font-medium tracking-wide transition-all duration-200",
               active
                 ? "bg-accent text-white"
-                : "text-muted hover:bg-slate-100 hover:text-text active:scale-95",
+                : "text-muted hover:bg-surface hover:text-text active:scale-95",
             )}
             onClick={() => {
               if (code === locale) return;

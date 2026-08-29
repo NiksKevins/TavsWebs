@@ -38,19 +38,19 @@ export function MobileDock() {
       }}
       transition={{ type: "spring", stiffness: 380, damping: 34 }}
     >
-      <div className="glass mx-auto grid max-w-md grid-cols-3 gap-1 rounded-[1.35rem] p-1.5 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.85)]">
+      <div className="glass mx-auto grid max-w-md grid-cols-3 gap-1 rounded-xl p-1.5 shadow-[0_12px_40px_-16px_rgba(28,25,23,0.35)]">
         <a
           href={site.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
             "group flex flex-col items-center justify-center gap-1 rounded-2xl py-3 text-[11px] font-medium text-muted transition-all duration-200",
-            "hover:bg-emerald-500/10 hover:text-emerald-400 hover:-translate-y-0.5 active:translate-y-0 active:bg-emerald-500/15 active:text-emerald-400",
+            "hover:bg-emerald-50 hover:text-emerald-700 hover:-translate-y-0.5 active:translate-y-0 active:bg-emerald-100 active:text-emerald-800",
           )}
         >
           <MessageCircle
             size={20}
-            className="transition-colors group-hover:text-emerald-400"
+            className="transition-colors group-hover:text-emerald-700"
           />
           {t("whatsapp")}
         </a>
@@ -66,7 +66,7 @@ export function MobileDock() {
         </a>
         <Link
           href="/contact"
-          className="flex flex-col items-center justify-center gap-1 rounded-2xl bg-gradient-to-r from-accent to-accent-bright py-3 text-[11px] font-semibold text-white shadow-[0_0_28px_-10px_rgba(59,130,246,0.9)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 active:translate-y-0"
+          className="flex flex-col items-center justify-center gap-1 rounded-xl bg-accent py-3 text-[11px] font-semibold text-white shadow-[0_4px_16px_-4px_rgba(10,95,168,0.45)] transition-all duration-200 hover:bg-accent-bright hover:-translate-y-0.5 active:translate-y-0"
         >
           {t("quote")}
         </Link>

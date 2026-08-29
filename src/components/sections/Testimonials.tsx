@@ -8,6 +8,7 @@ import {
   testimonialIndexes,
 } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 
 function GoogleMark({ className }: { className?: string }) {
   return (
@@ -53,16 +54,14 @@ export function Testimonials() {
         <Reveal>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-dim">
-                {t("eyebrow")}
-              </p>
+              <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
               <h2 className="display mt-4 text-4xl md:text-5xl">{t("title")}</h2>
             </div>
             <a
               href={GOOGLE_REVIEWS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="card inline-flex items-center gap-3 self-start px-5 py-3 transition-shadow hover:shadow-md"
+              className="card inline-flex items-center gap-3 self-start border-l-[3px] border-l-highlight px-5 py-3 transition-shadow hover:shadow-md"
             >
               <GoogleMark className="h-6 w-6" />
               <div>
@@ -79,7 +78,7 @@ export function Testimonials() {
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {googleReviews.map((review, index) => (
             <Reveal key={review.name} delay={index * 0.06}>
-              <blockquote className="card flex h-full flex-col p-6 md:p-7">
+              <blockquote className="card flex h-full flex-col border-l-[3px] border-l-accent/25 p-6 md:p-7">
                 <Stars />
                 <p className="mt-4 flex-1 leading-relaxed text-text">
                   &ldquo;{isLv ? review.textLv : review.text}&rdquo;
@@ -94,7 +93,7 @@ export function Testimonials() {
 
           {testimonialIndexes.slice(0, 1).map((i, index) => (
             <Reveal key={i} delay={(googleReviews.length + index) * 0.06}>
-              <blockquote className="card flex h-full flex-col p-6 md:p-7">
+              <blockquote className="card flex h-full flex-col border-l-[3px] border-l-accent/25 p-6 md:p-7">
                 <p className="flex-1 leading-relaxed text-text">
                   &ldquo;{t(`items.${i}.quote`)}&rdquo;
                 </p>

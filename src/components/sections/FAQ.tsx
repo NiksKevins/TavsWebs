@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Plus } from "lucide-react";
 import { faqIndexes } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 import { cn } from "@/lib/utils";
 
 export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
@@ -23,9 +24,7 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
       >
         {showHeader && (
           <Reveal className="lg:col-span-4">
-            <p className="text-xs uppercase tracking-[0.28em] text-dim">
-              {t("eyebrow")}
-            </p>
+            <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
             <h2 className="display mt-4 text-4xl md:text-5xl">{t("title")}</h2>
             <p className="mt-4 text-muted">{t("subtitle")}</p>
           </Reveal>
@@ -48,8 +47,8 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
                     </span>
                     <span
                       className={cn(
-                        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-bg-elevated transition-all duration-300 group-hover:border-accent/40 group-hover:bg-accent/5",
-                        isOpen && "rotate-45 border-accent/40 bg-accent/5",
+                        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-bg-elevated transition-all duration-300 group-hover:border-highlight/50 group-hover:bg-highlight-muted",
+                        isOpen && "rotate-45 border-highlight/50 bg-highlight-muted text-accent",
                       )}
                     >
                       <Plus size={16} />

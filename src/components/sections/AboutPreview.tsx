@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { stats } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 
 export function AboutPreview() {
   const t = useTranslations("aboutPreview");
@@ -14,9 +15,7 @@ export function AboutPreview() {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
-            <p className="text-xs uppercase tracking-[0.28em] text-dim">
-              {t("eyebrow")}
-            </p>
+            <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
             <h2 className="display mt-4 text-4xl md:text-5xl">{t("title")}</h2>
             <p className="mt-6 max-w-lg leading-relaxed text-muted">{t("body")}</p>
             <p className="mt-4 max-w-lg leading-relaxed text-muted">{t("body2")}</p>
@@ -34,7 +33,7 @@ export function AboutPreview() {
               {stats.map((stat) => (
                 <div
                   key={stat.key}
-                  className="card flex flex-col justify-center p-6 md:p-8"
+                  className="stat-card card flex flex-col justify-center p-6 md:p-8"
                 >
                   <p className="display text-4xl text-accent md:text-5xl">
                     {stat.value}

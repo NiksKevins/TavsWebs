@@ -10,6 +10,7 @@ import {
 } from "framer-motion";
 import { processStepIds } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 
 export function Process({ showHeader = true }: { showHeader?: boolean }) {
   const t = useTranslations("process");
@@ -33,9 +34,7 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
       {showHeader && (
         <div className="section-pad mx-auto max-w-[1400px] pt-24 md:pt-32">
           <Reveal>
-            <p className="text-xs uppercase tracking-[0.28em] text-dim">
-              {t("eyebrow")}
-            </p>
+            <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
             <h2 className="display mt-4 text-5xl md:text-7xl">
               {t("titleLead")}{" "}
               <span className="text-gradient">{t("titleAccent")}</span>
@@ -97,14 +96,14 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
                           className="h-full w-full"
                           style={{
                             background: `
-                              radial-gradient(circle at ${20 + i * 15}% ${30 + i * 8}%, rgba(37,99,235,0.15), transparent 45%),
-                              radial-gradient(circle at ${70 - i * 10}% ${60}% , rgba(14,165,233,0.1), transparent 40%),
-                              linear-gradient(160deg, #f1f5f9, #ffffff)
+                              radial-gradient(circle at ${20 + i * 15}% ${30 + i * 8}%, rgba(27,61,111,0.1), transparent 45%),
+                              radial-gradient(circle at ${70 - i * 10}% ${60}% , rgba(139,115,85,0.08), transparent 40%),
+                              linear-gradient(160deg, #f3efe8, #fffdf9)
                             `,
                           }}
                         />
                         <div className="pointer-events-none absolute inset-0 flex items-end p-8 md:p-12">
-                          <span className="display text-[clamp(4rem,12vw,9rem)] leading-none text-slate-200">
+                          <span className="display text-[clamp(4rem,12vw,9rem)] leading-none text-surface-muted">
                             {t(`steps.${id}.title`)}
                           </span>
                         </div>

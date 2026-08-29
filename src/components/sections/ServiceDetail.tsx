@@ -12,6 +12,7 @@ import {
   type ServiceId,
 } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
 export async function ServiceDetail({ id }: { id: ServiceId }) {
@@ -27,7 +28,7 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
       <section className="section-pad pb-16 md:pb-24">
         <div className="mx-auto max-w-[1400px]">
           <Reveal>
-            <div className="relative aspect-[21/9] overflow-hidden rounded-[1.5rem] border border-border bg-slate-100 md:rounded-[2rem]">
+            <div className="relative aspect-[21/9] overflow-hidden rounded-[1.5rem] border border-border bg-surface md:rounded-[2rem]">
               <Image
                 src={serviceImages[id]}
                 alt={t(`items.${id}.title`)}
@@ -42,7 +43,7 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
                     "absolute left-4 top-4 rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-wide",
                     badge === "popular"
                       ? "bg-accent text-white"
-                      : "bg-cyan text-white",
+                      : "bg-highlight text-white",
                   )}
                 >
                   {t(`badges.${badge}`)}
@@ -90,19 +91,15 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
                 </ul>
 
                 <div className="mt-8 flex flex-col gap-3">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-bright px-6 py-3 text-sm font-semibold text-white transition hover:brightness-105"
-                  >
-                    {t("ctaButton")}
-                    <ArrowUpRight size={16} />
+                  <Link href="/contact">
+                    <Button className="w-full">{t("ctaButton")}</Button>
                   </Link>
                   {externalUrl && (
                     <a
                       href={externalUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-text transition hover:border-accent/30 hover:bg-slate-50"
+                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-border px-6 py-3 text-sm font-medium text-text transition hover:border-border-strong hover:bg-surface"
                     >
                       {t("tryDemo")}
                       <ExternalLink size={16} />
@@ -140,7 +137,7 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
                   href={serviceHref(relatedId)}
                   className="group card-hover overflow-hidden"
                 >
-                  <div className="relative aspect-[16/10] bg-slate-100">
+                  <div className="relative aspect-[16/10] bg-surface">
                     <Image
                       src={serviceImages[relatedId]}
                       alt={t(`items.${relatedId}.title`)}

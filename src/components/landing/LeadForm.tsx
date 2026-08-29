@@ -190,7 +190,7 @@ export function LeadForm({
       <button
         type="submit"
         disabled={status === "loading"}
-        className="mt-6 w-full rounded-full bg-gradient-to-r from-accent to-accent-bright px-5 py-3.5 text-sm font-semibold text-white shadow-[0_4px_20px_-6px_rgba(37,99,235,0.5)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0 disabled:pointer-events-none disabled:opacity-60"
+        className="mt-6 w-full rounded-xl bg-accent px-5 py-3.5 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(10,95,168,0.42)] transition-all duration-200 hover:bg-accent-bright hover:-translate-y-0.5 active:translate-y-0 active:bg-accent-deep disabled:pointer-events-none disabled:opacity-60"
       >
         {status === "loading" ? "Sūta…" : "Saņemt bezmaksas piedāvājumu"}
       </button>

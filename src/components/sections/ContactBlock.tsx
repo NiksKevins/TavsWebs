@@ -5,6 +5,7 @@ import { ArrowUpRight, Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 import { Button } from "@/components/ui/Button";
 
 export function ContactBlock() {
@@ -49,9 +50,7 @@ export function ContactBlock() {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
-            <p className="text-xs uppercase tracking-[0.28em] text-dim">
-              {t("eyebrow")}
-            </p>
+            <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
             <h2 className="display mt-4 text-4xl md:text-5xl">{t("title")}</h2>
             <p className="mt-4 max-w-md leading-relaxed text-muted">
               {t("subtitle")}
@@ -101,7 +100,7 @@ export function ContactBlock() {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="block transition-colors hover:bg-slate-50"
+                      className="block transition-colors hover:bg-surface"
                     >
                       {content}
                     </a>

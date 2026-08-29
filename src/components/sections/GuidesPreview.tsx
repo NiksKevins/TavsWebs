@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { guideHref, guideIds } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 
 export function GuidesPreview() {
   const t = useTranslations("guides");
@@ -15,9 +16,7 @@ export function GuidesPreview() {
         <Reveal>
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-dim">
-                {t("eyebrow")}
-              </p>
+              <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
               <h2 className="display mt-4 text-4xl md:text-5xl">{t("title")}</h2>
             </div>
             <p className="max-w-sm text-sm text-muted">{t("subtitle")}</p>

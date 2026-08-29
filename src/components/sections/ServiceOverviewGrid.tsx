@@ -29,7 +29,7 @@ export function ServiceOverviewGrid() {
                 href={serviceHref(id)}
                 className="group card-hover flex h-full flex-col overflow-hidden"
               >
-              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+              <div className="relative aspect-[16/10] overflow-hidden bg-surface">
                 <Image
                   src={serviceImages[id]}
                   alt={t(`items.${id}.title`)}
@@ -43,7 +43,7 @@ export function ServiceOverviewGrid() {
                       "absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide",
                       badge === "popular"
                         ? "bg-accent text-white"
-                        : "bg-cyan text-white",
+                        : "bg-highlight text-white",
                     )}
                   >
                     {t(`badges.${badge}`)}

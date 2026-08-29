@@ -93,7 +93,7 @@ export function BudgetSelect({
                       "flex w-full items-center justify-between gap-3 rounded-xl px-3.5 py-2.5 text-left text-sm transition-colors",
                       selected
                         ? "bg-accent/10 text-accent"
-                        : "text-muted hover:bg-slate-50 hover:text-text",
+                        : "text-muted hover:bg-surface hover:text-text",
                     )}
                     onClick={() => {
                       setValue(option);

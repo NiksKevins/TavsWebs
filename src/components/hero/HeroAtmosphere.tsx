@@ -15,7 +15,7 @@ export function HeroAtmosphere() {
 
       <div className="hero-sheen" />
 
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(248,249,251,0.5)_0%,transparent_28%,rgba(248,249,251,0.6)_100%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(250,247,242,0.55)_0%,transparent_30%,rgba(250,247,242,0.65)_100%)]" />
     </div>
   );
 }

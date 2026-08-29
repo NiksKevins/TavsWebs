@@ -22,7 +22,7 @@ export function Footer() {
             {site.name}
             <span
               aria-hidden
-              className="ml-1 inline-block h-2 w-2 rounded-full bg-accent md:h-2.5 md:w-2.5"
+              className="ml-1 inline-block h-2 w-2 rounded-full bg-highlight md:h-2.5 md:w-2.5"
             />
           </Link>
           <p className="mt-3 max-w-sm text-sm text-muted">{tSite("description")}</p>

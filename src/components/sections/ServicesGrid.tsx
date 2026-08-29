@@ -12,6 +12,7 @@ import {
   type ServiceId,
 } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 import { cn } from "@/lib/utils";
 
 function ServiceCard({ id, index }: { id: ServiceId; index: number }) {
@@ -20,7 +21,7 @@ function ServiceCard({ id, index }: { id: ServiceId; index: number }) {
 
   const inner = (
     <>
-      <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+      <div className="relative aspect-[16/10] overflow-hidden bg-surface">
         <Image
           src={serviceImages[id]}
           alt=""
@@ -34,7 +35,7 @@ function ServiceCard({ id, index }: { id: ServiceId; index: number }) {
               "absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide",
               badge === "popular"
                 ? "bg-accent text-white"
-                : "bg-cyan/90 text-white",
+                : "bg-highlight text-white",
             )}
           >
             {t(`badges.${badge}`)}
@@ -80,9 +81,7 @@ export function ServicesGrid() {
     >
       <div className="mx-auto max-w-[1400px]">
         <Reveal>
-          <p className="text-xs uppercase tracking-[0.28em] text-dim">
-            {t("eyebrow")}
-          </p>
+          <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
           <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <h2
               id="services-grid-heading"

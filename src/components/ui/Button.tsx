@@ -10,13 +10,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-r from-accent to-accent-bright text-white shadow-[0_4px_20px_-6px_rgba(37,99,235,0.5)] hover:shadow-[0_8px_28px_-6px_rgba(37,99,235,0.55)] hover:brightness-105 hover:-translate-y-0.5 active:translate-y-0 active:brightness-100",
+    "bg-accent text-white shadow-[0_4px_16px_-4px_rgba(10,95,168,0.42)] hover:bg-accent-bright hover:shadow-[0_6px_22px_-4px_rgba(10,95,168,0.48)] hover:-translate-y-0.5 active:translate-y-0 active:bg-accent-deep",
   ghost:
-    "text-muted hover:text-text hover:bg-slate-100 active:bg-slate-200/80",
+    "text-muted hover:text-text hover:bg-surface active:bg-surface-muted",
   outline:
-    "border border-border bg-bg-elevated text-text hover:border-accent/40 hover:bg-slate-50 hover:-translate-y-0.5 active:translate-y-0",
+    "border border-border bg-bg-elevated text-text hover:border-border-strong hover:bg-surface hover:-translate-y-0.5 active:translate-y-0",
   whatsapp:
-    "border border-emerald-200 bg-emerald-50 text-emerald-700 hover:border-emerald-300 hover:bg-emerald-100 hover:-translate-y-0.5 active:translate-y-0",
+    "border border-emerald-200/80 bg-emerald-50/80 text-emerald-800 hover:border-emerald-300 hover:bg-emerald-50 hover:-translate-y-0.5 active:translate-y-0",
 };
 
 const sizes = {
@@ -31,7 +31,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wide transition-all duration-200 ease-out disabled:pointer-events-none disabled:opacity-50",
+          "inline-flex items-center justify-center gap-2 rounded-xl font-medium tracking-wide transition-all duration-200 ease-out disabled:pointer-events-none disabled:opacity-50",
           variants[variant],
           sizes[size],
           className,

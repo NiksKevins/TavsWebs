@@ -17,7 +17,7 @@ export function CtaBand({ title, description }: CtaBandProps) {
   return (
     <section className="section-pad py-16 md:py-24">
       <Reveal>
-        <div className="mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-8 rounded-[2rem] border border-border bg-gradient-to-br from-accent/5 to-cyan/5 p-8 md:flex-row md:items-center md:p-12">
+        <div className="cta-panel mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-8 rounded-2xl p-8 md:flex-row md:items-center md:p-12">
           <div>
             <h2 className="display text-3xl md:text-5xl">
               {title ?? t("title")}

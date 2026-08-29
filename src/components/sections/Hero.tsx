@@ -21,7 +21,7 @@ export function Hero() {
 
       <div className="section-pad relative z-10 mx-auto w-full max-w-[1400px]">
         <motion.p
-          className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-bg-elevated px-3.5 py-1.5 text-[11px] font-medium tracking-[0.18em] text-muted uppercase shadow-sm"
+          className="hero-eyebrow mb-5"
           initial={reduced ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.08 }}
@@ -74,7 +74,7 @@ export function Hero() {
       >
         <a
           href="#services"
-          className="flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-dim transition-colors hover:text-text"
+          className="flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-accent transition-colors hover:text-accent-bright"
         >
           <span>{t("explore")}</span>
           <motion.span

@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { GuideId } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
+import { Button } from "@/components/ui/Button";
 
 type SectionKey = "0" | "1" | "2" | "3" | "4";
 
@@ -44,14 +45,11 @@ export async function GuideArticle({ id }: { id: GuideId }) {
           ))}
         </div>
 
-        <Reveal className="mt-14 rounded-2xl border border-border bg-gradient-to-br from-accent/5 to-cyan/5 p-6 md:p-8">
+        <Reveal className="surface-panel mt-14 rounded-2xl p-6 md:p-8">
           <p className="text-sm font-medium text-text">{t("ctaTitle")}</p>
           <p className="mt-2 text-sm text-muted">{t("ctaBody")}</p>
-          <Link
-            href="/contact"
-            className="mt-5 inline-flex rounded-full bg-gradient-to-r from-accent to-accent-bright px-6 py-3 text-sm font-semibold text-white transition hover:brightness-105"
-          >
-            {t("ctaButton")}
+          <Link href="/contact" className="mt-5 inline-block">
+            <Button>{t("ctaButton")}</Button>
           </Link>
         </Reveal>
       </div>

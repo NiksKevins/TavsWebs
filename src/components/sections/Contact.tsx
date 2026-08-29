@@ -65,7 +65,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
     <section id="contact" className="section-pad relative py-16 md:py-24">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[radial-gradient(ellipse_at_bottom,rgba(59,130,246,0.12),transparent_60%)]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[radial-gradient(ellipse_at_bottom,rgba(27,61,111,0.06),transparent_60%)]"
       />
 
       <div className="relative mx-auto max-w-[1400px]">
@@ -90,7 +90,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                 href={`mailto:${site.email}`}
                 className="glass card-hover flex items-center gap-4 rounded-2xl p-4"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/15 text-accent-bright">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/10 text-accent">
                   <Mail size={18} />
                 </span>
                 <div>
@@ -102,7 +102,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                 href={site.phoneHref}
                 className="glass card-hover flex items-center gap-4 rounded-2xl p-4"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/15 text-accent-bright">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/10 text-accent">
                   <Phone size={18} />
                 </span>
                 <div>
@@ -114,9 +114,9 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                 href={site.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass card-hover flex items-center gap-4 rounded-2xl p-4 hover:border-emerald-400/35"
+                className="glass card-hover flex items-center gap-4 rounded-2xl p-4 hover:border-emerald-300/50"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
                   <MessageCircle size={18} />
                 </span>
                 <div>
@@ -124,7 +124,7 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                   <p className="text-sm">{t("whatsappHint")}</p>
                 </div>
               </a>
-              <div className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-4 py-2 text-xs text-accent-bright">
+              <div className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-2 text-xs text-accent">
                 <Clock size={14} />
                 {tSite("responseTime")}
               </div>
