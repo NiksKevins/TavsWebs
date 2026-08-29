@@ -60,7 +60,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       });
     }
 
-    const { guideIds } = await import("@/lib/data");
+    const { guideIds, serviceIds } = await import("@/lib/data");
     for (const guide of guideIds) {
       const path = `/guides/${guide}`;
       entries.push({
@@ -68,6 +68,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.75,
+        alternates: {
+          languages: Object.fromEntries(
+            routing.locales.map((l) => [
+              l,
+              absoluteUrl(localizedPath(l, path)),
+            ]),
+          ),
+        },
+      });
+    }
+
+    for (const service of serviceIds) {
+      const path = `/services/${service}`;
+      entries.push({
+        url: absoluteUrl(localizedPath(locale as Locale, path)),
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.8,
         alternates: {
           languages: Object.fromEntries(
             routing.locales.map((l) => [

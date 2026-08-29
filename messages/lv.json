@@ -262,51 +262,164 @@
         "title": "Mājaslapu izstrāde",
         "description": "WordPress, WooCommerce vai pielāgota izstrāde — mājaslapa, kas skaidri pastāsta, ko tu dari, un ir gatava Google.",
         "detail": "No €200 · 1–3 nedēļas · SEO pamati",
-        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei uz WordPress, WooCommerce vai pielāgotas platformas. Dizains, programmēšana, mobilā versija, SEO pamati un palaišana iekļauta."
+        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei uz WordPress, WooCommerce vai pielāgotas platformas. Dizains, programmēšana, mobilā versija, SEO pamati un palaišana iekļauta.",
+        "benefits": [
+          "Skaidra struktūra — apmeklētājs ātri saprot, ko tu dari",
+          "Mobilā versija iekļauta — lielākā daļa klientu meklē telefonā",
+          "SEO pamati — lai Google var atrast tavu lapu",
+          "WordPress tipa CMS — vari pats mainīt saturu bez programmētāja"
+        ],
+        "includes": [
+          "Dizains un izkārtojums",
+          "Programmēšana un palaišana",
+          "Kontaktu forma",
+          "Google Maps integrācija",
+          "Mobilā versija",
+          "Pamata SEO iestatījumi"
+        ]
       },
       "ecommerce": {
         "title": "Interneta veikalu izstrāde",
         "description": "Pārdod preces internetā. Veikals ar maksājumiem, produktiem un pasūtījumu apstrādi.",
         "detail": "Maksājumi · Produkti · Pasūtījumi",
-        "longDescription": "Pilns interneta veikals — produktu katalogs, grozs, maksājumi un pasūtījumu pārvaldība. Viss, kas vajadzīgs, lai sāktu pārdot online."
+        "longDescription": "Pilns interneta veikals — produktu katalogs, grozs, maksājumi un pasūtījumu pārvaldība. Viss, kas vajadzīgs, lai sāktu pārdot online.",
+        "benefits": [
+          "Pārdod 24/7 — veikals strādā pat kad birojs ir ciet",
+          "Maksājumi online — kartes, bankas linki, pēc vajadzības",
+          "Pasūtījumu pārvaldība — redzi visu vienuviet",
+          "Produktu katalogs — kategorijas, attēli, cenas"
+        ],
+        "includes": [
+          "Veikala dizains",
+          "Produktu katalogs",
+          "Grozs un maksājumi",
+          "Pasūtījumu panelis",
+          "Mobilā versija",
+          "Pamata SEO"
+        ]
       },
       "mobile-apps": {
         "title": "Mobilās aplikācijas",
         "description": "iOS un Android aplikācijas tavam biznesam — ērtas, ātras un gatavas veikaliem.",
         "detail": "iOS · Android · App Store",
-        "longDescription": "Veidojam mobilās aplikācijas, kas strādā telefonā un planšetē. No idejas līdz publikācijai App Store un Google Play."
+        "longDescription": "Veidojam mobilās aplikācijas, kas strādā telefonā un planšetē. No idejas līdz publikācijai App Store un Google Play.",
+        "benefits": [
+          "iOS un Android — viens projekts, divas platformas",
+          "Ērta lietošana — lietotāji gaida ātru un skaidru UX",
+          "App Store un Google Play publicēšana",
+          "Integrācija ar tavu esošo sistēmu vai API"
+        ],
+        "includes": [
+          "UI/UX dizains",
+          "Native vai cross-platform izstrāde",
+          "Testēšana ierīcēs",
+          "Veikalu publicēšana",
+          "Palaišanas atbalsts"
+        ]
       },
       "redesign": {
         "title": "Redesign un pārbūve",
         "description": "Vecā mājaslapa vairs neder? Atjauninām dizainu, ātrumu un funkcionalitāti.",
         "detail": "Jauns dizains · Ātrums · Labojumi",
-        "longDescription": "Pārbūvējam esošās vietnes — moderns izskats, labāka ātrums un ērtāka lietošana. Bieži ātrāk un lētāk nekā sākt no nulles."
+        "longDescription": "Pārbūvējam esošās vietnes — moderns izskats, labāka ātrums un ērtāka lietošana. Bieži ātrāk un lētāk nekā sākt no nulles.",
+        "benefits": [
+          "Moderns izskats — pirmais iespaids ir svarīgs",
+          "Ātrāka lapa — Google un lietotāji to novērtē",
+          "Labāka mobilā versija",
+          "Bieži lētāk nekā jauna lapa no nulles"
+        ],
+        "includes": [
+          "Esošās lapas audits",
+          "Jauns dizains",
+          "Programmēšana un migrācija",
+          "Saturs un SEO saglabāšana",
+          "Testēšana un palaišana"
+        ]
       },
       "seo-audit": {
         "title": "SEO auditi un optimizācija",
         "description": "Pārbaudām, kāpēc tevi neatrod Google, un uzlabojam — lai klienti atrastu tevi organiski.",
         "detail": "Audits no €150 · Labojumi · Google",
-        "longDescription": "SEO audits un pastāvīga optimizācija: ātrums, virsraksti, tehniskās kļūdas un redzamība meklētājā. Iedodam skaidru darbu sarakstu un vajadzības gadījumā arī implementējam labojumus paši."
+        "longDescription": "SEO audits un pastāvīga optimizācija: ātrums, virsraksti, tehniskās kļūdas un redzamība meklētājā. Iedodam skaidru darbu sarakstu un vajadzības gadījumā arī implementējam labojumus paši.",
+        "benefits": [
+          "Atklājam, kāpēc tevi neatrod Google",
+          "Ātruma un tehnisko kļūdu labojumi",
+          "Skaidrs darbu saraksts — zini, ko darīt tālāk",
+          "Varam implementēt labojumus paši"
+        ],
+        "includes": [
+          "Pilns SEO audits",
+          "Atskaites dokuments",
+          "Prioritāšu saraksts",
+          "Tehnisko kļūdu labojumi (pēc vienošanās)",
+          "Konsultācija par tālākajiem soļiem"
+        ]
       },
       "programming": {
         "title": "Programmēšana",
         "description": "Web lietotnes, API, automātika un pielāgoti risinājumi — jebkas, ko var uzprogrammēt.",
         "detail": "Web lietotnes · API · Automātika",
-        "longDescription": "Ja tev vajag kaut ko uzprogrammēt — sistēmu, automātiku, API vai labojumus — mēs to darām. Pastāsti, kas vajadzīgs, un iedosim skaidru piedāvājumu."
+        "longDescription": "Ja tev vajag kaut ko uzprogrammēt — sistēmu, automātiku, API vai labojumus — mēs to darām. Pastāsti, kas vajadzīgs, un iedosim skaidru piedāvājumu.",
+        "benefits": [
+          "Jebkāds pielāgots risinājums — ja var uzprogrammēt, varam",
+          "Web lietotnes, API, automatizācija",
+          "Integrācijas starp esošām sistēmām",
+          "Skaidrs piedāvājums pirms darba sākuma"
+        ],
+        "includes": [
+          "Specifikācijas saskaņošana",
+          "Arhitektūras plāns",
+          "Programmēšana",
+          "Testēšana",
+          "Dokumentācija un nodošana"
+        ]
       },
       "crm": {
         "title": "CRM un biznesa sistēmas",
         "description": "Specializētas CRM sistēmas uzņēmumiem un iekšējās biznesa lietotnes — pielāgotas tieši taviem procesiem.",
         "detail": "CRM · Klientu pārvaldība · Iekšējās sistēmas",
-        "longDescription": "Veidojam specializētas CRM sistēmas un jebkādas biznesa sistēmas — klientu pārvaldība, pasūtījumi, inventārs, darbinieku rīki, integrācijas. Nav gatavu šablonu: taisām to, kas tavam uzņēmumam īsti vajadzīgs. Ja biznesam kaut kas digitāli trūkst — varam to uztaisīt."
+        "longDescription": "Veidojam specializētas CRM sistēmas un jebkādas biznesa sistēmas — klientu pārvaldība, pasūtījumi, inventārs, darbinieku rīki, integrācijas. Nav gatavu šablonu: taisām to, kas tavam uzņēmumam īsti vajadzīgs. Ja biznesam kaut kas digitāli trūkst — varam to uztaisīt.",
+        "benefits": [
+          "Pielāgots taviem procesiem — nevis gatavs šablons",
+          "Klientu, pasūtījumu un uzdevumu pārvaldība",
+          "Integrācijas ar e-pastu, maksājumiem, citām sistēmām",
+          "Mērogojams — aug kopā ar biznesu"
+        ],
+        "includes": [
+          "Prasību analīze",
+          "Sistēmas arhitektūra",
+          "Programmēšana un testēšana",
+          "Apmācība komandai",
+          "Atbalsts pēc palaišanas"
+        ]
       },
       "ai-chatbots": {
         "title": "AI čatboti",
         "description": "Mākslīgā intelekta čatbots tavam biznesam — atbild uz jautājumiem, vāc pieteikumus un strādā 24/7.",
         "detail": "24/7 · Pielāgots · bot.tavswebs.com",
-        "longDescription": "Veidojam AI čatbotus, kas atbild klientiem jebkurā laikā — mājaslapā, WhatsApp vai iekšējās sistēmās. Izmēģini mūsu demo: bot.tavswebs.com"
+        "longDescription": "Veidojam AI čatbotus, kas atbild klientiem jebkurā laikā — mājaslapā, WhatsApp vai iekšējās sistēmās. Izmēģini mūsu demo: bot.tavswebs.com",
+        "benefits": [
+          "Atbild uz jautājumiem 24/7 — pat naktī un brīvdienās",
+          "Vāc pieteikumus un kontaktus automātiski",
+          "Pielāgotas atbildes tavam biznesam",
+          "Integrācija mājaslapā vai WhatsApp"
+        ],
+        "includes": [
+          "Sarunu plūsmas dizains",
+          "AI modeļa konfigurācija",
+          "Mācīšana ar tavu saturu",
+          "Integrācija vietnē",
+          "Demo: bot.tavswebs.com"
+        ]
       }
-    }
+    },
+    "benefitsTitle": "Kāpēc tas ir svarīgi",
+    "includesTitle": "Kas iekļauts",
+    "backToAll": "Atpakaļ pie pakalpojumiem",
+    "relatedTitle": "Citi pakalpojumi",
+    "ctaButton": "Saņemt piedāvājumu",
+    "detailCtaTitle": "Vajag {service}?",
+    "detailCtaBody": "Pastāsti par projektu — iedosim skaidru cenu un termiņu 24 stundu laikā."
   },
   "process": {
     "eyebrow": "Process",

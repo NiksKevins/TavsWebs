@@ -19,17 +19,6 @@ export const navHrefs = [
   { key: "contact", href: "/contact" },
 ] as const;
 
-export const serviceNavItems = [
-  { id: "website-dev", hash: "website-dev" },
-  { id: "ecommerce", hash: "ecommerce" },
-  { id: "seo-audit", hash: "seo-audit" },
-  { id: "crm", hash: "crm" },
-  { id: "mobile-apps", hash: "mobile-apps" },
-  { id: "programming", hash: "programming" },
-  { id: "ai-chatbots", hash: "ai-chatbots" },
-  { id: "redesign", hash: "redesign" },
-] as const;
-
 export const footerHrefs = [
   { key: "work", href: "/work" },
   { key: "services", href: "/services" },
@@ -160,6 +149,19 @@ export const serviceIds = [
 ] as const;
 
 export type ServiceId = (typeof serviceIds)[number];
+
+export const serviceNavItems = serviceIds.map((id) => ({ id }));
+
+export function serviceHref(slug: string) {
+  return {
+    pathname: "/services/[slug]" as const,
+    params: { slug },
+  };
+}
+
+export function getService(id: string) {
+  return serviceIds.find((s) => s === id);
+}
 
 export const serviceBadges: Partial<Record<ServiceId, "popular" | "new">> = {
   "website-dev": "popular",

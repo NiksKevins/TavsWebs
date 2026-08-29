@@ -262,51 +262,164 @@
         "title": "Website development",
         "description": "WordPress, WooCommerce or custom builds — a site that clearly shows what you do and is ready for Google.",
         "detail": "From €200 · 1–3 weeks · SEO basics",
-        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website on WordPress, WooCommerce or a custom platform. Design, development, mobile version, SEO basics and launch included."
+        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website on WordPress, WooCommerce or a custom platform. Design, development, mobile version, SEO basics and launch included.",
+        "benefits": [
+          "Clear structure — visitors quickly understand what you do",
+          "Mobile version included — most clients search on phone",
+          "SEO basics — so Google can find your site",
+          "WordPress-style CMS — edit content yourself without a developer"
+        ],
+        "includes": [
+          "Design and layout",
+          "Development and launch",
+          "Contact form",
+          "Google Maps integration",
+          "Mobile version",
+          "Basic SEO setup"
+        ]
       },
       "ecommerce": {
         "title": "Online store development",
         "description": "Sell products online. A store with payments, products and order handling.",
         "detail": "Payments · Products · Orders",
-        "longDescription": "A full online store — product catalog, cart, payments and order management. Everything you need to start selling online."
+        "longDescription": "A full online store — product catalog, cart, payments and order management. Everything you need to start selling online.",
+        "benefits": [
+          "Sell 24/7 — store works when office is closed",
+          "Online payments — cards, bank links as needed",
+          "Order management — see everything in one place",
+          "Product catalog — categories, images, prices"
+        ],
+        "includes": [
+          "Store design",
+          "Product catalog",
+          "Cart and payments",
+          "Order dashboard",
+          "Mobile version",
+          "Basic SEO"
+        ]
       },
       "mobile-apps": {
         "title": "Mobile apps",
         "description": "iOS and Android apps for your business — easy, fast and store-ready.",
         "detail": "iOS · Android · App Store",
-        "longDescription": "We build mobile apps that work on phones and tablets. From idea to App Store and Google Play."
+        "longDescription": "We build mobile apps that work on phones and tablets. From idea to App Store and Google Play.",
+        "benefits": [
+          "iOS and Android — one project, two platforms",
+          "Easy to use — users expect fast, clear UX",
+          "App Store and Google Play publishing",
+          "Integration with your existing system or API"
+        ],
+        "includes": [
+          "UI/UX design",
+          "Native or cross-platform development",
+          "Device testing",
+          "Store publishing",
+          "Launch support"
+        ]
       },
       "redesign": {
         "title": "Redesign & rebuild",
         "description": "Old site not working anymore? We refresh design, speed and features.",
         "detail": "New design · Speed · Fixes",
-        "longDescription": "We rebuild existing sites — modern look, better speed and easier use. Often faster and cheaper than starting from scratch."
+        "longDescription": "We rebuild existing sites — modern look, better speed and easier use. Often faster and cheaper than starting from scratch.",
+        "benefits": [
+          "Modern look — first impression matters",
+          "Faster site — Google and users appreciate it",
+          "Better mobile experience",
+          "Often cheaper than building from scratch"
+        ],
+        "includes": [
+          "Current site audit",
+          "New design",
+          "Development and migration",
+          "Content and SEO preservation",
+          "Testing and launch"
+        ]
       },
       "seo-audit": {
         "title": "SEO audits & optimization",
         "description": "We check why Google can't find you — and improve it so customers find you organically.",
         "detail": "Audit from €150 · Fixes · Google",
-        "longDescription": "SEO audit and ongoing optimization: speed, titles, technical issues and search visibility. You get a clear fix list — and we can implement the fixes too."
+        "longDescription": "SEO audit and ongoing optimization: speed, titles, technical issues and search visibility. You get a clear fix list — and we can implement the fixes too.",
+        "benefits": [
+          "Find out why Google can't find you",
+          "Speed and technical error fixes",
+          "Clear action list — know what to do next",
+          "We can implement fixes ourselves"
+        ],
+        "includes": [
+          "Full SEO audit",
+          "Report document",
+          "Priority list",
+          "Technical fixes (by agreement)",
+          "Consultation on next steps"
+        ]
       },
       "programming": {
         "title": "Programming",
         "description": "Web apps, APIs, automation and custom solutions — anything that can be built in code.",
         "detail": "Web apps · API · Automation",
-        "longDescription": "If you need something built — a system, automation, API or fixes — we do it. Tell us what you need and we’ll give a clear quote."
+        "longDescription": "If you need something built — a system, automation, API or fixes — we do it. Tell us what you need and we’ll give a clear quote.",
+        "benefits": [
+          "Any custom solution — if it can be coded, we can build it",
+          "Web apps, APIs, automation",
+          "Integrations between existing systems",
+          "Clear quote before work starts"
+        ],
+        "includes": [
+          "Specification agreement",
+          "Architecture plan",
+          "Development",
+          "Testing",
+          "Documentation and handover"
+        ]
       },
       "crm": {
         "title": "CRM & business systems",
         "description": "Specialised CRM systems for companies and internal business tools — built around your processes.",
         "detail": "CRM · Customer management · Internal systems",
-        "longDescription": "We build specialised CRM systems and any business software — customer management, orders, inventory, staff tools, integrations. No generic templates: we make what your company actually needs. If something is missing digitally — we can make it happen."
+        "longDescription": "We build specialised CRM systems and any business software — customer management, orders, inventory, staff tools, integrations. No generic templates: we make what your company actually needs. If something is missing digitally — we can make it happen.",
+        "benefits": [
+          "Built around your processes — not a generic template",
+          "Customer, order and task management",
+          "Integrations with email, payments, other systems",
+          "Scalable — grows with your business"
+        ],
+        "includes": [
+          "Requirements analysis",
+          "System architecture",
+          "Development and testing",
+          "Team training",
+          "Post-launch support"
+        ]
       },
       "ai-chatbots": {
         "title": "AI chatbots",
         "description": "An AI chatbot for your business — answers questions, collects leads and works 24/7.",
         "detail": "24/7 · Custom · bot.tavswebs.com",
-        "longDescription": "We build AI chatbots that respond to clients anytime — on your website, WhatsApp or internal systems. Try our demo: bot.tavswebs.com"
+        "longDescription": "We build AI chatbots that respond to clients anytime — on your website, WhatsApp or internal systems. Try our demo: bot.tavswebs.com",
+        "benefits": [
+          "Answers questions 24/7 — even nights and weekends",
+          "Collects leads and contacts automatically",
+          "Custom answers for your business",
+          "Integration on website or WhatsApp"
+        ],
+        "includes": [
+          "Conversation flow design",
+          "AI model configuration",
+          "Training with your content",
+          "Website integration",
+          "Demo: bot.tavswebs.com"
+        ]
       }
-    }
+    },
+    "benefitsTitle": "Why it matters",
+    "includesTitle": "What's included",
+    "backToAll": "Back to services",
+    "relatedTitle": "Other services",
+    "ctaButton": "Get a quote",
+    "detailCtaTitle": "Need {service}?",
+    "detailCtaBody": "Tell us about your project — we'll send a clear price and timeline within 24 hours."
   },
   "process": {
     "eyebrow": "Process",

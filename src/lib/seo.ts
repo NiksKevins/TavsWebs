@@ -7,6 +7,7 @@ import {
   type GuideId,
   type PageKey,
   type ProjectId,
+  type ServiceId,
 } from "@/lib/data";
 import { routing, type Locale } from "@/i18n/routing";
 
@@ -307,5 +308,65 @@ export async function guideArticleJsonLd(locale: Locale, guideId: GuideId) {
     inLanguage: locale,
     dateModified: "2026-08-29",
     datePublished: "2026-08-29",
+  };
+}
+
+export async function createServiceMetadata(
+  locale: Locale,
+  serviceId: ServiceId,
+): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "services" });
+  const tOg = await getTranslations({ locale, namespace: "og" });
+  const title = t(`items.${serviceId}.title`);
+  const description = t(`items.${serviceId}.description`);
+  const path = `/services/${serviceId}`;
+  const localized = localizedPath(locale, path);
+  const url = absoluteUrl(localized);
+  const ogTitle = `${title} — TavsWebs`;
+  const image = ogImageUrl(ogTitle, t(`items.${serviceId}.detail`), {
+    agency: tOg("agency"),
+    craft: tOg("craft"),
+  });
+
+  return {
+    title: ogTitle,
+    description,
+    alternates: {
+      canonical: url,
+      languages: alternateLanguages(path),
+    },
+    openGraph: {
+      title: ogTitle,
+      description,
+      url,
+      siteName: site.name,
+      locale: localeOgMap[locale],
+      type: "website",
+      images: [{ url: image, ...OG_SIZE, alt: ogTitle }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description,
+      site: site.twitter,
+      creator: site.twitter,
+      images: [image],
+    },
+  };
+}
+
+export async function serviceJsonLd(locale: Locale, serviceId: ServiceId) {
+  const t = await getTranslations({ locale, namespace: "services" });
+  const title = t(`items.${serviceId}.title`);
+  const description = t(`items.${serviceId}.longDescription`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: title,
+    description,
+    provider: { "@id": `${site.url}/#organization` },
+    url: absoluteUrl(localizedPath(locale, `/services/${serviceId}`)),
+    areaServed: { "@type": "Country", name: "Latvia" },
+    inLanguage: locale,
   };
 }

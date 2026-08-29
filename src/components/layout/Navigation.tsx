@@ -8,7 +8,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Button } from "@/components/ui/Button";
 import { BrandMark } from "@/components/ui/BrandMark";
-import { navHrefs, serviceNavItems, site } from "@/lib/data";
+import { navHrefs, serviceHref, serviceNavItems, site } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useScrollDirection } from "@/hooks/useMotion";
 
@@ -122,7 +122,7 @@ export function Navigation() {
                     {serviceNavItems.map((item) => (
                       <Link
                         key={item.id}
-                        href={{ pathname: "/services", hash: item.hash }}
+                        href={serviceHref(item.id)}
                         className="block px-4 py-2.5 text-sm text-muted transition-colors hover:bg-slate-50 hover:text-text"
                         onClick={() => setServicesOpen(false)}
                       >
@@ -231,7 +231,7 @@ export function Navigation() {
                       {serviceNavItems.map((item) => (
                         <Link
                           key={item.id}
-                          href={{ pathname: "/services", hash: item.hash }}
+                          href={serviceHref(item.id)}
                           onClick={() => setOpen(false)}
                           className="block py-2.5 text-lg text-muted transition hover:text-text"
                         >

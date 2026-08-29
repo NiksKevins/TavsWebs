@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import {
   serviceBadges,
-  serviceExternalUrls,
+  serviceHref,
   serviceIds,
   serviceImages,
   type ServiceId,
@@ -17,7 +17,6 @@ import { cn } from "@/lib/utils";
 function ServiceCard({ id, index }: { id: ServiceId; index: number }) {
   const t = useTranslations("services");
   const badge = serviceBadges[id];
-  const externalUrl = serviceExternalUrls[id];
 
   const inner = (
     <>
@@ -51,8 +50,8 @@ function ServiceCard({ id, index }: { id: ServiceId; index: number }) {
           {t(`items.${id}.detail`)}
         </p>
         <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
-          {externalUrl ? t("tryDemo") : t("learnMore")}
-          {externalUrl ? <ExternalLink size={14} /> : <ArrowUpRight size={14} />}
+          {t("learnMore")}
+          <ArrowUpRight size={14} />
         </span>
       </div>
     </>
@@ -63,20 +62,9 @@ function ServiceCard({ id, index }: { id: ServiceId; index: number }) {
 
   return (
     <Reveal delay={index * 0.04} className="h-full shrink-0 lg:shrink">
-      {externalUrl ? (
-        <a
-          href={externalUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={className}
-        >
-          {inner}
-        </a>
-      ) : (
-        <Link href={{ pathname: "/services", hash: id }} className={className}>
-          {inner}
-        </Link>
-      )}
+      <Link href={serviceHref(id)} className={className}>
+        {inner}
+      </Link>
     </Reveal>
   );
 }

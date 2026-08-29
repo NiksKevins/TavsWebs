@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Services } from "@/components/sections/Services";
+import { ServiceOverviewGrid } from "@/components/sections/ServiceOverviewGrid";
 import { CtaBand } from "@/components/seo/CtaBand";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/seo/PageHero";
@@ -34,7 +34,7 @@ export default async function ServicesPage({ params }: Props) {
       position: index + 1,
       name: t(`items.${id}.title`),
       url: absoluteUrl(
-        `${localizedPath(locale as Locale, "/services")}#${id}`,
+        localizedPath(locale as Locale, `/services/${id}`),
       ),
       description: t(`items.${id}.longDescription`),
     })),
@@ -63,7 +63,7 @@ export default async function ServicesPage({ params }: Props) {
           { label: tNav("services") },
         ]}
       />
-      <Services showHeader={false} />
+      <ServiceOverviewGrid />
       <CtaBand title={t("ctaTitle")} />
     </main>
   );
