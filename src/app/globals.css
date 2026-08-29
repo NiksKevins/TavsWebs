@@ -68,10 +68,6 @@ html {
 body {
   margin: 0;
   background-color: var(--bg);
-  background-image:
-    radial-gradient(ellipse 90% 55% at 50% -15%, rgba(10, 95, 168, 0.08), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 0%, rgba(217, 107, 50, 0.07), transparent 50%),
-    radial-gradient(ellipse 45% 35% at 0% 100%, rgba(243, 239, 232, 0.9), transparent 60%);
   color: var(--text);
   font-family: var(--font-manrope), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -201,15 +197,10 @@ img[data-nimg="1"] {
 
 .text-gradient {
   color: var(--accent);
-  background-image: linear-gradient(
-    transparent 58%,
-    var(--highlight-soft) 58%,
-    var(--highlight-soft) 88%,
-    transparent 88%
-  );
-  background-repeat: no-repeat;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+}
+
+.text-accent {
+  color: var(--accent);
 }
 
 .section-eyebrow {
@@ -233,17 +224,11 @@ img[data-nimg="1"] {
 }
 
 .hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  border-left: 3px solid var(--highlight);
-  border-radius: 0 0.5rem 0.5rem 0;
-  background: var(--accent-soft);
-  padding: 0.4rem 0.875rem;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text-dim);
 }
 
 .cta-panel {
@@ -292,134 +277,11 @@ img[data-nimg="1"] {
   box-shadow: var(--shadow-sm);
 }
 
-/* Hero atmosphere — warm, restrained */
-.hero-wash {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(90px);
-  pointer-events: none;
-  will-change: transform, opacity;
-}
-
-.hero-wash-main {
-  top: -12%;
-  right: -5%;
-  width: min(65vw, 680px);
-  height: min(65vw, 680px);
-  background: radial-gradient(circle, rgba(10, 95, 168, 0.11), transparent 72%);
-  animation: hero-drift-a 28s ease-in-out infinite;
-}
-
-.hero-wash-side {
-  top: 40%;
-  right: 22%;
-  width: min(35vw, 360px);
-  height: min(35vw, 360px);
-  background: radial-gradient(circle, rgba(217, 107, 50, 0.1), transparent 72%);
-  animation: hero-drift-b 32s ease-in-out infinite;
-}
-
-.hero-wash-bottom {
-  bottom: -18%;
-  left: 8%;
-  width: min(50vw, 520px);
-  height: min(42vw, 440px);
-  background: radial-gradient(circle, rgba(243, 239, 232, 0.95), transparent 70%);
-  animation: hero-drift-a 30s ease-in-out infinite reverse;
-}
-
-.hero-rule {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0.28;
-}
-
-.hero-rule-v {
-  top: 12%;
-  bottom: 18%;
-  right: 18%;
-  width: 1px;
-  background: linear-gradient(
-    180deg,
-    transparent,
-    rgba(120, 113, 108, 0.35),
-    transparent
-  );
-}
-
-.hero-rule-h {
-  top: 58%;
-  right: 6%;
-  width: min(34vw, 380px);
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(120, 113, 108, 0.3),
-    transparent
-  );
-}
-
+/* Hero atmosphere — minimal */
+.hero-wash,
+.hero-rule,
 .hero-sheen {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.5;
-  background:
-    radial-gradient(ellipse 45% 38% at 78% 28%, rgba(10, 95, 168, 0.07), transparent 70%),
-    radial-gradient(ellipse 40% 35% at 18% 82%, rgba(217, 107, 50, 0.05), transparent 70%);
-  animation: hero-sheen-pulse 18s ease-in-out infinite;
-}
-
-@keyframes hero-drift-a {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(-2%, 3%, 0) scale(1.04);
-  }
-}
-
-@keyframes hero-drift-b {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-  }
-  50% {
-    transform: translate3d(3%, -2%, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes hero-sheen-pulse {
-  0%,
-  100% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.55;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-wash,
-  .hero-sheen {
-    animation: none !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-rule-v,
-  .hero-rule-h {
-    opacity: 0.15;
-  }
-
-  .hero-wash-main {
-    right: -18%;
-    opacity: 0.75;
-  }
+  display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

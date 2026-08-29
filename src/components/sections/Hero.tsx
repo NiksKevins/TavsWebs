@@ -30,13 +30,13 @@ export function Hero() {
         </motion.p>
 
         <motion.h1
-          className="display max-w-[18ch] text-[clamp(2.25rem,6.5vw,5rem)] leading-[1.02] text-text md:max-w-[22ch]"
+          className="display max-w-[18ch] text-[clamp(2.25rem,6.5vw,5rem)] leading-[1.05] text-text md:max-w-[22ch]"
           initial={reduced ? false : { opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="block">{t("titleBefore")}</span>
-          <span className="text-gradient block">{t("titleAccent")}</span>
+          {t("titleBefore")}{" "}
+          <span className="text-muted">{t("titleAccent")}</span>
         </motion.h1>
 
         <motion.p
@@ -74,7 +74,7 @@ export function Hero() {
       >
         <a
           href="#services"
-          className="flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-accent transition-colors hover:text-accent-bright"
+          className="flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-dim transition-colors hover:text-muted"
         >
           <span>{t("explore")}</span>
           <motion.span
