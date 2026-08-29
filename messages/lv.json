@@ -43,27 +43,66 @@
     "about": "Par mums",
     "contact": "Kontakti",
     "faq": "BUJ",
-    "getQuote": "Uzzināt cenu",
+    "getQuote": "Sazināties",
+    "allServices": "Visi pakalpojumi",
     "openMenu": "Atvērt izvēlni",
     "closeMenu": "Aizvērt izvēlni",
     "homeAria": "{name} sākumlapa",
     "primary": "Galvenā navigācija",
-    "language": "Valoda"
+    "language": "Valoda",
+    "serviceItems": {
+      "website-dev": "Mājaslapu izstrāde",
+      "ecommerce": "Interneta veikali",
+      "seo-audit": "SEO optimizācija",
+      "crm": "CRM sistēmas",
+      "mobile-apps": "Mobilās aplikācijas",
+      "programming": "Programmēšana",
+      "ai-chatbots": "AI čatboti",
+      "redesign": "Redesign un pārbūve"
+    }
   },
   "hero": {
     "eyebrow": "TavsWebs · mājaslapas no €200",
-    "titleBefore": "Mājaslapa,",
-    "titleAccent": "kas atved klientus",
-    "body": "Skaidra lapa, veikals, CRM vai aplikācija — bez liekas sarežģītības. Piedāvājums 24 stundu laikā.",
-    "ctaPrimary": "Uzzināt cenu",
+    "titleBefore": "Mājaslapas, CRM, SEO, aplikācijas",
+    "titleAccent": "un AI risinājumi",
+    "body": "Digitālā studija Latvijā — taisām mājaslapas, CRM sistēmas, SEO, mobilās aplikācijas un AI čatbotus. Sākam ar tavu mērķi, beidzam ar skaidru rezultātu. Piedāvājums 24 stundu laikā.",
+    "ctaPrimary": "Saņemt piedāvājumu",
+    "ctaWhatsapp": "Rakstīt WhatsApp",
     "ctaSecondary": "Skatīt darbus",
     "explore": "Tālāk"
   },
   "site": {
-    "tagline": "Ātri, kvalitatīvi un pielāgots tavām prasībām",
-    "description": "TavsWebs — mājaslapas, specializētas CRM sistēmas un jebkādi biznesa risinājumi Latvijā. No idejas līdz gatavam produktam.",
+    "tagline": "Mājaslapas, CRM, SEO un AI risinājumi Latvijā",
+    "description": "TavsWebs — mājaslapu izstrāde, CRM sistēmas, SEO, mobilās aplikācijas un AI čatboti Latvijā. No idejas līdz gatavam produktam.",
     "responseTime": "Atbildam 24 stundu laikā",
     "skipToContent": "Pāriet pie satura"
+  },
+  "aboutPreview": {
+    "eyebrow": "Par mums",
+    "title": "Digitālā studija Latvijā",
+    "body": "Taisām mājaslapas, CRM sistēmas, SEO, aplikācijas un AI čatbotus. Vairumam klientu — vairākas no šīm lietām vienlaikus, jo kopā tās strādā labāk.",
+    "body2": "Nav šablonu un nav lieka žargona. Tu saproti, ko saņem, cik tas maksā un cik ilgi aizņems. Atbildam 24 stundu laikā.",
+    "cta": "Uzzināt vairāk par mums",
+    "stats": {
+      "websites": "Izveidotas mājaslapas",
+      "years": "Gadi pieredzes",
+      "rating": "Google vērtējums",
+      "response": "Atbildes laiks"
+    }
+  },
+  "contactBlock": {
+    "eyebrow": "Kontakti",
+    "title": "Kur mūs atrast",
+    "subtitle": "Sarunas notiek klātienē Rīgā un attālināti. Raksti, zvani vai aizpildi formu — norunāsim nākamo soli.",
+    "phone": "Tālrunis",
+    "email": "E-pasts",
+    "whatsapp": "WhatsApp",
+    "whatsappHint": "Raksti mums",
+    "location": "Vieta",
+    "locationValue": "Rīga, Latvija · klātienē un attālināti",
+    "hours": "Atbildes laiks",
+    "hoursValue": "Atbildam 24 stundu laikā darba dienās",
+    "cta": "Aizpildīt formu"
   },
   "home": {
     "processCard": {
@@ -85,9 +124,11 @@
   "work": {
     "eyebrow": "Portfolio",
     "title": "Mūsu darbi",
+    "homeTitle": "Jaunākie darbi",
     "titleAccent": "darbi",
     "titleLead": "Mūsu",
     "subtitle": "Reāli klienti — no CMS platformām līdz biznesa mājaslapām.",
+    "scrollHint": "Velc uz sāniem, lai redzētu visus",
     "viewCase": "Skatīt projektu",
     "caseStudyTitle": "{title} — projekts",
     "viewAll": "Visi projekti",
@@ -184,8 +225,17 @@
   "services": {
     "eyebrow": "Pakalpojumi",
     "title": "Viss, kas biznesam vajadzīgs digitāli",
+    "homeTitle": "8 pakalpojumi, viena komanda",
+    "homeSubtitle": "No mājaslapas un CRM līdz SEO, aplikācijām un AI čatbotiem — viss, ko biznesam vajag digitāli.",
     "pageDescription": "Mājaslapas, specializētas CRM sistēmas, veikali, aplikācijas, SEO un pielāgota programmēšana — no A līdz Z.",
     "exploreAll": "Visi pakalpojumi",
+    "learnMore": "Uzzināt vairāk",
+    "tryDemo": "Izmēģināt demo",
+    "scrollHint": "Velc uz sāniem, lai redzētu visus",
+    "badges": {
+      "popular": "Populārākais",
+      "new": "Jaunums"
+    },
     "ctaTitle": "Vajag kaut ko citu?",
     "items": {
       "website-dev": {
@@ -229,6 +279,12 @@
         "description": "Specializētas CRM sistēmas uzņēmumiem un iekšējās biznesa lietotnes — pielāgotas tieši taviem procesiem.",
         "detail": "CRM · Klientu pārvaldība · Iekšējās sistēmas",
         "longDescription": "Veidojam specializētas CRM sistēmas un jebkādas biznesa sistēmas — klientu pārvaldība, pasūtījumi, inventārs, darbinieku rīki, integrācijas. Nav gatavu šablonu: taisām to, kas tavam uzņēmumam īsti vajadzīgs. Ja biznesam kaut kas digitāli trūkst — varam to uztaisīt."
+      },
+      "ai-chatbots": {
+        "title": "AI čatboti",
+        "description": "Mākslīgā intelekta čatbots tavam biznesam — atbild uz jautājumiem, vāc pieteikumus un strādā 24/7.",
+        "detail": "24/7 · Pielāgots · bot.tavswebs.com",
+        "longDescription": "Veidojam AI čatbotus, kas atbild klientiem jebkurā laikā — mājaslapā, WhatsApp vai iekšējās sistēmās. Izmēģini mūsu demo: bot.tavswebs.com"
       }
     }
   },
@@ -239,6 +295,7 @@
     "titleAccent": "notiek",
     "subtitle": "Skaidri soļi no idejas līdz gatavam produktam.",
     "pageDescription": "Kā TavsWebs strādā: saruna, plāns, dizains, izstrāde un palaišana.",
+    "learnMore": "Pilns process",
     "ctaTitle": "Pastāsti, kas tev vajadzīgs",
     "steps": {
       "discovery": {
@@ -301,6 +358,10 @@
   "testimonials": {
     "eyebrow": "Atsauksmes",
     "title": "Ko saka klienti",
+    "googleRating": "4,9",
+    "googleLabel": "Google atsauksmēs",
+    "googleSource": "Google atsauksme",
+    "viewAllGoogle": "Skatīt visas atsauksmes Google",
     "items": {
       "0": {
         "quote": "Vajadzēja vietni, kas skaidri rāda, ko darām. Sanāca ātri, un tagad klienti zvana paši — bez liekas skaidrošanas.",
@@ -396,8 +457,9 @@
   },
   "footer": {
     "rights": "© {year} {name}. Visas tiesības aizsargātas.",
-    "note": "Mājaslapas, CRM sistēmas un programmēšana Latvijā.",
-    "nav": "Kājenes navigācija"
+    "note": "Mājaslapas, CRM, SEO un AI risinājumi Latvijā.",
+    "nav": "Kājenes navigācija",
+    "botDemo": "AI čatbots demo"
   },
   "dock": {
     "whatsapp": "WhatsApp",

@@ -10,7 +10,7 @@ import { BudgetSelect } from "@/components/ui/BudgetSelect";
 import { cn } from "@/lib/utils";
 
 const fieldClass =
-  "w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white outline-none transition-colors placeholder:text-dim focus:border-accent/50 focus:bg-white/[0.05]";
+  "w-full rounded-2xl border border-border bg-bg-elevated px-4 py-3.5 text-sm text-text outline-none transition-colors placeholder:text-dim focus:border-accent/50 focus:ring-2 focus:ring-accent/10";
 
 export function Contact({ showHeader = true }: { showHeader?: boolean }) {
   const t = useTranslations("contact");

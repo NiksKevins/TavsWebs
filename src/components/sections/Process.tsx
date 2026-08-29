@@ -29,7 +29,7 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
   );
 
   return (
-    <section id="process" className="relative bg-navy/40">
+    <section id="process" className="relative section-alt">
       {showHeader && (
         <div className="section-pad mx-auto max-w-[1400px] pt-24 md:pt-32">
           <Reveal>
@@ -50,7 +50,7 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
           {processStepIds.map((id, i) => (
             <div
               key={id}
-              className="rounded-3xl border border-white/8 bg-bg-elevated/60 p-8"
+              className="rounded-3xl border border-border bg-bg-elevated p-8 shadow-sm"
             >
               <p className="font-mono text-sm text-accent-bright">
                 0{i + 1}
@@ -92,19 +92,19 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
                       </p>
                     </div>
                     <div className="relative md:col-span-7">
-                      <div className="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-white/10 bg-bg-elevated">
+                      <div className="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-border bg-bg-elevated shadow-sm">
                         <div
                           className="h-full w-full"
                           style={{
                             background: `
-                              radial-gradient(circle at ${20 + i * 15}% ${30 + i * 8}%, rgba(96,165,250,0.35), transparent 45%),
-                              radial-gradient(circle at ${70 - i * 10}% ${60}% , rgba(103,232,249,0.18), transparent 40%),
-                              linear-gradient(160deg, #0a1220, #05070c)
+                              radial-gradient(circle at ${20 + i * 15}% ${30 + i * 8}%, rgba(37,99,235,0.15), transparent 45%),
+                              radial-gradient(circle at ${70 - i * 10}% ${60}% , rgba(14,165,233,0.1), transparent 40%),
+                              linear-gradient(160deg, #f1f5f9, #ffffff)
                             `,
                           }}
                         />
                         <div className="pointer-events-none absolute inset-0 flex items-end p-8 md:p-12">
-                          <span className="display text-[clamp(4rem,12vw,9rem)] leading-none text-white/[0.06]">
+                          <span className="display text-[clamp(4rem,12vw,9rem)] leading-none text-slate-200">
                             {t(`steps.${id}.title`)}
                           </span>
                         </div>

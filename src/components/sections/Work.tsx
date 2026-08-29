@@ -3,9 +3,178 @@
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { projects, projectHref, type ProjectMeta } from "@/lib/data";
+import { featuredProjectIds, projects, projectHref, type ProjectMeta } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
+
+function ProjectCard({
+  project,
+  index,
+}: {
+  project: ProjectMeta;
+  index: number;
+}) {
+  const t = useTranslations("projects");
+  const tWork = useTranslations("work");
+  const metrics = t.raw(`${project.id}.metrics`) as string[];
+
+  return (
+    <Reveal delay={index * 0.06} className="h-full shrink-0 sm:shrink lg:shrink">
+      <article className="group card-hover flex h-full w-[min(85vw,360px)] flex-col overflow-hidden sm:w-[340px] lg:w-auto">
+        <Link
+          href={projectHref(project.id)}
+          className="relative block aspect-[16/11] overflow-hidden bg-slate-100"
+          aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
+        >
+          <img
+            src={project.image}
+            alt={t(`${project.id}.title`)}
+            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+            loading={index === 0 ? "eager" : "lazy"}
+            decoding="async"
+          />
+        </Link>
+        <div className="flex flex-1 flex-col p-5 md:p-6">
+          <p className="text-xs uppercase tracking-[0.2em] text-dim">
+            {t(`${project.id}.category`)} · {project.year}
+          </p>
+          <h3 className="display mt-3 text-2xl leading-tight">
+            <Link
+              href={projectHref(project.id)}
+              className="transition-colors hover:text-accent"
+            >
+              {t(`${project.id}.title`)}
+            </Link>
+          </h3>
+          <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+            {t(`${project.id}.description`)}
+          </p>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {metrics.slice(0, 2).map((m) => (
+              <li
+                key={m}
+                className="rounded-full bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent"
+              >
+                {m}
+              </li>
+            ))}
+          </ul>
+          <Link
+            href={projectHref(project.id)}
+            className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-all duration-200 hover:gap-2.5"
+          >
+            {tWork("viewCase")}
+            <ArrowUpRight size={14} />
+          </Link>
+        </div>
+      </article>
+    </Reveal>
+  );
+}
+
+export function Work({
+  preview = false,
+  showHeader = true,
+}: {
+  preview?: boolean;
+  showHeader?: boolean;
+}) {
+  const t = useTranslations("work");
+
+  const list = preview
+    ? featuredProjectIds
+        .map((id) => projects.find((p) => p.id === id))
+        .filter((p): p is ProjectMeta => p !== undefined)
+    : projects;
+
+  if (preview) {
+    return (
+      <section
+        className="section-alt section-pad py-20 md:py-28"
+        aria-labelledby="work-heading"
+      >
+        <div className="mx-auto max-w-[1400px]">
+          {showHeader && (
+            <Reveal>
+              <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                <h2
+                  id="work-heading"
+                  className="display max-w-[14ch] text-4xl md:text-5xl lg:text-6xl"
+                >
+                  {t("homeTitle")}
+                </h2>
+                <p className="max-w-xs text-sm text-muted">{t("subtitle")}</p>
+              </div>
+            </Reveal>
+          )}
+
+          <div
+            className={cn(
+              "mt-12 -mx-[clamp(1.25rem,4vw,4.5rem)] overflow-x-auto px-[clamp(1.25rem,4vw,4.5rem)] pb-2 lg:overflow-visible",
+              showHeader && "mt-12",
+            )}
+          >
+            <div className="flex gap-5 lg:grid lg:grid-cols-2 lg:gap-6">
+              {list.map((project, index) => (
+                <ProjectCard key={project.id} project={project} index={index} />
+              ))}
+            </div>
+          </div>
+
+          <p className="mt-6 text-center text-xs text-dim lg:hidden">
+            {t("scrollHint")}
+          </p>
+
+          <Reveal className="mt-10 flex justify-center md:justify-end">
+            <Link
+              href="/work"
+              className="inline-flex items-center gap-2 text-sm font-medium text-accent transition-all duration-200 hover:gap-3"
+            >
+              {t("viewAll")}
+              <ArrowUpRight size={16} />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section
+      className="section-pad relative py-24 md:py-32"
+      aria-labelledby={showHeader ? "work-heading" : undefined}
+    >
+      <div className="mx-auto max-w-[1400px]">
+        {showHeader && (
+          <Reveal>
+            <div className="mb-8 flex flex-col gap-4 md:mb-4 md:flex-row md:items-end md:justify-between">
+              <h2
+                id="work-heading"
+                className="display max-w-[10ch] text-5xl md:text-7xl"
+              >
+                {t("titleLead")}{" "}
+                <span className="text-gradient">{t("titleAccent")}</span>
+              </h2>
+              <p className="max-w-xs text-sm text-muted md:text-right">
+                {t("subtitle")}
+              </p>
+            </div>
+          </Reveal>
+        )}
+
+        <div className="divide-y divide-border">
+          {list.map((project, index) => (
+            <ProjectShowcase
+              key={project.id}
+              project={project}
+              index={index}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function ProjectShowcase({
   project,
@@ -34,26 +203,22 @@ function ProjectShowcase({
       >
         <Link
           href={projectHref(project.id)}
-          className="group relative block overflow-hidden rounded-[1.5rem] border border-white/10 transition-all duration-300 hover:border-accent/35 hover:shadow-[0_20px_50px_-28px_rgba(59,130,246,0.55)]"
+          className="group relative block overflow-hidden rounded-[1.5rem] border border-border bg-bg-elevated shadow-sm transition-all duration-300 hover:border-accent/30 hover:shadow-md"
           aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
         >
           <div
             className="relative aspect-[16/11] overflow-hidden"
             style={{
-              background: `radial-gradient(120% 90% at ${isLeft ? "20%" : "80%"} 10%, ${project.glow}, transparent 55%), linear-gradient(145deg, ${project.accent}, #05070c 70%)`,
+              background: `radial-gradient(120% 90% at ${isLeft ? "20%" : "80%"} 10%, ${project.glow}, transparent 55%), linear-gradient(145deg, ${project.accent}, #f1f5f9 70%)`,
             }}
           >
             <img
               src={project.image}
               alt={t(`${project.id}.title`)}
-              width={1600}
-              height={1100}
-              className="absolute inset-0 object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
-              style={{ width: "100%", height: "100%", maxWidth: "none" }}
+              className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
               loading={index === 0 ? "eager" : "lazy"}
               decoding="async"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
           </div>
         </Link>
       </div>
@@ -71,7 +236,7 @@ function ProjectShowcase({
           <h3 className="display mt-4 text-4xl md:text-5xl lg:text-6xl">
             <Link
               href={projectHref(project.id)}
-              className="transition-colors hover:text-accent-bright"
+              className="transition-colors hover:text-accent"
             >
               {t(`${project.id}.title`)}
             </Link>
@@ -79,14 +244,14 @@ function ProjectShowcase({
           <p className="mt-5 max-w-md leading-relaxed text-muted">
             {t(`${project.id}.description`)}
           </p>
-          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-accent-bright">
+          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-accent">
             {metrics.map((m) => (
               <li key={m}>{m}</li>
             ))}
           </ul>
           <Link
             href={projectHref(project.id)}
-            className="mt-8 inline-flex items-center gap-2 text-sm text-white transition-all duration-200 hover:gap-3 hover:text-accent-bright"
+            className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-text transition-all duration-200 hover:gap-3 hover:text-accent"
           >
             {tWork("viewCase")}
             <ArrowUpRight size={16} />
@@ -94,64 +259,5 @@ function ProjectShowcase({
         </Reveal>
       </div>
     </article>
-  );
-}
-
-export function Work({
-  preview = false,
-  showHeader = true,
-}: {
-  preview?: boolean;
-  showHeader?: boolean;
-}) {
-  const t = useTranslations("work");
-  const list = preview ? projects.slice(0, 2) : projects;
-
-  return (
-    <section
-      className="section-pad relative py-24 md:py-32"
-      aria-labelledby={showHeader ? "work-heading" : undefined}
-    >
-      <div className="mx-auto max-w-[1400px]">
-        {showHeader && (
-          <Reveal>
-            <div className="mb-8 flex flex-col gap-4 md:mb-4 md:flex-row md:items-end md:justify-between">
-              <h2
-                id="work-heading"
-                className="display max-w-[10ch] text-5xl md:text-7xl"
-              >
-                {t("titleLead")}{" "}
-                <span className="text-gradient">{t("titleAccent")}</span>
-              </h2>
-              <p className="max-w-xs text-sm text-muted md:text-right">
-                {t("subtitle")}
-              </p>
-            </div>
-          </Reveal>
-        )}
-
-        <div className="divide-y divide-white/5">
-          {list.map((project, index) => (
-            <ProjectShowcase
-              key={project.id}
-              project={project}
-              index={index}
-            />
-          ))}
-        </div>
-
-        {preview && (
-          <Reveal className="mt-12 flex justify-center md:justify-end">
-            <Link
-              href="/work"
-              className="inline-flex items-center gap-2 text-sm text-accent-bright transition-all duration-200 hover:gap-3 hover:text-white"
-            >
-              {t("viewAll")}
-              <ArrowUpRight size={16} />
-            </Link>
-          </Reveal>
-        )}
-      </div>
-    </section>
   );
 }

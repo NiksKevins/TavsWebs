@@ -13,7 +13,7 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="section-pad py-24 md:py-32">
+    <section className="section-alt section-pad py-20 md:py-28">
       <div
         className={
           showHeader
@@ -26,7 +26,7 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
             <p className="text-xs uppercase tracking-[0.28em] text-dim">
               {t("eyebrow")}
             </p>
-            <h2 className="display mt-4 text-5xl md:text-6xl">{t("title")}</h2>
+            <h2 className="display mt-4 text-4xl md:text-5xl">{t("title")}</h2>
             <p className="mt-4 text-muted">{t("subtitle")}</p>
           </Reveal>
         )}
@@ -36,10 +36,10 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
             const isOpen = open === i;
             return (
               <Reveal key={key} delay={i * 0.04}>
-                <div className="border-b border-white/8">
+                <div className="border-b border-border">
                   <button
                     type="button"
-                    className="group flex w-full items-center justify-between gap-6 py-6 text-left transition-colors hover:text-accent-bright"
+                    className="group flex w-full items-center justify-between gap-6 py-6 text-left transition-colors hover:text-accent"
                     aria-expanded={isOpen}
                     onClick={() => setOpen(isOpen ? null : i)}
                   >
@@ -48,8 +48,8 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
                     </span>
                     <span
                       className={cn(
-                        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/10 transition-all duration-300 group-hover:border-accent/40 group-hover:bg-accent/10",
-                        isOpen && "rotate-45 border-accent/40 bg-accent/10",
+                        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-bg-elevated transition-all duration-300 group-hover:border-accent/40 group-hover:bg-accent/5",
+                        isOpen && "rotate-45 border-accent/40 bg-accent/5",
                       )}
                     >
                       <Plus size={16} />

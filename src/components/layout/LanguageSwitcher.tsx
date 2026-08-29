@@ -17,7 +17,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] p-0.5 text-xs",
+        "inline-flex items-center rounded-full border border-border bg-bg-elevated p-0.5 text-xs shadow-sm",
         className,
       )}
       role="group"
@@ -34,12 +34,11 @@ export function LanguageSwitcher({ className }: { className?: string }) {
             className={cn(
               "rounded-full px-2.5 py-1.5 font-medium tracking-wide transition-all duration-200",
               active
-                ? "bg-accent/20 text-white"
-                : "text-muted hover:bg-white/[0.08] hover:text-white active:scale-95",
+                ? "bg-accent text-white"
+                : "text-muted hover:bg-slate-100 hover:text-text active:scale-95",
             )}
             onClick={() => {
               if (code === locale) return;
-              // Preserve dynamic segments (e.g. /work/[slug]) when switching locale
               router.replace(
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 { pathname, params } as any,

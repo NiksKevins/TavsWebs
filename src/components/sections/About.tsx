@@ -32,16 +32,16 @@ export function About({ showHeader = true }: { showHeader?: boolean }) {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <div className="relative mb-14 aspect-[5/4] overflow-hidden rounded-[2rem] border border-white/10">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(96,165,250,0.25),transparent_50%),linear-gradient(145deg,#0c1a2e,#05070c)]" />
-              <div className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:48px_48px]" />
+            <div className="relative mb-14 aspect-[5/4] overflow-hidden rounded-[2rem] border border-border bg-bg-elevated shadow-sm">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(37,99,235,0.12),transparent_50%),linear-gradient(145deg,#f1f5f9,#ffffff)]" />
+              <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(15,23,42,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.04)_1px,transparent_1px)] [background-size:48px_48px]" />
               <div className="absolute bottom-6 left-6 right-6 glass rounded-2xl p-5">
                 <p className="text-sm text-muted">{t("philosophyLabel")}</p>
                 <p className="display mt-2 text-2xl">{t("philosophy")}</p>
               </div>
             </div>
 
-            <ol className="relative space-y-10 border-l border-white/10 pl-8">
+            <ol className="relative space-y-10 border-l border-border pl-8">
               {timelineYears.map((year, i) => (
                 <Reveal key={year} delay={i * 0.06}>
                   <li className="relative">

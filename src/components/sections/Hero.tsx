@@ -2,10 +2,11 @@
 
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, MessageCircle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { HeroAtmosphere } from "@/components/hero/HeroAtmosphere";
+import { site } from "@/lib/data";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -20,7 +21,7 @@ export function Hero() {
 
       <div className="section-pad relative z-10 mx-auto w-full max-w-[1400px]">
         <motion.p
-          className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[11px] font-medium tracking-[0.18em] text-white/70 uppercase"
+          className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-bg-elevated px-3.5 py-1.5 text-[11px] font-medium tracking-[0.18em] text-muted uppercase shadow-sm"
           initial={reduced ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.08 }}
@@ -29,7 +30,7 @@ export function Hero() {
         </motion.p>
 
         <motion.h1
-          className="display max-w-[11ch] text-[clamp(2.75rem,8.5vw,6.25rem)] leading-[0.95] text-white md:max-w-[14ch]"
+          className="display max-w-[18ch] text-[clamp(2.25rem,6.5vw,5rem)] leading-[1.02] text-text md:max-w-[22ch]"
           initial={reduced ? false : { opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
@@ -39,7 +40,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          className="mt-7 max-w-lg text-base leading-relaxed text-muted md:text-lg"
+          className="mt-7 max-w-2xl text-base leading-relaxed text-muted md:text-lg"
           initial={reduced ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -56,11 +57,12 @@ export function Hero() {
           <Link href="/contact">
             <Button size="lg">{t("ctaPrimary")}</Button>
           </Link>
-          <Link href="/work">
-            <Button size="lg" variant="outline">
-              {t("ctaSecondary")}
+          <a href={site.whatsapp} target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="whatsapp">
+              <MessageCircle size={18} />
+              {t("ctaWhatsapp")}
             </Button>
-          </Link>
+          </a>
         </motion.div>
       </div>
 
@@ -70,10 +72,9 @@ export function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        <Link
-          href="/work"
-          className="flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-dim transition-colors hover:text-white"
-          aria-label={t("ctaSecondary")}
+        <a
+          href="#services"
+          className="flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-dim transition-colors hover:text-text"
         >
           <span>{t("explore")}</span>
           <motion.span
@@ -82,7 +83,7 @@ export function Hero() {
           >
             <ArrowDown size={16} />
           </motion.span>
-        </Link>
+        </a>
       </motion.div>
     </section>
   );

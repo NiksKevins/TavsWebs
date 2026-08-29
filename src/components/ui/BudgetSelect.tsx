@@ -55,11 +55,11 @@ export function BudgetSelect({
         aria-controls={listId}
         onClick={() => setOpen((v) => !v)}
         className={cn(
-          "flex w-full items-center justify-between gap-3 rounded-2xl border bg-white/[0.03] px-4 py-3.5 text-left text-sm transition-all duration-300",
+          "flex w-full items-center justify-between gap-3 rounded-2xl border bg-bg-elevated px-4 py-3.5 text-left text-sm transition-all duration-300",
           open
-            ? "border-accent/50 bg-white/[0.05] shadow-[0_0_0_3px_rgba(59,130,246,0.12)]"
-            : "border-white/10 hover:border-white/20",
-          value ? "text-white" : "text-dim",
+            ? "border-accent/50 shadow-[0_0_0_3px_rgba(37,99,235,0.12)]"
+            : "border-border hover:border-accent/30",
+          value ? "text-text" : "text-dim",
         )}
       >
         <span className="truncate">{value || placeholder}</span>
@@ -67,7 +67,7 @@ export function BudgetSelect({
           size={16}
           className={cn(
             "shrink-0 text-muted transition-transform duration-300",
-            open && "rotate-180 text-accent-bright",
+            open && "rotate-180 text-accent",
           )}
         />
       </button>
@@ -81,7 +81,7 @@ export function BudgetSelect({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -4, scale: 0.98 }}
             transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute z-30 mt-2 max-h-64 w-full overflow-auto rounded-2xl border border-white/10 bg-[#0a1220]/95 p-1.5 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.85)] backdrop-blur-xl"
+            className="absolute z-30 mt-2 max-h-64 w-full overflow-auto rounded-2xl border border-border bg-bg-elevated p-1.5 shadow-lg"
           >
             {options.map((option) => {
               const selected = value === option;
@@ -92,8 +92,8 @@ export function BudgetSelect({
                     className={cn(
                       "flex w-full items-center justify-between gap-3 rounded-xl px-3.5 py-2.5 text-left text-sm transition-colors",
                       selected
-                        ? "bg-accent/20 text-white"
-                        : "text-muted hover:bg-white/[0.06] hover:text-white",
+                        ? "bg-accent/10 text-accent"
+                        : "text-muted hover:bg-slate-50 hover:text-text",
                     )}
                     onClick={() => {
                       setValue(option);
@@ -103,7 +103,7 @@ export function BudgetSelect({
                   >
                     <span>{option}</span>
                     {selected && (
-                      <Check size={14} className="shrink-0 text-accent-bright" />
+                      <Check size={14} className="shrink-0 text-accent" />
                     )}
                   </button>
                 </li>

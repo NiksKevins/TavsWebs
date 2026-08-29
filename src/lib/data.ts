@@ -6,14 +6,28 @@ export const site = {
   whatsapp: "https://wa.me/37125547113",
   url: "https://tavswebs.com",
   twitter: "@tavswebs",
+  botUrl: "https://bot.tavswebs.com",
 } as const;
+
+export const GOOGLE_REVIEWS_URL =
+  "https://share.google/SfRHlWtMviu8CpwQ5";
 
 export const navHrefs = [
   { key: "work", href: "/work" },
-  { key: "services", href: "/services" },
-  { key: "process", href: "/process" },
   { key: "about", href: "/about" },
+  { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
+] as const;
+
+export const serviceNavItems = [
+  { id: "website-dev", hash: "website-dev" },
+  { id: "ecommerce", hash: "ecommerce" },
+  { id: "seo-audit", hash: "seo-audit" },
+  { id: "crm", hash: "crm" },
+  { id: "mobile-apps", hash: "mobile-apps" },
+  { id: "programming", hash: "programming" },
+  { id: "ai-chatbots", hash: "ai-chatbots" },
+  { id: "redesign", hash: "redesign" },
 ] as const;
 
 export const footerHrefs = [
@@ -36,6 +50,27 @@ export const pagePaths = {
 } as const;
 
 export type PageKey = keyof typeof pagePaths;
+
+export const stats = [
+  { key: "websites", value: "35+" },
+  { key: "years", value: "7+" },
+  { key: "rating", value: "4.9★" },
+  { key: "response", value: "24h" },
+] as const;
+
+export const googleReviews = [
+  {
+    name: "Megija Megana",
+    text: "Very good experience. Everything was done quickly and with quality. Thanks for the great work! Definitely recommend.",
+    textLv:
+      "Ļoti laba pieredze. Viss tika izdarīts ātri un kvalitatīvi. Paldies par lielisko darbu! Noteikti iesaku.",
+  },
+  {
+    name: "Inguss Boldāns",
+    text: "Fast service and precision in website creation!",
+    textLv: "Ātrs serviss un precizitāte mājaslapas izveidē!",
+  },
+] as const;
 
 export const projects = [
   {
@@ -75,6 +110,7 @@ export const projects = [
     image: "/portfolio/mock-kozy-eats.jpg",
     url: null,
     gallery: ["/portfolio/mock-kozy-eats.jpg"] as const,
+    mock: true,
   },
   {
     id: "favela-nightclub",
@@ -85,6 +121,7 @@ export const projects = [
     image: "/portfolio/mock-favela.jpg",
     url: null,
     gallery: ["/portfolio/mock-favela.jpg"] as const,
+    mock: true,
   },
 ] as const;
 
@@ -102,17 +139,29 @@ export function getProject(id: string) {
   return projects.find((p) => p.id === id);
 }
 
+export const featuredProjectIds = ["audi-klubs", "sturisi-vib"] as const;
+
 export const serviceIds = [
   "website-dev",
   "ecommerce",
-  "mobile-apps",
-  "redesign",
   "seo-audit",
-  "programming",
   "crm",
+  "mobile-apps",
+  "programming",
+  "ai-chatbots",
+  "redesign",
 ] as const;
 
 export type ServiceId = (typeof serviceIds)[number];
+
+export const serviceBadges: Partial<Record<ServiceId, "popular" | "new">> = {
+  "website-dev": "popular",
+  "ai-chatbots": "new",
+};
+
+export const serviceExternalUrls: Partial<Record<ServiceId, string>> = {
+  "ai-chatbots": site.botUrl,
+};
 
 export const serviceImages: Record<ServiceId, string> = {
   "website-dev": "/services/website-dev.jpg",
@@ -122,6 +171,7 @@ export const serviceImages: Record<ServiceId, string> = {
   "seo-audit": "/services/seo-audit.jpg",
   programming: "/services/programming.jpg",
   crm: "/services/crm.jpg",
+  "ai-chatbots": "/services/programming.jpg",
 };
 
 export const processStepIds = [

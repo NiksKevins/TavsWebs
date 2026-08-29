@@ -11,18 +11,21 @@ export function Footer() {
   const tSite = useTranslations("site");
 
   return (
-    <footer className="section-pad border-t border-white/5 pb-[calc(6rem+var(--safe-bottom))] pt-16 md:pb-16">
+    <footer className="section-pad border-t border-border bg-bg-elevated pb-[calc(6rem+var(--safe-bottom))] pt-16 md:pb-16">
       <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <Link href="/" className="display inline-flex items-center gap-3 text-3xl opacity-95 transition hover:opacity-100 md:text-4xl">
+          <Link
+            href="/"
+            className="display inline-flex items-center gap-3 text-3xl text-text transition hover:text-accent md:text-4xl"
+          >
             <BrandMark className="h-8 w-8 shrink-0 md:h-9 md:w-9" />
             {site.name}
             <span
               aria-hidden
-              className="ml-1 inline-block h-2 w-2 rounded-full bg-accent-bright md:h-2.5 md:w-2.5"
+              className="ml-1 inline-block h-2 w-2 rounded-full bg-accent md:h-2.5 md:w-2.5"
             />
           </Link>
-          <p className="mt-3 max-w-sm text-sm text-muted">{tSite("tagline")}</p>
+          <p className="mt-3 max-w-sm text-sm text-muted">{tSite("description")}</p>
         </div>
 
         <nav
@@ -41,10 +44,16 @@ export function Footer() {
         </nav>
 
         <div className="flex flex-col gap-3 text-sm text-muted md:col-span-3 md:items-end">
-          <a href={`mailto:${site.email}`} className="text-link w-fit transition-colors md:ml-auto">
+          <a
+            href={`mailto:${site.email}`}
+            className="text-link w-fit transition-colors md:ml-auto"
+          >
             {site.email}
           </a>
-          <a href={site.phoneHref} className="text-link w-fit transition-colors md:ml-auto">
+          <a
+            href={site.phoneHref}
+            className="text-link w-fit transition-colors md:ml-auto"
+          >
             {site.phone}
           </a>
           <a
@@ -55,9 +64,17 @@ export function Footer() {
           >
             WhatsApp
           </a>
+          <a
+            href={site.botUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link w-fit transition-colors md:ml-auto"
+          >
+            {t("botDemo")}
+          </a>
         </div>
       </div>
-      <div className="mx-auto mt-12 flex max-w-[1400px] flex-col gap-2 border-t border-white/5 pt-6 text-xs text-dim sm:flex-row sm:justify-between">
+      <div className="mx-auto mt-12 flex max-w-[1400px] flex-col gap-2 border-t border-border pt-6 text-xs text-dim sm:flex-row sm:justify-between">
         <p>{t("rights", { year: new Date().getFullYear(), name: site.name })}</p>
         <p>{t("note")}</p>
       </div>

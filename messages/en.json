@@ -43,27 +43,66 @@
     "about": "About",
     "contact": "Contact",
     "faq": "FAQ",
-    "getQuote": "Get a quote",
+    "getQuote": "Get in touch",
+    "allServices": "All services",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "homeAria": "{name} home",
     "primary": "Primary",
-    "language": "Language"
+    "language": "Language",
+    "serviceItems": {
+      "website-dev": "Website development",
+      "ecommerce": "Online stores",
+      "seo-audit": "SEO optimization",
+      "crm": "CRM systems",
+      "mobile-apps": "Mobile apps",
+      "programming": "Programming",
+      "ai-chatbots": "AI chatbots",
+      "redesign": "Redesign & rebuild"
+    }
   },
   "hero": {
     "eyebrow": "TavsWebs · websites from €200",
-    "titleBefore": "A website",
-    "titleAccent": "that brings you clients",
-    "body": "A clear site, store, CRM, or app — without the fluff. Quote within 24 hours.",
+    "titleBefore": "Websites, CRM, SEO, apps",
+    "titleAccent": "and AI solutions",
+    "body": "Digital studio in Latvia — we build websites, CRM systems, SEO, mobile apps and AI chatbots. We start with your goal and finish with a clear result. Quote within 24 hours.",
     "ctaPrimary": "Get a quote",
+    "ctaWhatsapp": "Message on WhatsApp",
     "ctaSecondary": "View work",
     "explore": "Explore"
   },
   "site": {
-    "tagline": "Fast, high quality, tailored to your needs",
-    "description": "TavsWebs — websites, specialised CRM systems and any business software in Latvia. From idea to finished product.",
+    "tagline": "Websites, CRM, SEO and AI solutions in Latvia",
+    "description": "TavsWebs — website development, CRM systems, SEO, mobile apps and AI chatbots in Latvia. From idea to finished product.",
     "responseTime": "Replies within 24 hours",
     "skipToContent": "Skip to content"
+  },
+  "aboutPreview": {
+    "eyebrow": "About us",
+    "title": "Digital studio in Latvia",
+    "body": "We build websites, CRM systems, SEO, apps and AI chatbots. For most clients — several of these at once, because together they work better.",
+    "body2": "No templates and no jargon. You know what you get, what it costs and how long it takes. We reply within 24 hours.",
+    "cta": "Learn more about us",
+    "stats": {
+      "websites": "Websites built",
+      "years": "Years of experience",
+      "rating": "Google rating",
+      "response": "Response time"
+    }
+  },
+  "contactBlock": {
+    "eyebrow": "Contact",
+    "title": "Where to find us",
+    "subtitle": "Meetings in Riga or remote. Write, call or fill in the form — we'll plan the next step.",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "whatsappHint": "Message us",
+    "location": "Location",
+    "locationValue": "Riga, Latvia · in person and remote",
+    "hours": "Response time",
+    "hoursValue": "We reply within 24 hours on business days",
+    "cta": "Fill in the form"
   },
   "home": {
     "processCard": {
@@ -85,9 +124,11 @@
   "work": {
     "eyebrow": "Portfolio",
     "title": "Our work",
+    "homeTitle": "Latest work",
     "titleAccent": "work",
     "titleLead": "Our",
     "subtitle": "Real clients — from CMS platforms to business websites.",
+    "scrollHint": "Swipe to see all",
     "viewCase": "View project",
     "caseStudyTitle": "{title} — project",
     "viewAll": "All projects",
@@ -184,8 +225,17 @@
   "services": {
     "eyebrow": "Services",
     "title": "Everything a business needs digitally",
+    "homeTitle": "8 services, one team",
+    "homeSubtitle": "From websites and CRM to SEO, apps and AI chatbots — everything a business needs digitally.",
     "pageDescription": "Websites, specialised CRM systems, stores, apps, SEO and custom programming — end to end.",
     "exploreAll": "All services",
+    "learnMore": "Learn more",
+    "tryDemo": "Try the demo",
+    "scrollHint": "Swipe to see all",
+    "badges": {
+      "popular": "Most popular",
+      "new": "New"
+    },
     "ctaTitle": "Need something else?",
     "items": {
       "website-dev": {
@@ -229,6 +279,12 @@
         "description": "Specialised CRM systems for companies and internal business tools — built around your processes.",
         "detail": "CRM · Customer management · Internal systems",
         "longDescription": "We build specialised CRM systems and any business software — customer management, orders, inventory, staff tools, integrations. No generic templates: we make what your company actually needs. If something is missing digitally — we can make it happen."
+      },
+      "ai-chatbots": {
+        "title": "AI chatbots",
+        "description": "An AI chatbot for your business — answers questions, collects leads and works 24/7.",
+        "detail": "24/7 · Custom · bot.tavswebs.com",
+        "longDescription": "We build AI chatbots that respond to clients anytime — on your website, WhatsApp or internal systems. Try our demo: bot.tavswebs.com"
       }
     }
   },
@@ -239,6 +295,7 @@
     "titleAccent": "works",
     "subtitle": "Clear steps from idea to a finished product.",
     "pageDescription": "How TavsWebs works: talk, plan, design, build and launch.",
+    "learnMore": "Full process",
     "ctaTitle": "Tell us what you need",
     "steps": {
       "discovery": {
@@ -301,6 +358,10 @@
   "testimonials": {
     "eyebrow": "Testimonials",
     "title": "What clients say",
+    "googleRating": "4.9",
+    "googleLabel": "on Google reviews",
+    "googleSource": "Google review",
+    "viewAllGoogle": "View all reviews on Google",
     "items": {
       "0": {
         "quote": "We needed a site that clearly shows what we do. It was done fast, and now clients call us — without endless explaining.",
@@ -396,8 +457,9 @@
   },
   "footer": {
     "rights": "© {year} {name}. All rights reserved.",
-    "note": "Websites, CRM systems and programming in Latvia.",
-    "nav": "Footer"
+    "note": "Websites, CRM, SEO and AI solutions in Latvia.",
+    "nav": "Footer",
+    "botDemo": "AI chatbot demo"
   },
   "dock": {
     "whatsapp": "WhatsApp",
