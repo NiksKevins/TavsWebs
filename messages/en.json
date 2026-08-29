@@ -147,6 +147,7 @@
       "title": "Audi Klubs",
       "category": "Club platform · CMS",
       "description": "A real club platform with a WordPress-style content editor — the client updates pages, news and events themselves.",
+      "homeOutcome": "Full club platform with CMS — the client edits content, events and shop themselves.",
       "longDescription": "Audi Klubs is a full club platform: homepage, events, shop, gallery, classifieds and donations. The key client value is a WordPress-style admin (Filament CMS). They can edit page content, hero slides, partners, FAQ and shop without code. Open a page in admin, edit sections, publish — exactly what clients want: a strong site plus self-serve control.",
       "metrics": [
         "WordPress-style CMS",
@@ -169,6 +170,7 @@
       "title": "Stūrīši VIB",
       "category": "Construction · Landscaping",
       "description": "Live website for an earthworks and landscaping company — sturisivib.lv.",
+      "homeOutcome": "Live site at sturisivib.lv — clear services, mobile-ready, more enquiries.",
       "longDescription": "Stūrīši VIB specializes in landscaping, drainage and earthworks. The site clearly presents site preparation, road building, paving, melioration and greening. Clean design, mobile-ready layout and a contact form — so customers find the service and get in touch fast.",
       "metrics": [
         "sturisivib.lv",
@@ -240,9 +242,9 @@
     "items": {
       "website-dev": {
         "title": "Website development",
-        "description": "Fast, high quality and tailored to your needs. A site that clearly shows what you do.",
+        "description": "WordPress, WooCommerce or custom builds — a site that clearly shows what you do and is ready for Google.",
         "detail": "From €200 · 1–3 weeks · SEO basics",
-        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website. Design, development, mobile version and launch included."
+        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website on WordPress, WooCommerce or a custom platform. Design, development, mobile version, SEO basics and launch included."
       },
       "ecommerce": {
         "title": "Online store development",
@@ -264,9 +266,9 @@
       },
       "seo-audit": {
         "title": "SEO audits & optimization",
-        "description": "We check why Google can’t find you — and fix it so customers find you.",
-        "detail": "Audit · Fixes · Google",
-        "longDescription": "SEO audit: speed, titles, technical issues and search visibility. You get a clear fix list — and we can implement it too."
+        "description": "We check why Google can't find you — and improve it so customers find you organically.",
+        "detail": "Audit from €150 · Fixes · Google",
+        "longDescription": "SEO audit and ongoing optimization: speed, titles, technical issues and search visibility. You get a clear fix list — and we can implement the fixes too."
       },
       "programming": {
         "title": "Programming",
@@ -389,27 +391,35 @@
     "items": {
       "0": {
         "q": "How much does website development cost in Latvia?",
-        "a": "A simple website starts from €200. An online store, mobile app or larger system — from €2000. We’ll give an exact price after a short talk — free of charge."
+        "a": "A simple website starts from €200. A typical business site — €400–1500. Online store — from €800. CRM, app or larger system — from €2000. SEO audit — from €150. AI chatbot — based on scope. Before quoting we always talk to understand what you actually need — consultation is free."
       },
       "1": {
         "q": "Do you do more than websites?",
-        "a": "Specialised CRM systems for companies, mobile apps, online stores, redesigns, SEO audits and any programming. If a business needs something digital — we can make it happen."
+        "a": "Specialised CRM systems, mobile apps (iOS and Android), online stores, redesigns, SEO audits and optimization, AI chatbots, web apps, APIs and any custom programming. If a business needs something digital — we can build it. Try our AI chatbot: bot.tavswebs.com"
       },
       "2": {
         "q": "How long does a website take?",
-        "a": "A typical website — 1 to 3 weeks. Redesigns are often faster. Apps and larger projects — 4 to 12 weeks. We agree on the timeline before we start."
+        "a": "A typical website — 1 to 3 weeks. Redesigns are often faster. SEO — first changes after 2–3 months. Apps and larger projects — 4 to 12 weeks. We agree on a clear timeline before we start."
       },
       "3": {
-        "q": "What is an SEO audit?",
-        "a": "We check your site — speed, titles and Google visibility. Then you get a clear fix list, and we can implement the fixes too."
+        "q": "What is an SEO audit and optimization?",
+        "a": "We check your site — speed, titles, technical issues and Google visibility. Then you get a clear fix list, and we can implement the fixes too. Ongoing SEO optimization helps you grow in organic search long term."
       },
       "4": {
         "q": "Do you build mobile apps?",
-        "a": "Yes. We build iOS and Android apps, plus web apps. Tell us what you need — we’ll give a price and timeline."
+        "a": "Yes. We build iOS and Android apps, plus web apps. Tell us what you need — we'll give a price and timeline after a short talk."
       },
       "5": {
         "q": "Where in Latvia do you work?",
-        "a": "Across Latvia — in Riga and remotely. We work online, so location isn’t a blocker."
+        "a": "Across Latvia — in Riga in person and remotely. We work online, so location isn't a blocker. Meetings in Latvian and English."
+      },
+      "6": {
+        "q": "Do I need to sign a long-term contract?",
+        "a": "No. One-off projects — pay after an approved quote. If you need ongoing support or SEO — we agree a monthly plan that can be cancelled with 30 days notice."
+      },
+      "7": {
+        "q": "How do we start working together?",
+        "a": "1) Write to tavswebs@gmail.com, WhatsApp or fill in the contact form. 2) We get in touch and schedule a short call. 3) We send a written quote with plan and price. 4) If it fits — we usually start within 1–2 weeks."
       }
     }
   },

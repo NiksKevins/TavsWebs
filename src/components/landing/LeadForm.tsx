@@ -9,10 +9,14 @@ export const landingServices = [
   { id: "crm", label: "CRM / biznesa sistēma" },
   { id: "redesign", label: "Redesign (esošai lapai)" },
   { id: "seo", label: "SEO audits" },
+  { id: "chatbot", label: "AI čatbots" },
   { id: "programming", label: "Cits" },
 ] as const;
 
 type Status = "idle" | "loading" | "success" | "error";
+
+const inputClass =
+  "w-full rounded-xl border border-border bg-bg-elevated px-4 py-3 text-sm text-text outline-none transition placeholder:text-dim focus:border-accent/50 focus:ring-2 focus:ring-accent/10";
 
 export function LeadForm({
   source = "landing.tavswebs.com",
@@ -73,9 +77,9 @@ export function LeadForm({
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-[#5EEAD4]/30 bg-[#0a0a0a] p-8 text-center">
-        <p className="text-2xl font-semibold text-white">Paldies!</p>
-        <p className="mt-3 text-sm leading-relaxed text-white/70">
+      <div className="card p-8 text-center">
+        <p className="text-2xl font-semibold text-text">Paldies!</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted">
           Saņēmām jūsu pieteikumu. Sazināsimies 24 stundu laikā ar bezmaksas
           piedāvājumu.
         </p>
@@ -84,20 +88,17 @@ export function LeadForm({
   }
 
   return (
-    <form
-      onSubmit={onSubmit}
-      className="rounded-2xl border border-white/10 bg-[#0a0a0a] p-6 shadow-[0_24px_80px_-32px_rgba(0,0,0,0.8)] sm:p-8"
-    >
-      <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+    <form onSubmit={onSubmit} className="card p-6 sm:p-8">
+      <h2 className="text-xl font-semibold tracking-tight text-text sm:text-2xl">
         Saņemiet{" "}
-        <span className="text-[#5EEAD4]">BEZMAKSAS</span> piedāvājumu
+        <span className="text-accent">bezmaksas</span> piedāvājumu
       </h2>
-      <p className="mt-2 text-sm text-white/55">
+      <p className="mt-2 text-sm text-muted">
         Pastāstiet, kas vajadzīgs — atbildēsim 24 stundu laikā.
       </p>
 
       <fieldset className="mt-6">
-        <legend className="mb-2.5 text-xs font-medium uppercase tracking-wider text-white/45">
+        <legend className="mb-2.5 text-xs font-medium uppercase tracking-wider text-dim">
           Kas jums vajadzīgs?
         </legend>
         <div className="flex flex-wrap gap-2">
@@ -108,8 +109,8 @@ export function LeadForm({
                 key={service.id}
                 className={
                   active
-                    ? "cursor-pointer select-none rounded-full border border-[#5EEAD4] bg-[#5EEAD4]/15 px-3.5 py-2 text-xs font-medium text-[#5EEAD4] shadow-[0_0_0_1px_rgba(94,234,212,0.25)]"
-                    : "cursor-pointer select-none rounded-full border border-white/25 bg-white/[0.03] px-3.5 py-2 text-xs font-medium text-white/75 hover:border-white/45 hover:bg-white/[0.06] hover:text-white"
+                    ? "cursor-pointer select-none rounded-full border border-accent bg-accent/10 px-3.5 py-2 text-xs font-medium text-accent"
+                    : "cursor-pointer select-none rounded-full border border-border bg-bg px-3.5 py-2 text-xs font-medium text-muted hover:border-accent/30 hover:text-text"
                 }
               >
                 <input
@@ -127,7 +128,7 @@ export function LeadForm({
 
       <div className="mt-5 space-y-4">
         <label className="block">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/45">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-dim">
             Vārds
           </span>
           <input
@@ -135,12 +136,12 @@ export function LeadForm({
             type="text"
             required
             autoComplete="name"
-            className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/25 focus:border-[#5EEAD4]/50 focus:ring-1 focus:ring-[#5EEAD4]/40"
+            className={inputClass}
           />
         </label>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/45">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-dim">
             E-pasts
           </span>
           <input
@@ -148,12 +149,12 @@ export function LeadForm({
             type="email"
             required
             autoComplete="email"
-            className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/25 focus:border-[#5EEAD4]/50 focus:ring-1 focus:ring-[#5EEAD4]/40"
+            className={inputClass}
           />
         </label>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/45">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-dim">
             Tālruņa numurs
           </span>
           <input
@@ -161,29 +162,27 @@ export function LeadForm({
             type="tel"
             required
             autoComplete="tel"
-            className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/25 focus:border-[#5EEAD4]/50 focus:ring-1 focus:ring-[#5EEAD4]/40"
+            className={inputClass}
           />
         </label>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/45">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-dim">
             Esošā mājaslapa{" "}
-            <span className="normal-case tracking-normal text-white/30">
-              (pēc izvēles)
-            </span>
+            <span className="normal-case tracking-normal text-dim">(pēc izvēles)</span>
           </span>
           <input
             name="website"
             type="url"
             autoComplete="url"
             placeholder="https:// — ja jau ir"
-            className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/25 focus:border-[#5EEAD4]/50 focus:ring-1 focus:ring-[#5EEAD4]/40"
+            className={inputClass}
           />
         </label>
       </div>
 
       {error && (
-        <p className="mt-4 text-sm text-red-400" role="alert">
+        <p className="mt-4 text-sm text-red-600" role="alert">
           {error}
         </p>
       )}
@@ -191,8 +190,7 @@ export function LeadForm({
       <button
         type="submit"
         disabled={status === "loading"}
-        className="mt-6 w-full rounded-xl px-5 py-3.5 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 active:translate-y-0 disabled:pointer-events-none disabled:opacity-60"
-        style={{ backgroundColor: "#5EEAD4", color: "#000" }}
+        className="mt-6 w-full rounded-full bg-gradient-to-r from-accent to-accent-bright px-5 py-3.5 text-sm font-semibold text-white shadow-[0_4px_20px_-6px_rgba(37,99,235,0.5)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0 disabled:pointer-events-none disabled:opacity-60"
       >
         {status === "loading" ? "Sūta…" : "Saņemt bezmaksas piedāvājumu"}
       </button>

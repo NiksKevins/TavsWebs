@@ -141,6 +141,10 @@ export function getProject(id: string) {
 
 export const featuredProjectIds = ["audi-klubs", "sturisi-vib"] as const;
 
+export const realProjects = projects.filter(
+  (p) => !("mock" in p && p.mock),
+);
+
 export const serviceIds = [
   "website-dev",
   "ecommerce",
@@ -185,7 +189,7 @@ export const processStepIds = [
 export const timelineYears = ["2019", "2021", "2023", "2026"] as const;
 
 export const testimonialIndexes = ["0", "1", "2"] as const;
-export const faqIndexes = ["0", "1", "2", "3", "4", "5"] as const;
+export const faqIndexes = ["0", "1", "2", "3", "4", "5", "6", "7"] as const;
 export const budgetIndexes = ["0", "1", "2", "3", "4", "5"] as const;
 
 export const localeOgMap = {

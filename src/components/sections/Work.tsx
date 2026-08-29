@@ -47,7 +47,7 @@ function ProjectCard({
             </Link>
           </h3>
           <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
-            {t(`${project.id}.description`)}
+            {t(`${project.id}.homeOutcome`)}
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
             {metrics.slice(0, 2).map((m) => (
@@ -85,7 +85,7 @@ export function Work({
     ? featuredProjectIds
         .map((id) => projects.find((p) => p.id === id))
         .filter((p): p is ProjectMeta => p !== undefined)
-    : projects;
+    : projects.filter((p) => !("mock" in p && p.mock));
 
   if (preview) {
     return (

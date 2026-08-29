@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Syne } from "next/font/google";
 import { ChatWidget } from "@/components/ChatWidget";
-import { CursorGlow } from "@/components/CursorGlow";
 import { site } from "@/lib/data";
 import { landingJsonLd, landingSeo, landingUrl } from "@/lib/landing";
 import { ogImageUrl } from "@/lib/seo";
@@ -10,7 +9,14 @@ import "../globals.css";
 const manrope = Manrope({
   subsets: ["latin", "latin-ext"],
   display: "swap",
-  variable: "--font-landing",
+  variable: "--font-manrope",
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  display: "swap",
+  variable: "--font-syne",
 });
 
 const ogImage = ogImageUrl(
@@ -64,20 +70,15 @@ export default function LandingLayout({
   return (
     <html
       lang="lv"
-      className={`${manrope.variable} h-full scroll-smooth antialiased`}
-      style={{ scrollBehavior: "smooth" }}
+      className={`${manrope.variable} ${syne.variable} h-full scroll-smooth antialiased`}
     >
-      <body
-        className="min-h-full bg-black font-[family-name:var(--font-landing)] text-white"
-        style={{ fontFamily: "var(--font-landing), system-ui, sans-serif" }}
-      >
+      <body className="min-h-full bg-bg font-[family-name:var(--font-manrope)] text-text">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
         <ChatWidget />
-        <CursorGlow />
       </body>
     </html>
   );

@@ -147,6 +147,7 @@
       "title": "Audi Klubs",
       "category": "Kluba platforma · CMS",
       "description": "Reāla kluba platforma ar WordPress tipa satura redaktoru — klients pats maina lapas, ziņas un pasākumus bez programmētāja.",
+      "homeOutcome": "Pilna kluba platforma ar CMS — klients pats rediģē saturu, pasākumus un veikalu.",
       "longDescription": "Audi Klubs ir pilna kluba platforma: sākumlapa, pasākumi, veikals, galerija, sludinājumi un ziedojumi. Galvenā vērtība klientam — WordPress tipa admin (Filament CMS). Var rediģēt lapu saturu, hero slaidus, partnerus, BUJ un veikalu bez koda. Atver lapu adminā, labo sekcijas un publicē — tieši tā, kā klienti to grib: skaista vietne + ērta pašapkalpošanās.",
       "metrics": [
         "WordPress tipa CMS",
@@ -169,6 +170,7 @@
       "title": "Stūrīši VIB",
       "category": "Celtniecība · Labiekārtošana",
       "description": "Live mājaslapa zemes darbu un teritoriju labiekārtošanas uzņēmumam — sturisivib.lv.",
+      "homeOutcome": "Live vietne sturisivib.lv — skaidri pakalpojumi, mobilā versija, vairāk pieprasījumu.",
       "longDescription": "Stūrīši VIB specializējas teritoriju labiekārtošanā, meliorācijā un zemes darbos. Vietne skaidri rāda piedāvājumu: būvlaukumu sagatavošana, ceļu būve, bruģēšana, meliorācija un apzaļumošana. Tīrs dizains, mobilā versija un kontaktu forma — lai klienti ātri atrastu pakalpojumu un sazinātos.",
       "metrics": [
         "sturisivib.lv",
@@ -240,9 +242,9 @@
     "items": {
       "website-dev": {
         "title": "Mājaslapu izstrāde",
-        "description": "Ātri, kvalitatīvi un pielāgots tavām prasībām. Mājaslapa, kas skaidri pastāsta, ko tu dari.",
+        "description": "WordPress, WooCommerce vai pielāgota izstrāde — mājaslapa, kas skaidri pastāsta, ko tu dari, un ir gatava Google.",
         "detail": "No €200 · 1–3 nedēļas · SEO pamati",
-        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei. Dizains, programmēšana, mobilā versija un palaišana iekļauta."
+        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei uz WordPress, WooCommerce vai pielāgotas platformas. Dizains, programmēšana, mobilā versija, SEO pamati un palaišana iekļauta."
       },
       "ecommerce": {
         "title": "Interneta veikalu izstrāde",
@@ -264,9 +266,9 @@
       },
       "seo-audit": {
         "title": "SEO auditi un optimizācija",
-        "description": "Pārbaudām, kāpēc tevi neatrod Google, un salabojam — lai klienti atrastu tevi.",
-        "detail": "Audits · Labojumi · Google",
-        "longDescription": "SEO audits: ātrums, virsraksti, tehniskās kļūdas un redzamība meklētājā. Iedodam skaidru sarakstu un vajadzības gadījumā arī salabojam paši."
+        "description": "Pārbaudām, kāpēc tevi neatrod Google, un uzlabojam — lai klienti atrastu tevi organiski.",
+        "detail": "Audits no €150 · Labojumi · Google",
+        "longDescription": "SEO audits un pastāvīga optimizācija: ātrums, virsraksti, tehniskās kļūdas un redzamība meklētājā. Iedodam skaidru darbu sarakstu un vajadzības gadījumā arī implementējam labojumus paši."
       },
       "programming": {
         "title": "Programmēšana",
@@ -389,27 +391,35 @@
     "items": {
       "0": {
         "q": "Cik maksā mājaslapu izstrāde Latvijā?",
-        "a": "Vienkārša mājas lapas izveide — no €200. Interneta veikals, mobilā aplikācija vai lielāka sistēma — no €2000. Precīzu cenu iedosim pēc īsas sarunas — bez maksas."
+        "a": "Vienkārša mājaslapa sākas no €200. Tipiska biznesa vietne — €400–1500. Interneta veikals — no €800. CRM, aplikācija vai lielāka sistēma — no €2000. SEO audits — no €150. AI čatbots — pēc specifikācijas. Pirms piedāvājuma vienmēr parunājam, lai saprastu, kas tiešām vajadzīgs — konsultācija bez maksas."
       },
       "1": {
         "q": "Ko vēl darāt, ne tikai mājaslapas?",
-        "a": "Specializētas CRM sistēmas uzņēmumiem, mobilās aplikācijas, interneta veikalus, redesign, SEO auditus un jebkādu programmēšanu. Ja biznesam kaut kas digitāli vajadzīgs — varam to uztaisīt."
+        "a": "Specializētas CRM sistēmas, mobilās aplikācijas (iOS un Android), interneta veikalus, redesign, SEO auditus un optimizāciju, AI čatbotus, web lietotnes, API un jebkādu pielāgotu programmēšanu. Ja biznesam kaut kas digitāli trūkst — varam to uztaisīt. Izmēģini mūsu AI čatbotu: bot.tavswebs.com"
       },
       "2": {
         "q": "Cik ilgi aizņem mājas lapas izveide?",
-        "a": "Parasta mājaslapa — 1 līdz 3 nedēļas. Redesign bieži ātrāk. Aplikācijas un lielāki projekti — 4 līdz 12 nedēļas. Pirms darba sākuma vienojamies par termiņu."
+        "a": "Parasta mājaslapa — 1 līdz 3 nedēļas. Redesign bieži ātrāk. SEO — pirmās izmaiņas pēc 2–3 mēnešiem. Aplikācijas un lielāki projekti — 4 līdz 12 nedēļas. Pirms darba sākuma vienojamies par skaidru termiņu."
       },
       "3": {
-        "q": "Kas ir SEO audits?",
-        "a": "Pārbaudām tavu mājaslapu — ātrumu, virsrakstus un Google redzamību. Tad iedodam skaidru sarakstu, ko labot, un vajadzības gadījumā salabojam paši."
+        "q": "Kas ir SEO audits un optimizācija?",
+        "a": "Pārbaudām tavu mājaslapu — ātrumu, virsrakstus, tehniskās kļūdas un Google redzamību. Tad iedodam skaidru sarakstu, ko labot, un vajadzības gadījumā salabojam paši. Pastāvīga SEO optimizācija palīdz ilgtermiņā augt organiskajā meklēšanā."
       },
       "4": {
         "q": "Vai veidojat arī mobilās aplikācijas?",
-        "a": "Jā. Veidojam iOS un Android aplikācijas, kā arī web lietotnes. Pastāsti, kas vajadzīgs — iedosim cenu un termiņu."
+        "a": "Jā. Veidojam iOS un Android aplikācijas, kā arī web lietotnes. Pastāsti, kas vajadzīgs — iedosim cenu un termiņu pēc īsas sarunas."
       },
       "5": {
         "q": "Kur Latvijā jūs strādājat?",
-        "a": "Visā Latvijā — Rīgā un attālināti. Sadarbība notiek tiešsaistē, tāpēc atrašanās vieta nav šķērslis."
+        "a": "Visā Latvijā — Rīgā klātienē un attālināti. Sadarbība notiek tiešsaistē, tāpēc atrašanās vieta nav šķērslis. Sarunas iespējamas latviski un angliski."
+      },
+      "6": {
+        "q": "Vai jāparaksta ilgtermiņa līgums?",
+        "a": "Nē. Vienreizēji projekti — maksā pēc apstiprināta piedāvājuma. Ja vajadzīgs pastāvīgs atbalsts vai SEO — vienojamies par mēneša plānu, ko var pārtraukt ar 30 dienu uzteikumu."
+      },
+      "7": {
+        "q": "Kā sākt sadarbību?",
+        "a": "1) Uzraksti uz tavswebs@gmail.com, WhatsApp vai aizpildi kontaktu formu. 2) Sazināmies un norunājam īsu sarunu. 3) At sūtām rakstisku piedāvājumu ar plānu un cenu. 4) Ja der — sākam parasti 1–2 nedēļu laikā."
       }
     }
   },
