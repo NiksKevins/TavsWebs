@@ -34,6 +34,21 @@
       "title": "Biežākie jautājumi",
       "description": "Cik maksā mājaslapu izstrāde Latvijā? Cik ilgi jāgaida? Vai darāt arī aplikācijas un SEO auditus?",
       "ogTitle": "BUJ — TavsWebs"
+    },
+    "guides": {
+      "title": "Ceļveži un raksti",
+      "description": "Praktiski padomi par mājaslapu izmaksām, izstrādātāja izvēli un AI čatbotiem Latvijā.",
+      "ogTitle": "Ceļveži — TavsWebs"
+    },
+    "privacy": {
+      "title": "Privātuma politika",
+      "description": "Kā TavsWebs apstrādā jūsu personas datus.",
+      "ogTitle": "Privātums — TavsWebs"
+    },
+    "terms": {
+      "title": "Lietošanas noteikumi",
+      "description": "TavsWebs pakalpojumu lietošanas noteikumi.",
+      "ogTitle": "Noteikumi — TavsWebs"
     }
   },
   "nav": {
@@ -59,7 +74,10 @@
       "programming": "Programmēšana",
       "ai-chatbots": "AI čatboti",
       "redesign": "Redesign un pārbūve"
-    }
+    },
+    "guides": "Ceļveži",
+    "privacy": "Privātums",
+    "terms": "Noteikumi"
   },
   "hero": {
     "eyebrow": "TavsWebs · mājaslapas no €200",
@@ -488,5 +506,218 @@
     "lv": "LV",
     "en": "EN",
     "switchTo": "Pārslēgt uz {locale}"
+  },
+  "guides": {
+    "eyebrow": "Ceļveži",
+    "title": "Ko mēs rakstām",
+    "subtitle": "Praktiski padomi par mājaslapām, CRM un digitāliem risinājumiem Latvijā.",
+    "pageDescription": "Raksti par mājaslapu izmaksām, izstrādātāja izvēli un AI čatbotiem.",
+    "readMore": "Lasīt rakstu",
+    "viewAll": "Visi raksti",
+    "scrollHint": "Velc uz sāniem, lai redzētu vairāk",
+    "updated": "Atjaunināts 2026. gadā",
+    "ctaTitle": "Vajag palīdzību ar projektu?",
+    "ctaBody": "Pastāsti, kas vajadzīgs — iedosim skaidru piedāvājumu 24 stundu laikā.",
+    "ctaButton": "Saņemt piedāvājumu",
+    "items": {
+      "website-cost-latvia": {
+        "title": "Cik maksā mājaslapa Latvijā?",
+        "excerpt": "No kā veidojas cena un ar kādu budžetu ir jēga sākt — skaidri skaitļi un piemēri.",
+        "category": "Mājaslapas",
+        "readTime": "5 min lasīšana",
+        "intro": "Viens no biežākajiem jautājumiem, ko saņemam: cik maksā mājaslapa? Atbilde nav viens skaitlis — viss atkarīgs no apjoma. Šeit — skaidrs pārskats ar reāliem diapazoniem Latvijā.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Vienkārša mājaslapa — no €200",
+            "paragraphs": [
+              "Vienkārša vizītkarte vai neliela biznesa lapa ar sākumlapu, pakalpojumiem un kontaktu formu sākas no €200. Iekļauts dizains, programmēšana, mobilā versija un SEO pamati.",
+              "Šis līmenis der uzņēmumam, kam vajag skaidru klātbūtni internetā bez sarežģītas funkcionalitātes."
+            ]
+          },
+          "1": {
+            "heading": "Tipiska biznesa vietne — €400–1500",
+            "paragraphs": [
+              "Lielākajai daļai mazo un vidējo uzņēmumu pietiek ar lapu par €400–1500. Šeit parasti ir vairākas satura lapas, kvalitatīvāks dizains, kontaktu forma, Google Maps, biežāk arī bloga sadaļa vai daudzvalodu atbalsts.",
+              "Cenu ietekmē lapu skaits, vai vajag pielāgotu dizainu vai pietiek ar tīru, modernu šablonu, un vai ir jāintegrē ārēji rīki (CRM, rezervācijas u.c.)."
+            ]
+          },
+          "2": {
+            "heading": "Veikals, CRM un lielāki projekti",
+            "paragraphs": [
+              "Interneta veikals ar produktiem, grozu un maksājumiem — parasti no €800. CRM vai biznesa sistēma — no €2000, jo vajag detalizētu specifikāciju un pielāgotu loģiku.",
+              "Mobilās aplikācijas, AI čatboti un lielāki projekti tiek vērtēti individuāli pēc specifikācijas."
+            ]
+          },
+          "3": {
+            "heading": "Kā iegūt precīzu cenu",
+            "paragraphs": [
+              "Vislabāk — īsa saruna vai formas aizpildīšana. Mēs iedosim rakstisku piedāvājumu ar skaidru cenu, termiņu un to, kas tieši iekļauts — bez maksas un bez saistībām.",
+              "Ja budžets ir ierobežots, sakām atklāti, ko var izdarīt par šo summu un ko labāk atlikt nākamajam posmam."
+            ]
+          }
+        }
+      },
+      "choose-web-developer": {
+        "title": "Kā izvēlēties mājaslapu izstrādātāju?",
+        "excerpt": "Uz ko skatīties, pirms paraksti līgumu — portfolio, cenas, termiņi un sarkanās karogs.",
+        "category": "Padomi",
+        "readTime": "4 min lasīšana",
+        "intro": "Labs izstrādātājs nav tas, kas sola visātrāk vai lētāk. Šeit — praktisks checklist, lai izvēlētos partneri, kas patiešām piegādā rezultātu.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Skaties portfolio un reālus projektus",
+            "paragraphs": [
+              "Vai izstrādātājam ir reāli klienti, ne tikai mock dizaini? Vai vari atvērt live vietnes un paskatīties, kā tās strādā mobilajā?",
+              "TavsWebs portfolio ir publisks — skaties mūsu darbus un pārliecinies pats."
+            ]
+          },
+          "1": {
+            "heading": "Skaidra cena un termiņš pirms starta",
+            "paragraphs": [
+              "Uzticams partneris dod rakstisku piedāvājumu ar cenu, termiņu un to, kas iekļauts — pirms sākt darbu.",
+              "Uzmanies no \"viss par €99\" solījumiem bez specifikācijas. Bieži tas nozīmē slēptus maksājumus vai rezultātu, kas neapmierina."
+            ]
+          },
+          "2": {
+            "heading": "Atbalsts pēc palaišanas",
+            "paragraphs": [
+              "Vai pēc projekta beigām vari saņemt palīdzību? Vai vari pats mainīt saturu?",
+              "Labs risinājums ietver skaidru CMS (WordPress tipa redaktoru) un pieejamu kontaktu personu — ne tikai projekta beigas un klusumu."
+            ]
+          }
+        }
+      },
+      "ai-chatbot-business": {
+        "title": "AI čatbots biznesam — vai tas vajadzīgs?",
+        "excerpt": "Kāpēc arvien vairāk uzņēmumu izmanto AI čatbotus klientu apkalpošanai un pieteikumu vākšanai.",
+        "category": "AI",
+        "readTime": "4 min lasīšana",
+        "intro": "AI čatboti vairs nav nākotnes tehnoloģija — tie jau strādā pie mums. Šeit — kad čatbots ir jēga un ko tas var darīt tavam biznesam.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Ko dara AI čatbots?",
+            "paragraphs": [
+              "Čatbots atbild uz biežākajiem jautājumiem 24/7 — par cenām, pakalpojumiem, darba laiku, pieejamību. Var vākt pieteikumus, pierakstus un novirzīt sarežģītākus jautājumus uz cilvēku.",
+              "Tas nenozīmē aizstāt visu klientu apkalpošanu — bet atbrīvot laiku no atkārtotiem jautājumiem."
+            ]
+          },
+          "1": {
+            "heading": "Kam tas visvairāk der?",
+            "paragraphs": [
+              "Servisa uzņēmumi, e-veikali, klīnikas, būvniecība, auto nozare — visur, kur klienti uzdod līdzīgus jautājumus pirms pieteikšanās.",
+              "Ja saņem daudz WhatsApp vai e-pasta jautājumu par vienu un to pašu — čatbots ir jēga."
+            ]
+          },
+          "2": {
+            "heading": "Izmēģini mūsu demo",
+            "paragraphs": [
+              "TavsWebs veido pielāgotus AI čatbotus mājaslapām un WhatsApp. Izmēģini mūsu demo: bot.tavswebs.com",
+              "Ja der — varam integrēt tavā vietnē, pielāgot atbildes tavam biznesam un pieslēgt pieteikumu vākšanu."
+            ]
+          }
+        }
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "eyebrow": "Juridiski",
+      "title": "Privātuma politika",
+      "description": "Kā mēs apstrādājam jūsu personas datus, kad sazināties ar TavsWebs.",
+      "updated": "Spēkā no 2026. gada 29. augusta",
+      "sectionKeys": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "sections": {
+        "0": {
+          "heading": "Kas mēs esam",
+          "paragraphs": [
+            "TavsWebs (tavswebs@gmail.com) ir mājaslapu izstrādes un programmēšanas pakalpojumu sniedzējs Latvijā. Mēs esam datu pārzinis attiecībā uz personas datiem, ko saņemam caur mūsu vietni un kontaktformām."
+          ]
+        },
+        "1": {
+          "heading": "Kādus datus mēs vācam",
+          "paragraphs": [
+            "Kontaktformu aizpildīšanas laikā: vārds, e-pasts, tālrunis (ja norādīts), uzņēmuma nosaukums (ja norādīts), projekta apraksts un budžeta diapazons.",
+            "Automātiski: tehniskie dati par vietnes apmeklējumu (IP adrese, pārlūks) caur standarta servera žurnāliem un analītikas rīkiem, ja tie ir ieslēgti."
+          ]
+        },
+        "2": {
+          "heading": "Kā mēs izmantojam datus",
+          "paragraphs": [
+            "Lai atbildētu uz jūsu pieprasījumiem un sagatavotu piedāvājumus.",
+            "Lai nodrošinātu pakalpojumu sniegšanu un klientu atbalstu.",
+            "Mēs nepārdodam jūsu datus trešajām pusēm."
+          ]
+        },
+        "3": {
+          "heading": "Jūsu tiesības",
+          "paragraphs": [
+            "Jums ir tiesības pieprasīt piekļuvi saviem datiem, to labošanu vai dzēšanu, rakstot uz tavswebs@gmail.com.",
+            "Sūdzību var iesniegt Datu valsts inspekcijai (www.dvi.gov.lv)."
+          ]
+        }
+      }
+    },
+    "terms": {
+      "eyebrow": "Juridiski",
+      "title": "Lietošanas noteikumi",
+      "description": "Noteikumi TavsWebs vietnes un pakalpojumu lietošanai.",
+      "updated": "Spēkā no 2026. gada 29. augusta",
+      "sectionKeys": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "sections": {
+        "0": {
+          "heading": "Pakalpojumi",
+          "paragraphs": [
+            "TavsWebs sniedz mājaslapu izstrādes, programmēšanas, SEO un saistītos digitālos pakalpojumus. Konkrēts apjoms, cena un termiņš tiek noteikts individuālā rakstiskā piedāvājumā pirms darba sākuma."
+          ]
+        },
+        "1": {
+          "heading": "Maksājumi",
+          "paragraphs": [
+            "Maksājumu kārtību nosaka piedāvājumā — parasti avansa maksājums pirms darba sākuma un atlikums pēc pieņemšanas.",
+            "Cenas norādītas EUR bez PVN, ja nav norādīts citādi."
+          ]
+        },
+        "2": {
+          "heading": "Intelektuālais īpašums",
+          "paragraphs": [
+            "Pēc pilnas samaksas klients saņem tiesības izmantot izstrādāto vietni vai sistēmu savai biznesa vajadzībai, ja nav norunāts citādi piedāvājumā.",
+            "TavsWebs patur tiesības izmantot projektu portfolio un publicitātes nolūkos, ja klients tam nepiekrīt rakstiski."
+          ]
+        },
+        "3": {
+          "heading": "Atbildības ierobežojums",
+          "paragraphs": [
+            "TavsWebs nav atbildīgs par netiešiem zaudējumiem. Maksimālā atbildība ir ierobežota ar klienta samaksāto summu attiecīgajam projektam.",
+            "Jautājumos rakstiet uz tavswebs@gmail.com."
+          ]
+        }
+      }
+    }
   }
 }

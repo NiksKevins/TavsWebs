@@ -33,7 +33,7 @@ export const serviceNavItems = [
 export const footerHrefs = [
   { key: "work", href: "/work" },
   { key: "services", href: "/services" },
-  { key: "process", href: "/process" },
+  { key: "guides", href: "/guides" },
   { key: "about", href: "/about" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
@@ -47,6 +47,9 @@ export const pagePaths = {
   about: "/about",
   contact: "/contact",
   faq: "/faq",
+  guides: "/guides",
+  privacy: "/privacy",
+  terms: "/terms",
 } as const;
 
 export type PageKey = keyof typeof pagePaths;
@@ -191,6 +194,25 @@ export const timelineYears = ["2019", "2021", "2023", "2026"] as const;
 export const testimonialIndexes = ["0", "1", "2"] as const;
 export const faqIndexes = ["0", "1", "2", "3", "4", "5", "6", "7"] as const;
 export const budgetIndexes = ["0", "1", "2", "3", "4", "5"] as const;
+
+export const guideIds = [
+  "website-cost-latvia",
+  "choose-web-developer",
+  "ai-chatbot-business",
+] as const;
+
+export type GuideId = (typeof guideIds)[number];
+
+export function guideHref(slug: string) {
+  return {
+    pathname: "/guides/[slug]" as const,
+    params: { slug },
+  };
+}
+
+export function getGuide(id: string) {
+  return guideIds.find((g) => g === id);
+}
 
 export const localeOgMap = {
   lv: "lv_LV",

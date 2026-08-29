@@ -4,6 +4,7 @@ import {
   localeOgMap,
   pagePaths,
   site,
+  type GuideId,
   type PageKey,
   type ProjectId,
 } from "@/lib/data";
@@ -244,5 +245,67 @@ export async function projectJsonLd(locale: Locale, projectId: ProjectId) {
     image: project?.image
       ? absoluteUrl(project.image)
       : ogImageUrl(`${title} — TavsWebs`, t(`${projectId}.category`)),
+  };
+}
+
+export async function createGuideMetadata(
+  locale: Locale,
+  guideId: GuideId,
+): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "guides" });
+  const tOg = await getTranslations({ locale, namespace: "og" });
+  const title = t(`items.${guideId}.title`);
+  const description = t(`items.${guideId}.excerpt`);
+  const path = `/guides/${guideId}`;
+  const localized = localizedPath(locale, path);
+  const url = absoluteUrl(localized);
+  const ogTitle = `${title} — TavsWebs`;
+  const image = ogImageUrl(ogTitle, t(`items.${guideId}.category`), {
+    agency: tOg("agency"),
+    craft: tOg("craft"),
+  });
+
+  return {
+    title: ogTitle,
+    description,
+    alternates: {
+      canonical: url,
+      languages: alternateLanguages(path),
+    },
+    openGraph: {
+      title: ogTitle,
+      description,
+      url,
+      siteName: site.name,
+      locale: localeOgMap[locale],
+      type: "article",
+      images: [{ url: image, ...OG_SIZE, alt: ogTitle }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description,
+      site: site.twitter,
+      creator: site.twitter,
+      images: [image],
+    },
+  };
+}
+
+export async function guideArticleJsonLd(locale: Locale, guideId: GuideId) {
+  const t = await getTranslations({ locale, namespace: "guides" });
+  const title = t(`items.${guideId}.title`);
+  const description = t(`items.${guideId}.excerpt`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    author: { "@id": `${site.url}/#organization` },
+    publisher: { "@id": `${site.url}/#organization` },
+    url: absoluteUrl(localizedPath(locale, `/guides/${guideId}`)),
+    inLanguage: locale,
+    dateModified: "2026-08-29",
+    datePublished: "2026-08-29",
   };
 }

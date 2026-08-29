@@ -5,6 +5,7 @@ import { Work } from "@/components/sections/Work";
 import { AboutPreview } from "@/components/sections/AboutPreview";
 import { ProcessInline } from "@/components/sections/ProcessInline";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { GuidesPreview } from "@/components/sections/GuidesPreview";
 import { FAQ } from "@/components/sections/FAQ";
 import { ContactBlock } from "@/components/sections/ContactBlock";
 import { CtaBand } from "@/components/seo/CtaBand";
@@ -41,6 +42,7 @@ export default async function HomePage({ params }: Props) {
       <AboutPreview />
       <ProcessInline />
       <Testimonials />
+      <GuidesPreview />
       <FAQ showHeader />
       <ContactBlock />
       <CtaBand />

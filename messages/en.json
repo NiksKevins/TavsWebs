@@ -34,6 +34,21 @@
       "title": "FAQ",
       "description": "How much does a website cost in Latvia? How long does it take? Do you also build apps and SEO audits?",
       "ogTitle": "FAQ — TavsWebs"
+    },
+    "guides": {
+      "title": "Guides & articles",
+      "description": "Practical tips on website costs, choosing a developer and AI chatbots in Latvia.",
+      "ogTitle": "Guides — TavsWebs"
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "How TavsWebs handles your personal data.",
+      "ogTitle": "Privacy — TavsWebs"
+    },
+    "terms": {
+      "title": "Terms of service",
+      "description": "Terms for using TavsWebs services.",
+      "ogTitle": "Terms — TavsWebs"
     }
   },
   "nav": {
@@ -59,7 +74,10 @@
       "programming": "Programming",
       "ai-chatbots": "AI chatbots",
       "redesign": "Redesign & rebuild"
-    }
+    },
+    "guides": "Guides",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "hero": {
     "eyebrow": "TavsWebs · websites from €200",
@@ -488,5 +506,218 @@
     "lv": "LV",
     "en": "EN",
     "switchTo": "Switch to {locale}"
+  },
+  "guides": {
+    "eyebrow": "Guides",
+    "title": "What we write about",
+    "subtitle": "Practical tips on websites, CRM and digital solutions in Latvia.",
+    "pageDescription": "Articles on website costs, choosing a developer and AI chatbots.",
+    "readMore": "Read article",
+    "viewAll": "All articles",
+    "scrollHint": "Swipe to see more",
+    "updated": "Updated 2026",
+    "ctaTitle": "Need help with a project?",
+    "ctaBody": "Tell us what you need — we'll send a clear quote within 24 hours.",
+    "ctaButton": "Get a quote",
+    "items": {
+      "website-cost-latvia": {
+        "title": "How much does a website cost in Latvia?",
+        "excerpt": "What drives the price and what budget makes sense to start — clear numbers and examples.",
+        "category": "Websites",
+        "readTime": "5 min read",
+        "intro": "One of the most common questions we get: how much does a website cost? The answer isn't a single number — it depends on scope. Here's a clear overview with real ranges in Latvia.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Simple website — from €200",
+            "paragraphs": [
+              "A simple business card site or small business page with homepage, services and contact form starts from €200. Includes design, development, mobile version and SEO basics.",
+              "This level suits a business that needs a clear online presence without complex functionality."
+            ]
+          },
+          "1": {
+            "heading": "Typical business site — €400–1500",
+            "paragraphs": [
+              "For most small and mid-size businesses, a site for €400–1500 is enough. Usually several content pages, better design, contact form, Google Maps, often a blog section or multilingual support.",
+              "Price depends on page count, custom vs template design, and integrations (CRM, booking, etc.)."
+            ]
+          },
+          "2": {
+            "heading": "Stores, CRM and larger projects",
+            "paragraphs": [
+              "Online store with products, cart and payments — usually from €800. CRM or business system — from €2000, as it requires detailed specification and custom logic.",
+              "Mobile apps, AI chatbots and larger projects are quoted individually."
+            ]
+          },
+          "3": {
+            "heading": "How to get an exact price",
+            "paragraphs": [
+              "Best approach — a short call or filling in the form. We send a written quote with clear price, timeline and what's included — free and with no obligation.",
+              "If budget is limited, we say openly what can be done for that amount and what to save for a later phase."
+            ]
+          }
+        }
+      },
+      "choose-web-developer": {
+        "title": "How to choose a web developer?",
+        "excerpt": "What to check before signing — portfolio, pricing, timelines and red flags.",
+        "category": "Tips",
+        "readTime": "4 min read",
+        "intro": "A good developer isn't the one who promises the fastest or cheapest. Here's a practical checklist to pick a partner who actually delivers.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Check portfolio and real projects",
+            "paragraphs": [
+              "Does the developer have real clients, not just mock designs? Can you open live sites and check mobile experience?",
+              "TavsWebs portfolio is public — browse our work and see for yourself."
+            ]
+          },
+          "1": {
+            "heading": "Clear price and timeline before start",
+            "paragraphs": [
+              "A reliable partner gives a written quote with price, timeline and scope — before work begins.",
+              "Watch out for \"everything for €99\" promises without specification. Often that means hidden costs or disappointing results."
+            ]
+          },
+          "2": {
+            "heading": "Support after launch",
+            "paragraphs": [
+              "Can you get help after the project ends? Can you edit content yourself?",
+              "A good solution includes a clear CMS (WordPress-style editor) and a reachable contact — not silence after delivery."
+            ]
+          }
+        }
+      },
+      "ai-chatbot-business": {
+        "title": "AI chatbot for business — do you need one?",
+        "excerpt": "Why more businesses use AI chatbots for customer service and lead collection.",
+        "category": "AI",
+        "readTime": "4 min read",
+        "intro": "AI chatbots are no longer future tech — they already work today. Here's when a chatbot makes sense and what it can do for your business.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sections": {
+          "0": {
+            "heading": "What does an AI chatbot do?",
+            "paragraphs": [
+              "A chatbot answers common questions 24/7 — about pricing, services, hours, availability. It can collect leads, bookings and escalate complex questions to a human.",
+              "It doesn't replace all customer service — but frees time from repetitive questions."
+            ]
+          },
+          "1": {
+            "heading": "Who benefits most?",
+            "paragraphs": [
+              "Service businesses, e-commerce, clinics, construction, automotive — anywhere clients ask similar questions before applying.",
+              "If you get many WhatsApp or email questions about the same things — a chatbot makes sense."
+            ]
+          },
+          "2": {
+            "heading": "Try our demo",
+            "paragraphs": [
+              "TavsWebs builds custom AI chatbots for websites and WhatsApp. Try our demo: bot.tavswebs.com",
+              "If it fits — we can integrate on your site, customize answers for your business and connect lead collection."
+            ]
+          }
+        }
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Privacy policy",
+      "description": "How we process your personal data when you contact TavsWebs.",
+      "updated": "Effective from 29 August 2026",
+      "sectionKeys": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "sections": {
+        "0": {
+          "heading": "Who we are",
+          "paragraphs": [
+            "TavsWebs (tavswebs@gmail.com) is a website development and programming service provider in Latvia. We are the data controller for personal data received through our website and contact forms."
+          ]
+        },
+        "1": {
+          "heading": "What data we collect",
+          "paragraphs": [
+            "When filling contact forms: name, email, phone (if provided), company name (if provided), project description and budget range.",
+            "Automatically: technical visit data (IP address, browser) via standard server logs and analytics tools if enabled."
+          ]
+        },
+        "2": {
+          "heading": "How we use data",
+          "paragraphs": [
+            "To respond to your requests and prepare quotes.",
+            "To deliver services and customer support.",
+            "We do not sell your data to third parties."
+          ]
+        },
+        "3": {
+          "heading": "Your rights",
+          "paragraphs": [
+            "You may request access, correction or deletion of your data by emailing tavswebs@gmail.com.",
+            "Complaints can be filed with the Latvian Data State Inspectorate (www.dvi.gov.lv)."
+          ]
+        }
+      }
+    },
+    "terms": {
+      "eyebrow": "Legal",
+      "title": "Terms of service",
+      "description": "Terms for using the TavsWebs website and services.",
+      "updated": "Effective from 29 August 2026",
+      "sectionKeys": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "sections": {
+        "0": {
+          "heading": "Services",
+          "paragraphs": [
+            "TavsWebs provides website development, programming, SEO and related digital services. Specific scope, price and timeline are defined in an individual written quote before work begins."
+          ]
+        },
+        "1": {
+          "heading": "Payments",
+          "paragraphs": [
+            "Payment terms are defined in the quote — usually an advance before work starts and the balance after acceptance.",
+            "Prices are in EUR excluding VAT unless stated otherwise."
+          ]
+        },
+        "2": {
+          "heading": "Intellectual property",
+          "paragraphs": [
+            "After full payment, the client receives rights to use the delivered website or system for their business, unless otherwise agreed in the quote.",
+            "TavsWebs retains the right to use projects in portfolio and marketing unless the client objects in writing."
+          ]
+        },
+        "3": {
+          "heading": "Limitation of liability",
+          "paragraphs": [
+            "TavsWebs is not liable for indirect damages. Maximum liability is limited to the amount paid by the client for the relevant project.",
+            "Questions: tavswebs@gmail.com."
+          ]
+        }
+      }
+    }
   }
 }

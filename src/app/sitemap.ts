@@ -36,13 +36,38 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: absoluteUrl(localizedPath(locale as Locale, path)),
         lastModified: now,
         changeFrequency:
-          path === "/" || path === "/work" ? "weekly" : "monthly",
+          path === "/" || path === "/work" || path === "/guides"
+            ? "weekly"
+            : "monthly",
         priority:
           path === "/"
             ? 1
             : path === "/contact" || path === "/work"
               ? 0.9
-              : 0.7,
+              : path === "/guides"
+                ? 0.85
+                : path === "/privacy" || path === "/terms"
+                  ? 0.3
+                  : 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            routing.locales.map((l) => [
+              l,
+              absoluteUrl(localizedPath(l, path)),
+            ]),
+          ),
+        },
+      });
+    }
+
+    const { guideIds } = await import("@/lib/data");
+    for (const guide of guideIds) {
+      const path = `/guides/${guide}`;
+      entries.push({
+        url: absoluteUrl(localizedPath(locale as Locale, path)),
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.75,
         alternates: {
           languages: Object.fromEntries(
             routing.locales.map((l) => [

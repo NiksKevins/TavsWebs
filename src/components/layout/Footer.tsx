@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { BrandMark } from "@/components/ui/BrandMark";
-import { footerHrefs, site } from "@/lib/data";
+import { footerHrefs, pagePaths, site } from "@/lib/data";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -74,8 +74,16 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className="mx-auto mt-12 flex max-w-[1400px] flex-col gap-2 border-t border-border pt-6 text-xs text-dim sm:flex-row sm:justify-between">
+      <div className="mx-auto mt-12 flex max-w-[1400px] flex-col gap-3 border-t border-border pt-6 text-xs text-dim sm:flex-row sm:items-center sm:justify-between">
         <p>{t("rights", { year: new Date().getFullYear(), name: site.name })}</p>
+        <div className="flex flex-wrap gap-x-4 gap-y-1">
+          <Link href={pagePaths.privacy} className="text-link transition-colors">
+            {tNav("privacy")}
+          </Link>
+          <Link href={pagePaths.terms} className="text-link transition-colors">
+            {tNav("terms")}
+          </Link>
+        </div>
         <p>{t("note")}</p>
       </div>
     </footer>
