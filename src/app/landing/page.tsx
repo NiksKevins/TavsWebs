@@ -217,9 +217,16 @@ export default function LandingPage() {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-text">
                   &ldquo;{review.textLv}&rdquo;
                 </p>
-                <footer className="mt-4 flex items-center gap-2 border-t border-border pt-4">
-                  <GoogleMark className="h-4 w-4 shrink-0" />
+                <footer className="mt-4 flex flex-col gap-0.5 border-t border-border pt-4">
                   <cite className="not-italic text-sm font-semibold">{review.name}</cite>
+                  {"roleLv" in review && review.roleLv ? (
+                    <span className="text-xs text-dim">{review.roleLv}</span>
+                  ) : (
+                    <span className="inline-flex items-center gap-2 text-xs text-dim">
+                      <GoogleMark className="h-3.5 w-3.5 shrink-0" />
+                      Google atsauksme
+                    </span>
+                  )}
                 </footer>
               </blockquote>
             ))}

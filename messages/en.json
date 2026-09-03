@@ -497,14 +497,14 @@
     "viewAllGoogle": "View all reviews on Google",
     "items": {
       "0": {
-        "quote": "We needed a site that clearly shows what we do. It was done fast, and now clients call us — without endless explaining.",
-        "name": "Andris",
-        "role": "Stūrīši VIB · groundworks"
-      },
-      "1": {
         "quote": "The main thing was editing content ourselves. The CMS is clear — we update pages and events without a developer.",
         "name": "Mārtiņš",
         "role": "Audi Klubs · board member"
+      },
+      "1": {
+        "quote": "We needed a site that clearly shows what we do. It was done fast, and now clients call us — without endless explaining.",
+        "name": "Inguss Boldāns",
+        "role": "Stūrīši VIB · groundworks"
       },
       "2": {
         "quote": "From the first call to a live site — a couple of weeks. Clean design, solid on mobile, and a fair price.",

@@ -61,6 +61,8 @@ export const googleReviews = [
     name: "Inguss Boldāns",
     text: "Fast service and precision in website creation!",
     textLv: "Ātrs serviss un precizitāte mājaslapas izveidē!",
+    role: "Stūrīši VIB · groundworks",
+    roleLv: "Stūrīši VIB · zemes darbi",
   },
 ] as const;
 

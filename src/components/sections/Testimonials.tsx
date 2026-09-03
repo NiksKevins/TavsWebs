@@ -97,7 +97,13 @@ export function Testimonials() {
                 </p>
                 <footer className="mt-6 border-t border-border pt-4">
                   <p className="font-medium">{review.name}</p>
-                  <p className="mt-0.5 text-xs text-dim">{t("googleSource")}</p>
+                  <p className="mt-0.5 text-xs text-dim">
+                    {"role" in review && review.role
+                      ? isLv
+                        ? review.roleLv
+                        : review.role
+                      : t("googleSource")}
+                  </p>
                 </footer>
               </motion.blockquote>
             </StaggerItem>

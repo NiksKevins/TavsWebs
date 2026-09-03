@@ -497,14 +497,14 @@
     "viewAllGoogle": "Skatīt visas atsauksmes Google",
     "items": {
       "0": {
-        "quote": "Vajadzēja vietni, kas skaidri rāda, ko darām. Sanāca ātri, un tagad klienti zvana paši — bez liekas skaidrošanas.",
-        "name": "Andris",
-        "role": "Stūrīši VIB · zemes darbi"
-      },
-      "1": {
         "quote": "Galvenais bija, lai paši varam mainīt saturu. CMS ir saprotams — labojam lapas un pasākumus bez programmētāja.",
         "name": "Mārtiņš",
         "role": "Audi Klubs · valdes loceklis"
+      },
+      "1": {
+        "quote": "Vajadzēja vietni, kas skaidri rāda, ko darām. Sanāca ātri, un tagad klienti zvana paši — bez liekas skaidrošanas.",
+        "name": "Inguss Boldāns",
+        "role": "Stūrīši VIB · zemes darbi"
       },
       "2": {
         "quote": "No sarunas līdz gatavai lapai — pāris nedēļas. Dizains tīrs, mobilajā skats labs, un cena bija godīga.",
