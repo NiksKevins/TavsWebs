@@ -749,44 +749,84 @@
     }
   },
   "legal": {
+    "tocLabel": "Saturs",
+    "contactLabel": "Jautājumi",
+    "contactBody": "Ja kaut kas nav skaidrs vai vēlaties izmantot savas datu tiesības — rakstiet. Atbildam darba dienās.",
+    "contactCta": "Rakstīt e-pastu",
+    "relatedLabel": "Skatīt arī",
     "privacy": {
       "eyebrow": "Juridiski",
       "title": "Privātuma politika",
-      "description": "Kā mēs apstrādājam jūsu personas datus, kad sazināties ar TavsWebs.",
-      "updated": "Spēkā no 2026. gada 29. augusta",
+      "description": "Kā TavsWebs apstrādā personas datus, kad apmeklējat vietni, aizpildāt formu vai sazināties ar mums.",
+      "updated": "Spēkā no 2026. gada 3. septembra",
       "sectionKeys": [
         "0",
         "1",
         "2",
-        "3"
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
       ],
       "sections": {
         "0": {
           "heading": "Kas mēs esam",
           "paragraphs": [
-            "TavsWebs (tavswebs@gmail.com) ir mājaslapu izstrādes un programmēšanas pakalpojumu sniedzējs Latvijā. Mēs esam datu pārzinis attiecībā uz personas datiem, ko saņemam caur mūsu vietni un kontaktformām."
+            "TavsWebs (tavswebs.com) ir mājaslapu izstrādes, CRM, SEO, aplikāciju un AI risinājumu studija Latvijā. Kontaktadrese: tavswebs@gmail.com, tālr. +371 25 547 113.",
+            "Attiecībā uz personas datiem, ko saņemam caur vietni, kontaktformām, e-pastu vai WhatsApp, TavsWebs ir datu pārzinis GDPR / Vispārīgās datu aizsardzības regulas izpratnē."
           ]
         },
         "1": {
           "heading": "Kādus datus mēs vācam",
           "paragraphs": [
-            "Kontaktformu aizpildīšanas laikā: vārds, e-pasts, tālrunis (ja norādīts), uzņēmuma nosaukums (ja norādīts), projekta apraksts un budžeta diapazons.",
-            "Automātiski: tehniskie dati par vietnes apmeklējumu (IP adrese, pārlūks) caur standarta servera žurnāliem un analītikas rīkiem, ja tie ir ieslēgti."
+            "Kontaktformas un piedāvājuma pieprasījumi: vārds, e-pasts, tālrunis (ja norādīts), uzņēmums (ja norādīts), projekta apraksts, budžeta diapazons un citi ziņojumā iekļautie dati.",
+            "Tiešā saziņa (e-pasts, WhatsApp, telefons): dati, ko paši sniedzat, lai mēs varētu atbildēt un turpināt sarunu.",
+            "Tehniskie dati: IP adrese, pārlūks, ierīces tips, apmeklētās lapas un aptuvenais laiks — caur servera žurnāliem un, ja ieslēgti, analītikas rīkiem (piemēram, viesotāja vai Vercel infrastruktūru)."
           ]
         },
         "2": {
-          "heading": "Kā mēs izmantojam datus",
+          "heading": "Tiesiskais pamats",
           "paragraphs": [
-            "Lai atbildētu uz jūsu pieprasījumiem un sagatavotu piedāvājumus.",
-            "Lai nodrošinātu pakalpojumu sniegšanu un klientu atbalstu.",
-            "Mēs nepārdodam jūsu datus trešajām pusēm."
+            "Leģitīmās intereses — atbildēt uz pieprasījumiem, sagatavot piedāvājumus un uzturēt drošu vietni.",
+            "Līguma izpilde vai tā sagatavošana — kad sākas projekts vai notiek sarunas par pakalpojumu.",
+            "Piekrišana — ja atsevišķi prasām to (piemēram, neobligātiem saziņas kanāliem), un jūs to sniedzat."
           ]
         },
         "3": {
+          "heading": "Kā mēs izmantojam datus",
+          "paragraphs": [
+            "Lai atbildētu uz jūsu ziņojumiem, sagatavotu piedāvājumus un nodrošinātu klientu atbalstu.",
+            "Lai sniegtu un uzlabotu pakalpojumus, novērstu tehniskas problēmas un aizsargātu vietni pret ļaunprātīgu izmantošanu.",
+            "Mēs nepārdodam personas datus un neizmantojam tos neatkarīgai reklāmas pārdošanai trešajām pusēm."
+          ]
+        },
+        "4": {
+          "heading": "Glabāšana un apstrādātāji",
+          "paragraphs": [
+            "Kontaktpieprasījumus glabājam tik ilgi, cik nepieciešams, lai atbildētu un, ja vajadzīgs, turpinātu sadarbību — parasti līdz 24 mēnešiem pēc pēdējās saziņas, ja nav spēkā esoša līguma vai juridiska pienākuma.",
+            "Datus var apstrādāt uzticami pakalpojumu sniedzēji (piemēram, e-pasta, hostinga, formu vai analītikas rīki), kas darbojas kā apstrādātāji un apstrādā datus tikai mūsu uzdevumā."
+          ]
+        },
+        "5": {
+          "heading": "Sīkdatnes un analītika",
+          "paragraphs": [
+            "Vietne var izmantot tehniski nepieciešamās sīkdatnes un līdzīgas tehnoloģijas, lai nodrošinātu pamata funkcionalitāti (piemēram, valodas izvēli).",
+            "Ja ieslēdzam mērījumu vai analitiku, tā kalpo vietnes uzlabošanai. Jūs varat kontrolēt sīkdatnes pārlūka iestatījumos."
+          ]
+        },
+        "6": {
           "heading": "Jūsu tiesības",
           "paragraphs": [
-            "Jums ir tiesības pieprasīt piekļuvi saviem datiem, to labošanu vai dzēšanu, rakstot uz tavswebs@gmail.com.",
-            "Sūdzību var iesniegt Datu valsts inspekcijai (www.dvi.gov.lv)."
+            "Jums ir tiesības pieprasīt piekļuvi saviem datiem, to labošanu, dzēšanu, apstrādes ierobežošanu, iebildumu pret apstrādi un datu pārnesamību — ciktāl to paredz GDPR.",
+            "Lai izmantotu tiesības, rakstiet uz tavswebs@gmail.com. Mēs atbildēsim saprātīgā termiņā.",
+            "Sūdzību var iesniegt Datu valsts inspekcijai: www.dvi.gov.lv."
+          ]
+        },
+        "7": {
+          "heading": "Izmaiņas politikā",
+          "paragraphs": [
+            "Šo politiku varam atjaunināt, ja mainās pakalpojumi, tehnoloģijas vai tiesību akti. Aktuālā versija vienmēr pieejama šajā lapā ar spēkā stāšanās datumu."
           ]
         }
       }
@@ -794,39 +834,72 @@
     "terms": {
       "eyebrow": "Juridiski",
       "title": "Lietošanas noteikumi",
-      "description": "Noteikumi TavsWebs vietnes un pakalpojumu lietošanai.",
-      "updated": "Spēkā no 2026. gada 29. augusta",
+      "description": "Noteikumi TavsWebs vietnes un digitālo pakalpojumu lietošanai Latvijā.",
+      "updated": "Spēkā no 2026. gada 3. septembra",
       "sectionKeys": [
         "0",
         "1",
         "2",
-        "3"
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
       ],
       "sections": {
         "0": {
           "heading": "Pakalpojumi",
           "paragraphs": [
-            "TavsWebs sniedz mājaslapu izstrādes, programmēšanas, SEO un saistītos digitālos pakalpojumus. Konkrēts apjoms, cena un termiņš tiek noteikts individuālā rakstiskā piedāvājumā pirms darba sākuma."
+            "TavsWebs sniedz mājaslapu izstrādi, e-komerciju, redesign, SEO, CRM, mobilās aplikācijas, programmēšanu, AI čatbotus un saistītus digitālos pakalpojumus.",
+            "Konkrēts apjoms, piegādes, cena un termiņš tiek noteikts individuālā rakstiskā piedāvājumā (vai līgumā) pirms darba sākuma. Vietnes saturs un cenrāži ir informatīvi."
           ]
         },
         "1": {
-          "heading": "Maksājumi",
+          "heading": "Piedāvājumi un sadarbība",
           "paragraphs": [
-            "Maksājumu kārtību nosaka piedāvājumā — parasti avansa maksājums pirms darba sākuma un atlikums pēc pieņemšanas.",
-            "Cenas norādītas EUR bez PVN, ja nav norādīts citādi."
+            "Pieprasījums caur formu, e-pastu vai WhatsApp nav automātisks līgums. Sadarbība sākas, kad abas puses vienojas par piedāvājumu un, ja nepieciešams, avansa maksājumu.",
+            "Klients nodrošina savlaicīgu saturu, atsauksmes un piekļuves, kas vajadzīgas projekta izpildei. Kavējumi no klienta puses var mainīt termiņu."
           ]
         },
         "2": {
-          "heading": "Intelektuālais īpašums",
+          "heading": "Maksājumi",
           "paragraphs": [
-            "Pēc pilnas samaksas klients saņem tiesības izmantot izstrādāto vietni vai sistēmu savai biznesa vajadzībai, ja nav norunāts citādi piedāvājumā.",
-            "TavsWebs patur tiesības izmantot projektu portfolio un publicitātes nolūkos, ja klients tam nepiekrīt rakstiski."
+            "Maksājumu kārtību nosaka piedāvājumā — parasti avansa maksājums pirms darba sākuma un atlikums pēc pieņemšanas vai posmu pieņemšanas.",
+            "Cenas norādītas EUR. Ja vien nav skaidri norādīts citādi, tās ir bez PVN. Kavēti maksājumi var apturēt darbu līdz samaksai."
           ]
         },
         "3": {
+          "heading": "Intelektuālais īpašums",
+          "paragraphs": [
+            "Pēc pilnas samaksas klients saņem tiesības izmantot izstrādāto vietni vai sistēmu savai biznesa vajadzībai, ja piedāvājumā nav norunāts citādi.",
+            "Trešo pušu rīki, bibliotēkas, fonti un licences paliek to īpašnieku tiesību objekts. Klients atbild par sava satura (teksti, attēli, zīmoli) tiesībām."
+          ]
+        },
+        "4": {
+          "heading": "Portfolio un publicitāte",
+          "paragraphs": [
+            "Ja klients rakstiski neiebilst, TavsWebs var iekļaut projektu portfolio, gadījumu aprakstos un mārketinga materiālos (nosaukums, ekrānšāviņi, īss rezultāta apraksts).",
+            "Ja vēlaties projekta konfidencialitāti, to var atrunāt piedāvājumā pirms darba sākuma."
+          ]
+        },
+        "5": {
+          "heading": "Atbalsts un garantijas",
+          "paragraphs": [
+            "Pēc palaišanas varam labot kļūdas, kas radušās no mūsu puses un ir pieejamas saskaņā ar piedāvājumā noteikto periodu.",
+            "Izmaiņas pēc pieņemšanas, jaunas funkcijas, trešo pušu sistēmu kļūmes, hostinga vai klienta veiktas izmaiņas parasti nav iekļautas pamata cenā, ja nav atsevišķi norunāts."
+          ]
+        },
+        "6": {
           "heading": "Atbildības ierobežojums",
           "paragraphs": [
-            "TavsWebs nav atbildīgs par netiešiem zaudējumiem. Maksimālā atbildība ir ierobežota ar klienta samaksāto summu attiecīgajam projektam.",
+            "TavsWebs nav atbildīgs par netiešiem, nejaušiem vai izrietošiem zaudējumiem (piemēram, peļņas zaudējums, datu zudums ārpus mūsu kontroles).",
+            "Maksimālā atbildība par konkrētu projektu ir ierobežota ar summu, ko klients samaksājis par to projektu, ja vien obligāti tiesību akti nenosaka citādi."
+          ]
+        },
+        "7": {
+          "heading": "Piemērojamie tiesību akti",
+          "paragraphs": [
+            "Šos noteikumus regulē Latvijas Republikas tiesību akti. Strīdus risinām sarunu ceļā; ja neizdodas — Latvijas tiesās.",
             "Jautājumos rakstiet uz tavswebs@gmail.com."
           ]
         }

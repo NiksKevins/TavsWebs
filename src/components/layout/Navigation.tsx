@@ -3,11 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown, Menu, MessageCircle, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Button } from "@/components/ui/Button";
 import { BrandMark } from "@/components/ui/BrandMark";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { navHrefs, serviceHref, serviceNavItems, site } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useScrollDirection } from "@/hooks/useMotion";
@@ -170,9 +171,9 @@ export function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-600"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-[#25D366] transition-colors hover:border-emerald-300 hover:bg-emerald-50"
             >
-              <MessageCircle size={18} />
+              <WhatsAppIcon size={18} brand />
             </a>
             <Link href="/contact">
               <Button size={compact ? "sm" : "md"}>{t("getQuote")}</Button>
@@ -278,7 +279,7 @@ export function Navigation() {
                   onClick={() => setOpen(false)}
                 >
                   <Button size="md" variant="whatsapp">
-                    <MessageCircle size={18} />
+                    <WhatsAppIcon size={18} brand />
                     WhatsApp
                   </Button>
                 </a>

@@ -749,44 +749,84 @@
     }
   },
   "legal": {
+    "tocLabel": "Contents",
+    "contactLabel": "Questions",
+    "contactBody": "If anything is unclear or you want to exercise your data rights — email us. We reply on business days.",
+    "contactCta": "Email us",
+    "relatedLabel": "Also see",
     "privacy": {
       "eyebrow": "Legal",
       "title": "Privacy policy",
-      "description": "How we process your personal data when you contact TavsWebs.",
-      "updated": "Effective from 29 August 2026",
+      "description": "How TavsWebs processes personal data when you visit the site, submit a form, or contact us.",
+      "updated": "Effective from 3 September 2026",
       "sectionKeys": [
         "0",
         "1",
         "2",
-        "3"
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
       ],
       "sections": {
         "0": {
           "heading": "Who we are",
           "paragraphs": [
-            "TavsWebs (tavswebs@gmail.com) is a website development and programming service provider in Latvia. We are the data controller for personal data received through our website and contact forms."
+            "TavsWebs (tavswebs.com) is a digital studio in Latvia for websites, CRM, SEO, apps and AI solutions. Contact: tavswebs@gmail.com, phone +371 25 547 113.",
+            "For personal data received through the website, contact forms, email or WhatsApp, TavsWebs is the data controller under the GDPR."
           ]
         },
         "1": {
           "heading": "What data we collect",
           "paragraphs": [
-            "When filling contact forms: name, email, phone (if provided), company name (if provided), project description and budget range.",
-            "Automatically: technical visit data (IP address, browser) via standard server logs and analytics tools if enabled."
+            "Contact and quote forms: name, email, phone (if provided), company (if provided), project description, budget range and other details you include in the message.",
+            "Direct communication (email, WhatsApp, phone): information you share so we can reply and continue the conversation.",
+            "Technical data: IP address, browser, device type, pages visited and approximate timing — via server logs and, if enabled, analytics (for example hosting or Vercel infrastructure)."
           ]
         },
         "2": {
-          "heading": "How we use data",
+          "heading": "Legal basis",
           "paragraphs": [
-            "To respond to your requests and prepare quotes.",
-            "To deliver services and customer support.",
-            "We do not sell your data to third parties."
+            "Legitimate interests — responding to enquiries, preparing quotes and keeping the site secure.",
+            "Contract performance or steps prior to a contract — when a project starts or we negotiate services.",
+            "Consent — where we ask for it separately (for example optional channels) and you provide it."
           ]
         },
         "3": {
+          "heading": "How we use data",
+          "paragraphs": [
+            "To reply to messages, prepare quotes and provide customer support.",
+            "To deliver and improve services, fix technical issues and protect the site from abuse.",
+            "We do not sell personal data or use it for independent advertising resale to third parties."
+          ]
+        },
+        "4": {
+          "heading": "Retention and processors",
+          "paragraphs": [
+            "We keep contact requests as long as needed to reply and, if relevant, continue collaboration — typically up to 24 months after last contact, unless a contract or legal duty requires longer.",
+            "Trusted providers (email, hosting, forms or analytics) may process data as processors only on our instructions."
+          ]
+        },
+        "5": {
+          "heading": "Cookies and analytics",
+          "paragraphs": [
+            "The site may use strictly necessary cookies and similar technologies for basic functionality (for example language preference).",
+            "If we enable measurement or analytics, it is used to improve the site. You can control cookies in your browser settings."
+          ]
+        },
+        "6": {
           "heading": "Your rights",
           "paragraphs": [
-            "You may request access, correction or deletion of your data by emailing tavswebs@gmail.com.",
-            "Complaints can be filed with the Latvian Data State Inspectorate (www.dvi.gov.lv)."
+            "You may request access, correction, deletion, restriction, objection and data portability — as provided by the GDPR.",
+            "To exercise your rights, email tavswebs@gmail.com. We will respond within a reasonable time.",
+            "Complaints can be filed with the Latvian Data State Inspectorate: www.dvi.gov.lv."
+          ]
+        },
+        "7": {
+          "heading": "Policy updates",
+          "paragraphs": [
+            "We may update this policy when services, technology or law change. The current version is always on this page with its effective date."
           ]
         }
       }
@@ -794,39 +834,72 @@
     "terms": {
       "eyebrow": "Legal",
       "title": "Terms of service",
-      "description": "Terms for using the TavsWebs website and services.",
-      "updated": "Effective from 29 August 2026",
+      "description": "Terms for using the TavsWebs website and digital services in Latvia.",
+      "updated": "Effective from 3 September 2026",
       "sectionKeys": [
         "0",
         "1",
         "2",
-        "3"
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
       ],
       "sections": {
         "0": {
           "heading": "Services",
           "paragraphs": [
-            "TavsWebs provides website development, programming, SEO and related digital services. Specific scope, price and timeline are defined in an individual written quote before work begins."
+            "TavsWebs provides website development, ecommerce, redesign, SEO, CRM, mobile apps, custom programming, AI chatbots and related digital services.",
+            "Specific scope, deliverables, price and timeline are set in an individual written quote (or contract) before work begins. Website copy and price ranges are informative."
           ]
         },
         "1": {
-          "heading": "Payments",
+          "heading": "Quotes and collaboration",
           "paragraphs": [
-            "Payment terms are defined in the quote — usually an advance before work starts and the balance after acceptance.",
-            "Prices are in EUR excluding VAT unless stated otherwise."
+            "A request via form, email or WhatsApp is not an automatic contract. Work starts when both parties agree on a quote and, where required, an advance payment.",
+            "The client provides timely content, feedback and access needed for delivery. Client-side delays may shift the timeline."
           ]
         },
         "2": {
-          "heading": "Intellectual property",
+          "heading": "Payments",
           "paragraphs": [
-            "After full payment, the client receives rights to use the delivered website or system for their business, unless otherwise agreed in the quote.",
-            "TavsWebs retains the right to use projects in portfolio and marketing unless the client objects in writing."
+            "Payment terms are defined in the quote — usually an advance before work starts and the balance after acceptance or milestone acceptance.",
+            "Prices are in EUR. Unless clearly stated otherwise, they exclude VAT. Late payments may pause work until settled."
           ]
         },
         "3": {
+          "heading": "Intellectual property",
+          "paragraphs": [
+            "After full payment, the client receives rights to use the delivered website or system for their business, unless otherwise agreed in the quote.",
+            "Third-party tools, libraries, fonts and licences remain owned by their respective owners. The client is responsible for rights to their own content (text, images, trademarks)."
+          ]
+        },
+        "4": {
+          "heading": "Portfolio and publicity",
+          "paragraphs": [
+            "Unless the client objects in writing, TavsWebs may feature the project in portfolio, case studies and marketing materials (name, screenshots, short outcome summary).",
+            "If you need confidentiality, agree it in the quote before work starts."
+          ]
+        },
+        "5": {
+          "heading": "Support and warranties",
+          "paragraphs": [
+            "After launch we can fix defects caused on our side within the period defined in the quote.",
+            "Post-acceptance changes, new features, third-party outages, hosting issues or client-made changes are usually outside the base fee unless agreed separately."
+          ]
+        },
+        "6": {
           "heading": "Limitation of liability",
           "paragraphs": [
-            "TavsWebs is not liable for indirect damages. Maximum liability is limited to the amount paid by the client for the relevant project.",
+            "TavsWebs is not liable for indirect, incidental or consequential damages (for example lost profit or data loss outside our control).",
+            "Maximum liability for a given project is limited to the amount paid by the client for that project, unless mandatory law requires otherwise."
+          ]
+        },
+        "7": {
+          "heading": "Governing law",
+          "paragraphs": [
+            "These terms are governed by the laws of the Republic of Latvia. Disputes are resolved amicably first; otherwise in Latvian courts.",
             "Questions: tavswebs@gmail.com."
           ]
         }

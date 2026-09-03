@@ -2,9 +2,10 @@
 
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDown, MessageCircle } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { LineReveal } from "@/components/ui/TextReveal";
 import { HeroAtmosphere } from "@/components/hero/HeroAtmosphere";
 import { EASE_OUT_EXPO, staggerContainer } from "@/lib/motion";
@@ -63,7 +64,7 @@ export function Hero() {
           <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE_OUT_EXPO } } }}>
             <a href={site.whatsapp} target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="whatsapp">
-                <MessageCircle size={18} />
+                <WhatsAppIcon size={18} brand />
                 {t("ctaWhatsapp")}
               </Button>
             </a>

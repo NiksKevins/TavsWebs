@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/seo/PageHero";
+import { LegalDocument } from "@/components/sections/LegalDocument";
 import { pagePaths } from "@/lib/data";
 import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
@@ -16,9 +17,16 @@ export default async function PrivacyPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("legal.privacy");
+  const tLegal = await getTranslations("legal");
   const tCrumb = await getTranslations("breadcrumbs");
   const tNav = await getTranslations("nav");
   const sectionKeys = t.raw("sectionKeys") as string[];
+
+  const sections = sectionKeys.map((key) => ({
+    key,
+    heading: t(`sections.${key}.heading`),
+    paragraphs: t.raw(`sections.${key}.paragraphs`) as string[],
+  }));
 
   return (
     <main id="main">
@@ -42,21 +50,17 @@ export default async function PrivacyPage({ params }: Props) {
           { label: tNav("privacy") },
         ]}
       />
-      <div className="section-pad pb-20 md:pb-28">
-        <div className="prose-legal mx-auto max-w-3xl space-y-8">
-          <p className="text-sm text-dim">{t("updated")}</p>
-          {sectionKeys.map((key) => (
-            <section key={key}>
-              <h2 className="display text-xl md:text-2xl">{t(`sections.${key}.heading`)}</h2>
-              <div className="mt-3 space-y-3 text-base leading-relaxed text-muted">
-                {(t.raw(`sections.${key}.paragraphs`) as string[]).map((p) => (
-                  <p key={p.slice(0, 48)}>{p}</p>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      </div>
+      <LegalDocument
+        updated={t("updated")}
+        tocLabel={tLegal("tocLabel")}
+        contactLabel={tLegal("contactLabel")}
+        contactBody={tLegal("contactBody")}
+        contactCta={tLegal("contactCta")}
+        relatedLabel={tLegal("relatedLabel")}
+        relatedHref="/terms"
+        relatedTitle={tNav("terms")}
+        sections={sections}
+      />
     </main>
   );
 }

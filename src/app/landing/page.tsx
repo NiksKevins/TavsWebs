@@ -3,13 +3,13 @@ import {
   Check,
   ClipboardList,
   Globe2,
-  MessageCircle,
   MessageSquare,
   Rocket,
   Star,
 } from "lucide-react";
 import { LeadForm } from "@/components/landing/LeadForm";
 import { BrandMark } from "@/components/ui/BrandMark";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import {
   GOOGLE_REVIEWS_URL,
   googleReviews,
@@ -105,9 +105,9 @@ export default function LandingPage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
-              className="hidden h-10 w-10 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-600 sm:flex"
+              className="hidden h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:border-emerald-300 hover:bg-emerald-50 sm:flex"
             >
-              <MessageCircle size={18} />
+              <WhatsAppIcon size={18} brand />
             </a>
             <a
               href="#forma"

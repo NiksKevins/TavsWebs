@@ -2,11 +2,12 @@
 
 import { FormEvent, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Clock, Mail, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, Phone } from "lucide-react";
 import { budgetIndexes, site } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { BudgetSelect } from "@/components/ui/BudgetSelect";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { cn } from "@/lib/utils";
 
 const fieldClass =
@@ -116,8 +117,8 @@ export function Contact({ showHeader = true }: { showHeader?: boolean }) {
                 rel="noopener noreferrer"
                 className="glass card-hover flex items-center gap-4 rounded-2xl p-4 hover:border-emerald-300/50"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
-                  <MessageCircle size={18} />
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-50">
+                  <WhatsAppIcon size={18} brand />
                 </span>
                 <div>
                   <p className="text-xs text-dim">{t("whatsapp")}</p>

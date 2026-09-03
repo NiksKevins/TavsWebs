@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/data";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { useScrollDirection } from "@/hooks/useMotion";
 import { cn } from "@/lib/utils";
 
@@ -48,9 +49,10 @@ export function MobileDock() {
             "hover:bg-emerald-50 hover:text-emerald-700 hover:-translate-y-0.5 active:translate-y-0 active:bg-emerald-100 active:text-emerald-800",
           )}
         >
-          <MessageCircle
+          <WhatsAppIcon
             size={20}
-            className="transition-colors group-hover:text-emerald-700"
+            brand
+            className="transition-transform group-hover:scale-105"
           />
           {t("whatsapp")}
         </a>

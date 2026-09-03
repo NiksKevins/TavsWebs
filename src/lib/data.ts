@@ -191,6 +191,16 @@ export const processStepIds = [
   "launch",
 ] as const;
 
+export type ProcessStepId = (typeof processStepIds)[number];
+
+export const processImages: Record<ProcessStepId, string> = {
+  discovery: "/process/discovery.jpg",
+  strategy: "/process/strategy.jpg",
+  design: "/process/design.jpg",
+  development: "/process/development.jpg",
+  launch: "/process/launch.jpg",
+};
+
 export const timelineYears = ["2019", "2021", "2023", "2026"] as const;
 
 export const testimonialIndexes = ["0", "1", "2"] as const;

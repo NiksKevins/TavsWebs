@@ -1,12 +1,13 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ArrowUpRight, Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { ArrowUpRight, Clock, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 import { Button } from "@/components/ui/Button";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 export function ContactBlock() {
   const t = useTranslations("contactBlock");
@@ -25,7 +26,7 @@ export function ContactBlock() {
       href: `mailto:${site.email}`,
     },
     {
-      icon: MessageCircle,
+      icon: "whatsapp" as const,
       label: t("whatsapp"),
       value: t("whatsappHint"),
       href: site.whatsapp,
@@ -64,7 +65,7 @@ export function ContactBlock() {
               </Link>
               <a href={site.whatsapp} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="whatsapp">
-                  <MessageCircle size={18} />
+                  <WhatsAppIcon size={18} brand />
                   WhatsApp
                 </Button>
               </a>
@@ -74,11 +75,20 @@ export function ContactBlock() {
           <Reveal delay={0.1}>
             <div className="card divide-y divide-border overflow-hidden">
               {items.map((item) => {
-                const Icon = item.icon;
                 const content = (
                   <div className="flex items-start gap-4 p-5 md:p-6">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
-                      <Icon size={18} />
+                    <span
+                      className={
+                        item.icon === "whatsapp"
+                          ? "flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-50"
+                          : "flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent"
+                      }
+                    >
+                      {item.icon === "whatsapp" ? (
+                        <WhatsAppIcon size={18} brand />
+                      ) : (
+                        <item.icon size={18} />
+                      )}
                     </span>
                     <div>
                       <p className="text-xs uppercase tracking-[0.16em] text-dim">
