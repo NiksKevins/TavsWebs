@@ -87,7 +87,10 @@
     "ctaPrimary": "Saņemt piedāvājumu",
     "ctaWhatsapp": "Rakstīt WhatsApp",
     "ctaSecondary": "Skatīt darbus",
-    "explore": "Tālāk"
+    "explore": "Tālāk",
+    "photoAlt": "TavsWebs dibinātājs pie datora ar pašreizējo mājaslapu monitorā",
+    "photoLabel": "Aiz projekta",
+    "photoCaption": "Reāls cilvēks — ne anonīma aģentūra. Atbildam 24h laikā."
   },
   "site": {
     "tagline": "Mājaslapas, CRM, SEO un AI risinājumi Latvijā",

@@ -120,12 +120,12 @@ export default function LandingPage() {
       </header>
 
       <section id="top" className="border-b border-border">
-        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-8 lg:grid-cols-2 lg:items-center lg:py-20">
-          <div>
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:px-8 lg:grid-cols-12 lg:items-start lg:gap-10 lg:py-16">
+          <div className="lg:col-span-5">
             <p className="inline-flex rounded-full border border-border bg-bg-elevated px-3 py-1 text-[11px] font-semibold tracking-[0.16em] text-muted uppercase shadow-sm">
               Bezmaksas piedāvājums · no €200
             </p>
-            <h1 className="display mt-6 text-4xl leading-[1.05] text-balance sm:text-5xl lg:text-[3.25rem]">
+            <h1 className="display mt-6 text-4xl leading-[1.05] text-balance sm:text-5xl lg:text-[3.1rem]">
               Mājaslapas, CRM, SEO un AI risinājumi biznesam
             </h1>
             <p className="mt-5 text-lg text-muted">
@@ -153,7 +153,29 @@ export default function LandingPage() {
             </a>
           </div>
 
-          <div id="forma">
+          <div className="lg:col-span-3">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
+              <Image
+                src="/about/founder.jpg"
+                alt="TavsWebs dibinātājs pie datora"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 280px"
+                className="object-cover object-[center_18%]"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-elevated/80 via-transparent to-transparent" />
+              <div className="absolute inset-x-3 bottom-3 rounded-xl bg-bg-elevated/95 px-3 py-2.5 backdrop-blur-sm">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-dim">
+                  Aiz projekta
+                </p>
+                <p className="mt-0.5 text-sm font-medium leading-snug text-text">
+                  Reāls cilvēks — atbildam 24h laikā
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="forma" className="lg:col-span-4">
             <LeadForm />
           </div>
         </div>
