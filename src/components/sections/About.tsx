@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { site, timelineYears } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
@@ -31,9 +32,16 @@ export function About({ showHeader = true }: { showHeader?: boolean }) {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <div className="relative mb-14 aspect-[5/4] overflow-hidden rounded-[2rem] border border-border bg-bg-elevated shadow-sm">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(27,61,111,0.08),transparent_50%),linear-gradient(145deg,#f3efe8,#fffdf9)]" />
-              <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(28,25,23,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(28,25,23,0.035)_1px,transparent_1px)] [background-size:48px_48px]" />
+            <div className="relative mb-14 aspect-[5/4] overflow-hidden rounded-[2rem] border border-border bg-surface shadow-sm">
+              <Image
+                src="/about/studio.jpg"
+                alt=""
+                fill
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                className="object-cover"
+                priority
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-elevated/70 via-bg-elevated/10 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 glass rounded-2xl p-5">
                 <p className="text-sm text-muted">{t("philosophyLabel")}</p>
                 <p className="display mt-2 text-2xl">{t("philosophy")}</p>
