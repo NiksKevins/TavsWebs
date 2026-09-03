@@ -34,19 +34,19 @@ export function LegalDocument({
   sections,
 }: LegalDocumentProps) {
   return (
-    <div className="section-pad pb-20 md:pb-28">
-      <div className="mx-auto grid max-w-[1400px] gap-12 lg:grid-cols-12 lg:gap-16">
+    <div className="section-pad py-14 md:py-20">
+      <div className="mx-auto grid max-w-[1100px] gap-10 lg:grid-cols-12 lg:gap-14">
         <aside className="lg:col-span-3">
           <div className="lg:sticky lg:top-28">
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-dim">
               {tocLabel}
             </p>
-            <nav aria-label={tocLabel} className="mt-4 space-y-1">
+            <nav aria-label={tocLabel} className="mt-5 space-y-1.5">
               {sections.map((section, index) => (
                 <a
                   key={section.key}
                   href={`#section-${section.key}`}
-                  className="group flex items-baseline gap-3 rounded-lg px-2 py-2 text-sm text-muted transition-colors hover:bg-surface hover:text-text"
+                  className="group flex items-baseline gap-3 rounded-lg px-2.5 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-text"
                 >
                   <span className="font-mono text-[11px] text-accent/70 transition-colors group-hover:text-accent">
                     {String(index + 1).padStart(2, "0")}
@@ -56,11 +56,11 @@ export function LegalDocument({
               ))}
             </nav>
 
-            <div className="mt-8 hidden border-t border-border pt-6 lg:block">
-              <p className="text-xs text-dim">{updated}</p>
+            <div className="mt-10 hidden border-t border-border pt-8 lg:block">
+              <p className="text-xs leading-relaxed text-dim">{updated}</p>
               <Link
                 href={relatedHref}
-                className="mt-3 inline-flex text-sm font-medium text-accent transition-colors hover:text-accent-bright"
+                className="mt-4 inline-flex text-sm font-medium text-accent transition-colors hover:text-accent-bright"
               >
                 {relatedLabel}: {relatedTitle} →
               </Link>
@@ -68,7 +68,7 @@ export function LegalDocument({
           </div>
         </aside>
 
-        <div className="lg:col-span-8 lg:col-start-5">
+        <div className="lg:col-span-9">
           <Reveal>
             <div className="inline-flex items-center gap-3 rounded-xl border border-border bg-bg-elevated px-4 py-2.5 text-sm text-muted shadow-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-highlight" aria-hidden />
@@ -76,24 +76,24 @@ export function LegalDocument({
             </div>
           </Reveal>
 
-          <div className="mt-10 space-y-4">
+          <div className="mt-8 space-y-6 md:mt-10 md:space-y-7">
             {sections.map((section, index) => (
               <Reveal key={section.key} delay={index * 0.03}>
                 <section
                   id={`section-${section.key}`}
                   className={cn(
-                    "scroll-mt-32 rounded-2xl border border-border bg-bg-elevated p-6 shadow-sm md:p-8",
+                    "scroll-mt-32 rounded-2xl border border-border bg-bg-elevated p-6 shadow-sm md:p-8 md:px-9",
                   )}
                 >
-                  <div className="flex items-start gap-4">
-                    <span className="font-mono text-sm text-accent">
+                  <div className="flex items-start gap-3.5 md:gap-4">
+                    <span className="mt-0.5 font-mono text-xs text-accent md:text-sm">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     <div className="min-w-0 flex-1">
-                      <h2 className="display text-2xl md:text-3xl">
+                      <h2 className="display text-xl leading-snug md:text-2xl">
                         {section.heading}
                       </h2>
-                      <div className="mt-4 space-y-3 text-base leading-relaxed text-muted">
+                      <div className="mt-4 space-y-4 text-[15px] leading-[1.7] text-muted md:mt-5 md:text-base">
                         {section.paragraphs.map((paragraph) => (
                           <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                         ))}
@@ -105,10 +105,12 @@ export function LegalDocument({
             ))}
           </div>
 
-          <Reveal className="mt-10" delay={0.1}>
+          <Reveal className="mt-10 md:mt-12" delay={0.1}>
             <div className="cta-panel rounded-2xl p-6 md:p-8">
               <SectionEyebrow>{contactLabel}</SectionEyebrow>
-              <p className="mt-4 max-w-xl text-muted">{contactBody}</p>
+              <p className="mt-4 max-w-xl leading-relaxed text-muted">
+                {contactBody}
+              </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href={`mailto:${site.email}`}

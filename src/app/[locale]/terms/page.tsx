@@ -45,6 +45,7 @@ export default async function TermsPage({ params }: Props) {
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
+        size="compact"
         crumbs={[
           { label: tCrumb("home"), href: "/" },
           { label: tNav("terms") },

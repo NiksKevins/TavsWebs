@@ -45,6 +45,7 @@ export default async function PrivacyPage({ params }: Props) {
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
+        size="compact"
         crumbs={[
           { label: tCrumb("home"), href: "/" },
           { label: tNav("privacy") },
