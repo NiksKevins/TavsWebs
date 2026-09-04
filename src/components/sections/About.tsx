@@ -32,17 +32,19 @@ export function About({ showHeader = true }: { showHeader?: boolean }) {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <div className="relative mb-14 aspect-[5/4] overflow-hidden rounded-[2rem] border border-border bg-surface shadow-sm">
-              <Image
-                src="/about/founder.jpg"
-                alt={t("photoAlt")}
-                fill
-                sizes="(max-width: 1024px) 100vw, 55vw"
-                className="object-cover object-[center_18%]"
-                priority
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-elevated/75 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6 glass rounded-2xl p-5">
+            <div className="mb-14 overflow-hidden rounded-[2rem] border border-border bg-surface shadow-sm">
+              <div className="relative aspect-[5/4]">
+                <Image
+                  src="/about/founder.jpg"
+                  alt={t("photoAlt")}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 55vw"
+                  className="object-cover object-[center_22%]"
+                  priority
+                  quality={90}
+                />
+              </div>
+              <div className="border-t border-border bg-bg-elevated px-5 py-5 md:px-6">
                 <p className="text-sm text-muted">{t("philosophyLabel")}</p>
                 <p className="display mt-2 text-2xl">{t("philosophy")}</p>
               </div>

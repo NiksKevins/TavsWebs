@@ -154,17 +154,19 @@ export default function LandingPage() {
           </div>
 
           <div className="lg:col-span-3">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
-              <Image
-                src="/about/founder.jpg"
-                alt="TavsWebs dibinātājs pie datora"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 280px"
-                className="object-cover object-[center_18%]"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-elevated/80 via-transparent to-transparent" />
-              <div className="absolute inset-x-3 bottom-3 rounded-xl bg-bg-elevated/95 px-3 py-2.5 backdrop-blur-sm">
+            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
+              <div className="relative aspect-[4/5]">
+                <Image
+                  src="/about/founder.jpg"
+                  alt="TavsWebs dibinātājs pie datora"
+                  fill
+                  priority
+                  quality={90}
+                  sizes="(max-width: 1024px) 100vw, 280px"
+                  className="object-cover object-[center_22%]"
+                />
+              </div>
+              <div className="border-t border-border bg-bg-elevated px-3.5 py-3">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-dim">
                   Aiz projekta
                 </p>

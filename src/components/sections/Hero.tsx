@@ -99,25 +99,25 @@ export function Hero() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.35, ease: EASE_OUT_EXPO }}
           >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-border bg-surface shadow-md sm:aspect-[5/4] lg:aspect-[4/5] xl:aspect-[5/4]">
-              <Image
-                src="/about/founder.jpg"
-                alt={t("photoAlt")}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 48vw"
-                className="object-cover object-[center_18%]"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-elevated/80 via-transparent to-transparent" />
-              <div className="absolute inset-x-4 bottom-4 sm:inset-x-5 sm:bottom-5">
-                <div className="glass rounded-2xl px-4 py-3.5 sm:px-5 sm:py-4">
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-dim">
-                    {t("photoLabel")}
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-text sm:text-base">
-                    {t("photoCaption")}
-                  </p>
-                </div>
+            <div className="overflow-hidden rounded-[1.75rem] border border-border bg-surface shadow-md">
+              <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] xl:aspect-[5/4]">
+                <Image
+                  src="/about/founder.jpg"
+                  alt={t("photoAlt")}
+                  fill
+                  priority
+                  quality={90}
+                  sizes="(max-width: 1024px) 100vw, 48vw"
+                  className="object-cover object-[center_22%]"
+                />
+              </div>
+              <div className="border-t border-border bg-bg-elevated px-5 py-4">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-dim">
+                  {t("photoLabel")}
+                </p>
+                <p className="mt-1 text-sm font-medium text-text sm:text-base">
+                  {t("photoCaption")}
+                </p>
               </div>
             </div>
           </motion.div>
