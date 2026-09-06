@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TavsWebs — Pricing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --bg-elevated: #fffdf9;
+      --surface: #f3efe8;
+      --accent: #0a5fa8;
+      --accent-bright: #1278c9;
+      --accent-deep: #084a82;
+      --accent-soft: rgba(10, 95, 168, 0.11);
+      --highlight: #d96b32;
+      --text: #1c1917;
+      --muted: #57534e;
+      --dim: #78716c;
+      --border: rgba(28, 25, 23, 0.1);
+      --shadow: 0 1px 2px rgba(28, 25, 23, 0.04), 0 12px 32px rgba(28, 25, 23, 0.06);
+      --radius: 1rem;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Manrope", system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse 80% 50% at 100% -10%, rgba(10, 95, 168, 0.08), transparent 50%),
+        radial-gradient(ellipse 60% 40% at 0% 100%, rgba(217, 107, 50, 0.06), transparent 45%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    .display {
+      font-family: "Syne", sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem clamp(1rem, 4vw, 2.5rem);
+      background: rgba(255, 253, 249, 0.92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .toolbar-left, .toolbar-right {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-family: "Syne", sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 1.65rem;
+      height: 1.65rem;
+      border-radius: 0.4rem;
+      background: var(--accent);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    label.field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    select, .btn {
+      font: inherit;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      color: var(--text);
+      padding: 0.55rem 1rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    }
+
+    select {
+      min-width: 11rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%78716c' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.9rem center;
+      padding-right: 2.2rem;
+    }
+
+    select:focus, .btn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    .btn-primary:hover { background: var(--accent-deep); }
+    .btn-ghost:hover { border-color: rgba(10, 95, 168, 0.35); }
+
+    .wrap {
+      width: min(1100px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.25rem 0 4rem;
+    }
+
+    .hero {
+      display: grid;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 800px) {
+      .hero {
+        grid-template-columns: 1.4fr 1fr;
+        align-items: end;
+      }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 1.25rem;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      max-width: 16ch;
+    }
+
+    .hero-lead {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      max-width: 38ch;
+      font-size: 1.05rem;
+    }
+
+    .market-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.35rem;
+      box-shadow: var(--shadow);
+    }
+
+    .market-card h2 {
+      margin: 0 0 0.35rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dim);
+      font-weight: 700;
+    }
+
+    .market-mid {
+      font-family: "Syne", sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    .market-ranges {
+      margin: 0.85rem 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.4rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .market-ranges strong { color: var(--text); font-weight: 600; }
+
+    .note {
+      margin-top: 0.9rem;
+      padding: 0.75rem 0.85rem;
+      border-radius: 0.75rem;
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      font-size: 0.84rem;
+      font-weight: 500;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 720px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 980px) {
+      .grid { grid-template-columns: repeat(4, 1fr); align-items: stretch; }
+    }
+
+    .card {
+      position: relative;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 0.15rem);
+      padding: 1.35rem 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover { border-color: rgba(10, 95, 168, 0.28); }
+
+    .card.featured {
+      border-color: rgba(10, 95, 168, 0.4);
+      background:
+        linear-gradient(180deg, rgba(10, 95, 168, 0.06), transparent 42%),
+        var(--bg-elevated);
+    }
+
+    .badge {
+      position: absolute;
+      top: 0.9rem;
+      right: 0.9rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fff;
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 0.28rem 0.6rem;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-family: "Syne", sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .card .tagline {
+      margin: 0.35rem 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 2.6em;
+    }
+
+    .price {
+      margin: 1.1rem 0 0.25rem;
+      font-family: "Syne", sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--accent-deep);
+    }
+
+    .price span {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--dim);
+      letter-spacing: 0;
+      font-family: "Manrope", sans-serif;
+    }
+
+    .vs {
+      font-size: 0.8rem;
+      color: var(--highlight);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .card ul {
+      margin: 0 0 1.2rem;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.55rem;
+      flex: 1;
+    }
+
+    .card li {
+      position: relative;
+      padding-left: 1.35rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .card li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.45rem;
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.85;
+    }
+
+    .meta {
+      font-size: 0.78rem;
+      color: var(--dim);
+      margin-top: auto;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .section {
+      margin-top: 2.5rem;
+    }
+
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(1.4rem, 3vw, 1.85rem);
+    }
+
+    .addons {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .addons th, .addons td {
+      text-align: left;
+      padding: 0.95rem 1.15rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .addons th {
+      background: var(--surface);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+    .addons tr:last-child td { border-bottom: 0; }
+    .addons td:last-child {
+      font-family: "Syne", sans-serif;
+      font-weight: 700;
+      color: var(--accent-deep);
+      white-space: nowrap;
+    }
+
+    .footer-cta {
+      margin-top: 2.5rem;
+      padding: 1.6rem 1.5rem;
+      border-radius: calc(var(--radius) + 0.2rem);
+      background: linear-gradient(135deg, var(--accent-deep), var(--accent-bright));
+      color: #fff;
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .footer-cta {
+        grid-template-columns: 1.5fr auto;
+        align-items: center;
+      }
+    }
+    .footer-cta h2 {
+      margin: 0;
+      font-size: 1.55rem;
+      color: #fff;
+    }
+    .footer-cta p {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    .footer-cta a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.75rem 1.2rem;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--accent-deep);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .fineprint {
+      margin-top: 1.5rem;
+      color: var(--dim);
+      font-size: 0.78rem;
+    }
+
+    .print-only { display: none; }
+
+    @media print {
+      @page { margin: 12mm; size: A4; }
+      body {
+        background: #fff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .toolbar, .no-print { display: none !important; }
+      .print-only { display: block !important; }
+      .wrap { width: 100%; padding: 0; }
+      .card, .market-card, .addons, .footer-cta {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      .hero { margin-bottom: 1.25rem; }
+      .footer-cta { background: var(--accent) !important; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <div class="toolbar-left">
+      <a class="brand" href="https://tavswebs.com" target="_blank" rel="noopener">
+        <span class="brand-mark">TW</span>
+        TavsWebs
+      </a>
+      <label class="field">
+        Country
+        <select id="country" aria-label="Select country"></select>
+      </label>
+    </div>
+    <div class="toolbar-right">
+      <button type="button" class="btn btn-ghost" id="copyLink">Copy link</button>
+      <button type="button" class="btn btn-primary" id="exportPdf">Export PDF</button>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <p class="print-only" style="margin:0 0 1rem;font-size:0.85rem;color:var(--dim)">
+      TavsWebs pricing · <span id="printMeta"></span>
+    </p>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow" id="eyebrow">Pricing</p>
+        <h1 class="display" id="headline">Website packages</h1>
+        <p class="hero-lead" id="lead">
+          Fixed-scope quotes in English. Free consultation — clear proposal within 24 hours.
+        </p>
+      </div>
+      <aside class="market-card" aria-label="Local market context">
+        <h2>Typical local agency mid</h2>
+        <div class="market-mid" id="agencyMid">—</div>
+        <ul class="market-ranges" id="marketRanges"></ul>
+        <p class="note" id="positionNote"></p>
+      </aside>
+    </section>
+
+    <section aria-label="Packages">
+      <div class="grid" id="packages"></div>
+    </section>
+
+    <section class="section" aria-label="Add-ons">
+      <div class="section-head">
+        <h2 class="display">Add-ons</h2>
+      </div>
+      <table class="addons">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>From</th>
+          </tr>
+        </thead>
+        <tbody id="addons"></tbody>
+      </table>
+    </section>
+
+    <section class="footer-cta">
+      <div>
+        <h2 class="display">Ready for a fixed quote?</h2>
+        <p>Free consultation. Exact scope and timeline in 24 hours.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:0.6rem">
+        <a href="mailto:tavswebs@gmail.com">Email TavsWebs</a>
+        <a href="https://wa.me/37125547113" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </section>
+
+    <p class="fineprint" id="fineprint">
+      Prices exclude VAT where applicable. Final quote depends on scope. Client owns the site after delivery.
+    </p>
+  </main>
+
+  <script>
+    const MARKETS = {
+      latvia: {
+        name: "Latvia",
+        locale: "lv",
+        currency: "EUR",
+        eyebrow: "Latvia · local pricing",
+        headline: "Mājaslapu paketes Latvijā",
+        lead: "Fiksētas cenas Latvijas biznesiem. Bezmaksas konsultācija — piedāvājums 24h laikā.",
+        agencyMid: "~€800",
+        ranges: [
+          ["Starter", "€200–600"],
+          ["Business", "€400–1,500"],
+          ["Shop", "€800–2,500+"],
+        ],
+        position: "Local LV pricing — keep separate from EU English offers.",
+        packages: [
+          {
+            id: "starter",
+            name: "Starter",
+            tagline: "Vienkārša biznesa / vizītkartes lapa",
+            price: "€200",
+            priceNote: "",
+            vs: "Ieejas līmenis Latvijā",
+            features: ["Līdz 5 lapām", "Mobilā versija", "Kontaktu forma", "SEO pamati", "1 labojumu raunds"],
+            meta: "1–2 nedēļas",
+          },
+          {
+            id: "business",
+            name: "Business",
+            featured: true,
+            tagline: "Tipiska biznesa mājaslapa",
+            price: "€790",
+            priceNote: "",
+            vs: "Populārākā izvēle",
+            features: ["6–10 lapas", "Pielāgots dizains", "SEO pamati + analytics", "2 labojumu raundi", "Apmācība"],
+            meta: "2–3 nedēļas",
+          },
+          {
+            id: "growth",
+            name: "Growth",
+            tagline: "Lielāka / konversijai gatava lapa",
+            price: "€1,490",
+            priceNote: "",
+            vs: "Vairāk lapu un SEO",
+            features: ["10–15 lapas", "Blogs", "Stiprināts SEO", "Lead forma", "Apmācība"],
+            meta: "3–5 nedēļas",
+          },
+          {
+            id: "shop",
+            name: "Shop",
+            tagline: "Interneta veikals",
+            price: "€800",
+            priceNote: "+",
+            vs: "Mazam katalogam",
+            features: ["Produktu katalogs", "Maksājumi", "Mobilais grozs", "Pamata iestatījumi"],
+            meta: "3–6 nedēļas",
+          },
+        ],
+        addons: [
+          ["SEO audits", "€150"],
+          ["AI čatbots", "no €290"],
+          ["CRM / sistēma", "no €2,000"],
+          ["Redesign", "no €490"],
+          ["Uzturēšana", "€29–49 / mēn."],
+        ],
+        fineprint: "Cenas bez PVN, kur piemērojams. Galīgais piedāvājums pēc apjoma. Klients ir mājaslapas īpašnieks pēc nodošanas.",
+        ctaTitle: "Gatavs fiksētam piedāvājumam?",
+        ctaText: "Bezmaksas konsultācija. Skaidrs piedāvājums 24h laikā.",
+      },
+
+      spain: baseEu("Spain", {
+        agencyMid: "~€2,500",
+        ranges: [
+          ["Starter", "€700–1,800"],
+          ["Business", "€1,800–4,500"],
+          ["Shop", "€2,500–6,000+"],
+        ],
+        position: "Your packages sit under typical Spanish agency mid — competitive, not the cheapest freelancer tier.",
+        tweak: "soft",
+      }),
+      portugal: baseEu("Portugal", {
+        agencyMid: "~€2,400",
+        ranges: [
+          ["Starter", "€700–1,800"],
+          ["Business", "€1,800–4,500"],
+          ["Shop", "€2,500–6,000+"],
+        ],
+        position: "Priced under local agency mid for clear value while staying credible.",
+        tweak: "soft",
+      }),
+      netherlands: baseEu("Netherlands", {
+        agencyMid: "~€3,000",
+        ranges: [
+          ["Starter", "€900–2,500"],
+          ["Business", "€2,250–4,500"],
+          ["Shop", "€2,500–8,000+"],
+        ],
+        position: "~40–50% below typical NL agency mid for a business site.",
+        tweak: "standard",
+      }),
+      ireland: baseEu("Ireland", {
+        agencyMid: "~€4,000",
+        ranges: [
+          ["Starter", "€900–3,000"],
+          ["Business", "€1,800–8,000"],
+          ["Shop", "€3,500–15,000+"],
+        ],
+        position: "Well under Dublin agency averages — strong remote value.",
+        tweak: "standard",
+      }),
+      sweden: baseEu("Sweden", {
+        agencyMid: "~€3,500",
+        ranges: [
+          ["Starter", "€1,300–2,600"],
+          ["Business", "€1,300–5,200"],
+          ["Shop", "€4,000–10,000+"],
+        ],
+        position: "Nordic markets expect higher floors — Business raised slightly for trust.",
+        tweak: "nordic",
+      }),
+      denmark: baseEu("Denmark", {
+        agencyMid: "~€3,500",
+        ranges: [
+          ["Starter", "€1,100–2,200"],
+          ["Business", "€2,000–5,400"],
+          ["Shop", "€3,700–10,000+"],
+        ],
+        position: "Nordic markets expect higher floors — Business raised slightly for trust.",
+        tweak: "nordic",
+      }),
+    };
+
+    function baseEu(name, cfg) {
+      const packs = {
+        soft: {
+          starter: "€790",
+          business: "€1,690",
+          growth: "€2,690",
+          shop: "€2,790",
+        },
+        standard: {
+          starter: "€990",
+          business: "€1,890",
+          growth: "€2,890",
+          shop: "€2,990",
+        },
+        nordic: {
+          starter: "€1,190",
+          business: "€2,290",
+          growth: "€3,290",
+          shop: "€3,490",
+        },
+      }[cfg.tweak];
+
+      return {
+        name,
+        locale: "en",
+        currency: "EUR",
+        eyebrow: `${name} · English delivery`,
+        headline: `Website packages for ${name}`,
+        lead: "Fixed-scope quotes. Free consultation — clear proposal within 24 hours. Remote delivery in English.",
+        agencyMid: cfg.agencyMid,
+        ranges: cfg.ranges,
+        position: cfg.position,
+        packages: [
+          {
+            id: "starter",
+            name: "Starter",
+            tagline: "One-pager or simple 3–5 page presence",
+            price: packs.starter,
+            priceNote: "",
+            vs: "Credible EU entry price",
+            features: [
+              "Up to 5 pages",
+              "Mobile-first design",
+              "Contact form",
+              "Basic SEO setup",
+              "1 revision round",
+            ],
+            meta: "1–2 weeks",
+          },
+          {
+            id: "business",
+            name: "Business",
+            featured: true,
+            tagline: "Core SME site — services, about, work, contact",
+            price: packs.business,
+            priceNote: "",
+            vs: "Recommended — under local agency mid",
+            features: [
+              "6–10 pages",
+              "Custom look & feel",
+              "SEO basics + analytics",
+              "2 revision rounds",
+              "Handover training",
+            ],
+            meta: "2–4 weeks",
+          },
+          {
+            id: "growth",
+            name: "Growth",
+            tagline: "Larger site built for conversion",
+            price: packs.growth,
+            priceNote: "",
+            vs: "More pages & stronger SEO",
+            features: [
+              "10–15 pages",
+              "Blog section",
+              "Stronger SEO setup",
+              "Lead capture form",
+              "Handover training",
+            ],
+            meta: "3–5 weeks",
+          },
+          {
+            id: "shop",
+            name: "Shop",
+            tagline: "Small-catalogue ecommerce",
+            price: packs.shop,
+            priceNote: "+",
+            vs: "Entry under typical shop quotes",
+            features: [
+              "Product catalogue",
+              "Payments setup",
+              "Mobile checkout",
+              "Core store configuration",
+            ],
+            meta: "3–6 weeks",
+          },
+        ],
+        addons: [
+          ["SEO audit", "€290"],
+          ["AI chatbot", "from €490"],
+          ["CRM / custom system", "from €3,990"],
+          ["Redesign (existing site)", "from €1,290"],
+          ["Care plan (updates + support)", "€49–79 / mo"],
+        ],
+        fineprint:
+          "Prices exclude VAT where applicable. Final quote depends on scope. You own the site after delivery. Market ranges shown are indicative local agency/freelancer guides.",
+        ctaTitle: "Ready for a fixed quote?",
+        ctaText: "Free consultation. Exact scope and timeline within 24 hours.",
+      };
+    }
+
+    const select = document.getElementById("country");
+    const order = [
+      "latvia",
+      "netherlands",
+      "ireland",
+      "spain",
+      "portugal",
+      "sweden",
+      "denmark",
+    ];
+
+    order.forEach((key) => {
+      const opt = document.createElement("option");
+      opt.value = key;
+      opt.textContent = MARKETS[key].name;
+      select.appendChild(opt);
+    });
+
+    function render(key) {
+      const m = MARKETS[key];
+      if (!m) return;
+
+      document.documentElement.lang = m.locale;
+      document.title = `TavsWebs — Pricing · ${m.name}`;
+      document.getElementById("eyebrow").textContent = m.eyebrow;
+      document.getElementById("headline").textContent = m.headline;
+      document.getElementById("lead").textContent = m.lead;
+      document.getElementById("agencyMid").textContent = m.agencyMid;
+      document.getElementById("positionNote").textContent = m.position;
+      document.getElementById("fineprint").textContent = m.fineprint;
+      document.getElementById("printMeta").textContent =
+        `${m.name} · ${new Date().toLocaleDateString("en-GB")} · tavswebs.com`;
+
+      const cta = document.querySelector(".footer-cta");
+      cta.querySelector("h2").textContent = m.ctaTitle;
+      cta.querySelector("p").textContent = m.ctaText;
+
+      document.getElementById("marketRanges").innerHTML = m.ranges
+        .map(([k, v]) => `<li><strong>${k}:</strong> ${v} typical local</li>`)
+        .join("");
+
+      document.getElementById("packages").innerHTML = m.packages
+        .map(
+          (p) => `
+        <article class="card ${p.featured ? "featured" : ""}">
+          ${p.featured ? `<span class="badge">Popular</span>` : ""}
+          <h3>${p.name}</h3>
+          <p class="tagline">${p.tagline}</p>
+          <div class="price">${p.price}${p.priceNote ? `<span> ${p.priceNote}</span>` : ""}</div>
+          <div class="vs">${p.vs}</div>
+          <ul>${p.features.map((f) => `<li>${f}</li>`).join("")}</ul>
+          <div class="meta">Typical timeline: ${p.meta}</div>
+        </article>`
+        )
+        .join("");
+
+      document.getElementById("addons").innerHTML = m.addons
+        .map(([name, price]) => `<tr><td>${name}</td><td>${price}</td></tr>`)
+        .join("");
+
+      history.replaceState(null, "", `#${key}`);
+    }
+
+    function currentKey() {
+      const hash = (location.hash || "").replace("#", "").toLowerCase();
+      return MARKETS[hash] ? hash : "netherlands";
+    }
+
+    select.value = currentKey();
+    render(select.value);
+
+    select.addEventListener("change", () => render(select.value));
+    window.addEventListener("hashchange", () => {
+      const key = currentKey();
+      select.value = key;
+      render(key);
+    });
+
+    document.getElementById("exportPdf").addEventListener("click", () => {
+      const name = MARKETS[select.value].name.replace(/\s+/g, "-");
+      const prev = document.title;
+      document.title = `TavsWebs-Pricing-${name}`;
+      window.print();
+      setTimeout(() => { document.title = prev; }, 500);
+    });
+
+    document.getElementById("copyLink").addEventListener("click", async () => {
+      const url = `${location.origin}${location.pathname}#${select.value}`;
+      try {
+        await navigator.clipboard.writeText(url);
+        const btn = document.getElementById("copyLink");
+        const old = btn.textContent;
+        btn.textContent = "Copied";
+        setTimeout(() => { btn.textContent = old; }, 1200);
+      } catch {
+        prompt("Copy this link:", url);
+      }
+    });
+  </script>
+</body>
+</html>
