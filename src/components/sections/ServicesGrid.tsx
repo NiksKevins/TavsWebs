@@ -46,6 +46,8 @@ function ServiceCard({ id, index }: { id: ServiceId; index: number }) {
                 fill
                 sizes="(max-width: 768px) 80vw, 320px"
                 className="object-cover"
+                quality={70}
+                loading={index < 2 ? "eager" : "lazy"}
               />
             </motion.div>
             {badge && (

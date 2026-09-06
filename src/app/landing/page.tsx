@@ -78,7 +78,7 @@ function Stars({ count = 5 }: { count?: number }) {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-bg text-text">
-      <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-border bg-bg md:bg-bg/90 md:backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
           <a
             href="#top"
@@ -161,7 +161,7 @@ export default function LandingPage() {
                   alt="TavsWebs dibinātājs pie datora"
                   fill
                   priority
-                  quality={90}
+                  quality={75}
                   sizes="(max-width: 1024px) 100vw, 280px"
                   className="object-cover object-[center_22%]"
                 />

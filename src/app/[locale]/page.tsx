@@ -1,14 +1,7 @@
+import dynamic from "next/dynamic";
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/sections/Hero";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
-import { Work } from "@/components/sections/Work";
-import { AboutPreview } from "@/components/sections/AboutPreview";
-import { ProcessInline } from "@/components/sections/ProcessInline";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { GuidesPreview } from "@/components/sections/GuidesPreview";
-import { FAQ } from "@/components/sections/FAQ";
-import { ContactBlock } from "@/components/sections/ContactBlock";
-import { CtaBand } from "@/components/seo/CtaBand";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   createPageMetadata,
@@ -16,6 +9,31 @@ import {
   websiteJsonLd,
 } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
+
+const Work = dynamic(() =>
+  import("@/components/sections/Work").then((m) => m.Work),
+);
+const AboutPreview = dynamic(() =>
+  import("@/components/sections/AboutPreview").then((m) => m.AboutPreview),
+);
+const ProcessInline = dynamic(() =>
+  import("@/components/sections/ProcessInline").then((m) => m.ProcessInline),
+);
+const Testimonials = dynamic(() =>
+  import("@/components/sections/Testimonials").then((m) => m.Testimonials),
+);
+const GuidesPreview = dynamic(() =>
+  import("@/components/sections/GuidesPreview").then((m) => m.GuidesPreview),
+);
+const FAQ = dynamic(() =>
+  import("@/components/sections/FAQ").then((m) => m.FAQ),
+);
+const ContactBlock = dynamic(() =>
+  import("@/components/sections/ContactBlock").then((m) => m.ContactBlock),
+);
+const CtaBand = dynamic(() =>
+  import("@/components/seo/CtaBand").then((m) => m.CtaBand),
+);
 
 type Props = { params: Promise<{ locale: string }> };
 

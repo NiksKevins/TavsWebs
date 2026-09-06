@@ -46,8 +46,8 @@ export function Hero() {
 
             <motion.p
               className="mt-6 max-w-xl text-base leading-relaxed text-muted md:text-lg"
-              initial={reduced ? false : { opacity: 0, y: 24, filter: "blur(8px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              initial={reduced ? false : { opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 0.48, ease: EASE_OUT_EXPO }}
             >
               {t("body")}
@@ -106,8 +106,8 @@ export function Hero() {
                   alt={t("photoAlt")}
                   fill
                   priority
-                  quality={90}
-                  sizes="(max-width: 1024px) 100vw, 48vw"
+                  quality={75}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 48vw"
                   className="object-cover object-[center_22%]"
                 />
               </div>
@@ -135,13 +135,9 @@ export function Hero() {
           className="group flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-dim transition-colors hover:text-muted"
         >
           <span>{t("explore")}</span>
-          <motion.span
-            animate={reduced ? undefined : { y: [0, 6, 0] }}
-            transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-            className="transition-transform group-hover:scale-110"
-          >
+          <span className="motion-safe:animate-bounce transition-transform group-hover:scale-110">
             <ArrowDown size={16} />
-          </motion.span>
+          </span>
         </a>
       </motion.div>
     </section>

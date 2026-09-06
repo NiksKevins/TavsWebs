@@ -13,12 +13,12 @@ export const springSoft = {
   damping: 22,
 };
 
+/** Opacity + translate only — animating filter/blur freezes low-end mobile GPUs. */
 export const fadeUp = {
-  hidden: { opacity: 0, y: 40, filter: "blur(10px)" },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
     transition: { duration: 0.85, ease: EASE_OUT_EXPO },
   },
 };

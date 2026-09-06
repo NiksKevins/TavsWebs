@@ -41,7 +41,7 @@ export function About({ showHeader = true }: { showHeader?: boolean }) {
                   sizes="(max-width: 1024px) 100vw, 55vw"
                   className="object-cover object-[center_22%]"
                   priority
-                  quality={90}
+                  quality={75}
                 />
               </div>
               <div className="border-t border-border bg-bg-elevated px-5 py-5 md:px-6">

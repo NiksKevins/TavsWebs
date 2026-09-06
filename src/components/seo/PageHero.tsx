@@ -39,14 +39,14 @@ export function PageHero({
         <>
           <motion.div
             aria-hidden
-            className="pointer-events-none absolute -right-24 top-10 h-80 w-80 rounded-full bg-accent/14 blur-[110px]"
+            className="pointer-events-none absolute -right-24 top-10 hidden h-80 w-80 rounded-full bg-accent/14 blur-[110px] md:block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: EASE_OUT_EXPO }}
           />
           <motion.div
             aria-hidden
-            className="pointer-events-none absolute -left-16 bottom-0 h-56 w-56 rounded-full bg-highlight/10 blur-[90px]"
+            className="pointer-events-none absolute -left-16 bottom-0 hidden h-56 w-56 rounded-full bg-highlight/10 blur-[90px] md:block"
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: EASE_OUT_EXPO }}

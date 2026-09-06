@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -35,15 +36,21 @@ function ProjectCard({
           className="relative block aspect-[16/11] overflow-hidden bg-surface"
           aria-label={`${tWork("viewCase")}: ${t(`${project.id}.title`)}`}
         >
-          <motion.img
-            src={project.image}
-            alt={t(`${project.id}.title`)}
-            className="h-full w-full object-cover object-top"
-            loading={index === 0 ? "eager" : "lazy"}
-            decoding="async"
+          <motion.div
+            className="relative h-full w-full"
             whileHover={reduced ? undefined : { scale: 1.05 }}
             transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-          />
+          >
+            <Image
+              src={project.image}
+              alt={t(`${project.id}.title`)}
+              fill
+              sizes="(max-width: 640px) 85vw, (max-width: 1024px) 340px, 50vw"
+              className="object-cover object-top"
+              priority={index === 0}
+              quality={75}
+            />
+          </motion.div>
         </Link>
         <div className="flex flex-1 flex-col p-5 md:p-6">
           <p className="text-xs uppercase tracking-[0.2em] text-dim">
@@ -221,12 +228,14 @@ function ProjectShowcase({
               background: `radial-gradient(120% 90% at ${isLeft ? "20%" : "80%"} 10%, ${project.glow}, transparent 55%), linear-gradient(145deg, ${project.accent}, #f3efe8 70%)`,
             }}
           >
-            <img
+            <Image
               src={project.image}
               alt={t(`${project.id}.title`)}
-              className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
-              loading={index === 0 ? "eager" : "lazy"}
-              decoding="async"
+              fill
+              sizes="(max-width: 768px) 100vw, 60vw"
+              className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+              priority={index === 0}
+              quality={75}
             />
           </div>
         </Link>

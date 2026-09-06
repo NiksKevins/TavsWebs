@@ -71,7 +71,7 @@ export function Navigation() {
           layout
           className={cn(
             "section-pad mx-auto flex max-w-[1400px] items-center justify-between rounded-2xl transition-colors duration-500",
-            compact ? "glass py-2.5" : "bg-bg/80 py-1 backdrop-blur-sm",
+            compact ? "glass py-2.5" : "bg-bg/95 py-1 md:bg-bg/80 md:backdrop-blur-sm",
           )}
           transition={{ type: "spring", stiffness: 380, damping: 34 }}
         >
@@ -198,7 +198,7 @@ export function Navigation() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-[60] flex flex-col bg-bg/98 backdrop-blur-xl lg:hidden"
+            className="fixed inset-0 z-[60] flex flex-col bg-bg lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

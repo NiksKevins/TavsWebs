@@ -18,7 +18,7 @@ interface RevealProps {
 
 const modes: Record<RevealMode, Variants> = {
   default: fadeUp,
-  blur: fadeUp,
+  blur: fadeUpLite,
   scale: {
     hidden: { opacity: 0, y: 32, scale: 0.96 },
     visible: {

@@ -9,6 +9,7 @@ import {
   useTransform,
   useReducedMotion,
 } from "framer-motion";
+import { useMediaQuery } from "@/hooks/useMotion";
 import { processImages, processStepIds } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
@@ -17,6 +18,9 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
   const t = useTranslations("process");
   const containerRef = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
+  // Mobile-first: avoid 400–500vh sticky scroller on phones (OOM / jank).
+  const isMobile = useMediaQuery("(max-width: 767px)", true);
+  const stacked = Boolean(reduced || isMobile);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
@@ -45,7 +49,7 @@ export function Process({ showHeader = true }: { showHeader?: boolean }) {
         </div>
       )}
 
-      {reduced ? (
+      {stacked ? (
         <div className="section-pad mx-auto max-w-[1400px] space-y-10 py-16">
           {processStepIds.map((id, i) => (
             <div
