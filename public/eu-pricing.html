@@ -464,32 +464,269 @@
       font-size: 0.78rem;
     }
 
-    .print-only { display: none; }
+    /* Screen-only web UI; PDF uses a separate document layout */
+    .print-doc { display: none; }
 
     @media print {
-      @page { margin: 12mm; size: A4; }
-      body {
-        background: #fff;
+      @page {
+        size: A4;
+        margin: 14mm 16mm;
+      }
+
+      html, body {
+        background: #fff !important;
+        color: #111;
+        font-size: 10.5pt;
+        line-height: 1.45;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
-      .toolbar, .no-print { display: none !important; }
-      .print-only { display: block !important; }
-      .wrap { width: 100%; padding: 0; }
-      .card, .market-card, .addons, .footer-cta {
-        box-shadow: none;
-        break-inside: avoid;
+
+      .toolbar,
+      .screen-only,
+      .no-print {
+        display: none !important;
       }
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.85rem;
+
+      .print-doc {
+        display: block !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: #111;
+        font-family: "Manrope", Helvetica, Arial, sans-serif;
       }
-      .card { padding: 1.1rem 1rem 1.05rem; }
-      .price { font-size: 1.85rem; margin: 0.85rem 0 0.25rem; }
-      .hero { margin-bottom: 1.25rem; gap: 1rem; }
-      .section { margin-top: 1.5rem; }
-      .footer-cta { background: var(--accent) !important; margin-top: 1.5rem; }
-      a { color: inherit; text-decoration: none; }
+
+      .print-doc * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+
+      .pd-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding-bottom: 12pt;
+        border-bottom: 2.5pt solid #0a5fa8;
+        margin-bottom: 16pt;
+      }
+
+      .pd-brand {
+        display: flex;
+        align-items: center;
+        gap: 8pt;
+      }
+
+      .pd-mark {
+        width: 22pt;
+        height: 22pt;
+        background: #0a5fa8;
+        color: #fff;
+        font-family: "Syne", Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 8pt;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pd-brand-name {
+        font-family: "Syne", Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 14pt;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .pd-brand-sub {
+        font-size: 8pt;
+        color: #57534e;
+        margin-top: 1pt;
+      }
+
+      .pd-meta {
+        text-align: right;
+        font-size: 8.5pt;
+        color: #57534e;
+        line-height: 1.5;
+      }
+
+      .pd-meta strong {
+        display: block;
+        color: #111;
+        font-size: 10pt;
+        font-weight: 700;
+        margin-bottom: 2pt;
+      }
+
+      .pd-intro {
+        margin: 0 0 16pt;
+        max-width: 92%;
+        font-size: 10.5pt;
+        color: #333;
+      }
+
+      .pd-title {
+        margin: 0 0 6pt;
+        font-family: "Syne", Helvetica, sans-serif;
+        font-size: 18pt;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+        color: #111;
+      }
+
+      .pd-section-label {
+        margin: 18pt 0 7pt;
+        font-size: 8pt;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #0a5fa8;
+      }
+
+      .pd-packages {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .pd-packages th {
+        text-align: left;
+        font-size: 7.5pt;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #78716c;
+        padding: 0 8pt 6pt 0;
+        border-bottom: 1pt solid #d6d3d1;
+      }
+
+      .pd-packages th:nth-child(2),
+      .pd-packages td:nth-child(2) {
+        text-align: right;
+        white-space: nowrap;
+        width: 18%;
+      }
+
+      .pd-packages th:nth-child(4),
+      .pd-packages td:nth-child(4) {
+        text-align: right;
+        white-space: nowrap;
+        width: 16%;
+      }
+
+      .pd-packages td {
+        vertical-align: top;
+        padding: 9pt 8pt 9pt 0;
+        border-bottom: 0.6pt solid #e7e5e4;
+      }
+
+      .pd-packages tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .pd-pkg-name {
+        font-weight: 700;
+        font-size: 11pt;
+        color: #111;
+      }
+
+      .pd-pkg-name .pill {
+        display: inline-block;
+        margin-left: 6pt;
+        padding: 1pt 5pt;
+        font-size: 7pt;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #0a5fa8;
+        border: 0.7pt solid #0a5fa8;
+        vertical-align: middle;
+      }
+
+      .pd-pkg-desc {
+        margin-top: 2pt;
+        font-size: 8.5pt;
+        color: #57534e;
+      }
+
+      .pd-pkg-price {
+        font-weight: 700;
+        font-size: 12pt;
+        color: #084a82;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .pd-pkg-features {
+        font-size: 8.5pt;
+        color: #44403c;
+        line-height: 1.4;
+      }
+
+      .pd-pkg-time {
+        font-size: 8.5pt;
+        color: #57534e;
+      }
+
+      .pd-addons {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .pd-addons td {
+        padding: 6pt 0;
+        border-bottom: 0.6pt solid #e7e5e4;
+        font-size: 9.5pt;
+      }
+
+      .pd-addons tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .pd-addons td:last-child {
+        text-align: right;
+        font-weight: 700;
+        color: #084a82;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
+      .pd-footer {
+        margin-top: 18pt;
+        padding-top: 10pt;
+        border-top: 1.2pt solid #0a5fa8;
+        display: flex;
+        justify-content: space-between;
+        gap: 16pt;
+        align-items: flex-start;
+      }
+
+      .pd-footer p {
+        margin: 0;
+        font-size: 8pt;
+        color: #57534e;
+        max-width: 55%;
+        line-height: 1.45;
+      }
+
+      .pd-contact {
+        text-align: right;
+        font-size: 8.5pt;
+        color: #111;
+        line-height: 1.55;
+      }
+
+      .pd-contact strong {
+        display: block;
+        font-size: 9.5pt;
+        margin-bottom: 2pt;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   </style>
 </head>
@@ -507,15 +744,11 @@
     </div>
     <div class="toolbar-right">
       <button type="button" class="btn btn-ghost" id="copyLink">Copy link</button>
-      <button type="button" class="btn btn-primary" id="exportPdf">Export PDF</button>
+      <button type="button" class="btn btn-primary" id="exportPdf" title="Opens print dialog — choose Save as PDF, turn off headers/footers">Export PDF</button>
     </div>
   </div>
 
-  <main class="wrap">
-    <p class="print-only" style="margin:0 0 1rem;font-size:0.85rem;color:var(--dim)">
-      TavsWebs pricing · <span id="printMeta"></span>
-    </p>
-
+  <main class="wrap screen-only">
     <section class="hero">
       <div>
         <p class="eyebrow" id="eyebrow">Pricing</p>
@@ -566,6 +799,56 @@
       Prices exclude VAT where applicable. Final quote depends on scope. Client owns the site after delivery.
     </p>
   </main>
+
+  <!-- Dedicated print/PDF document (not the website layout) -->
+  <article class="print-doc" aria-hidden="true">
+    <header class="pd-header">
+      <div class="pd-brand">
+        <div class="pd-mark">TW</div>
+        <div>
+          <div class="pd-brand-name">TavsWebs</div>
+          <div class="pd-brand-sub" id="pdBrandSub">Website development</div>
+        </div>
+      </div>
+      <div class="pd-meta">
+        <strong id="pdDocTitle">Pricing overview</strong>
+        <span id="pdDate"></span><br />
+        <span id="pdMarket"></span><br />
+        tavswebs.com
+      </div>
+    </header>
+
+    <h1 class="pd-title" id="pdHeadline"></h1>
+    <p class="pd-intro" id="pdLead"></p>
+
+    <div class="pd-section-label" id="pdPkgLabel">Packages</div>
+    <table class="pd-packages">
+      <thead>
+        <tr>
+          <th id="pdThPkg">Package</th>
+          <th id="pdThPrice">Price</th>
+          <th id="pdThIncl">Includes</th>
+          <th id="pdThTime">Timeline</th>
+        </tr>
+      </thead>
+      <tbody id="pdPackages"></tbody>
+    </table>
+
+    <div class="pd-section-label" id="pdAddonLabel">Add-ons</div>
+    <table class="pd-addons">
+      <tbody id="pdAddons"></tbody>
+    </table>
+
+    <footer class="pd-footer">
+      <p id="pdFine"></p>
+      <div class="pd-contact">
+        <strong id="pdContactTitle">Contact</strong>
+        tavswebs@gmail.com<br />
+        +371 25 547 113<br />
+        wa.me/37125547113
+      </div>
+    </footer>
+  </article>
 
   <script>
     const MARKETS = {
@@ -636,6 +919,18 @@
         fineprint: "Cenas bez PVN, kur piemērojams. Galīgais piedāvājums pēc apjoma. Klients ir mājaslapas īpašnieks pēc nodošanas.",
         ctaTitle: "Gatavs fiksētam piedāvājumam?",
         ctaText: "Bezmaksas konsultācija. Skaidrs piedāvājums 24h laikā.",
+        print: {
+          brandSub: "Mājaslapu izstrāde",
+          docTitle: "Cenu pārskats",
+          pkgLabel: "Paketes",
+          addonLabel: "Papildus",
+          thPkg: "Pakete",
+          thPrice: "Cena",
+          thIncl: "Iekļauts",
+          thTime: "Termiņš",
+          popular: "Populāra",
+          contactTitle: "Kontakti",
+        },
       },
 
       spain: baseEu("Spain", {
@@ -809,6 +1104,18 @@
           "Prices exclude VAT where applicable. Final quote depends on scope. You own the site after delivery. Market ranges shown are indicative local agency/freelancer guides.",
         ctaTitle: "Ready for a fixed quote?",
         ctaText: "Free consultation. Exact scope and timeline within 24 hours.",
+        print: {
+          brandSub: "Website development",
+          docTitle: "Pricing overview",
+          pkgLabel: "Packages",
+          addonLabel: "Add-ons",
+          thPkg: "Package",
+          thPrice: "Price",
+          thIncl: "Includes",
+          thTime: "Timeline",
+          popular: "Popular",
+          contactTitle: "Contact",
+        },
       };
     }
 
@@ -842,8 +1149,6 @@
       document.getElementById("agencyMid").textContent = m.agencyMid;
       document.getElementById("positionNote").textContent = m.position;
       document.getElementById("fineprint").textContent = m.fineprint;
-      document.getElementById("printMeta").textContent =
-        `${m.name} · ${new Date().toLocaleDateString("en-GB")} · tavswebs.com`;
 
       const cta = document.querySelector(".footer-cta");
       cta.querySelector("h2").textContent = m.ctaTitle;
@@ -869,6 +1174,49 @@
         .join("");
 
       document.getElementById("addons").innerHTML = m.addons
+        .map(([name, price]) => `<tr><td>${name}</td><td>${price}</td></tr>`)
+        .join("");
+
+      // Print / PDF document (separate from website layout)
+      const pr = m.print;
+      const dateStr = new Date().toLocaleDateString(
+        m.locale === "lv" ? "lv-LV" : "en-GB",
+        { day: "numeric", month: "long", year: "numeric" },
+      );
+      document.getElementById("pdBrandSub").textContent = pr.brandSub;
+      document.getElementById("pdDocTitle").textContent = pr.docTitle;
+      document.getElementById("pdDate").textContent = dateStr;
+      document.getElementById("pdMarket").textContent = m.name;
+      document.getElementById("pdHeadline").textContent = m.headline;
+      document.getElementById("pdLead").textContent = m.lead;
+      document.getElementById("pdPkgLabel").textContent = pr.pkgLabel;
+      document.getElementById("pdAddonLabel").textContent = pr.addonLabel;
+      document.getElementById("pdThPkg").textContent = pr.thPkg;
+      document.getElementById("pdThPrice").textContent = pr.thPrice;
+      document.getElementById("pdThIncl").textContent = pr.thIncl;
+      document.getElementById("pdThTime").textContent = pr.thTime;
+      document.getElementById("pdFine").textContent = m.fineprint;
+      document.getElementById("pdContactTitle").textContent = pr.contactTitle;
+
+      document.getElementById("pdPackages").innerHTML = m.packages
+        .map((p) => {
+          const price = `${p.price}${p.priceNote || ""}`;
+          const pill = p.featured
+            ? `<span class="pill">${pr.popular}</span>`
+            : "";
+          return `<tr>
+            <td>
+              <div class="pd-pkg-name">${p.name}${pill}</div>
+              <div class="pd-pkg-desc">${p.tagline}</div>
+            </td>
+            <td><div class="pd-pkg-price">${price}</div></td>
+            <td><div class="pd-pkg-features">${p.features.join(" · ")}</div></td>
+            <td><div class="pd-pkg-time">${p.meta}</div></td>
+          </tr>`;
+        })
+        .join("");
+
+      document.getElementById("pdAddons").innerHTML = m.addons
         .map(([name, price]) => `<tr><td>${name}</td><td>${price}</td></tr>`)
         .join("");
 
