@@ -316,7 +316,17 @@
       line-height: 1.15;
     }
 
-    .price span {
+    .price .from {
+      display: block;
+      margin-bottom: 0.15rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    .price span.suffix {
       font-size: 1rem;
       font-weight: 600;
       color: var(--dim);
@@ -656,6 +666,18 @@
         font-size: 12pt;
         color: #084a82;
         font-variant-numeric: tabular-nums;
+        letter-spacing: 0;
+        white-space: nowrap;
+      }
+
+      .pd-pkg-price .from {
+        display: block;
+        font-size: 7.5pt;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #78716c;
+        margin-bottom: 1pt;
       }
 
       .pd-pkg-features {
@@ -857,7 +879,7 @@
         currency: "EUR",
         eyebrow: "Latvia · local pricing",
         headline: "Mājaslapu paketes Latvijā",
-        lead: "Fiksētas cenas Latvijas biznesiem. Bezmaksas konsultācija — piedāvājums 24h laikā.",
+        lead: "Cenas no norādītā minimuma — galīgais piedāvājums pēc apjoma. Bezmaksas konsultācija 24h laikā.",
         agencyMid: "~€800",
         ranges: [
           ["Starter", "€200–600"],
@@ -865,13 +887,13 @@
           ["Shop", "€800–2,500+"],
         ],
         position: "Local LV pricing — keep separate from EU English offers.",
+        fromLabel: "no",
         packages: [
           {
             id: "starter",
             name: "Starter",
             tagline: "Vienkārša biznesa / vizītkartes lapa",
             price: "€200",
-            priceNote: "",
             vs: "Ieejas līmenis Latvijā",
             features: ["Līdz 5 lapām", "Mobilā versija", "Kontaktu forma", "SEO pamati", "1 labojumu raunds"],
             meta: "1–2 nedēļas",
@@ -882,7 +904,6 @@
             featured: true,
             tagline: "Tipiska biznesa mājaslapa",
             price: "€790",
-            priceNote: "",
             vs: "Populārākā izvēle",
             features: ["6–10 lapas", "Pielāgots dizains", "SEO pamati + analytics", "2 labojumu raundi", "Apmācība"],
             meta: "2–3 nedēļas",
@@ -892,7 +913,6 @@
             name: "Growth",
             tagline: "Lielāka / konversijai gatava lapa",
             price: "€1,490",
-            priceNote: "",
             vs: "Vairāk lapu un SEO",
             features: ["10–15 lapas", "Blogs", "Stiprināts SEO", "Lead forma", "Apmācība"],
             meta: "3–5 nedēļas",
@@ -902,21 +922,20 @@
             name: "Shop",
             tagline: "Interneta veikals",
             price: "€800",
-            priceNote: "+",
             vs: "Mazam katalogam",
             features: ["Produktu katalogs", "Maksājumi", "Mobilais grozs", "Pamata iestatījumi"],
             meta: "3–6 nedēļas",
           },
         ],
         addons: [
-          ["SEO audits", "€150"],
+          ["SEO audits", "no €150"],
           ["AI čatbots", "no €290"],
           ["CRM / sistēma", "no €2,000"],
           ["Redesign", "no €490"],
           ["Uzturēšana / izmaiņas", "pēc uzdevuma · no €49"],
         ],
-        fineprint: "Cenas bez PVN, kur piemērojams. Galīgais piedāvājums pēc apjoma. Klients ir mājaslapas īpašnieks pēc nodošanas.",
-        ctaTitle: "Gatavs fiksētam piedāvājumam?",
+        fineprint: "Norādītās cenas ir sākuma (no). Galīgais piedāvājums pēc apjoma. Cenas bez PVN, kur piemērojams. Klients ir mājaslapas īpašnieks pēc nodošanas.",
+        ctaTitle: "Gatavs piedāvājumam?",
         ctaText: "Bezmaksas konsultācija. Skaidrs piedāvājums 24h laikā.",
         print: {
           brandSub: "Mājaslapu izstrāde",
@@ -924,7 +943,7 @@
           pkgLabel: "Paketes",
           addonLabel: "Papildus",
           thPkg: "Pakete",
-          thPrice: "Cena",
+          thPrice: "Cena no",
           thIncl: "Iekļauts",
           thTime: "Termiņš",
           popular: "Populāra",
@@ -1022,17 +1041,17 @@
         currency: "EUR",
         eyebrow: `${name} · English delivery`,
         headline: `Website packages for ${name}`,
-        lead: "Fixed-scope quotes. Free consultation — clear proposal within 24 hours. Remote delivery in English.",
+        lead: "Starting-from prices — exact quote after scope. Free consultation within 24 hours. Remote delivery in English.",
         agencyMid: cfg.agencyMid,
         ranges: cfg.ranges,
         position: cfg.position,
+        fromLabel: "from",
         packages: [
           {
             id: "starter",
             name: "Starter",
             tagline: "One-pager or simple 3–5 page presence",
             price: packs.starter,
-            priceNote: "",
             vs: "Credible EU entry price",
             features: [
               "Up to 5 pages",
@@ -1049,7 +1068,6 @@
             featured: true,
             tagline: "Core SME site — services, about, work, contact",
             price: packs.business,
-            priceNote: "",
             vs: "Recommended — under local agency mid",
             features: [
               "6–10 pages",
@@ -1065,7 +1083,6 @@
             name: "Growth",
             tagline: "Larger site built for conversion",
             price: packs.growth,
-            priceNote: "",
             vs: "More pages & stronger SEO",
             features: [
               "10–15 pages",
@@ -1081,7 +1098,6 @@
             name: "Shop",
             tagline: "Small-catalogue ecommerce",
             price: packs.shop,
-            priceNote: "+",
             vs: "Entry under typical shop quotes",
             features: [
               "Product catalogue",
@@ -1093,15 +1109,15 @@
           },
         ],
         addons: [
-          ["SEO audit", "€290"],
+          ["SEO audit", "from €290"],
           ["AI chatbot", "from €490"],
           ["CRM / custom system", "from €3,990"],
           ["Redesign (existing site)", "from €1,290"],
           ["Updates & support", "per task · from €79"],
         ],
         fineprint:
-          "Prices exclude VAT where applicable. Final quote depends on scope. You own the site after delivery. Market ranges shown are indicative local agency/freelancer guides.",
-        ctaTitle: "Ready for a fixed quote?",
+          "Listed package prices are starting-from (minimum). Final quote depends on scope. Prices exclude VAT where applicable. You own the site after delivery. Market ranges shown are indicative local agency/freelancer guides.",
+        ctaTitle: "Ready for a quote?",
         ctaText: "Free consultation. Exact scope and timeline within 24 hours.",
         print: {
           brandSub: "Website development",
@@ -1109,7 +1125,7 @@
           pkgLabel: "Packages",
           addonLabel: "Add-ons",
           thPkg: "Package",
-          thPrice: "Price",
+          thPrice: "From",
           thIncl: "Includes",
           thTime: "Timeline",
           popular: "Popular",
@@ -1164,7 +1180,7 @@
           ${p.featured ? `<span class="badge">Popular</span>` : ""}
           <h3>${p.name}</h3>
           <p class="tagline">${p.tagline}</p>
-          <div class="price">${p.price}${p.priceNote ? `<span> ${p.priceNote}</span>` : ""}</div>
+          <div class="price"><span class="from">${m.fromLabel}</span>${p.price}</div>
           <div class="vs">${p.vs}</div>
           <ul>${p.features.map((f) => `<li>${f}</li>`).join("")}</ul>
           <div class="meta">Typical timeline: ${p.meta}</div>
@@ -1199,7 +1215,6 @@
 
       document.getElementById("pdPackages").innerHTML = m.packages
         .map((p) => {
-          const price = `${p.price}${p.priceNote || ""}`;
           const pill = p.featured
             ? `<span class="pill">${pr.popular}</span>`
             : "";
@@ -1208,7 +1223,7 @@
               <div class="pd-pkg-name">${p.name}${pill}</div>
               <div class="pd-pkg-desc">${p.tagline}</div>
             </td>
-            <td><div class="pd-pkg-price">${price}</div></td>
+            <td><div class="pd-pkg-price"><span class="from">${m.fromLabel}</span>${p.price}</div></td>
             <td><div class="pd-pkg-features">${p.features.join(" · ")}</div></td>
             <td><div class="pd-pkg-time">${p.meta}</div></td>
           </tr>`;
