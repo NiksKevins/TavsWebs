@@ -182,7 +182,7 @@ export const serviceImages: Record<ServiceId, string> = {
   "seo-audit": "/services/seo-audit.jpg",
   programming: "/services/programming.jpg",
   crm: "/services/crm.jpg",
-  "ai-chatbots": "/services/programming.jpg",
+  "ai-chatbots": "/services/ai-chatbots.jpg",
 };
 
 export const processStepIds = [
