@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Star } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
@@ -35,11 +35,11 @@ export function Hero() {
               {t("eyebrow")}
             </motion.p>
 
-            <h1 className="display max-w-[18ch] text-[clamp(2.1rem,5.5vw,4.25rem)] leading-[1.05] md:max-w-[20ch]">
+            <h1 className="display max-w-[16ch] text-[clamp(2.15rem,5.2vw,4.1rem)] leading-[1.05] md:max-w-[18ch]">
               <LineReveal delay={0.18} className="text-text">
                 {t("titleBefore")}
               </LineReveal>
-              <LineReveal delay={0.32} className="text-muted">
+              <LineReveal delay={0.32} className="text-accent">
                 {t("titleAccent")}
               </LineReveal>
             </h1>
@@ -100,6 +100,36 @@ export function Hero() {
             >
               {t("trustLine")}
             </motion.p>
+
+            <motion.div
+              className="mt-6 grid gap-3 sm:grid-cols-2"
+              initial={reduced ? false : { opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 1, ease: EASE_OUT_EXPO }}
+            >
+              <blockquote className="rounded-xl border border-border bg-bg-elevated/90 px-4 py-3 shadow-sm">
+                <div className="mb-1.5 flex gap-0.5 text-[#F4B400]" aria-hidden>
+                  {Array.from({ length: 5 }, (_, i) => (
+                    <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
+                  ))}
+                </div>
+                <p className="text-sm leading-snug text-text">“{t("proofQuote")}”</p>
+                <footer className="mt-2 text-xs font-medium text-dim">
+                  {t("proofName")}
+                </footer>
+              </blockquote>
+              <blockquote className="rounded-xl border border-border bg-bg-elevated/90 px-4 py-3 shadow-sm">
+                <div className="mb-1.5 flex gap-0.5 text-[#F4B400]" aria-hidden>
+                  {Array.from({ length: 5 }, (_, i) => (
+                    <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
+                  ))}
+                </div>
+                <p className="text-sm leading-snug text-text">“{t("proofQuote2")}”</p>
+                <footer className="mt-2 text-xs font-medium text-dim">
+                  {t("proofName2")}
+                </footer>
+              </blockquote>
+            </motion.div>
           </div>
 
           <motion.div
@@ -108,7 +138,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.35, ease: EASE_OUT_EXPO }}
           >
-            <div className="overflow-hidden rounded-[1.75rem] border border-border bg-surface shadow-md">
+            <div className="overflow-hidden rounded-[1.75rem] border border-border bg-surface shadow-[0_24px_60px_-28px_rgba(8,74,130,0.35)]">
               <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] xl:aspect-[5/4]">
                 <Image
                   src="/about/founder.jpg"
@@ -119,9 +149,13 @@ export function Hero() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 48vw"
                   className="object-cover object-[center_22%]"
                 />
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent"
+                />
               </div>
               <div className="border-t border-border bg-bg-elevated px-5 py-4">
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-dim">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-accent">
                   {t("photoLabel")}
                 </p>
                 <p className="mt-1 text-sm font-medium text-text sm:text-base">

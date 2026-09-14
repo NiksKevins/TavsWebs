@@ -2,8 +2,8 @@
   "meta": {
     "home": {
       "title": "Mājaslapu izstrāde Latvijā",
-      "description": "Biznesa mājaslapas Latvijā no €200 — skaidrs dizains, SEO pamati un bezmaksas piedāvājums 24h laikā. TavsWebs.",
-      "ogTitle": "Mājaslapa, kas atved klientus | TavsWebs"
+      "description": "Mājaslapu izstrāde Latvijā no €200 — 1–3 nedēļas līdz gatavai vietnei. Piedāvājums bez maksas 24h. TavsWebs.",
+      "ogTitle": "Mājaslapu izstrāde Latvijā no €200 | TavsWebs"
     },
     "work": {
       "title": "Mūsu darbi",
@@ -58,7 +58,7 @@
     "about": "Par mums",
     "contact": "Kontakti",
     "faq": "BUJ",
-    "getQuote": "Sazināties",
+    "getQuote": "Piedāvājums 24h",
     "allServices": "Visi pakalpojumi",
     "openMenu": "Atvērt izvēlni",
     "closeMenu": "Aizvērt izvēlni",
@@ -80,22 +80,26 @@
     "terms": "Noteikumi"
   },
   "hero": {
-    "eyebrow": "TavsWebs",
-    "titleBefore": "Mājaslapa, kas",
-    "titleAccent": "atved klientus.",
-    "body": "Biznesa mājaslapas Latvijā — skaidrs dizains, SEO pamati un bezmaksas piedāvājums 24 stundu laikā. No €200. Ja vajag vairāk — arī SEO, veikalu, CRM vai AI čatbotu.",
-    "ctaPrimary": "Saņemt bezmaksas piedāvājumu",
-    "ctaWhatsapp": "Saruna WhatsApp",
-    "ctaSecondary": "Skatīt reālus darbus",
+    "eyebrow": "TavsWebs · mājaslapu izstrāde Latvijā",
+    "titleBefore": "Mājaslapu izstrāde",
+    "titleAccent": "no €200 · 1–3 nedēļās.",
+    "body": "Uztaisām biznesa vietni, ko tu pats vari rediģēt. Klienti saprot, ko tu dari, un zvana. Piedāvājums bez maksas 24 stundu laikā — Audi Klubs, Stūrīši VIB un citi jau strādā ar mums.",
+    "ctaPrimary": "Saņemt piedāvājumu šodien",
+    "ctaWhatsapp": "Rakstīt WhatsApp tagad",
+    "ctaSecondary": "Skatīt pabeigtus projektus",
     "explore": "Tālāk",
-    "trustLine": "4,9★ Google · atbilde 24h · no €200",
+    "trustLine": "4,9★ Google · 35+ vietnes · atbilde 24h",
+    "proofQuote": "CMS ir saprotams — labojam lapas bez programmētāja.",
+    "proofName": "Mārtiņš · Audi Klubs",
+    "proofQuote2": "Sanāca ātri, un tagad klienti zvana paši.",
+    "proofName2": "Inguss · Stūrīši VIB",
     "photoAlt": "TavsWebs dibinātājs pie datora ar pašreizējo mājaslapu monitorā",
     "photoLabel": "Aiz projekta",
-    "photoCaption": "Reāls cilvēks — ne anonīma aģentūra. Atbildam 24h laikā."
+    "photoCaption": "Niks — TavsWebs. Atbildi saņemsi 24h laikā, ne no call centra."
   },
   "site": {
-    "tagline": "Mājaslapas, kas atved klientus — Latvijā",
-    "description": "TavsWebs — biznesa mājaslapu izstrāde Latvijā. Skaidras cenas, ātra atbilde un rezultāts, ko klients saprot.",
+    "tagline": "Mājaslapu izstrāde Latvijā no €200",
+    "description": "TavsWebs — mājaslapu izstrāde Latvijā. No €200, 1–3 nedēļas, piedāvājums 24h. Tu pats vari mainīt saturu pēc nodošanas.",
     "responseTime": "Atbildam 24 stundu laikā",
     "skipToContent": "Pāriet pie satura"
   },
@@ -250,11 +254,11 @@
     "eyebrow": "Pakalpojumi",
     "title": "Mājaslapa pirmā. Pārējais — kad vajag.",
     "homeTitle": "Ko mēs darām",
-    "homeSubtitle": "Galvenais — mājaslapa, kas pārdod. SEO, veikals, CRM un AI — tad, kad biznesam tas ir nākamais solis.",
-    "pageDescription": "Mājaslapas no €200, SEO, veikali, CRM un AI čatboti ar skaidrām cenām un termiņiem.",
+    "homeSubtitle": "Mājaslapa, ko klienti saprot un tu pats vari labot. SEO, veikals, CRM un AI — kad tas atmaksājas.",
+    "pageDescription": "Mājaslapas no €200 (1–3 nedēļas), SEO auditi no €150, veikali, CRM un AI čatboti ar skaidru cenu pirms starta.",
     "exploreAll": "Visi pakalpojumi",
     "learnMore": "Uzzināt vairāk",
-    "tryDemo": "Izmēģināt AI čatu bezmaksas",
+    "tryDemo": "Izmēģināt AI čatu — bez reģistrācijas",
     "scrollHint": "Velc uz sāniem, lai redzētu visus",
     "badges": {
       "popular": "Populārākais",
@@ -265,13 +269,13 @@
       "website-dev": {
         "title": "Mājaslapu izstrāde",
         "description": "WordPress, WooCommerce vai pielāgota izstrāde — mājaslapa, kas skaidri pastāsta, ko tu dari, un ir gatava Google.",
-        "detail": "No €200 · 1–3 nedēļas · SEO pamati",
-        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei uz WordPress, WooCommerce vai pielāgotas platformas. Dizains, programmēšana, mobilā versija, SEO pamati un palaišana iekļauta.",
+        "detail": "No €200 · 1–3 nedēļas · tu pats labo saturu",
+        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei uz WordPress, WooCommerce vai pielāgotas platformas. Dizains, programmēšana, mobilā versija, Google indeksācija un palaišana iekļauta.",
         "benefits": [
-          "Skaidra struktūra — apmeklētājs ātri saprot, ko tu dari",
-          "Mobilā versija iekļauta — lielākā daļa klientu meklē telefonā",
-          "SEO pamati — lai Google var atrast tavu lapu",
-          "WordPress tipa CMS — vari pats mainīt saturu bez programmētāja"
+          "Apmeklētājs 5 sekundēs saprot, ko tu dari un kā sazināties",
+          "Mobilā versija iekļauta — vairums klientu meklē telefonā",
+          "Virsraksti un ātrums iestatīti, lai Google var atrast lapu",
+          "WordPress tipa CMS — maini tekstus un bildes bez programmētāja"
         ],
         "includes": [
           "Dizains un izkārtojums",
@@ -597,9 +601,9 @@
     }
   },
   "cta": {
-    "title": "Vēlies skaidru piedāvājumu?",
-    "description": "Pastāsti, kāda mājaslapa vai digitālais risinājums vajadzīgs — 24 stundu laikā iedosim cenu un termiņu. Bez saistībām.",
-    "button": "Saņemt bezmaksas piedāvājumu"
+    "title": "Piedāvājums 24 stundu laikā",
+    "description": "Pastāsti, kāda mājaslapa vajadzīga — iedosim cenu un termiņu bez maksas. Bez saistībām, bez call centra.",
+    "button": "Saņemt piedāvājumu šodien"
   },
   "footer": {
     "rights": "© {year} {name}. Visas tiesības aizsargātas.",

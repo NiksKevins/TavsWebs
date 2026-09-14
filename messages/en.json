@@ -2,8 +2,8 @@
   "meta": {
     "home": {
       "title": "Website Development in Latvia",
-      "description": "Business websites in Latvia from €200 — clear design, SEO basics and a free quote within 24 hours. TavsWebs.",
-      "ogTitle": "A website that brings you clients | TavsWebs"
+      "description": "Website development in Latvia from €200 — live in 1–3 weeks. Free quote in 24h. TavsWebs.",
+      "ogTitle": "Website development in Latvia from €200 | TavsWebs"
     },
     "work": {
       "title": "Our Work",
@@ -58,7 +58,7 @@
     "about": "About",
     "contact": "Contact",
     "faq": "FAQ",
-    "getQuote": "Get in touch",
+    "getQuote": "Quote in 24h",
     "allServices": "All services",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -80,22 +80,26 @@
     "terms": "Terms"
   },
   "hero": {
-    "eyebrow": "TavsWebs",
-    "titleBefore": "A website that",
-    "titleAccent": "brings you clients.",
-    "body": "Business websites in Latvia — clear design, SEO basics and a free quote within 24 hours. From €200. Need more later? SEO, ecommerce, CRM or an AI chatbot.",
-    "ctaPrimary": "Get a free quote",
-    "ctaWhatsapp": "Chat on WhatsApp",
-    "ctaSecondary": "See real projects",
+    "eyebrow": "TavsWebs · website development in Latvia",
+    "titleBefore": "Website development",
+    "titleAccent": "from €200 · in 1–3 weeks.",
+    "body": "We build a business site you can edit yourself. Visitors understand what you do — and call. Free quote within 24 hours. Clients include Audi Klubs and Stūrīši VIB.",
+    "ctaPrimary": "Get a quote today",
+    "ctaWhatsapp": "Message WhatsApp now",
+    "ctaSecondary": "See finished projects",
     "explore": "Explore",
-    "trustLine": "4.9★ Google · reply in 24h · from €200",
+    "trustLine": "4.9★ Google · 35+ sites · reply in 24h",
+    "proofQuote": "The CMS is clear — we update pages without a developer.",
+    "proofName": "Mārtiņš · Audi Klubs",
+    "proofQuote2": "Done fast — and now clients call us themselves.",
+    "proofName2": "Inguss · Stūrīši VIB",
     "photoAlt": "TavsWebs founder at the desk with the current website on the monitor",
     "photoLabel": "Behind the work",
-    "photoCaption": "A real person — not an anonymous agency. Replies within 24h."
+    "photoCaption": "Niks — TavsWebs. You get a reply in 24h, not a call centre."
   },
   "site": {
-    "tagline": "Websites that bring you clients — in Latvia",
-    "description": "TavsWebs — business website development in Latvia. Clear prices, fast replies and results clients understand.",
+    "tagline": "Website development in Latvia from €200",
+    "description": "TavsWebs — website development in Latvia. From €200, 1–3 weeks, quote in 24h. Edit your content yourself after handover.",
     "responseTime": "Replies within 24 hours",
     "skipToContent": "Skip to content"
   },
@@ -250,11 +254,11 @@
     "eyebrow": "Services",
     "title": "Website first. Everything else when you need it.",
     "homeTitle": "What we do",
-    "homeSubtitle": "Core offer: a website that sells. SEO, store, CRM and AI — when your business is ready for the next step.",
-    "pageDescription": "Websites from €200, SEO, stores, CRM and AI chatbots with clear prices and timelines.",
+    "homeSubtitle": "A site visitors understand and you can edit yourself. SEO, store, CRM and AI — when they pay off.",
+    "pageDescription": "Websites from €200 (1–3 weeks), SEO audits from €150, stores, CRM and AI chatbots with a clear price before we start.",
     "exploreAll": "All services",
     "learnMore": "Learn more",
-    "tryDemo": "Try the AI chat free",
+    "tryDemo": "Try the AI chat — no sign-up",
     "scrollHint": "Swipe to see all",
     "badges": {
       "popular": "Most popular",
@@ -265,13 +269,13 @@
       "website-dev": {
         "title": "Website development",
         "description": "WordPress, WooCommerce or custom builds — a site that clearly shows what you do and is ready for Google.",
-        "detail": "From €200 · 1–3 weeks · SEO basics",
-        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website on WordPress, WooCommerce or a custom platform. Design, development, mobile version, SEO basics and launch included.",
+        "detail": "From €200 · 1–3 weeks · edit content yourself",
+        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website on WordPress, WooCommerce or a custom platform. Design, development, mobile version, Google indexing setup and launch included.",
         "benefits": [
-          "Clear structure — visitors quickly understand what you do",
-          "Mobile version included — most clients search on phone",
-          "SEO basics — so Google can find your site",
-          "WordPress-style CMS — edit content yourself without a developer"
+          "Visitors grasp what you do and how to contact you in seconds",
+          "Mobile version included — most clients search on their phone",
+          "Titles and speed set up so Google can find the page",
+          "WordPress-style CMS — change text and images without a developer"
         ],
         "includes": [
           "Design and layout",
@@ -597,9 +601,9 @@
     }
   },
   "cta": {
-    "title": "Want a clear quote?",
-    "description": "Tell us what website or digital solution you need — we'll send price and timeline within 24 hours. No obligation.",
-    "button": "Get a free quote"
+    "title": "Quote within 24 hours",
+    "description": "Tell us what website you need — we'll send price and timeline free. No obligation, no call centre.",
+    "button": "Get a quote today"
   },
   "footer": {
     "rights": "© {year} {name}. All rights reserved.",
