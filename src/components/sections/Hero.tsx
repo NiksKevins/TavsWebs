@@ -91,6 +91,15 @@ export function Hero() {
                 </a>
               </motion.div>
             </motion.div>
+
+            <motion.p
+              className="mt-5 text-sm font-medium tracking-wide text-dim"
+              initial={reduced ? false : { opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.9, ease: EASE_OUT_EXPO }}
+            >
+              {t("trustLine")}
+            </motion.p>
           </div>
 
           <motion.div

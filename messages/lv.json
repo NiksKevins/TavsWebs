@@ -2,8 +2,8 @@
   "meta": {
     "home": {
       "title": "Mājaslapu izstrāde Latvijā",
-      "description": "Mājaslapu izstrāde, CRM sistēmas, mobilās aplikācijas, SEO un jebkas, ko biznesam vajag — programmējam pielāgotus risinājumus Latvijā. No €200. Piedāvājums 24h.",
-      "ogTitle": "Mājaslapu izstrāde — CRM un biznesa sistēmas | TavsWebs"
+      "description": "Biznesa mājaslapas Latvijā no €200 — skaidrs dizains, SEO pamati un bezmaksas piedāvājums 24h laikā. TavsWebs.",
+      "ogTitle": "Mājaslapa, kas atved klientus | TavsWebs"
     },
     "work": {
       "title": "Mūsu darbi",
@@ -12,7 +12,7 @@
     },
     "services": {
       "title": "Pakalpojumi",
-      "description": "Mājaslapas, CRM sistēmas, interneta veikali, aplikācijas, SEO un pielāgota programmēšana — viss, ko biznesam vajag digitāli.",
+      "description": "Mājaslapas no €200, SEO, veikali, CRM un AI čatboti — skaidras cenas un termiņi Latvijā.",
       "ogTitle": "Pakalpojumi — TavsWebs"
     },
     "process": {
@@ -80,30 +80,31 @@
     "terms": "Noteikumi"
   },
   "hero": {
-    "eyebrow": "TavsWebs · mājaslapas no €200",
-    "titleBefore": "Mājaslapas, CRM, SEO, aplikācijas",
-    "titleAccent": "un AI risinājumi",
-    "body": "Digitālā studija Latvijā — taisām mājaslapas, CRM sistēmas, SEO, mobilās aplikācijas un AI čatbotus. Sākam ar tavu mērķi, beidzam ar skaidru rezultātu. Piedāvājums 24 stundu laikā.",
-    "ctaPrimary": "Saņemt piedāvājumu",
-    "ctaWhatsapp": "Rakstīt WhatsApp",
-    "ctaSecondary": "Skatīt darbus",
+    "eyebrow": "TavsWebs",
+    "titleBefore": "Mājaslapa, kas",
+    "titleAccent": "atved klientus.",
+    "body": "Biznesa mājaslapas Latvijā — skaidrs dizains, SEO pamati un bezmaksas piedāvājums 24 stundu laikā. No €200. Ja vajag vairāk — arī SEO, veikalu, CRM vai AI čatbotu.",
+    "ctaPrimary": "Saņemt bezmaksas piedāvājumu",
+    "ctaWhatsapp": "Saruna WhatsApp",
+    "ctaSecondary": "Skatīt reālus darbus",
     "explore": "Tālāk",
+    "trustLine": "4,9★ Google · atbilde 24h · no €200",
     "photoAlt": "TavsWebs dibinātājs pie datora ar pašreizējo mājaslapu monitorā",
     "photoLabel": "Aiz projekta",
     "photoCaption": "Reāls cilvēks — ne anonīma aģentūra. Atbildam 24h laikā."
   },
   "site": {
-    "tagline": "Mājaslapas, CRM, SEO un AI risinājumi Latvijā",
-    "description": "TavsWebs — mājaslapu izstrāde, CRM sistēmas, SEO, mobilās aplikācijas un AI čatboti Latvijā. No idejas līdz gatavam produktam.",
+    "tagline": "Mājaslapas, kas atved klientus — Latvijā",
+    "description": "TavsWebs — biznesa mājaslapu izstrāde Latvijā. Skaidras cenas, ātra atbilde un rezultāts, ko klients saprot.",
     "responseTime": "Atbildam 24 stundu laikā",
     "skipToContent": "Pāriet pie satura"
   },
   "aboutPreview": {
     "eyebrow": "Par mums",
-    "title": "Digitālā studija Latvijā",
-    "body": "Taisām mājaslapas, CRM sistēmas, SEO, aplikācijas un AI čatbotus. Vairumam klientu — vairākas no šīm lietām vienlaikus, jo kopā tās strādā labāk.",
-    "body2": "Nav šablonu un nav lieka žargona. Tu saproti, ko saņem, cik tas maksā un cik ilgi aizņems. Atbildam 24 stundu laikā.",
-    "cta": "Uzzināt vairāk par mums",
+    "title": "Mazā komanda. Skaidri rezultāti.",
+    "body": "Speciālisti mājaslapām Latvijā. Tu zini cenu un termiņu pirms darba sākuma — bez aģentūras birokrātijas.",
+    "body2": "Pēc palaišanas vari pats mainīt saturu. Ja vajag SEO, CRM vai AI — pievienojam tad, kad tas atmaksājas.",
+    "cta": "Uzzināt, kā strādājam",
     "stats": {
       "websites": "Izveidotas mājaslapas",
       "years": "Gadi pieredzes",
@@ -247,19 +248,19 @@
   },
   "services": {
     "eyebrow": "Pakalpojumi",
-    "title": "Viss, kas biznesam vajadzīgs digitāli",
-    "homeTitle": "8 pakalpojumi, viena komanda",
-    "homeSubtitle": "No mājaslapas un CRM līdz SEO, aplikācijām un AI čatbotiem — viss, ko biznesam vajag digitāli.",
-    "pageDescription": "Mājaslapas, specializētas CRM sistēmas, veikali, aplikācijas, SEO un pielāgota programmēšana — no A līdz Z.",
+    "title": "Mājaslapa pirmā. Pārējais — kad vajag.",
+    "homeTitle": "Ko mēs darām",
+    "homeSubtitle": "Galvenais — mājaslapa, kas pārdod. SEO, veikals, CRM un AI — tad, kad biznesam tas ir nākamais solis.",
+    "pageDescription": "Mājaslapas no €200, SEO, veikali, CRM un AI čatboti ar skaidrām cenām un termiņiem.",
     "exploreAll": "Visi pakalpojumi",
     "learnMore": "Uzzināt vairāk",
-    "tryDemo": "Izmēģināt demo",
+    "tryDemo": "Izmēģināt AI čatu bezmaksas",
     "scrollHint": "Velc uz sāniem, lai redzētu visus",
     "badges": {
       "popular": "Populārākais",
       "new": "Jaunums"
     },
-    "ctaTitle": "Vajag kaut ko citu?",
+    "ctaTitle": "Neesi drošs, kas vajadzīgs?",
     "items": {
       "website-dev": {
         "title": "Mājaslapu izstrāde",
@@ -494,7 +495,7 @@
   },
   "testimonials": {
     "eyebrow": "Atsauksmes",
-    "title": "Ko saka klienti",
+    "title": "Reāli klienti. Reāli rezultāti.",
     "googleRating": "4,9",
     "googleLabel": "Google atsauksmēs",
     "googleSource": "Google atsauksme",
@@ -596,15 +597,15 @@
     }
   },
   "cta": {
-    "title": "Gatavs sākt?",
-    "description": "Mājaslapa, CRM, aplikācija vai kaut kas cits biznesam — pastāsti, kas vajadzīgs. Atbildēsim 24 stundu laikā.",
-    "button": "Uzzināt cenu"
+    "title": "Vēlies skaidru piedāvājumu?",
+    "description": "Pastāsti, kāda mājaslapa vai digitālais risinājums vajadzīgs — 24 stundu laikā iedosim cenu un termiņu. Bez saistībām.",
+    "button": "Saņemt bezmaksas piedāvājumu"
   },
   "footer": {
     "rights": "© {year} {name}. Visas tiesības aizsargātas.",
-    "note": "Mājaslapas, CRM, SEO un AI risinājumi Latvijā.",
+    "note": "Mājaslapas, kas atved klientus — Latvijā.",
     "nav": "Kājenes navigācija",
-    "botDemo": "AI čatbots demo"
+    "botDemo": "Izmēģināt AI čatu 24/7"
   },
   "dock": {
     "whatsapp": "WhatsApp",

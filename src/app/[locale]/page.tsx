@@ -57,9 +57,9 @@ export default async function HomePage({ params }: Props) {
       <Hero />
       <ServicesGrid />
       <Work preview />
+      <Testimonials />
       <AboutPreview />
       <ProcessInline />
-      <Testimonials />
       <GuidesPreview />
       <FAQ showHeader />
       <ContactBlock />

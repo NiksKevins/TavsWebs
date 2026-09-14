@@ -2,8 +2,8 @@
   "meta": {
     "home": {
       "title": "Website Development in Latvia",
-      "description": "Website development, custom CRM systems, mobile apps, SEO and anything a business needs — tailored software in Latvia. From €200. Quote in 24h.",
-      "ogTitle": "Website Development — CRM & Business Systems | TavsWebs"
+      "description": "Business websites in Latvia from €200 — clear design, SEO basics and a free quote within 24 hours. TavsWebs.",
+      "ogTitle": "A website that brings you clients | TavsWebs"
     },
     "work": {
       "title": "Our Work",
@@ -12,7 +12,7 @@
     },
     "services": {
       "title": "Services",
-      "description": "Websites, CRM systems, online stores, apps, SEO and custom programming — everything a business needs digitally.",
+      "description": "Websites from €200, SEO, stores, CRM and AI chatbots — clear prices and timelines in Latvia.",
       "ogTitle": "Services — TavsWebs"
     },
     "process": {
@@ -80,30 +80,31 @@
     "terms": "Terms"
   },
   "hero": {
-    "eyebrow": "TavsWebs · websites from €200",
-    "titleBefore": "Websites, CRM, SEO, apps",
-    "titleAccent": "and AI solutions",
-    "body": "Digital studio in Latvia — we build websites, CRM systems, SEO, mobile apps and AI chatbots. We start with your goal and finish with a clear result. Quote within 24 hours.",
-    "ctaPrimary": "Get a quote",
-    "ctaWhatsapp": "Message on WhatsApp",
-    "ctaSecondary": "View work",
+    "eyebrow": "TavsWebs",
+    "titleBefore": "A website that",
+    "titleAccent": "brings you clients.",
+    "body": "Business websites in Latvia — clear design, SEO basics and a free quote within 24 hours. From €200. Need more later? SEO, ecommerce, CRM or an AI chatbot.",
+    "ctaPrimary": "Get a free quote",
+    "ctaWhatsapp": "Chat on WhatsApp",
+    "ctaSecondary": "See real projects",
     "explore": "Explore",
+    "trustLine": "4.9★ Google · reply in 24h · from €200",
     "photoAlt": "TavsWebs founder at the desk with the current website on the monitor",
     "photoLabel": "Behind the work",
     "photoCaption": "A real person — not an anonymous agency. Replies within 24h."
   },
   "site": {
-    "tagline": "Websites, CRM, SEO and AI solutions in Latvia",
-    "description": "TavsWebs — website development, CRM systems, SEO, mobile apps and AI chatbots in Latvia. From idea to finished product.",
+    "tagline": "Websites that bring you clients — in Latvia",
+    "description": "TavsWebs — business website development in Latvia. Clear prices, fast replies and results clients understand.",
     "responseTime": "Replies within 24 hours",
     "skipToContent": "Skip to content"
   },
   "aboutPreview": {
     "eyebrow": "About us",
-    "title": "Digital studio in Latvia",
-    "body": "We build websites, CRM systems, SEO, apps and AI chatbots. For most clients — several of these at once, because together they work better.",
-    "body2": "No templates and no jargon. You know what you get, what it costs and how long it takes. We reply within 24 hours.",
-    "cta": "Learn more about us",
+    "title": "Small team. Clear outcomes.",
+    "body": "Website specialists in Latvia. You know the price and timeline before we start — no agency bureaucracy.",
+    "body2": "After launch you can edit content yourself. SEO, CRM or AI — we add them when they pay off.",
+    "cta": "See how we work",
     "stats": {
       "websites": "Websites built",
       "years": "Years of experience",
@@ -247,19 +248,19 @@
   },
   "services": {
     "eyebrow": "Services",
-    "title": "Everything a business needs digitally",
-    "homeTitle": "8 services, one team",
-    "homeSubtitle": "From websites and CRM to SEO, apps and AI chatbots — everything a business needs digitally.",
-    "pageDescription": "Websites, specialised CRM systems, stores, apps, SEO and custom programming — end to end.",
+    "title": "Website first. Everything else when you need it.",
+    "homeTitle": "What we do",
+    "homeSubtitle": "Core offer: a website that sells. SEO, store, CRM and AI — when your business is ready for the next step.",
+    "pageDescription": "Websites from €200, SEO, stores, CRM and AI chatbots with clear prices and timelines.",
     "exploreAll": "All services",
     "learnMore": "Learn more",
-    "tryDemo": "Try the demo",
+    "tryDemo": "Try the AI chat free",
     "scrollHint": "Swipe to see all",
     "badges": {
       "popular": "Most popular",
       "new": "New"
     },
-    "ctaTitle": "Need something else?",
+    "ctaTitle": "Not sure what you need?",
     "items": {
       "website-dev": {
         "title": "Website development",
@@ -494,7 +495,7 @@
   },
   "testimonials": {
     "eyebrow": "Testimonials",
-    "title": "What clients say",
+    "title": "Real clients. Real results.",
     "googleRating": "4.9",
     "googleLabel": "on Google reviews",
     "googleSource": "Google review",
@@ -596,15 +597,15 @@
     }
   },
   "cta": {
-    "title": "Ready to start?",
-    "description": "Website, CRM, app or something else for your business — tell us what you need. We’ll reply within 24 hours.",
-    "button": "Get a quote"
+    "title": "Want a clear quote?",
+    "description": "Tell us what website or digital solution you need — we'll send price and timeline within 24 hours. No obligation.",
+    "button": "Get a free quote"
   },
   "footer": {
     "rights": "© {year} {name}. All rights reserved.",
-    "note": "Websites, CRM, SEO and AI solutions in Latvia.",
+    "note": "Websites that bring you clients — in Latvia.",
     "nav": "Footer",
-    "botDemo": "AI chatbot demo"
+    "botDemo": "Try the AI chat 24/7"
   },
   "dock": {
     "whatsapp": "WhatsApp",
