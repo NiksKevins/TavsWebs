@@ -590,9 +590,9 @@
     "budgetPlaceholder": "Select a range",
     "description": "What do you need?",
     "descriptionPlaceholder": "Website, app, redesign, SEO… Tell us briefly.",
-    "submit": "Send",
+    "submit": "Get my quote now",
     "submitting": "Sending…",
-    "success": "Thanks! We’ll reply within 24 hours.",
+    "success": "Thanks! You'll get a quote within 24 hours.",
     "error": "Couldn’t send. Try again or email us directly.",
     "submitted": "Message sent.",
     "budgets": {
