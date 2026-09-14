@@ -2,8 +2,8 @@
   "meta": {
     "home": {
       "title": "Mājaslapu izstrāde Latvijā",
-      "description": "Mājaslapu izstrāde Latvijā no €200 — 1–3 nedēļas līdz gatavai vietnei. Piedāvājums bez maksas 24h. TavsWebs.",
-      "ogTitle": "Mājaslapu izstrāde Latvijā no €200 | TavsWebs"
+      "description": "Gatava biznesa mājaslapa 1–3 nedēļās — tikai no €200. Bezmaksas piedāvājums 24h. 4,9★ Google. TavsWebs Latvija.",
+      "ogTitle": "Gatava mājaslapa 1–3 nedēļās no €200 | TavsWebs"
     },
     "work": {
       "title": "Mūsu darbi",
@@ -26,9 +26,9 @@
       "ogTitle": "Par mums — TavsWebs"
     },
     "contact": {
-      "title": "Uzzināt cenu",
-      "description": "Pastāsti, kas tev vajadzīgs — mājaslapa, CRM, aplikācija, redesign vai SEO. Atbildēsim 24 stundu laikā.",
-      "ogTitle": "Kontakti — TavsWebs"
+      "title": "Saņem mājaslapas piedāvājumu",
+      "description": "Pastāsti, kāda mājaslapa vajadzīga — cenu un termiņu saņemsi 24 stundu laikā. Bez maksas.",
+      "ogTitle": "Saņem piedāvājumu tagad — TavsWebs"
     },
     "faq": {
       "title": "Biežākie jautājumi",
@@ -56,9 +56,9 @@
     "services": "Pakalpojumi",
     "process": "Process",
     "about": "Par mums",
-    "contact": "Kontakti",
+    "getQuote": "Saņem cenu tagad",
+    "contact": "Piedāvājums",
     "faq": "BUJ",
-    "getQuote": "Piedāvājums 24h",
     "allServices": "Visi pakalpojumi",
     "openMenu": "Atvērt izvēlni",
     "closeMenu": "Aizvērt izvēlni",
@@ -80,35 +80,39 @@
     "terms": "Noteikumi"
   },
   "hero": {
-    "eyebrow": "TavsWebs · mājaslapu izstrāde Latvijā",
-    "titleBefore": "Mājaslapu izstrāde",
-    "titleAccent": "no €200 · 1–3 nedēļās.",
-    "body": "Uztaisām biznesa vietni, ko tu pats vari rediģēt. Klienti saprot, ko tu dari, un zvana. Piedāvājums bez maksas 24 stundu laikā — Audi Klubs, Stūrīši VIB un citi jau strādā ar mums.",
-    "ctaPrimary": "Saņemt piedāvājumu šodien",
-    "ctaWhatsapp": "Rakstīt WhatsApp tagad",
-    "ctaSecondary": "Skatīt pabeigtus projektus",
-    "explore": "Tālāk",
-    "trustLine": "4,9★ Google · 35+ vietnes · atbilde 24h",
+    "eyebrow": "TavsWebs · 4,9★ Google · Latvija",
+    "titleBefore": "Gatava mājaslapa",
+    "titleAccent": "1–3 nedēļās — tikai no €200.",
+    "body": "Beidz skaidrot telefonā, ko tu dari. Mēs uztaisām vietni, ko klienti saprot 5 sekundēs — un tu pats labo tekstus bez programmētāja. Bezmaksas piedāvājums 24h. Jau uzticas Audi Klubs un Stūrīši VIB.",
+    "ctaPrimary": "Saņem mājaslapas piedāvājumu tagad",
+    "ctaWhatsapp": "Sākt sarunu WhatsApp",
+    "ctaSecondary": "Skatīt reālus projektus",
+    "explore": "Skatīt, kā strādājam",
+    "trustLine": "4,9★ Google · 35+ gatavas vietnes · atbilde 24h · no €200",
+    "clientsLabel": "Uzticas mums",
+    "clients": "Audi Klubs · Stūrīši VIB · uzņēmēji Rīgā",
     "proofQuote": "CMS ir saprotams — labojam lapas bez programmētāja.",
     "proofName": "Mārtiņš · Audi Klubs",
-    "proofQuote2": "Sanāca ātri, un tagad klienti zvana paši.",
+    "proofQuote2": "Sanāca ātri — tagad klienti zvana paši.",
     "proofName2": "Inguss · Stūrīši VIB",
+    "proofQuote3": "No sarunas līdz gatavai lapai — pāris nedēļas. Godīga cena.",
+    "proofName3": "Ilze · uzņēmēja, Rīga",
     "photoAlt": "TavsWebs dibinātājs pie datora ar pašreizējo mājaslapu monitorā",
-    "photoLabel": "Aiz projekta",
-    "photoCaption": "Niks — TavsWebs. Atbildi saņemsi 24h laikā, ne no call centra."
+    "photoLabel": "Tava komanda",
+    "photoCaption": "Niks no TavsWebs — atbild 24h, ne call centrs. Raksti šodien."
   },
   "site": {
-    "tagline": "Mājaslapu izstrāde Latvijā no €200",
-    "description": "TavsWebs — mājaslapu izstrāde Latvijā. No €200, 1–3 nedēļas, piedāvājums 24h. Tu pats vari mainīt saturu pēc nodošanas.",
+    "tagline": "Gatava mājaslapa 1–3 nedēļās no €200",
+    "description": "TavsWebs — gatavas biznesa mājaslapas Latvijā 1–3 nedēļās no €200. 4,9★ Google. Piedāvājums 24h. Tu pats labo saturu.",
     "responseTime": "Atbildam 24 stundu laikā",
     "skipToContent": "Pāriet pie satura"
   },
   "aboutPreview": {
-    "eyebrow": "Par mums",
-    "title": "Mazā komanda. Skaidri rezultāti.",
-    "body": "Speciālisti mājaslapām Latvijā. Tu zini cenu un termiņu pirms darba sākuma — bez aģentūras birokrātijas.",
-    "body2": "Pēc palaišanas vari pats mainīt saturu. Ja vajag SEO, CRM vai AI — pievienojam tad, kad tas atmaksājas.",
-    "cta": "Uzzināt, kā strādājam",
+    "eyebrow": "Kāpēc TavsWebs",
+    "title": "Mazā komanda. Ātri rezultāti. Bez aģentūras teātra.",
+    "body": "Tu zini cenu un termiņu pirms starta. Mēs nezaudējam nedēļas “stratēģijas darbnīcās” — taisām vietni, kas atved zvanus.",
+    "body2": "Pēc nodošanas tu pats maini tekstus. SEO, veikals, CRM vai AI — pievienojam tad, kad tas atdod naudu, ne “jo tā vajag”.",
+    "cta": "Skatīt, kā mēs strādājam",
     "stats": {
       "websites": "Izveidotas mājaslapas",
       "years": "Gadi pieredzes",
@@ -117,9 +121,9 @@
     }
   },
   "contactBlock": {
-    "eyebrow": "Kontakti",
-    "title": "Kur mūs atrast",
-    "subtitle": "Sarunas notiek klātienē Rīgā un attālināti. Raksti, zvani vai aizpildi formu — norunāsim nākamo soli.",
+    "eyebrow": "Sāc šodien",
+    "title": "Saņem piedāvājumu 24h laikā",
+    "subtitle": "Raksti, zvani vai aizpildi formu — iedosim cenu un termiņu. Klātienē Rīgā vai attālināti.",
     "phone": "Tālrunis",
     "email": "E-pasts",
     "whatsapp": "WhatsApp",
@@ -128,7 +132,7 @@
     "locationValue": "Rīga, Latvija · klātienē un attālināti",
     "hours": "Atbildes laiks",
     "hoursValue": "Atbildam 24 stundu laikā darba dienās",
-    "cta": "Aizpildīt formu"
+    "cta": "Saņem piedāvājumu tagad"
   },
   "home": {
     "processCard": {
@@ -252,9 +256,9 @@
   },
   "services": {
     "eyebrow": "Pakalpojumi",
-    "title": "Mājaslapa pirmā. Pārējais — kad vajag.",
-    "homeTitle": "Ko mēs darām",
-    "homeSubtitle": "Mājaslapa, ko klienti saprot un tu pats vari labot. SEO, veikals, CRM un AI — kad tas atmaksājas.",
+    "title": "Mājaslapa pirmā — bez tukšiem solījumiem.",
+    "homeTitle": "Ko mēs uztaisām",
+    "homeSubtitle": "Vietne, ko klienti saprot 5 sekundēs un tu pats labo. SEO, veikals, CRM, AI — kad tas atnes naudu.",
     "pageDescription": "Mājaslapas no €200 (1–3 nedēļas), SEO auditi no €150, veikali, CRM un AI čatboti ar skaidru cenu pirms starta.",
     "exploreAll": "Visi pakalpojumi",
     "learnMore": "Uzzināt vairāk",
@@ -498,12 +502,12 @@
     }
   },
   "testimonials": {
-    "eyebrow": "Atsauksmes",
-    "title": "Reāli klienti. Reāli rezultāti.",
+    "eyebrow": "Google 4,9★ · atsauksmes",
+    "title": "Ko saka klienti, kas jau maksāja",
     "googleRating": "4,9",
-    "googleLabel": "Google atsauksmēs",
+    "googleLabel": "Google atsauksmēs — pārbaudāms",
     "googleSource": "Google atsauksme",
-    "viewAllGoogle": "Skatīt visas atsauksmes Google",
+    "viewAllGoogle": "Lasīt visas atsauksmes Google →",
     "items": {
       "0": {
         "quote": "Galvenais bija, lai paši varam mainīt saturu. CMS ir saprotams — labojam lapas un pasākumus bez programmētāja.",
@@ -564,14 +568,14 @@
     }
   },
   "contact": {
-    "eyebrow": "Kontakti",
-    "title": "Uzzināt cenu",
-    "titleAlt": "Pastāsti, kas tev vajadzīgs",
-    "titleAltLead": "Pastāsti, kas tev",
-    "titleAltAccent": "vajadzīgs",
+    "eyebrow": "Piedāvājums 24h",
+    "title": "Saņem mājaslapas piedāvājumu tagad",
+    "titleAlt": "Pastāsti, kāda mājaslapa vajadzīga",
+    "titleAltLead": "Pastāsti, kāda mājaslapa",
+    "titleAltAccent": "vajadzīga",
     "titleAltEnd": ".",
-    "subtitle": "Mājaslapa, aplikācija, redesign, SEO vai jebkāda programmēšana. Atbildēsim 24h ar skaidru cenu — bez maksas.",
-    "pageDescription": "Sazinies ar TavsWebs — piedāvājumu saņemsi 24 stundu laikā.",
+    "subtitle": "Cenu un termiņu iedosim 24h — bez maksas. Mājaslapa no €200, 1–3 nedēļas.",
+    "pageDescription": "Saņem TavsWebs mājaslapas piedāvājumu 24 stundu laikā.",
     "email": "E-pasts",
     "phone": "Tālrunis",
     "whatsapp": "WhatsApp",
@@ -586,9 +590,9 @@
     "budgetPlaceholder": "Izvēlies diapazonu",
     "description": "Kas tev vajadzīgs?",
     "descriptionPlaceholder": "Mājaslapa, aplikācija, redesign, SEO… Pastāsti īsi.",
-    "submit": "Nosūtīt",
+    "submit": "Saņemt piedāvājumu tagad",
     "submitting": "Sūtam…",
-    "success": "Paldies! Atbildēsim 24 stundu laikā.",
+    "success": "Paldies! Piedāvājumu saņemsi 24 stundu laikā.",
     "error": "Neizdevās nosūtīt. Mēģini vēlreiz vai raksti e-pastā.",
     "submitted": "Ziņa nosūtīta.",
     "budgets": {
@@ -601,20 +605,20 @@
     }
   },
   "cta": {
-    "title": "Piedāvājums 24 stundu laikā",
-    "description": "Pastāsti, kāda mājaslapa vajadzīga — iedosim cenu un termiņu bez maksas. Bez saistībām, bez call centra.",
-    "button": "Saņemt piedāvājumu šodien"
+    "title": "Gatavs jaunai mājaslapai?",
+    "description": "Raksti šodien — 24h laikā iedosim cenu un termiņu. Bez saistībām. No €200.",
+    "button": "Saņem mājaslapas piedāvājumu tagad"
   },
   "footer": {
     "rights": "© {year} {name}. Visas tiesības aizsargātas.",
-    "note": "Mājaslapas, kas atved klientus — Latvijā.",
+    "note": "Gatavas mājaslapas 1–3 nedēļās · no €200 · Latvija",
     "nav": "Kājenes navigācija",
-    "botDemo": "Izmēģināt AI čatu 24/7"
+    "botDemo": "Izmēģināt AI čatu — bez maksas"
   },
   "dock": {
     "whatsapp": "WhatsApp",
     "email": "E-pasts",
-    "quote": "Cena",
+    "quote": "Cena tagad",
     "quickActions": "Ātrās darbības"
   },
   "og": {

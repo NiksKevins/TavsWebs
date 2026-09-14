@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import {
+  GOOGLE_REVIEWS_URL,
   localeOgMap,
   pagePaths,
   site,
@@ -145,6 +146,7 @@ export async function createProjectMetadata(
 
 export async function organizationJsonLd(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "site" });
+  const reviews = await getTranslations({ locale, namespace: "testimonials" });
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -168,7 +170,27 @@ export async function organizationJsonLd(locale: Locale) {
     ],
     priceRange: "€€",
     currenciesAccepted: "EUR",
-    sameAs: [site.whatsapp],
+    sameAs: [site.whatsapp, GOOGLE_REVIEWS_URL],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      bestRating: "5",
+      ratingCount: "12",
+      reviewCount: "12",
+    },
+    review: [0, 1, 2].map((i) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: reviews(`items.${i}.name`),
+      },
+      reviewBody: reviews(`items.${i}.quote`),
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+    })),
     knowsAbout: [
       "mājaslapu izstrāde",
       "mājas lapas izveide",

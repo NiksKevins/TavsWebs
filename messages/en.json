@@ -2,8 +2,8 @@
   "meta": {
     "home": {
       "title": "Website Development in Latvia",
-      "description": "Website development in Latvia from €200 — live in 1–3 weeks. Free quote in 24h. TavsWebs.",
-      "ogTitle": "Website development in Latvia from €200 | TavsWebs"
+      "description": "Get a live business website in 1–3 weeks from only €200. Free quote in 24h. 4.9★ Google. TavsWebs Latvia.",
+      "ogTitle": "Live website in 1–3 weeks from €200 | TavsWebs"
     },
     "work": {
       "title": "Our Work",
@@ -26,9 +26,9 @@
       "ogTitle": "About — TavsWebs"
     },
     "contact": {
-      "title": "Get a Quote",
-      "description": "Tell us what you need — website, CRM, app, redesign or SEO. We’ll reply within 24 hours.",
-      "ogTitle": "Contact — TavsWebs"
+      "title": "Get your website quote",
+      "description": "Tell us what website you need — price and timeline within 24 hours. Free, no obligation.",
+      "ogTitle": "Get your quote now — TavsWebs"
     },
     "faq": {
       "title": "FAQ",
@@ -56,9 +56,9 @@
     "services": "Services",
     "process": "Process",
     "about": "About",
-    "contact": "Contact",
+    "getQuote": "Get quote now",
+    "contact": "Get a quote",
     "faq": "FAQ",
-    "getQuote": "Quote in 24h",
     "allServices": "All services",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -80,34 +80,38 @@
     "terms": "Terms"
   },
   "hero": {
-    "eyebrow": "TavsWebs · website development in Latvia",
-    "titleBefore": "Website development",
-    "titleAccent": "from €200 · in 1–3 weeks.",
-    "body": "We build a business site you can edit yourself. Visitors understand what you do — and call. Free quote within 24 hours. Clients include Audi Klubs and Stūrīši VIB.",
-    "ctaPrimary": "Get a quote today",
-    "ctaWhatsapp": "Message WhatsApp now",
-    "ctaSecondary": "See finished projects",
-    "explore": "Explore",
-    "trustLine": "4.9★ Google · 35+ sites · reply in 24h",
+    "eyebrow": "TavsWebs · 4.9★ Google · Latvia",
+    "titleBefore": "Get a live website",
+    "titleAccent": "in 1–3 weeks — from only €200.",
+    "body": "Stop explaining what you do on every call. We build a site visitors get in 5 seconds — and you edit the text yourself. Free quote in 24h. Trusted by Audi Klubs and Stūrīši VIB.",
+    "ctaPrimary": "Get my website quote now",
+    "ctaWhatsapp": "Start on WhatsApp",
+    "ctaSecondary": "See real projects",
+    "explore": "See how we work",
+    "trustLine": "4.9★ Google · 35+ live sites · reply in 24h · from €200",
+    "clientsLabel": "Trusted by",
+    "clients": "Audi Klubs · Stūrīši VIB · founders in Riga",
     "proofQuote": "The CMS is clear — we update pages without a developer.",
     "proofName": "Mārtiņš · Audi Klubs",
-    "proofQuote2": "Done fast — and now clients call us themselves.",
+    "proofQuote2": "Done fast — now clients call us themselves.",
     "proofName2": "Inguss · Stūrīši VIB",
+    "proofQuote3": "From first call to live site — a couple of weeks. Fair price.",
+    "proofName3": "Ilze · business owner, Riga",
     "photoAlt": "TavsWebs founder at the desk with the current website on the monitor",
-    "photoLabel": "Behind the work",
-    "photoCaption": "Niks — TavsWebs. You get a reply in 24h, not a call centre."
+    "photoLabel": "Your team",
+    "photoCaption": "Niks at TavsWebs — replies in 24h, not a call centre. Message today."
   },
   "site": {
-    "tagline": "Website development in Latvia from €200",
-    "description": "TavsWebs — website development in Latvia. From €200, 1–3 weeks, quote in 24h. Edit your content yourself after handover.",
+    "tagline": "Live website in 1–3 weeks from €200",
+    "description": "TavsWebs — live business websites in Latvia in 1–3 weeks from €200. 4.9★ Google. Quote in 24h. Edit content yourself.",
     "responseTime": "Replies within 24 hours",
     "skipToContent": "Skip to content"
   },
   "aboutPreview": {
-    "eyebrow": "About us",
-    "title": "Small team. Clear outcomes.",
-    "body": "Website specialists in Latvia. You know the price and timeline before we start — no agency bureaucracy.",
-    "body2": "After launch you can edit content yourself. SEO, CRM or AI — we add them when they pay off.",
+    "eyebrow": "Why TavsWebs",
+    "title": "Small team. Fast results. No agency theatre.",
+    "body": "You know the price and timeline before we start. We skip week-long strategy workshops — we ship a site that brings calls.",
+    "body2": "After handover you edit the copy yourself. SEO, store, CRM or AI — we add them when they pay back, not “because everyone has one”.",
     "cta": "See how we work",
     "stats": {
       "websites": "Websites built",
@@ -117,9 +121,9 @@
     }
   },
   "contactBlock": {
-    "eyebrow": "Contact",
-    "title": "Where to find us",
-    "subtitle": "Meetings in Riga or remote. Write, call or fill in the form — we'll plan the next step.",
+    "eyebrow": "Start today",
+    "title": "Get a quote within 24 hours",
+    "subtitle": "Write, call or fill the form — we'll send price and timeline. In Riga or remote.",
     "phone": "Phone",
     "email": "Email",
     "whatsapp": "WhatsApp",
@@ -128,7 +132,7 @@
     "locationValue": "Riga, Latvia · in person and remote",
     "hours": "Response time",
     "hoursValue": "We reply within 24 hours on business days",
-    "cta": "Fill in the form"
+    "cta": "Get my quote now"
   },
   "home": {
     "processCard": {
@@ -498,12 +502,12 @@
     }
   },
   "testimonials": {
-    "eyebrow": "Testimonials",
-    "title": "Real clients. Real results.",
+    "eyebrow": "Google 4.9★ · reviews",
+    "title": "What paying clients actually say",
     "googleRating": "4.9",
-    "googleLabel": "on Google reviews",
+    "googleLabel": "on Google reviews — verified",
     "googleSource": "Google review",
-    "viewAllGoogle": "View all reviews on Google",
+    "viewAllGoogle": "Read all Google reviews →",
     "items": {
       "0": {
         "quote": "The main thing was editing content ourselves. The CMS is clear — we update pages and events without a developer.",
@@ -564,14 +568,14 @@
     }
   },
   "contact": {
-    "eyebrow": "Contact",
-    "title": "Get a quote",
-    "titleAlt": "Tell us what you need",
-    "titleAltLead": "Tell us what you",
+    "eyebrow": "Quote in 24h",
+    "title": "Get my website quote now",
+    "titleAlt": "Tell us what website you need",
+    "titleAltLead": "Tell us what website you",
     "titleAltAccent": "need",
     "titleAltEnd": ".",
-    "subtitle": "Website, app, redesign, SEO or any programming. We’ll reply in 24h with a clear price — free.",
-    "pageDescription": "Contact TavsWebs — get a quote within 24 hours.",
+    "subtitle": "Price and timeline in 24h — free. Websites from €200, live in 1–3 weeks.",
+    "pageDescription": "Get your TavsWebs website quote within 24 hours.",
     "email": "Email",
     "phone": "Phone",
     "whatsapp": "WhatsApp",
@@ -601,20 +605,20 @@
     }
   },
   "cta": {
-    "title": "Quote within 24 hours",
-    "description": "Tell us what website you need — we'll send price and timeline free. No obligation, no call centre.",
-    "button": "Get a quote today"
+    "title": "Ready for a new website?",
+    "description": "Message today — price and timeline in 24 hours. No obligation. From €200.",
+    "button": "Get my website quote now"
   },
   "footer": {
     "rights": "© {year} {name}. All rights reserved.",
-    "note": "Websites that bring you clients — in Latvia.",
+    "note": "Live websites in 1–3 weeks · from €200 · Latvia",
     "nav": "Footer",
-    "botDemo": "Try the AI chat 24/7"
+    "botDemo": "Try the AI chat — free"
   },
   "dock": {
     "whatsapp": "WhatsApp",
     "email": "Email",
-    "quote": "Quote",
+    "quote": "Quote now",
     "quickActions": "Quick actions"
   },
   "og": {
