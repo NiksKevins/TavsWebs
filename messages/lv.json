@@ -90,7 +90,7 @@
     "explore": "Skatīt, kā strādājam",
     "trustLine": "4,9★ Google · 35+ gatavas vietnes · atbilde 24h · no €200",
     "clientsLabel": "Uzticas mums",
-    "clients": "Audi Klubs · Stūrīši VIB · uzņēmēji Rīgā",
+    "clients": "Audi Klubs · Stūrīši VIB · Trailers.lv",
     "proofQuote": "CMS ir saprotams — labojam lapas bez programmētāja.",
     "proofName": "Mārtiņš · Audi Klubs",
     "proofQuote2": "Sanāca ātri — tagad klienti zvana paši.",
@@ -225,6 +225,31 @@
       "challenge": "Uzņēmums darīja nopietnus zemes darbus, bet online klienti nesaprata piedāvājumu — trūka skaidras vietnes, kas ved uz pieprasījumu.",
       "solution": "Uztaisījām mājaslapu ar skaidru pakalpojumu struktūru (sagatavošana, ceļi, bruģis, meliorācija, apzaļumošana), mobilo versiju un kontaktu formu.",
       "result": "Live vietne sturisivib.lv — klienti atrada pakalpojumus un sazinās paši. Mazāk skaidrošanas telefonā, vairāk mērķētu pieprasījumu."
+    },
+    "trailers-lv": {
+      "title": "Trailers.lv",
+      "category": "Migrācija · Admin panelis",
+      "description": "trailers.lv pārcelšana uz jaunu serveri un pilnīgi jauns admin panelis admin.trailers.lv — katalogs, sludinājumi un saturs vienuviet.",
+      "homeOutcome": "Jauns trailers.lv + admin.trailers.lv — migrācija un moderns admin ar plašākām funkcijām.",
+      "longDescription": "AXTRA (trailers.lv) vajadzēja stabilu vietni un modernu pārvaldību: vecā servera risinājums vairs nederēja. Pārcēlām vietni uz jaunu infrastruktūru un uztaisījām pilnīgi jaunu admin paneli (admin.trailers.lv) ar krietni plašākām funkcijām — piekabju katalogs, sludinājumi, aprīkojums un rezerves daļas. Live: www.trailers.lv.",
+      "challenge": "Vecā infrastruktūra un ierobežots admin — grūti uzturēt katalogu, sludinājumus un saturu, serveris vairs nebija uzticams ilgtermiņā.",
+      "solution": "Migrējām trailers.lv uz jaunu serveri un uzbūvējam jaunu admin paneli no nulles: darba vietas pieteikšanās, satura un kataloga pārvaldība ar plašākām funkcijām nekā iepriekš.",
+      "result": "Stabils live katalogs profesionālām piekabēm un moderns admin.trailers.lv — komanda pārvalda saturu bez vecās sistēmas ierobežojumiem.",
+      "metrics": [
+        "Migrācija uz jaunu serveri",
+        "Jauns admin.trailers.lv",
+        "Katalogs · sludinājumi · saturs"
+      ],
+      "services": [
+        "Mājaslapu izstrāde",
+        "Programmēšana",
+        "Migrācija / CMS"
+      ],
+      "galleryLabels": [
+        "Sākumlapa — trailers.lv",
+        "Piekabju katalogs",
+        "Admin panelis — admin.trailers.lv"
+      ]
     },
     "kozy-eats": {
       "title": "Kozy Eats",

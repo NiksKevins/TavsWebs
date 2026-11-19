@@ -90,7 +90,7 @@
     "explore": "See how we work",
     "trustLine": "4.9★ Google · 35+ live sites · reply in 24h · from €200",
     "clientsLabel": "Trusted by",
-    "clients": "Audi Klubs · Stūrīši VIB · founders in Riga",
+    "clients": "Audi Klubs · Stūrīši VIB · Trailers.lv",
     "proofQuote": "The CMS is clear — we update pages without a developer.",
     "proofName": "Mārtiņš · Audi Klubs",
     "proofQuote2": "Done fast — now clients call us themselves.",
@@ -225,6 +225,31 @@
       "challenge": "Serious earthworks work, but online customers didn’t understand the offer — no clear site that turned visits into enquiries.",
       "solution": "We built a website with a clear service structure (site prep, roads, paving, drainage, greening), mobile layout and a contact form.",
       "result": "Live at sturisivib.lv — clients find the services and reach out themselves. Less explaining on the phone, more targeted enquiries."
+    },
+    "trailers-lv": {
+      "title": "Trailers.lv",
+      "category": "Migration · Admin panel",
+      "description": "Moved trailers.lv to a new server and built a brand-new admin at admin.trailers.lv — catalogue, classifieds and content in one place.",
+      "homeOutcome": "New trailers.lv + admin.trailers.lv — migration and a modern admin with more features.",
+      "longDescription": "AXTRA (trailers.lv) needed a stable site and modern ops: the old server setup was no longer enough. We migrated the site to new infrastructure and built a completely new admin panel (admin.trailers.lv) with far more functionality — trailer catalogue, classifieds, equipment and spare parts. Live at www.trailers.lv.",
+      "challenge": "Aging infrastructure and a limited admin made it hard to maintain the catalogue, classifieds and content — the old server wasn’t reliable long-term.",
+      "solution": "Migrated trailers.lv to a new server and built a new admin from scratch: workspace login, content and catalogue management with more capability than before.",
+      "result": "A stable live catalogue for professional trailers and a modern admin.trailers.lv — the team manages content without the old system’s limits.",
+      "metrics": [
+        "Migrated to a new server",
+        "New admin.trailers.lv",
+        "Catalogue · classifieds · content"
+      ],
+      "services": [
+        "Website development",
+        "Programming",
+        "Migration / CMS"
+      ],
+      "galleryLabels": [
+        "Homepage — trailers.lv",
+        "Trailer catalogue",
+        "Admin panel — admin.trailers.lv"
+      ]
     },
     "kozy-eats": {
       "title": "Kozy Eats",

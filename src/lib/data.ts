@@ -96,6 +96,20 @@ export const projects = [
     ] as const,
   },
   {
+    id: "trailers-lv",
+    year: "2025",
+    accent: "#0c1a33",
+    glow: "rgba(200, 30, 40, 0.35)",
+    offset: "left" as const,
+    image: "/portfolio/trailers-lv-site.jpg",
+    url: "https://www.trailers.lv/",
+    gallery: [
+      "/portfolio/trailers-lv-site.jpg",
+      "/portfolio/trailers-lv-catalog.jpg",
+      "/portfolio/trailers-lv-admin.jpg",
+    ] as const,
+  },
+  {
     id: "kozy-eats",
     year: "2025",
     accent: "#2a1810",
@@ -133,7 +147,11 @@ export function getProject(id: string) {
   return projects.find((p) => p.id === id);
 }
 
-export const featuredProjectIds = ["audi-klubs", "sturisi-vib"] as const;
+export const featuredProjectIds = [
+  "audi-klubs",
+  "sturisi-vib",
+  "trailers-lv",
+] as const;
 
 export const realProjects = projects.filter(
   (p) => !("mock" in p && p.mock),
