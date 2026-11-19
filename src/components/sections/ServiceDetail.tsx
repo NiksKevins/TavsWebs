@@ -27,7 +27,9 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
   const includes = t.raw(`items.${id}.includes`) as string[];
   const related = serviceIds.filter((s) => s !== id).slice(0, 3);
   const guides = serviceRelatedGuides[id] ?? [];
-  const faqKeys = (t.raw(`items.${id}.faqKeys`) as string[] | undefined) ?? [];
+  const faqKeys = t.has(`items.${id}.faqKeys`)
+    ? (t.raw(`items.${id}.faqKeys`) as string[])
+    : [];
   const faqItems = faqKeys.map((key) => ({
     q: t(`items.${id}.faq.${key}.q`),
     a: t(`items.${id}.faq.${key}.a`),

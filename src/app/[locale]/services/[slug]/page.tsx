@@ -42,7 +42,9 @@ export default async function ServicePage({ params }: Props) {
   const t = await getTranslations("services");
   const tNav = await getTranslations("nav");
   const tCrumb = await getTranslations("breadcrumbs");
-  const faqKeys = (t.raw(`items.${service}.faqKeys`) as string[] | undefined) ?? [];
+  const faqKeys = t.has(`items.${service}.faqKeys`)
+    ? (t.raw(`items.${service}.faqKeys`) as string[])
+    : [];
   const faqItems = faqKeys.map((key) => ({
     q: t(`items.${service}.faq.${key}.q`),
     a: t(`items.${service}.faq.${key}.a`),
