@@ -1,17 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { AnimatePresence, motion } from "framer-motion";
-import { Plus } from "lucide-react";
 import { faqIndexes } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
-import { cn } from "@/lib/utils";
+import { FaqAccordion } from "@/components/sections/FaqAccordion";
 
 export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
   const t = useTranslations("faq");
-  const [open, setOpen] = useState<number | null>(0);
+  const items = faqIndexes.map((key) => ({
+    q: t(`items.${key}.q`),
+    a: t(`items.${key}.a`),
+  }));
 
   return (
     <section className="section-alt section-pad py-20 md:py-28">
@@ -30,50 +30,10 @@ export function FAQ({ showHeader = true }: { showHeader?: boolean }) {
           </Reveal>
         )}
 
-        <div className={showHeader ? "lg:col-span-7 lg:col-start-6" : "max-w-3xl"}>
-          {faqIndexes.map((key, i) => {
-            const isOpen = open === i;
-            return (
-              <Reveal key={key} delay={i * 0.04}>
-                <div className="border-b border-border">
-                  <button
-                    type="button"
-                    className="group flex w-full items-center justify-between gap-6 py-6 text-left transition-colors hover:text-accent"
-                    aria-expanded={isOpen}
-                    onClick={() => setOpen(isOpen ? null : i)}
-                  >
-                    <span className="text-lg font-medium md:text-xl">
-                      {t(`items.${key}.q`)}
-                    </span>
-                    <span
-                      className={cn(
-                        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-bg-elevated transition-all duration-300 group-hover:border-highlight/50 group-hover:bg-highlight-muted",
-                        isOpen && "rotate-45 border-highlight/50 bg-highlight-muted text-accent",
-                      )}
-                    >
-                      <Plus size={16} />
-                    </span>
-                  </button>
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                        className="overflow-hidden"
-                      >
-                        <p className="pb-6 pr-12 leading-relaxed text-muted">
-                          {t(`items.${key}.a`)}
-                        </p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </Reveal>
-            );
-          })}
-        </div>
+        <FaqAccordion
+          items={items}
+          className={showHeader ? "lg:col-span-7 lg:col-start-6" : "max-w-3xl"}
+        />
       </div>
     </section>
   );

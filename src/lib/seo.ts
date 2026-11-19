@@ -234,21 +234,30 @@ export function breadcrumbJsonLd(
   };
 }
 
-export async function faqJsonLd(locale: Locale) {
-  const t = await getTranslations({ locale, namespace: "faq" });
-  const { faqIndexes } = await import("@/lib/data");
+export function faqPageJsonLd(items: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqIndexes.map((i) => ({
+    mainEntity: items.map((item) => ({
       "@type": "Question",
-      name: t(`items.${i}.q`),
+      name: item.q,
       acceptedAnswer: {
         "@type": "Answer",
-        text: t(`items.${i}.a`),
+        text: item.a,
       },
     })),
   };
+}
+
+export async function faqJsonLd(locale: Locale) {
+  const t = await getTranslations({ locale, namespace: "faq" });
+  const { faqIndexes } = await import("@/lib/data");
+  return faqPageJsonLd(
+    faqIndexes.map((i) => ({
+      q: t(`items.${i}.q`),
+      a: t(`items.${i}.a`),
+    })),
+  );
 }
 
 export async function projectJsonLd(locale: Locale, projectId: ProjectId) {

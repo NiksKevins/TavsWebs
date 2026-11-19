@@ -132,6 +132,34 @@ export default async function ProjectPage({ params }: Props) {
               <p className="mt-5 text-lg leading-relaxed text-muted">
                 {t(`${project.id}.longDescription`)}
               </p>
+              {t.has(`${project.id}.challenge`) && (
+                <div className="mt-10 space-y-8">
+                  <div>
+                    <h3 className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+                      {tWork("challenge")}
+                    </h3>
+                    <p className="mt-3 leading-relaxed text-muted">
+                      {t(`${project.id}.challenge`)}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+                      {tWork("solution")}
+                    </h3>
+                    <p className="mt-3 leading-relaxed text-muted">
+                      {t(`${project.id}.solution`)}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+                      {tWork("result")}
+                    </h3>
+                    <p className="mt-3 leading-relaxed text-muted">
+                      {t(`${project.id}.result`)}
+                    </p>
+                  </div>
+                </div>
+              )}
             </Reveal>
             <Reveal className="lg:col-span-4 lg:col-start-9" delay={0.1}>
               <div className="glass rounded-[1.5rem] p-6">

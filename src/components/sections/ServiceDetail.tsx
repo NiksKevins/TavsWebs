@@ -13,6 +13,7 @@ import {
   site,
   type ServiceId,
 } from "@/lib/data";
+import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
@@ -26,6 +27,11 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
   const includes = t.raw(`items.${id}.includes`) as string[];
   const related = serviceIds.filter((s) => s !== id).slice(0, 3);
   const guides = serviceRelatedGuides[id] ?? [];
+  const faqKeys = (t.raw(`items.${id}.faqKeys`) as string[] | undefined) ?? [];
+  const faqItems = faqKeys.map((key) => ({
+    q: t(`items.${id}.faq.${key}.q`),
+    a: t(`items.${id}.faq.${key}.a`),
+  }));
 
   return (
     <>
@@ -121,6 +127,14 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
               </div>
             </Reveal>
           </div>
+
+          {faqItems.length > 0 && (
+            <div className="mt-16 max-w-3xl">
+              <h2 className="display text-2xl md:text-3xl">{t("faqTitle")}</h2>
+              <p className="mt-3 text-sm text-muted">{t("faqSubtitle")}</p>
+              <FaqAccordion items={faqItems} className="mt-2" />
+            </div>
+          )}
 
           {guides.length > 0 && (
             <div className="mt-16">

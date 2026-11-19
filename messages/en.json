@@ -170,19 +170,22 @@
     "ctaTitle": "Want a similar result?",
     "ctaProject": "Start a project like {title}",
     "pageDescription": "Real TavsWebs projects — websites, stores and digital products.",
-    "viewLive": "View live site"
+    "viewLive": "View live site",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "result": "Result"
   },
   "projects": {
     "audi-klubs": {
       "title": "Audi Klubs",
       "category": "Club platform · CMS",
-      "description": "A real club platform with a WordPress-style content editor — the client updates pages, news and events themselves.",
-      "homeOutcome": "Full club platform with CMS — the client edits content, events and shop themselves.",
-      "longDescription": "Audi Klubs is a full club platform: homepage, events, shop, gallery, classifieds and donations. The key client value is a WordPress-style admin (Filament CMS). They can edit page content, hero slides, partners, FAQ and shop without code. Open a page in admin, edit sections, publish — exactly what clients want: a strong site plus self-serve control.",
+      "description": "Club platform with CMS — content used to need a developer; now Audi Klubs updates pages, events and the shop themselves.",
+      "homeOutcome": "Self-serve CMS — the club edits content themselves; less waiting on a developer.",
+      "longDescription": "Audi Klubs needed a site they could run themselves: homepage, events, shop, gallery, classifieds and donations. We built a full club platform with a WordPress-style admin (Filament CMS) — open a page, edit sections, publish. Result: a strong site plus self-serve control, without paying a developer for every text change.",
       "metrics": [
-        "WordPress-style CMS",
-        "Self-serve editing",
-        "Events · Shop · Gallery"
+        "CMS — edit yourselves, no code",
+        "Events · shop · gallery in one place",
+        "Less waiting on a developer"
       ],
       "services": [
         "Website development",
@@ -194,18 +197,21 @@
         "CMS — homepage editor",
         "CMS — rich text editor (WordPress-like)",
         "CMS — page list"
-      ]
+      ],
+      "challenge": "The club needed a modern platform, but couldn’t edit content or events without a developer — every change cost time and money.",
+      "solution": "We built a full club site with a WordPress-style CMS: hero, events, shop, gallery, FAQ and partners — all editable in admin with no code.",
+      "result": "The team updates content and events themselves. Less dependency on a developer, faster communication with members, and a clear platform for growth."
     },
     "sturisi-vib": {
       "title": "Stūrīši VIB",
       "category": "Construction · Landscaping",
-      "description": "Live website for an earthworks and landscaping company — sturisivib.lv.",
-      "homeOutcome": "Live site at sturisivib.lv — clear services, mobile-ready, more enquiries.",
-      "longDescription": "Stūrīši VIB specializes in landscaping, drainage and earthworks. The site clearly presents site preparation, road building, paving, melioration and greening. Clean design, mobile-ready layout and a contact form — so customers find the service and get in touch fast.",
+      "description": "Earthworks company site sturisivib.lv — clear mobile services so clients call you, instead of hunting on Facebook.",
+      "homeOutcome": "sturisivib.lv — clear mobile services; clients find them and call.",
+      "longDescription": "Stūrīši VIB (landscaping, drainage, earthworks) needed a site that shows what they do in 5 seconds on a phone and drives a call. We built a clean business site with a service list, contact form and mobile layout. Live at sturisivib.lv — clients now find the service on Google and get in touch themselves.",
       "metrics": [
-        "sturisivib.lv",
-        "Mobile-ready",
-        "Clear services"
+        "Live: sturisivib.lv",
+        "Clients call on their own",
+        "Clear services on mobile"
       ],
       "services": [
         "Website development",
@@ -215,7 +221,10 @@
       "galleryLabels": [
         "Homepage",
         "Services"
-      ]
+      ],
+      "challenge": "Serious earthworks work, but online customers didn’t understand the offer — no clear site that turned visits into enquiries.",
+      "solution": "We built a website with a clear service structure (site prep, roads, paving, drainage, greening), mobile layout and a contact form.",
+      "result": "Live at sturisivib.lv — clients find the services and reach out themselves. Less explaining on the phone, more targeted enquiries."
     },
     "kozy-eats": {
       "title": "Kozy Eats",
@@ -288,6 +297,35 @@
           "Google Maps integration",
           "Mobile version",
           "Basic SEO setup"
+        ],
+        "faq": {
+          "0": {
+            "q": "How much does website development cost in Latvia?",
+            "a": "A simple business site at TavsWebs starts from €200. A typical company site is €400–1500. WordPress or custom — depends on page count and features. Written quote within 24 hours, free."
+          },
+          "1": {
+            "q": "How long does a website take?",
+            "a": "A standard site takes 1–3 weeks from start to launch. Ready content (copy, images) usually means faster. We agree a clear deadline before work starts."
+          },
+          "2": {
+            "q": "Can I edit the site myself after launch?",
+            "a": "Yes. We typically set up a WordPress-style CMS so you change text, images and pages without a developer — same idea as the Audi Klubs project."
+          },
+          "3": {
+            "q": "Do you build websites in Riga?",
+            "a": "Yes — we can meet in Riga in person, and we work remotely across Latvia. Conversations in Latvian and English."
+          },
+          "4": {
+            "q": "What’s included in the price?",
+            "a": "Design, development, mobile layout, contact form, basic SEO (titles, speed, sitemap), SSL and launch. Exact scope is in the written quote."
+          }
+        },
+        "faqKeys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
         ]
       },
       "ecommerce": {
@@ -433,7 +471,9 @@
     "detailCtaTitle": "Need {service}?",
     "detailCtaBody": "Tell us about your project — we'll send a clear price and timeline within 24 hours.",
     "guidesTitle": "Helpful guides",
-    "guidesSubtitle": "Prices, timelines and tips — read before you order."
+    "guidesSubtitle": "Prices, timelines and tips — read before you order.",
+    "faqTitle": "Frequently asked questions",
+    "faqSubtitle": "Price, timeline and what’s included — before you order."
   },
   "process": {
     "eyebrow": "Process",

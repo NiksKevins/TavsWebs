@@ -170,19 +170,22 @@
     "ctaTitle": "Vēlies līdzīgu rezultātu?",
     "ctaProject": "Sākt projektu kā {title}",
     "pageDescription": "Reāli TavsWebs projekti — mājaslapas, veikali un digitālie produkti.",
-    "viewLive": "Skatīt live vietni"
+    "viewLive": "Skatīt live vietni",
+    "challenge": "Izaicinājums",
+    "solution": "Risinājums",
+    "result": "Rezultāts"
   },
   "projects": {
     "audi-klubs": {
       "title": "Audi Klubs",
       "category": "Kluba platforma · CMS",
-      "description": "Reāla kluba platforma ar WordPress tipa satura redaktoru — klients pats maina lapas, ziņas un pasākumus bez programmētāja.",
-      "homeOutcome": "Pilna kluba platforma ar CMS — klients pats rediģē saturu, pasākumus un veikalu.",
-      "longDescription": "Audi Klubs ir pilna kluba platforma: sākumlapa, pasākumi, veikals, galerija, sludinājumi un ziedojumi. Galvenā vērtība klientam — WordPress tipa admin (Filament CMS). Var rediģēt lapu saturu, hero slaidus, partnerus, BUJ un veikalu bez koda. Atver lapu adminā, labo sekcijas un publicē — tieši tā, kā klienti to grib: skaista vietne + ērta pašapkalpošanās.",
+      "description": "Kluba platforma ar CMS — pirms tam saturu laboja tikai programmētājs; tagad Audi Klubs pats maina lapas, pasākumus un veikalu.",
+      "homeOutcome": "CMS pašapkalpošanās — klubs pats rediģē saturu; mazāk gaidīšanas uz izstrādātāju.",
+      "longDescription": "Audi Klubs vajadzēja vietni, kuru var uzturēt paši: sākumlapa, pasākumi, veikals, galerija, sludinājumi un ziedojumi. Uztaisījām pilnu kluba platformu ar WordPress tipa adminu (Filament CMS) — atver lapu, labo sekcijas, publicē. Rezultāts: skaista vietne + ērta pašapkalpošanās, bez katra teksta labojuma pie programmētāja.",
       "metrics": [
-        "WordPress tipa CMS",
-        "Paši rediģē saturu",
-        "Pasākumi · Veikals · Galerija"
+        "CMS — labo paši, bez koda",
+        "Pasākumi · veikals · galerija vienuviet",
+        "Mazāk gaidīšanas uz izstrādātāju"
       ],
       "services": [
         "Mājaslapu izstrāde",
@@ -194,18 +197,21 @@
         "CMS — sākumlapas redaktors",
         "CMS — teksta redaktors (kā WordPress)",
         "CMS — lapu saraksts"
-      ]
+      ],
+      "challenge": "Klubam vajadzēja modernu platformu, bet saturu un pasākumus nevarēja labot bez izstrādātāja — katra izmaiņa maksāja laiku un naudu.",
+      "solution": "Uztaisījām pilnu kluba vietni ar WordPress tipa CMS: hero, pasākumi, veikals, galerija, BUJ un partneri — viss rediģējams adminā bez koda.",
+      "result": "Komanda pati atjaunina saturu un pasākumus. Mazāk atkarības no izstrādātāja, ātrāka komunikācija ar biedriem un skaidra platforma kluba izaugsmei."
     },
     "sturisi-vib": {
       "title": "Stūrīši VIB",
       "category": "Celtniecība · Labiekārtošana",
-      "description": "Live mājaslapa zemes darbu un teritoriju labiekārtošanas uzņēmumam — sturisivib.lv.",
-      "homeOutcome": "Live vietne sturisivib.lv — skaidri pakalpojumi, mobilā versija, vairāk pieprasījumu.",
-      "longDescription": "Stūrīši VIB specializējas teritoriju labiekārtošanā, meliorācijā un zemes darbos. Vietne skaidri rāda piedāvājumu: būvlaukumu sagatavošana, ceļu būve, bruģēšana, meliorācija un apzaļumošana. Tīrs dizains, mobilā versija un kontaktu forma — lai klienti ātri atrastu pakalpojumu un sazinātos.",
+      "description": "Zemes darbu uzņēmumam sturisivib.lv — skaidri pakalpojumi mobilajā, lai klienti zvana paši, nevis meklē Facebookā.",
+      "homeOutcome": "sturisivib.lv — skaidri pakalpojumi mobilajā; klienti atrada un zvana paši.",
+      "longDescription": "Stūrīši VIB (teritoriju labiekārtošana, meliorācija, zemes darbi) vajadzēja vietni, kas telefona ekrānā 5 sekundēs parāda, ko viņi dara, un ved uz zvanu. Uztaisījām tīru biznesa lapu ar pakalpojumu sarakstu, kontaktu formu un mobilo versiju. Live: sturisivib.lv — klienti tagad atrada pakalpojumu Google un sazinās paši.",
       "metrics": [
-        "sturisivib.lv",
-        "Mobilā versija",
-        "Skaidri pakalpojumi"
+        "Live: sturisivib.lv",
+        "Klienti zvana paši",
+        "Skaidri pakalpojumi mobilajā"
       ],
       "services": [
         "Mājaslapu izstrāde",
@@ -215,7 +221,10 @@
       "galleryLabels": [
         "Sākumlapa",
         "Pakalpojumi"
-      ]
+      ],
+      "challenge": "Uzņēmums darīja nopietnus zemes darbus, bet online klienti nesaprata piedāvājumu — trūka skaidras vietnes, kas ved uz pieprasījumu.",
+      "solution": "Uztaisījām mājaslapu ar skaidru pakalpojumu struktūru (sagatavošana, ceļi, bruģis, meliorācija, apzaļumošana), mobilo versiju un kontaktu formu.",
+      "result": "Live vietne sturisivib.lv — klienti atrada pakalpojumus un sazinās paši. Mazāk skaidrošanas telefonā, vairāk mērķētu pieprasījumu."
     },
     "kozy-eats": {
       "title": "Kozy Eats",
@@ -288,6 +297,35 @@
           "Google Maps integrācija",
           "Mobilā versija",
           "Pamata SEO iestatījumi"
+        ],
+        "faq": {
+          "0": {
+            "q": "Cik maksā mājaslapu izstrāde Latvijā?",
+            "a": "Vienkārša biznesa mājaslapa TavsWebs sākas no €200. Tipiska uzņēmuma vietne — €400–1500. WordPress vai pielāgota izstrāde — atkarīgs no lapu skaita un funkcijām. Rakstisku piedāvājumu iedosim 24 stundu laikā, bez maksas."
+          },
+          "1": {
+            "q": "Cik ilgi aizņem mājaslapas izveide?",
+            "a": "Parasta mājaslapa — 1 līdz 3 nedēļas no starta līdz palaišanai. Ja saturs (teksti, bildes) ir gatavs, bieži ātrāk. Pirms darba vienojamies par skaidru termiņu."
+          },
+          "2": {
+            "q": "Vai mājaslapu varu labot pats pēc palaišanas?",
+            "a": "Jā. Tipiski iestatām WordPress tipa CMS — tu pats maini tekstus, bildes un lapas bez programmētāja. Tāpat kā Audi Kluba projektā."
+          },
+          "3": {
+            "q": "Vai darāt mājaslapu izstrādi Rīgā?",
+            "a": "Jā — Rīgā varam tikties klātienē, izstrādi bieži darām attālināti visā Latvijā. Sarunas latviski un angliski."
+          },
+          "4": {
+            "q": "Kas iekļauts cenā?",
+            "a": "Dizains, programmēšana, mobilā versija, kontaktu forma, pamata SEO (virsraksti, ātrums, sitemap), SSL un palaišana. Precīzs saraksts — rakstiskajā piedāvājumā."
+          }
+        },
+        "faqKeys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
         ]
       },
       "ecommerce": {
@@ -433,7 +471,9 @@
     "detailCtaTitle": "Vajag {service}?",
     "detailCtaBody": "Pastāsti par projektu — iedosim skaidru cenu un termiņu 24 stundu laikā.",
     "guidesTitle": "Noderīgi ceļveži",
-    "guidesSubtitle": "Cenas, termiņi un padomi — pirms pasūti, izlasi."
+    "guidesSubtitle": "Cenas, termiņi un padomi — pirms pasūti, izlasi.",
+    "faqTitle": "Biežākie jautājumi",
+    "faqSubtitle": "Cenas, termiņi un kas iekļauts — pirms pasūti."
   },
   "process": {
     "eyebrow": "Process",

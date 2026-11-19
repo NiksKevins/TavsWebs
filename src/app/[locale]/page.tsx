@@ -5,6 +5,7 @@ import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   createPageMetadata,
+  faqJsonLd,
   organizationJsonLd,
   websiteJsonLd,
 } from "@/lib/seo";
@@ -52,6 +53,7 @@ export default async function HomePage({ params }: Props) {
         data={[
           await organizationJsonLd(locale as Locale),
           await websiteJsonLd(locale as Locale),
+          await faqJsonLd(locale as Locale),
         ]}
       />
       <Hero />

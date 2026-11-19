@@ -14,6 +14,7 @@ import {
 import {
   breadcrumbJsonLd,
   createServiceMetadata,
+  faqPageJsonLd,
   serviceJsonLd,
 } from "@/lib/seo";
 
@@ -41,6 +42,11 @@ export default async function ServicePage({ params }: Props) {
   const t = await getTranslations("services");
   const tNav = await getTranslations("nav");
   const tCrumb = await getTranslations("breadcrumbs");
+  const faqKeys = (t.raw(`items.${service}.faqKeys`) as string[] | undefined) ?? [];
+  const faqItems = faqKeys.map((key) => ({
+    q: t(`items.${service}.faq.${key}.q`),
+    a: t(`items.${service}.faq.${key}.a`),
+  }));
 
   return (
     <main id="main">
@@ -58,6 +64,7 @@ export default async function ServicePage({ params }: Props) {
             locale as Locale,
           ),
           await serviceJsonLd(locale as Locale, service as ServiceId),
+          ...(faqItems.length > 0 ? [faqPageJsonLd(faqItems)] : []),
         ]}
       />
       <PageHero
