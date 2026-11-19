@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { guideHref, guideIds } from "@/lib/data";
+import { featuredGuideIds, guideHref } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 import { Stagger, StaggerItem } from "@/components/ui/Stagger";
@@ -31,7 +31,7 @@ export function GuidesPreview() {
 
         <div className="mt-12 -mx-[clamp(1.25rem,4vw,4.5rem)] overflow-x-auto px-[clamp(1.25rem,4vw,4.5rem)] pb-2 lg:overflow-visible">
           <Stagger className="flex gap-5 lg:grid lg:grid-cols-3 lg:gap-6" stagger={0.08}>
-            {guideIds.map((id) => (
+            {featuredGuideIds.map((id) => (
               <StaggerItem key={id} className="h-full shrink-0 lg:shrink">
                 <motion.div whileHover={{ y: -8 }} transition={springSnappy} className="h-full">
                   <Link

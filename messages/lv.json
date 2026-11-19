@@ -2,7 +2,7 @@
   "meta": {
     "home": {
       "title": "Mājaslapu izstrāde Latvijā",
-      "description": "Gatava biznesa mājaslapa 1–3 nedēļās — tikai no €200. Bezmaksas piedāvājums 24h. 4,9★ Google. TavsWebs Latvija.",
+      "description": "Mājaslapu izstrāde Latvijā no €200 — gatava 1–3 nedēļās. WordPress, veikali, SEO audits, AI čatboti. Piedāvājums 24h. TavsWebs Rīga.",
       "ogTitle": "Gatava mājaslapa 1–3 nedēļās no €200 | TavsWebs"
     },
     "work": {
@@ -12,7 +12,7 @@
     },
     "services": {
       "title": "Pakalpojumi",
-      "description": "Mājaslapas no €200, SEO, veikali, CRM un AI čatboti — skaidras cenas un termiņi Latvijā.",
+      "description": "Mājaslapu izstrāde Latvijā un Rīgā no €200, WordPress, interneta veikali, SEO audits no €150, CRM un AI čatboti. Skaidras cenas un termiņi.",
       "ogTitle": "Pakalpojumi — TavsWebs"
     },
     "process": {
@@ -37,7 +37,7 @@
     },
     "guides": {
       "title": "Ceļveži un raksti",
-      "description": "Praktiski padomi par mājaslapu izmaksām, izstrādātāja izvēli un AI čatbotiem Latvijā.",
+      "description": "Praktiski ceļveži: cik maksā mājaslapa un WordPress Latvijā, interneta veikals, SEO audits, redesign un mājaslapu izstrāde Rīgā.",
       "ogTitle": "Ceļveži — TavsWebs"
     },
     "privacy": {
@@ -271,10 +271,10 @@
     "ctaTitle": "Neesi drošs, kas vajadzīgs?",
     "items": {
       "website-dev": {
-        "title": "Mājaslapu izstrāde",
-        "description": "WordPress, WooCommerce vai pielāgota izstrāde — mājaslapa, kas skaidri pastāsta, ko tu dari, un ir gatava Google.",
+        "title": "Mājaslapu izstrāde Latvijā",
+        "description": "Mājaslapu izstrāde Latvijā no €200 — WordPress vai pielāgota vietne 1–3 nedēļās, ko pats vari labot.",
         "detail": "No €200 · 1–3 nedēļas · tu pats labo saturu",
-        "longDescription": "Mājas lapas izveide Latvijā — no vienkāršas vizītkartes līdz pilnai biznesa vietnei uz WordPress, WooCommerce vai pielāgotas platformas. Dizains, programmēšana, mobilā versija, Google indeksācija un palaišana iekļauta.",
+        "longDescription": "Mājaslapu izstrāde Latvijā un Rīgā — no vizītkartes līdz biznesa vietnei uz WordPress, WooCommerce vai pielāgotas platformas. Iekļauts dizains, programmēšana, mobilā versija, kontaktu forma, pamata SEO (virsraksti, ātrums, sitemap) un palaišana. Cenas no €200, tipiski 1–3 nedēļas. Piedāvājums 24 stundu laikā.",
         "benefits": [
           "Apmeklētājs 5 sekundēs saprot, ko tu dari un kā sazināties",
           "Mobilā versija iekļauta — vairums klientu meklē telefonā",
@@ -292,9 +292,9 @@
       },
       "ecommerce": {
         "title": "Interneta veikalu izstrāde",
-        "description": "Pārdod preces internetā. Veikals ar maksājumiem, produktiem un pasūtījumu apstrādi.",
+        "description": "Interneta veikals Latvijā no ~€800 — produkti, maksājumi, piegāde, mobilais grozs.",
         "detail": "Maksājumi · Produkti · Pasūtījumi",
-        "longDescription": "Pilns interneta veikals — produktu katalogs, grozs, maksājumi un pasūtījumu pārvaldība. Viss, kas vajadzīgs, lai sāktu pārdot online.",
+        "longDescription": "Interneta veikala izstrāde Latvijā — WooCommerce vai pielāgots katalogs ar maksājumiem, piegādi un pasūtījumu paneli. Mazs veikals no ~€800, tipiski 3–6 nedēļas. Piedāvājums 24h.",
         "benefits": [
           "Pārdod 24/7 — veikals strādā pat kad birojs ir ciet",
           "Maksājumi online — kartes, bankas linki, pēc vajadzības",
@@ -331,9 +331,9 @@
       },
       "redesign": {
         "title": "Redesign un pārbūve",
-        "description": "Vecā mājaslapa vairs neder? Atjauninām dizainu, ātrumu un funkcionalitāti.",
+        "description": "Mājaslapas redesign Latvijā no €490 — moderns dizains, ātrums un SEO saglabāšana.",
         "detail": "Jauns dizains · Ātrums · Labojumi",
-        "longDescription": "Pārbūvējam esošās vietnes — moderns izskats, labāka ātrums un ērtāka lietošana. Bieži ātrāk un lētāk nekā sākt no nulles.",
+        "longDescription": "Mājaslapas redesign Latvijā no €490 — jauna struktūra, ātrums, mobilā versija un CMS, saglabājot SEO ar 301 redirectiem. Piedāvājums 24h.",
         "benefits": [
           "Moderns izskats — pirmais iespaids ir svarīgs",
           "Ātrāka lapa — Google un lietotāji to novērtē",
@@ -350,9 +350,9 @@
       },
       "seo-audit": {
         "title": "SEO auditi un optimizācija",
-        "description": "Pārbaudām, kāpēc tevi neatrod Google, un uzlabojam — lai klienti atrastu tevi organiski.",
+        "description": "SEO audits Latvijā no €150 — tehniskā pārbaude un skaidrs labojumu plāns.",
         "detail": "Audits no €150 · Labojumi · Google",
-        "longDescription": "SEO audits un pastāvīga optimizācija: ātrums, virsraksti, tehniskās kļūdas un redzamība meklētājā. Iedodam skaidru darbu sarakstu un vajadzības gadījumā arī implementējam labojumus paši.",
+        "longDescription": "SEO audits Latvijā no €150 — ātrums, mobilā versija, title/description, sitemap, tehniskās kļūdas un prioritāšu saraksts. Pēc audita — labojumi un saturs, lai Google redzētu lapu.",
         "benefits": [
           "Atklājam, kāpēc tevi neatrod Google",
           "Ātruma un tehnisko kļūdu labojumi",
@@ -431,7 +431,9 @@
     "relatedTitle": "Citi pakalpojumi",
     "ctaButton": "Saņemt piedāvājumu",
     "detailCtaTitle": "Vajag {service}?",
-    "detailCtaBody": "Pastāsti par projektu — iedosim skaidru cenu un termiņu 24 stundu laikā."
+    "detailCtaBody": "Pastāsti par projektu — iedosim skaidru cenu un termiņu 24 stundu laikā.",
+    "guidesTitle": "Noderīgi ceļveži",
+    "guidesSubtitle": "Cenas, termiņi un padomi — pirms pasūti, izlasi."
   },
   "process": {
     "eyebrow": "Process",
@@ -758,8 +760,233 @@
             ]
           }
         }
+      },
+      "wordpress-website-latvia": {
+        "title": "WordPress mājaslapa Latvijā — cena un termiņi",
+        "excerpt": "Cik maksā WordPress mājaslapa Latvijā 2026. gadā, kas iekļauts un cik ilgi jāgaida līdz palaišanai.",
+        "category": "WordPress",
+        "readTime": "6 min lasīšana",
+        "intro": "WordPress joprojām ir populārākā izvēle mazo un vidējo uzņēmumu mājaslapām Latvijā — jo saturu vari labot pats. Šeit: reālas cenas, termiņi un kad WordPress der (un kad nē).",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Cik maksā WordPress mājaslapa Latvijā?",
+            "paragraphs": [
+              "Vienkārša WordPress biznesa lapa (līdz 5 lapām, forma, mobilā versija) TavsWebs sākas no €200. Tipiska uzņēmuma vietne ar 6–10 lapām — €400–1500. Interneta veikals uz WooCommerce — parasti no €800.",
+              "Tirgū redzēsi arī piedāvājumus no €600–2500+ pie lielākām aģentūrām. Atšķirība bieži ir pielāgotā dizaina apjomā, satura rakstīšanā un atbalstā pēc palaišanas — ne \"WordPress vai ne-WordPress\"."
+            ]
+          },
+          "1": {
+            "heading": "Kas iekļauts kvalitatīvā WordPress projektā",
+            "paragraphs": [
+              "Dizains (vai tīra, modernā veidne), lapu struktūra, kontaktu forma, mobilā versija, pamata SEO (virsraksti, ātrums, sitemap), SSL un CMS, kurā tu pats maini tekstus un bildes.",
+              "Bez šī komplekta \"lēta WordPress lapa\" bieži nozīmē lēnu ielādi, drošības riskus un situāciju, kur katru teksta labojumu jāmaksā izstrādātājam."
+            ]
+          },
+          "2": {
+            "heading": "Cik ilgi aizņem WordPress mājaslapas izveide?",
+            "paragraphs": [
+              "Vienkārša lapa — 1–2 nedēļas. Tipiska biznesa vietne — 2–3 nedēļas. Veikals vai sarežģītākas integrācijas — 3–6 nedēļas.",
+              "Termiņu visvairāk ietekmē saturs: ja teksti un bildes ir gatavi, projekts iet ātrāk. Ja saturu rakstām kopā — plānojam papildu dienas."
+            ]
+          },
+          "3": {
+            "heading": "Kad WordPress der — un kad labāk cits risinājums",
+            "paragraphs": [
+              "WordPress der: biznesa mājaslapai, blogam, nelielam veikalam, vietnei, kuru bieži atjaunini. CMS ir saprotams, pluginu ekosistēma plaša.",
+              "Labāk cits risinājums: ļoti specifiska CRM loģika, sarežģīta web lietotne vai produkts ar daudz pielāgotu API. Tad taisām pielāgotu izstrādi, nevis \"spraužam\" visu WordPressā."
+            ]
+          },
+          "4": {
+            "heading": "Kā saņemt piedāvājumu",
+            "paragraphs": [
+              "Pastāsti, cik lapu vajag, vai ir saturs un vai vajag veikalu. 24 stundu laikā iedosim cenu un termiņu — bez maksas.",
+              "Skaties arī mūsu ceļvedi \"Cik maksā mājaslapa Latvijā?\" un pakalpojumu lapu par mājaslapu izstrādi."
+            ]
+          }
+        }
+      },
+      "ecommerce-cost-latvia": {
+        "title": "Interneta veikala izstrāde Latvijā — cenas 2026",
+        "excerpt": "Cik maksā interneta veikals Latvijā: no maza kataloga līdz pilnam WooCommerce ar maksājumiem un piegādi.",
+        "category": "E-komercija",
+        "readTime": "6 min lasīšana",
+        "intro": "\"Cik maksā interneta veikals?\" — atkarīgs no produktu skaita, maksājumiem un piegādes. Šeit skaidri diapazoni Latvijas tirgum un ko saņemsi par naudu.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Cik maksā interneta veikals Latvijā?",
+            "paragraphs": [
+              "Mazs katalogs (desmitiem produktu, grozs, maksājumi) TavsWebs sākas aptuveni no €800. Vidējs veikals ar kategorijām, atlaidēm un piegādes opcijām — bieži €1500–4000. Lieli katalogi un ERP integrācijas — individuāli, bieži €4000+.",
+              "Aģentūru piedāvājumi Latvijā bieži sākas no €2200–4000. Ja budžets ir mazāks, sākam ar šauru sortimentu un paplašinām, kad ir pirmie pasūtījumi."
+            ]
+          },
+          "1": {
+            "heading": "Kas ietekmē veikala cenu",
+            "paragraphs": [
+              "Produktu un variantu skaits, maksājumu veidi (kartes, bankas linki), piegādes zonas, atlaides, daudzvalodība, un vai vajag saistīt ar noliktavu vai grāmatvedību.",
+              "Dizains un mobilais grozs arī ietekmē: veikals, kas slikti strādā telefonā, zaudē pirkumus."
+            ]
+          },
+          "2": {
+            "heading": "WooCommerce vai cits?",
+            "paragraphs": [
+              "WooCommerce (uz WordPress) der lielākajai daļai mazo–vidējo veikalu Latvijā: tu pats pievieno produktus, un ekosistēma ir pazīstama.",
+              "Shopify vai pielāgots risinājums — ja vajag specifisku loģiku vai ļoti lielu apjomu. Izvēli izrunājam pirms tāmes."
+            ]
+          },
+          "3": {
+            "heading": "Kā sākt",
+            "paragraphs": [
+              "Sagatavo produktu sarakstu (kaut vai Excel) un pastāsti, kā gribēsi pieņemt maksājumus. Piedāvājumu iedosim 24h.",
+              "Skaties arī pakalpojumu: interneta veikalu izstrāde."
+            ]
+          }
+        }
+      },
+      "website-development-riga": {
+        "title": "Mājaslapu izstrāde Rīgā — lokalitāte, cenas, process",
+        "excerpt": "Mājaslapu izstrāde Rīgā un attālināti: cenas no €200, termiņi 1–3 nedēļas, tikšanās klātienē vai online.",
+        "category": "Rīga",
+        "readTime": "5 min lasīšana",
+        "intro": "Meklē mājaslapu izstrādi Rīgā? Lielākā daļa klientu grib skaidru cenu, ātru startu un iespēju satikties. TavsWebs strādā Rīgā klātienē un attālināti visā Latvijā.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Mājaslapu izstrāde Rīgā — ko tas nozīmē praktiski",
+            "paragraphs": [
+              "Klātienē Rīgā varam tikties īsai sarunai (vajadzības, budžets, termiņš). Pašu izstrādi bieži darām attālināti — tas neietekmē kvalitāti, bet ietaupa laiku.",
+              "Ja esi ārpus Rīgas — viss process notiek online: WhatsApp, videozvans, testa vide un palaišana."
+            ]
+          },
+          "1": {
+            "heading": "Cenas un termiņi Rīgas uzņēmumiem",
+            "paragraphs": [
+              "Biznesa mājaslapa no €200 (1–3 nedēļas). Tipiska vietne €400–1500. SEO audits no €150. AI čatbots — pēc apjoma.",
+              "Rīgā konkurence ir liela, tāpēc mēs nedodam \"miglainas tāmes\" — rakstisks piedāvājums 24h ar to, kas iekļauts."
+            ]
+          },
+          "2": {
+            "heading": "Kam deram vislabāk",
+            "paragraphs": [
+              "Pakalpojumu biznesiem, kuriem klienti meklē Google: būvniecība, auto, skaistumkopšana, medicīna, konsultācijas, vietējie veikali.",
+              "Ja vajag tikai \"skaistu bildi bez struktūras\" — mēs nebūsim labākā izvēle. Ja vajag vietni, kas atved zvanus — jā."
+            ]
+          },
+          "3": {
+            "heading": "Nākamais solis",
+            "paragraphs": [
+              "Raksti WhatsApp vai aizpildi formu — 24h laikā iedosim cenu. Portfolio: Audi Klubs, Stūrīši VIB u.c.",
+              "Lasīt arī: cik maksā mājaslapa Latvijā un kā izvēlēties izstrādātāju."
+            ]
+          }
+        }
+      },
+      "seo-audit-cost-latvia": {
+        "title": "SEO audits Latvijā — cena un ko saņemsi",
+        "excerpt": "Cik maksā SEO audits Latvijā, kas ietilpst pārbaudē un kad ir jēga maksāt par labojumiem.",
+        "category": "SEO",
+        "readTime": "5 min lasīšana",
+        "intro": "SEO audits nav \"magija Google pirmajā vietā\". Tas ir skaidrs saraksts, kas kavē redzamību: ātrums, virsraksti, indeksācija, tehniskās kļūdas. Šeit — cenas un process Latvijā.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Cik maksā SEO audits Latvijā?",
+            "paragraphs": [
+              "TavsWebs SEO audits sākas no €150 — pārbaudām ātrumu, mobilās versijas, title/description, virsrakstus, sitemap/robots, acīmredzamas tehniskās kļūdas un dodam prioritāšu sarakstu.",
+              "Plašāki auditi ar satura stratēģiju un konkurentu analīzi aģentūrās bieži maksā €300–1000+. Sākam ar praktisku auditu, tad — labojumus pēc vajadzības."
+            ]
+          },
+          "1": {
+            "heading": "Ko audits atklāj biežāk",
+            "paragraphs": [
+              "Lēna ielāde, vāji title tagi, dublikāti, nav sitemap Search Console, sliktas iekšējās saites, saturs, kas neatbild uz meklēšanas nodomu.",
+              "Ja vietnei ir 0–100 impressijas mēnesī (kā jaunai vai vājai lapai), audits + satura ceļveži + Google Business Profile dod vairāk nekā tikai \"vairāk keywords meta tagā\"."
+            ]
+          },
+          "2": {
+            "heading": "Audits vs pastāvīgs SEO",
+            "paragraphs": [
+              "Audits = diagnostika. Optimizācija = labojumi un saturs mēnešiem. Pozīcijas uz konkurējošiem terminiem (piem. \"mājaslapu izstrāde Latvijā\") necelsies 1 nedēļā.",
+              "Reālistisks plāns: labot tehnisko bāzi → publicēt long-tail rakstus → vākt atsauksmes un lokālās norādes → tad mērīt GSC 28–90 dienu griezumā."
+            ]
+          },
+          "3": {
+            "heading": "Pasūtīt SEO auditu",
+            "paragraphs": [
+              "Atsūti URL — 24h laikā pastāstīsim, vai der vienkāršs audits vai vajag plašāku plānu.",
+              "Skaties arī pakalpojumu SEO auditi un optimizācija."
+            ]
+          }
+        }
+      },
+      "website-redesign-latvia": {
+        "title": "Mājaslapas redesign Latvijā — kad un cik maksā",
+        "excerpt": "Kad ir jēga pārbūvēt veco mājaslapu, cik maksā redesign Latvijā un kā saglabāt Google pozīcijas.",
+        "category": "Redesign",
+        "readTime": "5 min lasīšana",
+        "intro": "Vecā lapa var \"strādāt\", bet zaudēt klientus: lēna, neskaidra, nav mobilajā. Redesign nav tikai jaunas krāsas — tā ir struktūra, ātrums un konversija.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "Kad vajag redesign",
+            "paragraphs": [
+              "Ja lapa slikti izskatās telefonā, ielādējas lēni, nav skaidras CTA, saturu nevari mainīt pats, vai dizains ir no 2015. gada — redesign atmaksājas.",
+              "Ja jau ir labs trafiks, redesign jādara uzmanīgi: saglabājam URL struktūru, redirectus un SEO signālus."
+            ]
+          },
+          "1": {
+            "heading": "Cik maksā mājaslapas redesign Latvijā?",
+            "paragraphs": [
+              "TavsWebs redesign tipiski sākas no €490 atkarībā no lapu skaita un vai pārrakstām uz modernu CMS. Pilna pārbūve ar jaunu struktūru — bieži €800–2000+.",
+              "Lētākais \"tikai CSS pārkrāsošana\" reti atrisina konversijas problēmu. Labāk: jauna struktūra + ātrums + CMS."
+            ]
+          },
+          "2": {
+            "heading": "Kā nesabojāt SEO pārbūves laikā",
+            "paragraphs": [
+              "Kartējam vecos URL → jaunajos (301), saglabājam svarīgos tekstus, pārbaudām Search Console pēc palaišanas, neatstājam 404 uz vecajām adresēm.",
+              "Ja vecā lapa gandrīz nav indeksēta, redesign ir arī iespēja sākt ar tīru SEO bāzi."
+            ]
+          },
+          "3": {
+            "heading": "Saņemt piedāvājumu redesignam",
+            "paragraphs": [
+              "Atsūti esošo URL un pastāsti, kas neapmierina (zvani, mobilā, ātrums). 24h — cena un plāns.",
+              "Skaties pakalpojumu: redesign un pārbūve."
+            ]
+          }
+        }
       }
-    }
+    },
+    "relatedTitle": "Saistītie raksti",
+    "relatedServiceLabel": "Saistītais pakalpojums"
   },
   "legal": {
     "tocLabel": "Saturs",

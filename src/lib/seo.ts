@@ -328,7 +328,7 @@ export async function guideArticleJsonLd(locale: Locale, guideId: GuideId) {
     publisher: { "@id": `${site.url}/#organization` },
     url: absoluteUrl(localizedPath(locale, `/guides/${guideId}`)),
     inLanguage: locale,
-    dateModified: "2026-08-29",
+    dateModified: "2026-11-19",
     datePublished: "2026-08-29",
   };
 }

@@ -2,7 +2,7 @@
   "meta": {
     "home": {
       "title": "Website Development in Latvia",
-      "description": "Get a live business website in 1–3 weeks from only €200. Free quote in 24h. 4.9★ Google. TavsWebs Latvia.",
+      "description": "Website development in Latvia from €200 — live in 1–3 weeks. WordPress, stores, SEO audits, AI chatbots. Quote in 24h. TavsWebs Riga.",
       "ogTitle": "Live website in 1–3 weeks from €200 | TavsWebs"
     },
     "work": {
@@ -12,7 +12,7 @@
     },
     "services": {
       "title": "Services",
-      "description": "Websites from €200, SEO, stores, CRM and AI chatbots — clear prices and timelines in Latvia.",
+      "description": "Website development in Latvia and Riga from €200, WordPress, online stores, SEO audits from €150, CRM and AI chatbots. Clear prices and timelines.",
       "ogTitle": "Services — TavsWebs"
     },
     "process": {
@@ -37,7 +37,7 @@
     },
     "guides": {
       "title": "Guides & articles",
-      "description": "Practical tips on website costs, choosing a developer and AI chatbots in Latvia.",
+      "description": "Practical guides: website and WordPress cost in Latvia, online stores, SEO audits, redesign, and website development in Riga.",
       "ogTitle": "Guides — TavsWebs"
     },
     "privacy": {
@@ -271,10 +271,10 @@
     "ctaTitle": "Not sure what you need?",
     "items": {
       "website-dev": {
-        "title": "Website development",
-        "description": "WordPress, WooCommerce or custom builds — a site that clearly shows what you do and is ready for Google.",
+        "title": "Website development in Latvia",
+        "description": "Website development in Latvia from €200 — WordPress or custom, live in 1–3 weeks, editable by you.",
         "detail": "From €200 · 1–3 weeks · edit content yourself",
-        "longDescription": "Website creation in Latvia — from a simple business card site to a full company website on WordPress, WooCommerce or a custom platform. Design, development, mobile version, Google indexing setup and launch included.",
+        "longDescription": "Website development in Latvia and Riga — from a simple brochure site to a full business site on WordPress, WooCommerce or a custom stack. Includes design, development, mobile layout, contact form, basic SEO (titles, speed, sitemap) and launch. From €200, typically 1–3 weeks. Quote within 24 hours.",
         "benefits": [
           "Visitors grasp what you do and how to contact you in seconds",
           "Mobile version included — most clients search on their phone",
@@ -292,9 +292,9 @@
       },
       "ecommerce": {
         "title": "Online store development",
-        "description": "Sell products online. A store with payments, products and order handling.",
+        "description": "Online store in Latvia from ~€800 — products, payments, shipping, mobile checkout.",
         "detail": "Payments · Products · Orders",
-        "longDescription": "A full online store — product catalog, cart, payments and order management. Everything you need to start selling online.",
+        "longDescription": "Online store development in Latvia — WooCommerce or a custom catalogue with payments, shipping and order management. Small store from ~€800, typically 3–6 weeks. Quote in 24h.",
         "benefits": [
           "Sell 24/7 — store works when office is closed",
           "Online payments — cards, bank links as needed",
@@ -331,9 +331,9 @@
       },
       "redesign": {
         "title": "Redesign & rebuild",
-        "description": "Old site not working anymore? We refresh design, speed and features.",
+        "description": "Website redesign in Latvia from €490 — modern design, speed, and SEO preserved.",
         "detail": "New design · Speed · Fixes",
-        "longDescription": "We rebuild existing sites — modern look, better speed and easier use. Often faster and cheaper than starting from scratch.",
+        "longDescription": "Website redesign in Latvia from €490 — new structure, speed, mobile layout and CMS, keeping SEO with 301 redirects. Quote in 24h.",
         "benefits": [
           "Modern look — first impression matters",
           "Faster site — Google and users appreciate it",
@@ -350,9 +350,9 @@
       },
       "seo-audit": {
         "title": "SEO audits & optimization",
-        "description": "We check why Google can't find you — and improve it so customers find you organically.",
+        "description": "SEO audit in Latvia from €150 — technical review and a clear fix plan.",
         "detail": "Audit from €150 · Fixes · Google",
-        "longDescription": "SEO audit and ongoing optimization: speed, titles, technical issues and search visibility. You get a clear fix list — and we can implement the fixes too.",
+        "longDescription": "SEO audit in Latvia from €150 — speed, mobile, titles/descriptions, sitemap, technical issues and a prioritized fix list. After the audit — fixes and content so Google can find you.",
         "benefits": [
           "Find out why Google can't find you",
           "Speed and technical error fixes",
@@ -431,7 +431,9 @@
     "relatedTitle": "Other services",
     "ctaButton": "Get a quote",
     "detailCtaTitle": "Need {service}?",
-    "detailCtaBody": "Tell us about your project — we'll send a clear price and timeline within 24 hours."
+    "detailCtaBody": "Tell us about your project — we'll send a clear price and timeline within 24 hours.",
+    "guidesTitle": "Helpful guides",
+    "guidesSubtitle": "Prices, timelines and tips — read before you order."
   },
   "process": {
     "eyebrow": "Process",
@@ -758,8 +760,233 @@
             ]
           }
         }
+      },
+      "wordpress-website-latvia": {
+        "title": "WordPress website in Latvia — price and timeline",
+        "excerpt": "What a WordPress site costs in Latvia in 2026, what’s included, and how long launch takes.",
+        "category": "WordPress",
+        "readTime": "6 min read",
+        "intro": "WordPress is still the default for SMEs in Latvia because you can edit content yourself. Here’s real pricing, timelines, and when WordPress is (and isn’t) the right stack.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "sections": {
+          "0": {
+            "heading": "How much does a WordPress website cost in Latvia?",
+            "paragraphs": [
+              "A simple WordPress business site (up to 5 pages, form, mobile) at TavsWebs starts from €200. A typical 6–10 page company site is €400–1500. A WooCommerce store usually starts from €800.",
+              "Larger agencies often quote €600–2500+. The gap is usually custom design depth, copywriting and post-launch support — not “WordPress vs not WordPress”."
+            ]
+          },
+          "1": {
+            "heading": "What’s included in a solid WordPress build",
+            "paragraphs": [
+              "Design (or a clean modern theme), page structure, contact form, mobile layout, basic SEO (titles, speed, sitemap), SSL, and a CMS you can edit.",
+              "Without that package, a “cheap WordPress site” often means slow load, security risk, and paying a developer for every text change."
+            ]
+          },
+          "2": {
+            "heading": "How long does it take?",
+            "paragraphs": [
+              "Simple site: 1–2 weeks. Typical business site: 2–3 weeks. Store or integrations: 3–6 weeks.",
+              "Content is the bottleneck: ready text/images = faster. Writing content together = add days."
+            ]
+          },
+          "3": {
+            "heading": "When WordPress fits — and when it doesn’t",
+            "paragraphs": [
+              "Fits: brochure sites, blogs, small shops, sites you update often.",
+              "Choose custom build instead: heavy CRM logic, complex web apps, lots of bespoke APIs."
+            ]
+          },
+          "4": {
+            "heading": "Get a quote",
+            "paragraphs": [
+              "Tell us page count, whether content exists, and if you need a shop. Quote within 24 hours — free.",
+              "Also see our guide on website cost in Latvia and the website development service page."
+            ]
+          }
+        }
+      },
+      "ecommerce-cost-latvia": {
+        "title": "Online store development in Latvia — 2026 prices",
+        "excerpt": "What an ecommerce site costs in Latvia: from a small catalogue to full WooCommerce with payments and shipping.",
+        "category": "Ecommerce",
+        "readTime": "6 min read",
+        "intro": "“How much is an online store?” depends on products, payments and shipping. Here are clear Latvia ranges and what you get for the money.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "How much does an online store cost in Latvia?",
+            "paragraphs": [
+              "A small catalogue (dozens of products, cart, payments) at TavsWebs starts around €800. A mid store with categories, discounts and shipping options is often €1500–4000. Large catalogues / ERP links are custom, often €4000+.",
+              "Agency quotes in Latvia often start €2200–4000. On a tighter budget we launch a narrow catalogue first, then expand after orders start."
+            ]
+          },
+          "1": {
+            "heading": "What drives the price",
+            "paragraphs": [
+              "Product/variant count, payment methods, shipping zones, discounts, languages, and warehouse/accounting links.",
+              "Mobile checkout matters: a store that fails on phone loses sales."
+            ]
+          },
+          "2": {
+            "heading": "WooCommerce or something else?",
+            "paragraphs": [
+              "WooCommerce fits most small–mid Latvian shops: you add products yourself and the ecosystem is familiar.",
+              "Shopify or custom — for special logic or very large scale. We decide before quoting."
+            ]
+          },
+          "3": {
+            "heading": "How to start",
+            "paragraphs": [
+              "Prepare a product list (even Excel) and how you want to take payments. Quote in 24h.",
+              "See also: ecommerce development service."
+            ]
+          }
+        }
+      },
+      "website-development-riga": {
+        "title": "Website development in Riga — local pricing and process",
+        "excerpt": "Website development in Riga and remote across Latvia: from €200, 1–3 weeks, meet in person or online.",
+        "category": "Riga",
+        "readTime": "5 min read",
+        "intro": "Looking for website development in Riga? Most clients want a clear price, a fast start, and the option to meet. TavsWebs works in Riga in person and remotely across Latvia.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "What “Riga website development” means in practice",
+            "paragraphs": [
+              "We can meet in Riga for a short briefing. Build work is often remote — same quality, less scheduling friction.",
+              "Outside Riga — fully online: WhatsApp, video call, staging link, then launch."
+            ]
+          },
+          "1": {
+            "heading": "Prices and timelines for Riga businesses",
+            "paragraphs": [
+              "Business site from €200 (1–3 weeks). Typical site €400–1500. SEO audit from €150.",
+              "Riga is competitive, so we don’t do vague estimates — written quote in 24h with what’s included."
+            ]
+          },
+          "2": {
+            "heading": "Who we fit best",
+            "paragraphs": [
+              "Service businesses found via Google: trades, auto, beauty, clinics, consultants, local shops.",
+              "If you only want a pretty picture with no structure — we’re not the fit. If you want calls — we are."
+            ]
+          },
+          "3": {
+            "heading": "Next step",
+            "paragraphs": [
+              "WhatsApp or the form — quote in 24h. Portfolio includes Audi Klubs and Stūrīši VIB.",
+              "Also read: website cost in Latvia and how to choose a developer."
+            ]
+          }
+        }
+      },
+      "seo-audit-cost-latvia": {
+        "title": "SEO audit in Latvia — price and what you get",
+        "excerpt": "What an SEO audit costs in Latvia, what’s checked, and when paying for fixes makes sense.",
+        "category": "SEO",
+        "readTime": "5 min read",
+        "intro": "An SEO audit isn’t magic page-one ranking. It’s a clear list of what blocks visibility: speed, titles, indexing, technical issues. Here’s pricing and process in Latvia.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "How much does an SEO audit cost in Latvia?",
+            "paragraphs": [
+              "TavsWebs SEO audits start from €150 — speed, mobile, titles/descriptions, headings, sitemap/robots, obvious technical issues, plus a prioritized fix list.",
+              "Broader audits with content strategy and competitor research at agencies often run €300–1000+. We start practical, then fix what matters."
+            ]
+          },
+          "1": {
+            "heading": "What audits usually find",
+            "paragraphs": [
+              "Slow load, weak titles, duplicates, no Search Console sitemap, poor internal links, content that misses search intent.",
+              "If a site has ~0–100 impressions/month, audit + long-tail guides + Google Business Profile beats stuffing more keywords in a meta tag."
+            ]
+          },
+          "2": {
+            "heading": "Audit vs ongoing SEO",
+            "paragraphs": [
+              "Audit = diagnosis. Optimization = months of fixes and content. Competitive terms won’t jump in a week.",
+              "Realistic plan: fix technical base → publish long-tail articles → collect reviews/local signals → measure GSC over 28–90 days."
+            ]
+          },
+          "3": {
+            "heading": "Order an SEO audit",
+            "paragraphs": [
+              "Send your URL — within 24h we’ll say if a simple audit fits or you need a wider plan.",
+              "See also: SEO audit & optimization service."
+            ]
+          }
+        }
+      },
+      "website-redesign-latvia": {
+        "title": "Website redesign in Latvia — when and how much",
+        "excerpt": "When a redesign is worth it, what it costs in Latvia, and how to keep Google rankings during a rebuild.",
+        "category": "Redesign",
+        "readTime": "5 min read",
+        "intro": "An old site can “work” while losing clients: slow, unclear, not mobile. Redesign isn’t just new colours — it’s structure, speed and conversion.",
+        "sectionKeys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sections": {
+          "0": {
+            "heading": "When you need a redesign",
+            "paragraphs": [
+              "If it’s bad on phone, slow, has no clear CTA, you can’t edit content, or it looks stuck in 2015 — redesign pays off.",
+              "If you already have traffic, redesign carefully: keep URL structure, redirects and SEO signals."
+            ]
+          },
+          "1": {
+            "heading": "How much does website redesign cost in Latvia?",
+            "paragraphs": [
+              "TavsWebs redesigns typically start from €490 depending on page count and whether we move to a modern CMS. Full rebuild with new structure is often €800–2000+.",
+              "The cheapest “CSS repaint” rarely fixes conversion. Better: new structure + speed + CMS."
+            ]
+          },
+          "2": {
+            "heading": "How not to break SEO during a rebuild",
+            "paragraphs": [
+              "Map old URLs → new (301), keep key copy, check Search Console after launch, don’t leave 404s on old addresses.",
+              "If the old site barely ranks, redesign is also a chance to start with a clean SEO base."
+            ]
+          },
+          "3": {
+            "heading": "Get a redesign quote",
+            "paragraphs": [
+              "Send the current URL and what’s wrong (calls, mobile, speed). Quote and plan in 24h.",
+              "See service: redesign & rebuild."
+            ]
+          }
+        }
       }
-    }
+    },
+    "relatedTitle": "Related articles",
+    "relatedServiceLabel": "Related service"
   },
   "legal": {
     "tocLabel": "Contents",

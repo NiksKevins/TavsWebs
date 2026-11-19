@@ -3,11 +3,13 @@ import { getTranslations } from "next-intl/server";
 import { ArrowLeft, ArrowUpRight, Check, ExternalLink } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import {
+  guideHref,
   serviceBadges,
   serviceExternalUrls,
   serviceHref,
   serviceIds,
   serviceImages,
+  serviceRelatedGuides,
   site,
   type ServiceId,
 } from "@/lib/data";
@@ -17,11 +19,13 @@ import { cn } from "@/lib/utils";
 
 export async function ServiceDetail({ id }: { id: ServiceId }) {
   const t = await getTranslations("services");
+  const tGuides = await getTranslations("guides");
   const badge = serviceBadges[id];
   const externalUrl = serviceExternalUrls[id];
   const benefits = t.raw(`items.${id}.benefits`) as string[];
   const includes = t.raw(`items.${id}.includes`) as string[];
   const related = serviceIds.filter((s) => s !== id).slice(0, 3);
+  const guides = serviceRelatedGuides[id] ?? [];
 
   return (
     <>
@@ -117,6 +121,33 @@ export async function ServiceDetail({ id }: { id: ServiceId }) {
               </div>
             </Reveal>
           </div>
+
+          {guides.length > 0 && (
+            <div className="mt-16">
+              <h2 className="display text-2xl md:text-3xl">{t("guidesTitle")}</h2>
+              <p className="mt-3 max-w-2xl text-sm text-muted">{t("guidesSubtitle")}</p>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {guides.map((guideId) => (
+                  <li key={guideId}>
+                    <Link
+                      href={guideHref(guideId)}
+                      className="group flex h-full flex-col rounded-xl border border-border p-5 transition hover:border-border-strong hover:bg-surface"
+                    >
+                      <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+                        {tGuides(`items.${guideId}.category`)}
+                      </span>
+                      <span className="mt-2 display text-lg leading-snug group-hover:text-accent">
+                        {tGuides(`items.${guideId}.title`)}
+                      </span>
+                      <span className="mt-2 text-sm text-muted">
+                        {tGuides(`items.${guideId}.excerpt`)}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div className="mt-16 border-t border-border pt-10">
             <Link

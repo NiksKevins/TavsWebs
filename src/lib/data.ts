@@ -213,9 +213,87 @@ export const guideIds = [
   "website-cost-latvia",
   "choose-web-developer",
   "ai-chatbot-business",
+  "wordpress-website-latvia",
+  "ecommerce-cost-latvia",
+  "website-development-riga",
+  "seo-audit-cost-latvia",
+  "website-redesign-latvia",
 ] as const;
 
 export type GuideId = (typeof guideIds)[number];
+
+/** Shown on the homepage preview (long-tail SEO focus). */
+export const featuredGuideIds: GuideId[] = [
+  "website-cost-latvia",
+  "wordpress-website-latvia",
+  "website-development-riga",
+];
+
+export const relatedGuides: Record<GuideId, GuideId[]> = {
+  "website-cost-latvia": [
+    "wordpress-website-latvia",
+    "website-development-riga",
+    "choose-web-developer",
+  ],
+  "choose-web-developer": [
+    "website-cost-latvia",
+    "website-development-riga",
+    "website-redesign-latvia",
+  ],
+  "ai-chatbot-business": [
+    "website-cost-latvia",
+    "seo-audit-cost-latvia",
+    "choose-web-developer",
+  ],
+  "wordpress-website-latvia": [
+    "website-cost-latvia",
+    "ecommerce-cost-latvia",
+    "website-development-riga",
+  ],
+  "ecommerce-cost-latvia": [
+    "wordpress-website-latvia",
+    "website-cost-latvia",
+    "seo-audit-cost-latvia",
+  ],
+  "website-development-riga": [
+    "website-cost-latvia",
+    "wordpress-website-latvia",
+    "choose-web-developer",
+  ],
+  "seo-audit-cost-latvia": [
+    "website-redesign-latvia",
+    "website-cost-latvia",
+    "website-development-riga",
+  ],
+  "website-redesign-latvia": [
+    "seo-audit-cost-latvia",
+    "website-cost-latvia",
+    "wordpress-website-latvia",
+  ],
+};
+
+export const serviceRelatedGuides: Partial<Record<ServiceId, GuideId[]>> = {
+  "website-dev": [
+    "website-cost-latvia",
+    "wordpress-website-latvia",
+    "website-development-riga",
+  ],
+  ecommerce: ["ecommerce-cost-latvia", "wordpress-website-latvia"],
+  "seo-audit": ["seo-audit-cost-latvia", "website-redesign-latvia"],
+  redesign: ["website-redesign-latvia", "seo-audit-cost-latvia"],
+  "ai-chatbots": ["ai-chatbot-business"],
+};
+
+export const guideRelatedService: Partial<Record<GuideId, ServiceId>> = {
+  "website-cost-latvia": "website-dev",
+  "choose-web-developer": "website-dev",
+  "wordpress-website-latvia": "website-dev",
+  "website-development-riga": "website-dev",
+  "ecommerce-cost-latvia": "ecommerce",
+  "seo-audit-cost-latvia": "seo-audit",
+  "website-redesign-latvia": "redesign",
+  "ai-chatbot-business": "ai-chatbots",
+};
 
 export function guideHref(slug: string) {
   return {
